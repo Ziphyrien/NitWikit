@@ -122,7 +122,7 @@ Matrix 是由国人 RE 编写的一款反作弊插件，当年诞生是用于取
 
 ### 扩展反作弊插件
 
-一些扩展的反作弊插件，通常不提供直接的防作弊功能，而是扩展
+一些扩展的反作弊插件，提供一些一般反作弊不会反的部分
 
 <Tabs queryString="ext">
 <TabItem value="aca" label="AntiCheatAddition">
@@ -140,12 +140,75 @@ Matrix 是由国人 RE 编写的一款反作弊插件，当年诞生是用于取
 > 购买地址：https://www.spigotmc.org/resources/anticheataddition.33590/
 
 </TabItem>
+<TabItem value="coordinateoffset" label="CoordinateOffset">
+
+CoordinateOffset 是一个坐标混淆插件，可以防止玩家通过 F3 调试界面或客户端模组获取真实坐标。
+
+**支持版本：** 1.17.x - 1.21.7 (Spigot/Paper)
+
+> GitHub: https://github.com/joshuaprince/CoordinateOffset
+>
+> Modrinth: https://modrinth.com/plugin/coordinateoffset
+>
+> Spigot: https://www.spigotmc.org/resources/coordinateoffset.111292/
+
+需要安装前置 PacketEvent
+
+![](_images/img.png)
+
+</TabItem>
+<TabItem value="antihealthindicator" label="AntiHealthIndicator">
+
+AntiHealthIndicator 是一个防止黑客和模组用户查看其他玩家血量的插件。通过直接修改数据包来实现，无法被绕过。
+
+**主要功能：**
+- 隐藏玩家血量
+- 隐藏玩家氧气值
+- 隐藏玩家吸收效果
+- 隐藏玩家饱食度
+- 隐藏玩家游戏模式
+- 隐藏玩家经验值
+- 隐藏物品耐久度
+- 隐藏物品附魔
+- 隐藏物品堆叠数量
+
+需要安装前置 PacketEvents
+
+> GitHub: https://github.com/Bram1903/AntiHealthIndicator
+>
+> Modrinth: https://modrinth.com/plugin/antihealthindicator
+>
+> SpigotMC: https://www.spigotmc.org/resources/antihealthindicator.114851/
+
+</TabItem>
+<TabItem value="totemguard" label="TotemGuard">
+
+TotemGuard 是一个专门检测 AutoTotem 作弊的轻量级反作弊插件
+
+具体如何检查请查看 [Wiki](https://github.com/Bram1903/TotemGuard/wiki/Checks)
+
+需要安装前置 PacketEvents
+
+> GitHub: https://github.com/Bram1903/TotemGuard
+>
+> Modrinth: https://modrinth.com/plugin/totemguard
+>
+> SpigotMC: https://www.spigotmc.org/resources/totemguard.119385/
+
+</TabItem>
+</Tabs>
+
+### 扩展工具
+
+这些插件自身不提供反作弊功能,但是可用于反作弊,推荐全部看一遍
+
+<Tabs>
 <TabItem value="aco" label="AntiCheatObfuscator">
 
 此插件会 "混淆 你的服务器上的反作弊，可以避免作弊者发现你的反作弊组合而针对性绕过
 
 > 下载地址：https://www.minebbs.com/resources/anticheatobfuscator-1-8-1-20.9251/
-> 
+>
 > Modrinth: https://modrinth.com/plugin/anticheatobfuscator
 
 </TabItem>
@@ -171,6 +234,34 @@ ISeeYou 是一个免费的录制插件，可以录制玩家的一举一动
 > 下载地址：https://github.com/MC-XiaoHei/ISeeYou/releases
 
 </TabItem>
+<TabItem value="synsniff" label="syn-sniff">
+
+syn-sniff 是一个被动 TCP/IP 协议栈指纹识别插件，通过分析网络数据包来获取玩家连接的深层信息。
+
+**主要功能：**
+- 被动嗅探 TCP/IP SYN 数据包进行指纹识别
+- 检测玩家的操作系统类型
+
+**系统要求：**
+- pcap 原生库 (libpcap, WinPcap, Npcap)
+- 管理员权限或 Linux Capabilities
+
+**命令：**
+- `/fingerprint <player>` - 查看原始 TCP/IP 指纹信息
+- `/predictos <player>` - 显示预测的操作系统
+
+:::warning[注意]
+
+此插件需要管理员权限和特定的网络库支持，安装前请确保满足系统要求。
+
+:::
+
+![](_images/img_1.png)
+
+> GitHub: https://github.com/Duckulus/syn-sniff
+
+</TabItem>
+
 </Tabs>
 
 ---
@@ -220,5 +311,5 @@ GitHub: https://github.com/8aka-Team/Talents-AntiCheat-Config
 高版本组合参考：
 
 - Matrix + GrimAC
-- NoChestPlus + GrimAC
+- NoCheatPlus + GrimAC
 - Vulcan + Matrix

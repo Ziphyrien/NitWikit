@@ -7,11 +7,11 @@ sidebar_position: 2
 
 这里只列出**部分**扩展的**部分**变量，这几个变量老是有人问
 
-如果你想了解全部变量，点击 [此处](https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list.html)
+如果你想了解全部变量，点击 [此处](https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html)
 
 ## Player
 
-> https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list.html#player
+> https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html#player
 
 ```text
 /papi ecloud download Player
@@ -27,7 +27,7 @@ sidebar_position: 2
 
 ## Server
 
-> https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list.html#server
+> https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html#server
 
 ```text
 /papi ecloud download Server
@@ -46,7 +46,7 @@ sidebar_position: 2
 
 ## Vault
 
-> https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list.html#vault
+> https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html#vault
 
 ```text
 /papi ecloud download Vault
@@ -58,21 +58,43 @@ sidebar_position: 2
 
 ## Multiverse
 
-> https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list.html#multiverse-core
+> https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html#multiverse-core
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs queryString="multiverse">
+<TabItem value="v5" label="Multiverse-Core v5">
+
+:::tip
+
+Multiverse-Core v5 已经内置 papi 支持，不再需要额外下载扩展
+
+:::
+
+```text
+%multiverse-core_alias% - v5 显示世界别名
+```
+
+</TabItem>
+<TabItem value="v4" label="Multiverse-Core v4">
 
 ```text
 /papi ecloud download multiverse
 ```
 
 ```text
-%multiverse_world_alias% - 显示世界别名
+%multiverse_world_alias% - v4 显示世界别名
 ```
 
-[案例 | 中文世界名](../../WorldManagement/Multiverse/Multiverse.md)
+</TabItem>
+</Tabs>
+
+[案例 | 中文世界名](../../WorldManagement/Multiverse/Q&A_1.md#世界别名)
 
 ## PlayerPoints
 
-> https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list.html#playerpoints
+> https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html#playerpoints
 
 ```text
 %playerpoints_points% - 点券数
@@ -84,7 +106,7 @@ PlayerPoints 在 3.0.0 以及更高版本会自动挂钩 papi，不再需要自�
 
 ## Statistic
 
-> https://snowcutieowo.github.io/PlaceholderAPI/user-guides.placeholder-list.html#statistic
+> https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html#statistic
 
 ```text
 /papi ecloud download Statistic
@@ -97,4 +119,23 @@ PlayerPoints 在 3.0.0 以及更高版本会自动挂钩 papi，不再需要自�
 %statistic_time_played:seconds% - 在线时间（秒）
 %statistic_mob_kills% - 生物击杀数
 %statistic_deaths% - 死亡数
+```
+
+# LuckPerms
+
+> https://continue-project.netlify.app/PlaceholderAPI/user-guides.placeholder-list.html#luckperms
+
+```text
+/papi ecloud download LuckPerms
+```
+
+```text
+%luckperms_prefix% - 返回玩家的前缀
+%luckperms_meta<键名>% - 返回给定元数据键的单个对应值
+%luckperms_groups% - 返回玩家直接继承的权限组列表
+%luckperms_has_permission_<权限>% - 返回玩家是否实际拥有该权限（与一般的权限检查不同！）
+%luckperms_inherits_permission_<权限>% - 返回玩家是否实际继承该权限（与一般的权限检查不同！）
+%luckperms_check_permission_<权限>% - 返回对给定玩家的权限检查
+%luckperms_in_group_<权限组>% - 返回玩家是否为给定权限组的成员
+%luckperms_expiry_time_<权限>% - 返回直接分配给玩家的临时权限剩余时间
 ```

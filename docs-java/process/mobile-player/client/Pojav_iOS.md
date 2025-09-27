@@ -4,6 +4,13 @@ sidebar_position: 2
 ---
 
 # 在 iOS 上安装 PojavLauncher
+:::warning
+
+ PojavLauncher已于2025年5月17日宣布停更
+
+ 建议使用Amethyst或者FCL替代PojavLauncher
+ 
+:::
 
 免越狱安装 PojavLauncher_iOS
 

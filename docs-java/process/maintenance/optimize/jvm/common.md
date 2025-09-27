@@ -68,12 +68,52 @@ java -Xlog:gc+init -XX:+UseTransparentHugePages -Xmx1g -version
 -DLeaf.library-download-repo=https://maven.aliyun.com/repository/public
 ```
 
+如果你使用的是 Paper 1.21.6(及其分支) 之后的版本 ，可以使用以下系统属性配置 Maven 中心仓库镜像：
+
+```shell
+-Dorg.bukkit.plugin.java.LibraryLoader.centralURL=https://maven.aliyun.com/repository/central
+```
+
+或者设置环境变量（优先级更高）：
+
+```shell
+# Linux/MacOS
+export PAPER_DEFAULT_CENTRAL_REPOSITORY=https://maven.aliyun.com/repository/central
+
+# Windows (PowerShell)
+$env:PAPER_DEFAULT_CENTRAL_REPOSITORY="https://maven.aliyun.com/repository/central"
+
+# Windows (CMD)
+set PAPER_DEFAULT_CENTRAL_REPOSITORY=https://maven.aliyun.com/repository/central
+```
+
+如果不是上述核心，你可以使用 [Spigot Library Booster](/docs-java/process/plugin/more/tittle-tattle.md#spigot-library-booster)
+
+### 其他国内镜像源
+
+- **阿里云 Maven 中心仓库**: `https://maven.aliyun.com/repository/central`
+- **阿里云公共仓库**: `https://maven.aliyun.com/repository/public`
+- **华为云 Maven 中心仓库**: `https://repo.huaweicloud.com/repository/maven/`
+- **腾讯云 Maven 中心仓库**: `https://mirrors.cloud.tencent.com/nexus/repository/maven-public/`
+
+:::tip 性能提示
+
+使用国内镜像源可以显著提升插件依赖库的下载速度，特别是在服务器首次启动或安装新插件时。
+
+:::
+
 ## 中文编码
 
 防止乱码
 
 ```shell
 -Dfile.encoding=UTF-8
+```
+
+如果仍然乱码,可以添加运行:
+
+```shell
+chcp 65001 # for Windows
 ```
 
 ## 删除垃圾信息

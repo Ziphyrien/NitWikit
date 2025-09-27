@@ -9,13 +9,13 @@ sidebar_position: 1
 
 :::info
 
-`SpigotMC` https://www.spigotmc.org/resources/.39267/
+`SpigotMC` https://www.spigotmc.org/resources/.39267
 
 `GitLab` https://gitlab.com/phoenix-dvpmt/mmoitems
 
 `文档(英文)` https://gitlab.com/phoenix-dvpmt/mmoitems/-/wikis/home
 
-`文档(中文)` https://gitlab.com/TranslatedByShark/Mythic-Manual-CN/-/wikis/home
+`文档(中文)` https://mmoitems.magicmc.top
 
 :::
 

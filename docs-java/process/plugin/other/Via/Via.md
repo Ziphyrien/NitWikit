@@ -62,29 +62,32 @@ Via* 插件剔除了 Java8 支持，这导致你不能在更低的服务端版�
 
 ## 独立版 (ViaProxy)
 
-- Release (所有版本)
+ViaProxy 是独立的代理程序，支持任意客户端版本连接任意服务器版本。
+
+### 支持的服务器版本
+
+- Release (1.0.0 - 1.21.8)
 - Beta (b1.0 - b1.8.1)
 - Alpha (a1.0.15 - a1.2.6)
 - Classic (c0.0.15 - c0.30 包含 [CPE](https://wiki.vg/Classic_Protocol_Extension))
-- 愚人节快照 (3D Shareware，20w14infinite)
+- 愚人节快照 (3D Shareware，20w14infinite，25w14craftmine)
 - 战斗测试快照 (Combat Test 8c)
-- 基岩版服务器 1.20.70 ([某些功能缺失](https://github.com/RaphiMC/ViaBedrock#features))
+- 基岩版 1.21.93 ([某些功能缺失](https://github.com/RaphiMC/ViaBedrock#features))
+- 快照版本 15w31a 和 15w31b (需要 [ViaSnapshot](ViaProxy/plugins/features.md#ViaSnapshot))
 
-### 支持的客户端
+### 支持的客户端版本
 
-- Release (1.7.2 - 1.21)
+- Release (1.7.2 - 1.21.8)
 - Beta 1.7.3 (需要 [ViaProxyBeta2Release](https://github.com/ViaVersionAddons/ViaProxyBeta2Release))
 - 基岩版 (需要 [Geyser](/docs-java/process/mobile-player/Geyser/geyser.md) 插件)
 
-你没看错，ViaProxy 可以让 1.20.4 客户端进入 Classic 版本的服务器 (后者大概发布于十年前)
-
-也可以让一个 JAVA 版玩家进入基岩版服务器，或者基岩版玩家进入 JAVA 版服务器！
+ViaProxy 可以让现代客户端进入十年前的 Classic 服务器，也可以实现 Java 版与基岩版之间的互通！
 
 ### 下载
 
 官方发布页面：[GitHub Release](https://github.com/ViaVersion/ViaProxy/releases)
 
-你也可以在[Jenkins](https://build.lenni0451.net/job/ViaProxy/) 下载最新版本
+Jenkins 构建：[ViaVersion Jenkins](https://ci.viaversion.com/view/All/job/ViaProxy/)
 
 ## 笨蛋脚本
 

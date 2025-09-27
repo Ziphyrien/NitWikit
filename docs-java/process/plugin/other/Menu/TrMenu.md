@@ -65,7 +65,7 @@ Notice：维护这个分支完全是个人兴趣。
 
 `GitHub(不推荐，已停止维护)` https://github.com/TrPlugins/TrMenu/tree/stable/v3
 
-`GitHub(推荐，社区维护)` https://github.com/Dreeam-qwq/TrMenu
+`GitHub(推荐，社区维护)` https://github.com/CoderKuo/TrMenu
 
 :::
 
