@@ -104,7 +104,7 @@ TrMenu 入门学习文档
 
 ## vscode 插件
 
-与 TrMenu 或 [kether](/docs-java/process/maintenance/lang/kether/kether.md) 有关的 vscode 插件
+与 TrMenu 或 [kether](/Java/lang/kether) 有关的 vscode 插件
 
 - [TrMenu-Helper](https://marketplace.visualstudio.com/items?itemName=hhhhhy.trmenu-helper)
 
@@ -229,9 +229,9 @@ https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
 
 :::tip
 
-你需要安装 [CheckItem](../../Front-Plugin/PlaceHolderAPI/CheckItem.md)
+你需要安装 [CheckItem](../../Front-Plugin/PlaceHolderAPI/CheckItem)
 
-并 [开启 give 和 remove](../../Front-Plugin/PlaceHolderAPI/CheckItem.md#启用give和remove) 和 [更改-boolean](../../Front-Plugin/PlaceHolderAPI/Q&A.md#更改-boolean)
+并 [开启 give 和 remove](../../Front-Plugin/PlaceHolderAPI/CheckItem#启用give和remove) 和 [更改-boolean](../../Front-Plugin/PlaceHolderAPI/Q&A#更改-boolean)
 
 :::
 
@@ -240,8 +240,8 @@ https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
 **知识点：**
 
 - TrMenu 文档熟读并背诵
-- [kether](/docs-java/process/maintenance/lang/kether/basic.md)
-- [CheckItem](../../Front-Plugin/PlaceHolderAPI/CheckItem.md)
+- [kether](/Java/process/maintenance/lang/kether/basic)
+- [CheckItem](../../Front-Plugin/PlaceHolderAPI/CheckItem)
 
 ```yaml
   '写法1':
@@ -296,8 +296,8 @@ https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
 **知识点：**
 
 - TrMenu 文档熟读并背诵
-- [kether](/docs-java/process/maintenance/lang/kether/basic.md)
-- [CheckItem](../../Front-Plugin/PlaceHolderAPI/CheckItem.md)
+- [kether](/Java/process/maintenance/lang/kether/basic)
+- [CheckItem](../../Front-Plugin/PlaceHolderAPI/CheckItem)
 - [妙妙写法](#妙妙写法)
 - [\{condition=\}条件](https://hhhhhy.gitbook.io/trmenu-v3/menu/action/option#tiao-jian)
 

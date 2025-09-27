@@ -42,7 +42,7 @@ ViaProxy 是独立程序，不是服务器插件。它运行在客户端和服�
 ### 客户端版本
 - Release (1.7.2 - 1.21.8)
 - Beta 1.7.3 (需要 [ViaProxyBeta2Release](https://github.com/ViaVersionAddons/ViaProxyBeta2Release))
-- 基岩版 (需要 [Geyser](/docs-java/process/mobile-player/Geyser/geyser.md) 插件)
+- 基岩版 (需要 [Geyser](/Java/Geyser) 插件)
 - Classic/Alpha/Beta/1.0-1.6.4 (仅透传模式)
 - EaglerCraft (需要 [ViaProxyEaglerCraft](https://github.com/Oryxel/ViaProxyEaglerCraft) 插件)
 

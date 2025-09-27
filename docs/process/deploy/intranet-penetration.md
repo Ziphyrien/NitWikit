@@ -166,7 +166,7 @@ frp 启用 proxy protocol 的方式参考 [Linux 自建 frp](/advance/Linux/frp)
 
 * bungeecord 系
 * paper 分支 (1.18.2)(仅支持 v2)
-* [Geyser](https://nitwikit.8aka.org/Java/process/mobile-player/Geyser/introduction/FAQ/#frp%E6%90%AD%E5%BB%BA%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E6%83%B3%E6%98%BE%E7%A4%BA%E7%9C%9F%E5%AE%9Eip%E6%80%8E%E4%B9%88%E5%8A%9E)
+* [Geyser](/Java/process/mobile-player/Geyser/introduction/FAQ#frp搭建内网穿透想显示真实ip怎么办)
 * Spigot 端插件 [HAProxyDetector](https://github.com/andylizi/haproxy-detector)
 
 等。BDS 服务器目前不支持此协议。

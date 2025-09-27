@@ -23,7 +23,7 @@ sidebar_position: 3
 
 我是 op，所以我拥有此权限，返回了 true
 
-同 [PlaceholderAPI](basic.md#变量placeholderapi) 一样，**Permission** 也有一个简写 **perm**
+同 [PlaceholderAPI](./basic#变量placeholderapi) 一样，**Permission** 也有一个简写 **perm**
 
 ## 判断为否 (Not)
 

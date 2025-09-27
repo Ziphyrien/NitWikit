@@ -11,7 +11,7 @@ sidebar_position: 3
 
 ### （针对Windows用户，Windows 用户尚不支持在 iOS 17 上使用 AltJIT。）
 
-1.点击此 [链接](i4.cn)下载爱思助手电脑端并安装
+1.点击此 [链接](https://www.i4.cn)下载爱思助手电脑端并安装
 
 2.打开爱思助手，点击“工具箱->iTunes及驱动->安装iTunes”来安装iTunes
 ![](../_images/i4_1.png)
@@ -76,7 +76,7 @@ A12-A17/M1-M2处理器的iPhone，iPad等在iOS/iPadOS 14.0 beta 2 ~ 17.0 除16.
 
 #### 以及更高版本设备以及版本 17.0 beta 1至 17.0 beta 4的 A10(X) 设备。
 
-1.点击此 [链接](i4.cn)下载爱思助手电脑端并安装。
+1.点击此 [链接](https://www.i4.cn)下载爱思助手电脑端并安装。
 
 2.将你的设备连接到电脑，并确保其已解锁。
 
@@ -146,7 +146,7 @@ A12-A17/M1-M2处理器的iPhone，iPad等在iOS/iPadOS 14.0 beta 2 ~ 17.0 除16.
 
 1.安装python3最新版本，[官网下载地址](https://www.python.org/downloads/)。
 
-2.点击此 [链接](i4.cn)下载爱思助手电脑端并安装。
+2.点击此 [链接](https://www.i4.cn)下载爱思助手电脑端并安装。
 
 3.打开爱思助手，点击“工具箱->iTunes及驱动->安装iTunes”来安装iTunes
 ![](../_images/i4_1.png)
