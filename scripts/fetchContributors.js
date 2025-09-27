@@ -2,6 +2,21 @@ const fs = require('fs');
 const path = require('path');
 const fetch = require('node-fetch');
 
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+
+function buildHeaders() {
+  const headers = {
+    'User-Agent': 'NitWikit-contributor-fetcher',
+    'Accept': 'application/vnd.github+json'
+  };
+
+  if (GITHUB_TOKEN) {
+    headers.Authorization = `Bearer ${GITHUB_TOKEN}`;
+  }
+
+  return headers;
+}
+
 // 从现有组件复用的函数
 async function fetchContributors(repo) {
   try {
@@ -10,7 +25,9 @@ async function fetchContributors(repo) {
     let hasNextPage = true;
     
     while (hasNextPage) {
-      const response = await fetch(`https://api.github.com/repos/${repo}/contributors?per_page=100&page=${page}`);
+      const response = await fetch(`https://api.github.com/repos/${repo}/contributors?per_page=100&page=${page}`, {
+        headers: buildHeaders()
+      });
       if (!response.ok) {
         throw new Error('获取贡献者数据失败');
       }
@@ -34,7 +51,9 @@ async function fetchContributors(repo) {
 
 async function fetchAllContributorStats(repo) {
   try {
-    const response = await fetch(`https://api.github.com/repos/${repo}/stats/contributors`);
+    const response = await fetch(`https://api.github.com/repos/${repo}/stats/contributors`, {
+      headers: buildHeaders()
+    });
     if (!response.ok) {
       if (response.status === 202) {
         await new Promise(resolve => setTimeout(resolve, 3000));
@@ -75,22 +94,28 @@ function isBot(username) {
 
 function getContributorStats(allStats, username) {
   if (!Array.isArray(allStats)) {
-    return { additions: 0, deletions: 0 };
+    return { additions: 0, deletions: 0, commits: 0 };
   }
   
   const userStats = allStats.find(stat => stat && stat.author && stat.author.login === username);
   if (!userStats) {
-    return { additions: 0, deletions: 0 };
+    return { additions: 0, deletions: 0, commits: 0 };
   }
   
   let additions = 0;
   let deletions = 0;
+  let commits = 0;
   userStats.weeks.forEach(week => {
     additions += week.a;
     deletions += week.d;
+    commits += week.c;
   });
   
-  return { additions, deletions };
+  return {
+    additions,
+    deletions,
+    commits: userStats.total ?? commits
+  };
 }
 
 async function main() {
@@ -115,16 +140,19 @@ async function main() {
     
     // 合并统计数据到贡献者数据
     const contributorsWithStats = filteredContributors.map(contributor => {
-      const stats = getContributorStats(statsData, contributor.login);
+      const { additions, deletions, commits } = getContributorStats(statsData, contributor.login);
       
       return {
         ...contributor,
+        additions,
+        deletions,
+        commits
       };
     });
     
     // 过滤有效贡献者并排序
-    const validContributors = contributorsWithStats.filter(c => c.contributions > 0 || c.total > 0);
-    const sorted = validContributors.sort((a, b) => (b.contributions || b.total) - (a.contributions || a.total));
+  const validContributors = contributorsWithStats.filter(c => c.contributions > 0 || c.commits > 0 || c.additions > 0 || c.deletions > 0);
+  const sorted = validContributors.sort((a, b) => (b.contributions || b.commits) - (a.contributions || a.commits));
     
     // 创建静态目录(如果不存在)
     const staticDir = path.join(__dirname, '../static/data');
