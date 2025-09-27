@@ -267,7 +267,7 @@ any [
 
 可是我想判断的是 `null` 这四个字母！这咋办？
 
-还记得之前学的 [literal](basic.md#actiontoken和literal) 吗？
+还记得之前学的 [literal](./basic#actiontoken和literal) 吗？
 
 ```yaml
 check 你要判断的东西 == literal null

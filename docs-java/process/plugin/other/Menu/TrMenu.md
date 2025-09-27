@@ -229,9 +229,9 @@ https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
 
 :::tip
 
-你需要安装 [CheckItem](../../Front-Plugin/PlaceHolderAPI/CheckItem)
+你需要安装 [CheckItem](/Java/process/plugin/Front-Plugin/PlaceHolderAPI/CheckItem)
 
-并 [开启 give 和 remove](../../Front-Plugin/PlaceHolderAPI/CheckItem#启用give和remove) 和 [更改-boolean](../../Front-Plugin/PlaceHolderAPI/Q&A#更改-boolean)
+并 [开启 give 和 remove](/Java/process/plugin/Front-Plugin/PlaceHolderAPI/CheckItem#启用give和remove) 和 [更改-boolean](/Java/process/plugin/Front-Plugin/PlaceHolderAPI/Q&A#更改-boolean)
 
 :::
 
@@ -241,7 +241,7 @@ https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
 
 - TrMenu 文档熟读并背诵
 - [kether](/Java/process/maintenance/lang/kether/basic)
-- [CheckItem](../../Front-Plugin/PlaceHolderAPI/CheckItem)
+- [CheckItem](/Java/process/plugin/Front-Plugin/PlaceHolderAPI/CheckItem)
 
 ```yaml
   '写法1':
