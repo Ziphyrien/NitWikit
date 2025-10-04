@@ -23,7 +23,7 @@ sidebar_position: 3
 
 我是 op，所以我拥有此权限，返回了 true
 
-同 [PlaceholderAPI](./basic#变量placeholderapi) 一样，**Permission** 也有一个简写 **perm**
+同 [PlaceholderAPI](./basic#变量-placeholderapi) 一样，**Permission** 也有一个简写 **perm**
 
 ## 判断为否 (Not)
 
@@ -267,7 +267,7 @@ any [
 
 可是我想判断的是 `null` 这四个字母！这咋办？
 
-还记得之前学的 [literal](./basic#actiontoken和literal) 吗？
+还记得之前学的 [literal](./basic#actiontoken和-literal) 吗？
 
 ```yaml
 check 你要判断的东西 == literal null

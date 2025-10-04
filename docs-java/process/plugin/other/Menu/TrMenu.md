@@ -231,7 +231,7 @@ https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
 
 你需要安装 [CheckItem](/Java/process/plugin/Front-Plugin/PlaceHolderAPI/CheckItem)
 
-并 [开启 give 和 remove](/Java/process/plugin/Front-Plugin/PlaceHolderAPI/CheckItem#启用give和remove) 和 [更改-boolean](/Java/process/plugin/Front-Plugin/PlaceHolderAPI/Q&A#更改-boolean)
+并 [开启 give 和 remove](/Java/process/plugin/Front-Plugin/PlaceHolderAPI/CheckItem#启用-give-和-remove) 和 [更改-boolean](/Java/process/plugin/Front-Plugin/PlaceHolderAPI/Q&A#更改-boolean)
 
 :::
 
