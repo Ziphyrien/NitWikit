@@ -121,7 +121,7 @@ discord 下载预构建
 
 [项目地址](https://github.com/GeyserExtras/GeyserExtras)
 
-[汉化下载](https://hangar.papermc.io/Guardian1l/GeyserExtras_CNN)
+[汉化下载](https://hangar.papermc.io/Guardian1l/GeyserExtras_CN)
 
 ## Geyser Recipe Fix
 
