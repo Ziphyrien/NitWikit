@@ -212,6 +212,6 @@ Broadcaster 通过模拟 Xbox Live 客户端，将你的 Geyser/基岩版服务�
 
 修复基岩版在大距离处的浮点精度问题（距离效应）。
 
-[下载地址](https://github.com/Oryxel/GeyserFloatingPoints/releases)
+[下载地址](https://github.com/oryxel1/GeyserFloatingPoints/releases)
 
 将 `.jar` 文件放入 Geyser `extensions` 文件夹，重启服务器即可自动生效。
