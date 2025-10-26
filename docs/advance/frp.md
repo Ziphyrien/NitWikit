@@ -454,15 +454,15 @@ sudo systemctl enable frpc
 1. 打开命令提示符（CMD）或 PowerShell
 2. 切换到 frp 解压目录：
 
-```cmd
-cd C:\frp
-```
+   ```cmd
+   cd C:\frp
+   ```
 
 3. 运行 frpc：
 
-```cmd
-frpc.exe -c frpc.toml
-```
+   ```cmd
+   frpc.exe -c frpc.toml
+   ```
 
 :::tip
 此方法会占用一个命令行窗口，关闭窗口后 frpc 会停止运行。
@@ -477,31 +477,31 @@ frpc.exe -c frpc.toml
 3. 以管理员身份运行命令提示符
 4. 安装服务：
 
-```cmd
-nssm install frpc "C:\frp\frpc.exe" "-c C:\frp\frpc.toml"
-```
+   ```cmd
+   nssm install frpc "C:\frp\frpc.exe" "-c C:\frp\frpc.toml"
+   ```
 
 5. 启动服务：
 
-```cmd
-nssm start frpc
-```
+   ```cmd
+   nssm start frpc
+   ```
 
 6. 其他常用命令：
 
-```cmd
-# 停止服务
-nssm stop frpc
+   ```cmd
+   # 停止服务
+   nssm stop frpc
 
-# 重启服务
-nssm restart frpc
+   # 重启服务
+   nssm restart frpc
 
-# 查看服务状态
-nssm status frpc
+   # 查看服务状态
+   nssm status frpc
 
-# 卸载服务
-nssm remove frpc confirm
-```
+   # 卸载服务
+   nssm remove frpc confirm
+   ```
 
 ##### 方法三：使用 WinSW 设置为 Windows 服务
 
@@ -509,29 +509,29 @@ nssm remove frpc confirm
 2. 将下载的 `WinSW.exe` 重命名为 `frpc-service.exe` 并放到 frp 目录
 3. 在同一目录创建配置文件 `frpc-service.xml`：
 
-```xml
-<service>
-  <id>frpc</id>
-  <name>Frp Client</name>
-  <description>Frp 内网穿透客户端</description>
-  <executable>C:\frp\frpc.exe</executable>
-  <arguments>-c C:\frp\frpc.toml</arguments>
-  <logmode>rotate</logmode>
-</service>
-```
+   ```xml
+   <service>
+     <id>frpc</id>
+     <name>Frp Client</name>
+     <description>Frp 内网穿透客户端</description>
+     <executable>C:\frp\frpc.exe</executable>
+     <arguments>-c C:\frp\frpc.toml</arguments>
+     <logmode>rotate</logmode>
+   </service>
+   ```
 
 4. 以管理员身份运行命令提示符，安装服务：
 
-```cmd
-cd C:\frp
-frpc-service.exe install
-```
+   ```cmd
+   cd C:\frp
+   frpc-service.exe install
+   ```
 
 5. 启动服务：
 
-```cmd
-frpc-service.exe start
-```
+   ```cmd
+   frpc-service.exe start
+   ```
 
 6. 设置开机自启（在服务管理中设置为自动启动）
 
