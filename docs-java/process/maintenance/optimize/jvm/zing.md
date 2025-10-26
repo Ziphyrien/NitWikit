@@ -18,6 +18,12 @@ Azul Zing 的专业性较强，新手请不要使用
 
 你大概已经注意到了，Zing 的预热期很长，ReadyNow 就是来解决这个问题的
 
+:::danger
+
+**重要警告**：如果你使用了大量插件，ReadyNow 在部分情况下可能会导致插件加载出现错误，例如启动时出现 `ClassNotFoundException` 等异常。如果遇到此类问题，请移除 ReadyNow 相关参数。
+
+:::
+
 若要启用 ReadyNow，请添加以下命令行选项，其中两者`<file>`通常相同：
 
 `-XX:ProfileLogIn=<file>` 指示 Azul Platform Prime 使用现有配置文件日志中的信息。
@@ -28,7 +34,19 @@ Azul Zing 的专业性较强，新手请不要使用
 
 官方推荐所有重要函数执行**5 万遍**
 
-添加`-XX:+FalconUseCompileStashing -XX:+FalconLoadObjectCache -XX:-FalconSaveObjectCache`以使用编译存储
+### 编译存储（已弃用）
+
+:::warning
+
+以下 Falcon 参数已在 Zing 25.02 版本中被标记为弃用，并可能在未来版本中移除，不建议继续使用：
+
+* `-XX:+FalconUseCompileStashing`
+* `-XX:+FalconLoadObjectCache`
+* `-XX:-FalconSaveObjectCache`
+
+这些参数与 `UseUnifiedCompilerFrontend` 不兼容，使用时会自动禁用 `UseUnifiedCompilerFrontend`。
+
+:::
 
 ## 垃圾回收器
 
@@ -53,6 +71,12 @@ C4 是 Zing 中唯一的垃圾收集器，取代了 OpenJDK 中可用的其他�
 [官方安装教程](https://docs.azul.com/prime/zst/installation)
 
 使用`-XX:+UseZST` 开启
+
+:::info
+
+**关于 ZST 的使用**：根据 Azul 官方说明，如果你的 Linux 内核版本足够新，你可以**不使用 ZST**，直接安装 Zing 即可。ZST 组件是可选的，主要用于较旧的内核版本。
+
+:::
 
 :::warning
 
