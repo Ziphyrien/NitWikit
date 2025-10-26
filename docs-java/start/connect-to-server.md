@@ -76,7 +76,7 @@ server-port=25565
 
 ### 我没公网
 
-查看 [内网穿透](https://nitwikit.8aka.org/process/deploy/intranet-penetration) 部分，按照上面的教程把你的端口映射出去
+查看 [内网穿透](/process/deploy/intranet-penetration) 部分，按照上面的教程把你的端口映射出去
 
 ## 常见错误
 

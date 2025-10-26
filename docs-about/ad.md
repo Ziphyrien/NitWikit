@@ -33,10 +33,10 @@ title: 广告
 
 根据你的付费内容，我们会在对应页面写宣传语或开 教程*，并且在赞助商那里加上你的网站链接或联系方式，以下是对应的内容：
 
-- VPS -> [购买服务器](https://nitwikit.8aka.org/process/deploy/purchase-server)
-- 模型定制 -> [创建美术资源](https://nitwikit.8aka.org/process/create-art-assets)
-- 插件定制 -> [插件 - 更多页面](https://nitwikit.8aka.org/Java/more)
-- 高防/CDN -> [如何抵御网络攻击](https://nitwikit.8aka.org/process/maintenance/how-to-defend-against-cyber-attacks)
+- VPS -> [购买服务器](/process/deploy/purchase-server)
+- 模型定制 -> [创建美术资源](/process/create-art-assets)
+- 插件定制 -> [插件 - 更多页面](/Java/process/plugin/more)
+- 高防/CDN -> [如何抵御网络攻击](/process/maintenance/how-to-defend-against-cyber-attacks)
 
 更多的就不链接了，只要和 MC 有关，都有地方挂广告，没有就立刻开新的天坑
 

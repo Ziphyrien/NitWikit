@@ -14,7 +14,7 @@ import TabItem from '@theme/TabItem';
 
 部分插件模组或者外部独立程序会内置 QQ 机器人框架
 
-关于机器人框架详情请见 [通用 | 机器人框架](https://nitwikit.8aka.org/advance/bot/framework/)
+关于机器人框架详情请见 [通用 | 机器人框架](./framework)
 
 <Tabs queryString="jrqqbot">
 <TabItem value="MiraiMC" label="MiraiMC">

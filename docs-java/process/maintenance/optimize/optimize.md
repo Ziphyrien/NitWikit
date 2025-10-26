@@ -19,7 +19,7 @@ sidebar_position: 1
 
 仅仅需要你下载一个小小的 Java 安装程序，或者更改 JVM 参数 (大白话来说就是开服参数)。
 
-参见 [JVM 优化](https://nitwikit.8aka.org/Java/optimize/jvm)
+参见 [JVM 优化](/Java/process/maintenance/optimize/jvm)
 
 ## 第二步 - 预生成
 
@@ -73,7 +73,7 @@ sidebar_position: 1
 
 切换到 Linux 后，你还可以进行 [内核优化](kernel.md)
 
-如果想要了解更多请前往进阶 [Linux 开服教程](https://nitwikit.8aka.org/Sundry/Advance/Linux)
+如果想要了解更多请前往进阶 [Linux 开服教程](/advance/Linux)
 
 ## 第七步 - 性能分析
 
