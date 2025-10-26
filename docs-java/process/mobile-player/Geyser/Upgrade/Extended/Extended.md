@@ -1,10 +1,10 @@
 ---
-title: 进阶
+title: Geyser扩展
 sidebar_position: 1
 slug: /Geyser/Upgrade
 ---
 
-# 插件
+# Geyser扩展
 
 这里是进阶教程，你可以通过进阶教程获得更好的基岩版兼容
 让基岩版玩家拥有更加接近原生基岩版服务器的体验

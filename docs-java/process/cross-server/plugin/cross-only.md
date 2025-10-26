@@ -132,7 +132,7 @@ java.lang.RuntimeException: Failed to download library
 
 :::info
 
-见 [插件 | LimboAuth](/docs-java/process/plugin/other/Login/LimboAuth.md)
+见 [插件 | LimboAuth](../../plugin/other/Login/LimboAuth.md)
 
 :::
 

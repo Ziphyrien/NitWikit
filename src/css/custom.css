@@ -1027,8 +1027,7 @@ article img:hover {
 }
 
 /* 修改卡片样式避免影响GitHub图标 */
-a.card:after:not(.header-github-link):not(.github-icon-button),
-a.card::after:not(.header-github-link):not(.github-icon-button) {
+a.card:not(.header-github-link):not(.github-icon-button)::after {
   content: '';
   position: absolute;
   bottom: 0;

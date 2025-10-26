@@ -48,7 +48,7 @@ sidebar_position: 4
 
 </details>
 
-[Linux ssh](../../advance/Linux/Connect-to-server.md)
+[Linux ssh](/advance/Linux/Connect-to-server)
 
 #### 放行端口
 
@@ -92,7 +92,7 @@ sidebar_position: 4
 
 [内网穿透](intranet-penetration.md)
 
-[搭建内网穿透 (Frp)](../../advance/frp.md)
+[搭建内网穿透 (Frp)](/advance/frp)
 
 </details>
 

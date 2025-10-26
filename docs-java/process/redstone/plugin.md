@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: 插件端
+sidebar_label: 插件端
 ---
 
 # 插件端

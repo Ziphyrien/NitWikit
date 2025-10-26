@@ -39,6 +39,9 @@ const config = {
 
         markdown: {
             mermaid: true,
+            hooks: {
+                onBrokenMarkdownLinks: 'warn',
+            },
         },
 
         title: '笨蛋 MC 开服教程',
@@ -53,7 +56,6 @@ const config = {
         projectName: '笨蛋式指南',
 
         onBrokenLinks: 'warn',
-        onBrokenMarkdownLinks: 'warn',
         onBrokenAnchors: 'warn',
 
         i18n: {

@@ -54,7 +54,7 @@ import TabItem from '@theme/TabItem';
 
 :::info
 
-见 [插件 | ViaVersion](/docs-java/process/plugin/other/Via/Via.md)
+见 [插件 | ViaVersion](../../plugin/other/Via/Via.md)
 
 :::
 
@@ -122,7 +122,7 @@ import TabItem from '@theme/TabItem';
 
 :::info
 
-见 [插件 | ServerUtils](/docs-java/process/plugin/ManageTool/PluginManagement/ServerUtils.md)
+见 [插件 | ServerUtils](../../plugin/ManageTool/PluginManagement/ServerUtils.md)
 
 :::
 
@@ -188,7 +188,7 @@ TODO
 
 :::info
 
-见 [插件 | TAB](/docs-java/process/plugin/other/TAB&Scoreboard/TAB.md)
+见 [插件 | TAB](../../plugin/other/TAB&Scoreboard/TAB.md)
 
 :::
 
@@ -230,7 +230,7 @@ TODO
 
 :::info
 
-[插件 | 皮肤 - skinsRestorer](/docs-java/process/plugin/other/SkinsRestorer.md)
+[插件 | 皮肤 - skinsRestorer](../../plugin/other/SkinsRestorer.md)
 
 :::
 

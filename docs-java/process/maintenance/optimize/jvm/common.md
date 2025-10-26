@@ -87,7 +87,7 @@ $env:PAPER_DEFAULT_CENTRAL_REPOSITORY="https://maven.aliyun.com/repository/centr
 set PAPER_DEFAULT_CENTRAL_REPOSITORY=https://maven.aliyun.com/repository/central
 ```
 
-如果不是上述核心，你可以使用 [Spigot Library Booster](/docs-java/process/plugin/more/tittle-tattle.md#spigot-library-booster)
+如果不是上述核心，你可以使用 [Spigot Library Booster](../../../plugin/more/tittle-tattle.md#spigot-library-booster)
 
 ### 其他国内镜像源
 
