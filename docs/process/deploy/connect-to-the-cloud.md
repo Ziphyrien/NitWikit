@@ -92,7 +92,7 @@ sidebar_position: 4
 
 [内网穿透](intranet-penetration.md)
 
-[Linux | 搭建内网穿透 (Frp)](../../advance/Linux/frp.md)
+[搭建内网穿透 (Frp)](../../advance/frp.md)
 
 </details>
 
