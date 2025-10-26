@@ -1,6 +1,7 @@
 ---
 title: 可能用到的网站
 sidebar_position: 1
+sidebar_label: BDS 可能用到的网站
 ---
 
 # 可能用到的网站

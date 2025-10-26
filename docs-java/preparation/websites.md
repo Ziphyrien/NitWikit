@@ -1,6 +1,7 @@
 ---
 title: 可能用到的网站
 sidebar_position: 3
+sidebar_label: Java 版可能用到的网站
 ---
 
 # 可能用到的网站
