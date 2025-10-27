@@ -199,6 +199,9 @@ html[data-theme='dark'] .theme-doc-markdown {
   background-color: var(--bg-card);
   transition: background-color var(--transition-base);
   margin-right: 1rem;
+  display: block;
+  min-width: 0;
+  flex-shrink: 0;
 }
 
 .menu {
@@ -1038,4 +1041,51 @@ a.card:not(.header-github-link):not(.github-icon-button)::after {
   opacity: 0;
   transform: scaleX(0.6) translateY(3px);
   transition: all var(--transition-bezier);
+}
+
+@supports (-webkit-hyphens:none) {
+  .theme-doc-sidebar-container {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .menu {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  aside[class*="sidebar"] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+@media not all and (min-resolution:.001dpcm) {
+  @supports (-webkit-appearance:none) {
+    .theme-doc-sidebar-container {
+      flex: 0 0 auto;
+      width: auto;
+    }
+
+    .menu {
+      min-height: 100%;
+    }
+  }
+}
+
+.DocSearch-Container,
+.DocSearch-Modal,
+.DocSearch-Form,
+.DocSearch-Hit {
+
+  align-items: flex-start;
+}
+
+.DocSearch-Hit-Container {
+  align-items: center;
 }
