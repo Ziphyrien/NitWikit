@@ -205,4 +205,4 @@ sidebar_position: 6
 
 # 数据包的编写
 
-太多了，详情请参阅 [Minecraft Wiki](https://minecraft.fandom.com/wiki/Data_pack)
+太多了，详情请参阅 [Minecraft Wiki](https://zh.minecraft.wiki/w/%E6%95%B0%E6%8D%AE%E5%8C%85)

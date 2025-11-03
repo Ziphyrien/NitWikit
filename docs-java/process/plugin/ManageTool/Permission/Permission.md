@@ -61,7 +61,7 @@ sidebar_position: 1
 
 下载 jar 文件放入 plugins 文件夹即可。
 
-[点击此处查看教程](https://continue-project.netlify.app/LuckPerms/#/install-on-a-single-server)
+[点击此处查看教程](https://continue-project.netlify.app/LuckPerms/install-on-a-single-server)
 
 :::tip[注意]
 

@@ -291,11 +291,15 @@ PaperMC 的现代化的插件平台，目前正在 Beta 阶段，插件相对较
 
 像素论坛还在搞云黑
 
-即 像素论坛的 [失信人员名单页面](https://www.pixelbbs.cn/f-50-1.html)。
+即 像素论坛的 [失信人员名单页面](https://ban.pixelbbs.cn/)。
 
 交易前查询下这人有没有被记录过，被记录过就别交易了。如果你被骗了，搜集证据去发个帖，给大家避个雷。
 
 能为你避开 90% 诈骗坑的 [防骗小技巧](https://www.pixelbbs.cn/t-1377-1-1.html)。
+
+> 像素论坛因[数据丢失](https://www.pixelbbs.cn/thread-3-1-1.html)，大部分页面已失效，以下为 Wayback Machine 存档。
+> + [失信人员名单页面](https://web.archive.org/web/20240715222153/https://www.pixelbbs.cn/f-50-1.html)
+> + [防骗小技巧](https://web.archive.org/web/20250122075709/https://www.pixelbbs.cn/t-1377-1-1.html)
 
   </TabItem>
 
@@ -372,6 +376,8 @@ MOTD 是玩家进入服务器之前最先看到的东西，决定了玩家对一
 > [MOTD creator](https://mctools.org/motd-creator)
 >
 > [Minecraft MOTD tool](https://minecraft.tools/en/motd.php)
+> 
+> [MineBBS MOTD 查询站](https://motd.minebbs.com/)
 
   </TabItem>
   <TabItem value="misode" label="数据包生成器">

@@ -30,10 +30,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     
     - name: Set up JDK
-      uses: actions/setup-java@v2
+      uses: actions/setup-java@v4
       with:
         java-version: '8'
         distribution: 'adopt'
@@ -42,14 +42,14 @@ jobs:
       run: mvn -B package
       
     - name: Upload artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: Plugin
         path: target/*.jar
         
     - name: Upload to release
       if: github.event_name == 'release'
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       with:
         files: target/*.jar
 ```
@@ -71,26 +71,28 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     
     - name: Set up JDK
-      uses: actions/setup-java@v2
+      uses: actions/setup-java@v4
       with:
         java-version: '8'
         distribution: 'adopt'
         
     - name: Build with Gradle
-      run: ./gradlew build
+      run: |
+        chmod +x gradlew
+        ./gradlew build
       
     - name: Upload artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: Plugin
         path: build/libs/*.jar
         
     - name: Upload to release
       if: github.event_name == 'release'
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       with:
         files: build/libs/*.jar
 ```

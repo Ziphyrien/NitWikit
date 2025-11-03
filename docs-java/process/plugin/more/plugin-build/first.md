@@ -37,7 +37,7 @@ sidebar_position: 2
 2. **Gradle**
    - 特点：功能强大，配置灵活
    - 适合：大型项目，需要复杂构建逻辑
-   - 配置文件：`build.gradle`
+   - 配置文件：`build.gradle` 或 `build.gradle.kts`
 
 ## 识别项目类型
 
@@ -49,7 +49,7 @@ sidebar_position: 2
    - 构建产物在 `target` 目录
    - 使用 `mvn` 命令构建
 
-2. **如果看到 `build.gradle`**
+2. **如果看到 `build.gradle` 或 `build.gradle.kts`**
    - 这是 Gradle 项目
    - 构建产物在 `build/libs` 目录
    - 使用 `gradle` 命令构建
