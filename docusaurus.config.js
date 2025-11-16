@@ -211,7 +211,7 @@ const config = {
                     {name: 'keywords', content: 'Minecraft, 开服教程, MC, 开服, 插件, 联机, 我的世界'},
                 ],
                 navbar: {
-                    title: 'NitWikit',
+                    title: 'Cubic Wiki',
                     logo: {
                         alt: 'Logo',
                         src: 'img/book.png',
@@ -364,7 +364,7 @@ const config = {
                         '笨蛋文档QQ群由于不可抗力因素（群员恶意举报，恶意发言）目前被封禁，请移至备用群 <a target="_blank" rel="noopener noreferrer" href="https://qm.qq.com/cgi-bin/qm/qr?k=UjB6H5oE8JdSqnc8RrKIrlMOHQAXDfJ6&jump_from=webapi"><strong>858694195</strong></a>',
                     backgroundColor: '#25a06e',
                     textColor: 'white',
-                    isCloseable: false,
+                    isCloseable: true,
                 },
 
                 // 颜色随系统切换
@@ -379,6 +379,12 @@ const config = {
                     appId: 'D1KV1BYF3B',
                     apiKey: '4bb3573e59f2c49f30f057ce54edab3f',
                     indexName: 'yizhan',
+                    askAi: {
+                        assistantId: '8JdNEmIpzb5T',
+                        indexName: 'NITWIKIT BOT',
+                        apiKey: '8730c526c66126ee3424fe3e8647d825',
+                        appId: 'D1KV1BYF3B',
+                    },
                 },
                 mermaid: {
                     theme: {light: "neutral", dark: "dark"},
