@@ -303,7 +303,7 @@ const config = {
                             items: [
                                 {
                                     label: '服主资源导航页',
-                                    href: 'http://mcnav.fun',
+                                    href: 'http://mcnav.cn',
                                 },
                                 {
                                     label: 'CSKB 日冕知识库',

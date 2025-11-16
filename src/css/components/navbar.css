@@ -2,7 +2,8 @@
   box-shadow: 0 1px 0 0 var(--border) !important;
   transition: all var(--transition-base);
   height: var(--ifm-navbar-height);
-  padding: var(--ifm-navbar-padding-vertical) var(--ifm-navbar-padding-horizontal);
+  padding: var(--ifm-navbar-padding-vertical)
+    var(--ifm-navbar-padding-horizontal);
   display: flex;
   align-items: center;
   backdrop-filter: blur(10px);
@@ -58,7 +59,7 @@
     min-height: var(--ifm-navbar-height);
     padding: 0.5rem 1rem;
   }
-  
+
   .navbar__brand {
     position: absolute;
     left: 50%;
@@ -66,60 +67,71 @@
     margin: 0;
     z-index: 0;
   }
-  
+
   .navbar__title {
     font-size: 1.2rem;
   }
-  
+
   .navbar__logo {
     height: 1.5rem;
     width: 1.5rem;
   }
-  
+
   .navbar-sidebar-toggle {
     position: relative;
     z-index: 10;
     margin-right: auto;
   }
-  
+
   .navbar__search {
     position: relative;
     z-index: 10;
     margin-left: auto;
   }
-  
+
   .navbar-sidebar {
     z-index: 15 !important;
+    height: 100vh !important;
+    max-height: none !important;
   }
-  
+
+  .navbar-sidebar__body {
+    height: calc(
+      100vh - var(--ifm-navbar-height)
+    ) !important;
+  }
+
   .navbar__inner {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .navbar__items--left {
     width: 33%;
     justify-content: flex-start;
   }
-  
+
   .navbar__items--right {
     width: 33%;
     justify-content: flex-end;
   }
-  
+
   [class*="github-link"]:not(.header-github-link),
   a[aria-label*="GitHub"]:not(.header-github-link),
-  .navbar__item[href="/"]:not(.navbar__brand), 
-  .navbar__item[href$="/Java/"], 
-  .navbar__item[href$="/Bedrock/"], 
+  .navbar__item[href="/"]:not(.navbar__brand),
+  .navbar__item[href$="/Java/"],
+  .navbar__item[href$="/Bedrock/"],
   .navbar__item[href$="/about/"],
   .navbar__item[href*="Java"],
   .navbar__item[href*="Bedrock"],
   .navbar__item[href*="about"],
-  .navbar__item:not(.navbar__logo):not(.navbar__title):not(.navbar__brand):not(.navbar-sidebar-toggle):not(.navbar__search):not(.header-github-link),
-  .navbar__items--left .navbar__item:not(.navbar__brand):not(.navbar-sidebar-toggle) {
+  .navbar__item:not(.navbar__logo):not(.navbar__title):not(.navbar__brand):not(
+      .navbar-sidebar-toggle
+    ):not(.navbar__search):not(.header-github-link),
+  .navbar__items--left
+    .navbar__item:not(.navbar__brand):not(.navbar-sidebar-toggle) {
     display: none !important;
     width: 0 !important;
     padding: 0 !important;
@@ -127,7 +139,7 @@
     opacity: 0 !important;
     pointer-events: none !important;
   }
-  
+
   .header-github-link {
     display: flex !important;
     width: auto !important;
@@ -139,7 +151,7 @@
     background-color: rgba(125, 125, 125, 0.1);
     margin: 0 0.5rem !important;
   }
-  
+
   .navbar-sidebar .menu__list-item a[href="/"],
   .navbar-sidebar .menu__list-item a[href$="/Java/"],
   .navbar-sidebar .menu__list-item a[href$="/Bedrock/"],
@@ -151,7 +163,7 @@
     opacity: 1 !important;
     pointer-events: auto !important;
   }
-  
+
   .navbar-sidebar-toggle,
   .navbar__brand,
   .navbar__search {
@@ -163,4 +175,3 @@
 .github-icon-button::after {
   display: none !important;
 }
-
