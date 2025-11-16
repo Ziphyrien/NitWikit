@@ -272,10 +272,6 @@ const config = {
                             title: '文档',
                             items: [
                                 {
-                                    label: '驿站主页',
-                                    to: 'https://8aka.org',
-                                },
-                                {
                                     label: 'Docusaurus 主题',
                                     to: 'https://nitwikit.8aka.org',
                                 },
@@ -292,10 +288,6 @@ const config = {
                         {
                             title: '交流',
                             items: [
-                                {
-                                    label: 'QQ 群',
-                                    href: 'https://qm.qq.com/q/dENGavSflK',
-                                },
                             ],
                         },
                         {
@@ -357,15 +349,7 @@ const config = {
                     ],
                 },
 
-                // 公告横幅
-                announcementBar: {
-                    id: 'qq-group-notice',
-                    content:
-                        '笨蛋文档QQ群由于不可抗力因素（群员恶意举报，恶意发言）目前被封禁，请移至备用群 <a target="_blank" rel="noopener noreferrer" href="https://qm.qq.com/cgi-bin/qm/qr?k=UjB6H5oE8JdSqnc8RrKIrlMOHQAXDfJ6&jump_from=webapi"><strong>858694195</strong></a>',
-                    backgroundColor: '#25a06e',
-                    textColor: 'white',
-                    isCloseable: true,
-                },
+
 
                 // 颜色随系统切换
                 colorMode: {
