@@ -184,7 +184,7 @@ export function ContributorCardItem({ contributor, rank }) {
 /**
  * 贡献者卡片列表组件
  */
-export default function ContributorCard({ repo = "8aka-Team/NitWikit" }) {
+export default function ContributorCard({ repo = "Cubic-Project/NitWikit" }) {
   const [contributors, setContributors] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);

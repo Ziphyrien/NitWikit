@@ -3,7 +3,7 @@ import React from 'react';
 export default function GitHubButton() {
   return (
     <a
-      href="https://github.com/8aka-Team/NitWikit"
+      href="https://github.com/Cubic-Project/NitWikit"
       className="header-github-link github-icon-button"
       target="_blank"
       rel="noopener noreferrer"

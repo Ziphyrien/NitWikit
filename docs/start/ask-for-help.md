@@ -225,7 +225,7 @@ Wiki 就是让你解决常见问题的，不看这玩意儿就在那瞎问只会
 **经典如何提问：https://settingdust.gitbook.io/stop-ask-questions-the-stupid-ways/**
 
 <a href="https://www.8aka.org/qq">
-  <img src="https://raw.githubusercontent.com/8aka-Team/NitWikit/refs/heads/main/docs/_images/qqgroupshield.svg" alt="QQ 群"></img>
+  <img src="https://raw.githubusercontent.com/Cubic-Project/NitWikit/refs/heads/main/docs/_images/qqgroupshield.svg" alt="QQ 群"></img>
 </a>
 
 ### 经典老图

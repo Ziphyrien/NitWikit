@@ -118,7 +118,7 @@ function getContributorStats(allStats, username) {
 }
 
 async function main() {
-  const repo = "8aka-Team/NitWikit"; // 你的仓库
+  const repo = "Cubic-Project/NitWikit"; // 你的仓库
   
   console.log(`开始获取 ${repo} 的贡献者数据...`);
   

@@ -139,7 +139,7 @@ export default function Home() {
                 欢迎通过 GitHub 提交建议、报告问题或贡献文档。
               </p>
               <div className={styles.communityCtas}>
-                <Link className={styles.primaryButton} to="https://github.com/8aka-Team/NitWikit">
+                <Link className={styles.primaryButton} to="https://github.com/Cubic-Project/NitWikit">
                   访问仓库
                 </Link>
                 <Link className={styles.secondaryButton} to="/contribution">

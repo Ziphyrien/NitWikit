@@ -30,7 +30,7 @@
 
 这里是本文档相关转载地址
 
-- [GitHub](https://github.com/8aka-Team/NitWikit)
+- [GitHub](https://github.com/Cubic-Project/NitWikit)
 - [MineBBS](https://www.minebbs.com/threads/nitwikit-geyser.26356/)
 - [klpbbs](https://klpbbs.com/forum.php?mod=viewthread&tid=136184&page=1&extra=#pid10518779)
 - [九域](https://bbs.mc9y.net/threads/1624/)
@@ -45,9 +45,9 @@
 > 请先安装 Node.js 和 pnpm
 
 1. 将此仓库克隆至本地
-   `git clone https://github.com/8aka-Team/NitWikit.git`
+   `git clone https://github.com/Cubic-Project/NitWikit.git`
    更快的克隆(推荐)
-   `git clone --single-branch --depth 1 -b main https://github.com/8aka-Team/NitWikit.git`
+   `git clone --single-branch --depth 1 -b main https://github.com/Cubic-Project/NitWikit.git`
 2. 移动至仓库根目录
    `cd NitWikit`
 3. 安装依赖
@@ -69,11 +69,11 @@
 
 # 🤝 贡献者
 
-[![Contrib](https://contrib.rocks/image?repo=8aka-Team/NitWikit)](https://github.com/8aka-Team/NitWikit/graphs/contributors)
+[![Contrib](https://contrib.rocks/image?repo=Cubic-Project/NitWikit)](https://github.com/Cubic-Project/NitWikit/graphs/contributors)
 
 # ⭐ 历史图
 
-[![Stargazers over time](https://starchart.cc/8aka-Team/NitWikit.svg?variant=adaptive)](https://starchart.cc/8aka-Team/NitWikit)
+[![Stargazers over time](https://starchart.cc/Cubic-Project/NitWikit.svg?variant=adaptive)](https://starchart.cc/Cubic-Project/NitWikit)
 
 ## 📜 笨蛋脚本
 
@@ -98,6 +98,6 @@
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F8aka-Team%2FNitWikit)
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/integration/start/deploy?repository=https://github.com/8aka-Team/NitWikit)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/integration/start/deploy?repository=https://github.com/Cubic-Project/NitWikit)
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https%3A%2F%2Fgithub.com%2F8aka-Team%2FNitWikit)

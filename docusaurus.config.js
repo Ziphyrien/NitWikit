@@ -76,7 +76,7 @@ const config = {
                     docs: {
                         sidebarPath: require.resolve('./sidebars.js'),
                         routeBasePath: '/',
-                        editUrl: 'https://github.com/8aka-Team/NitWikit/tree/main',
+                        editUrl: 'https://github.com/Cubic-Project/NitWikit/tree/main',
                         showLastUpdateAuthor: true,
                         showLastUpdateTime: true,
                     },
@@ -113,7 +113,7 @@ const config = {
                     id: 'docs-java',
                     path: 'docs-java',
                     routeBasePath: 'Java',
-                    editUrl: 'https://github.com/8aka-Team/NitWikit/tree/main',
+                    editUrl: 'https://github.com/Cubic-Project/NitWikit/tree/main',
                     sidebarPath: require.resolve('./sidebars.js'),
                     editCurrentVersion: true,
                     showLastUpdateAuthor: true,
@@ -146,7 +146,7 @@ const config = {
                     id: 'docs-bedrock',
                     path: 'docs-bedrock',
                     routeBasePath: 'Bedrock',
-                    editUrl: 'https://github.com/8aka-Team/NitWikit/tree/main',
+                    editUrl: 'https://github.com/Cubic-Project/NitWikit/tree/main',
                     sidebarPath: require.resolve('./sidebars.js'),
                     editCurrentVersion: true,
                     showLastUpdateAuthor: true,
@@ -159,7 +159,7 @@ const config = {
                     id: 'docs-about',
                     path: 'docs-about',
                     routeBasePath: 'about',
-                    editUrl: 'https://github.com/8aka-Team/NitWikit/tree/main',
+                    editUrl: 'https://github.com/Cubic-Project/NitWikit/tree/main',
                     sidebarPath: require.resolve('./sidebars.js'),
                     editCurrentVersion: true,
                     showLastUpdateAuthor: true,
@@ -184,7 +184,7 @@ const config = {
             ({
                 // Giscus 评论功能在 CHINA 环境变量设置时禁用
                 giscus: {
-                    repo: '8aka-Team/NitWikit',
+                    repo: 'Cubic-Project/NitWikit',
                     repoId: 'R_kgDOLkVR-A',
                     category: 'Announcements',
                     categoryId: 'DIC_kwDOLkVR-M4CkTAe'
@@ -252,7 +252,7 @@ const config = {
                         },
                         // GitHub
                         {
-                            href: "https://github.com/8aka-Team/NitWikit",
+                            href: "https://github.com/Cubic-Project/NitWikit",
                             className: "header-github-link",
                             position: "right",
                         },
@@ -285,7 +285,7 @@ const config = {
                                 },
                                 {
                                     label: 'GitHub',
-                                    href: 'https://github.com/8aka-Team/NitWikit',
+                                    href: 'https://github.com/Cubic-Project/NitWikit',
                                 },
                             ],
                         },

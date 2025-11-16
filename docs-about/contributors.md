@@ -13,15 +13,15 @@ import ContributorCard from '@site/src/components/ContributorCard';
 
 ## 贡献统计
 
-本项目的所有贡献者数据都来自于 [GitHub 贡献者页面](https://github.com/8aka-Team/NitWikit/graphs/contributors)。数据包含了每位贡献者的提交次数、代码添加和删除行数等信息。
+本项目的所有贡献者数据都来自于 [GitHub 贡献者页面](https://github.com/Cubic-Project/NitWikit/graphs/contributors)。数据包含了每位贡献者的提交次数、代码添加和删除行数等信息。
 
 下面是贡献者的详细列表，贡献量仅代表贡献行数，不代表贡献质量，其排名仅供参考：
 
-<ContributorCard repo="8aka-Team/NitWikit" />
+<ContributorCard repo="Cubic-Project/NitWikit" />
 
 ## 如何参与贡献
 
-我们欢迎并鼓励更多的人参与到文档的改进中来！如果你希望为本项目贡献内容，请查阅[贡献指南](https://github.com/8aka-Team/NitWikit/blob/main/CONTRIBUTING.md)。
+我们欢迎并鼓励更多的人参与到文档的改进中来！如果你希望为本项目贡献内容，请查阅[贡献指南](https://github.com/Cubic-Project/NitWikit/blob/main/CONTRIBUTING.md)。
 
 参与贡献的方式包括但不限于：
 
