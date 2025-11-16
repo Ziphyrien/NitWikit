@@ -10,9 +10,9 @@ import SponsorCard from '@site/src/components/SponsorCard';
 感谢所有赞助者对本项目的支持！您的帮助让我们能够持续维护和改进文档内容。
 
 :::tip 如何赞助
-赞助超过 10 元即可加入赞助鸣谢列表！不同金额可获得不同的群头衔。
 
-详情请访问我们的爱发电主页：[https://afdian.com/a/postyizhan](https://afdian.com/a/postyizhan)
+在组织恢复前,不会接受赞助
+
 :::
 
 ## 赞助者
