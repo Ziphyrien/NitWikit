@@ -185,9 +185,9 @@ const config = {
                 // Giscus 评论功能在 CHINA 环境变量设置时禁用
                 giscus: {
                     repo: 'Cubic-Project/NitWikit',
-                    repoId: 'R_kgDOLkVR-A',
-                    category: 'Announcements',
-                    categoryId: 'DIC_kwDOLkVR-M4CkTAe'
+                    repoId: 'R_kgDOQWQ-Ng',
+                    category: 'General',
+                    categoryId: 'DIC_kwDOQWQ-Ns4Cx2No'
                 },
                 zoom: {
                     selector: '.markdown :not(em) > img',
