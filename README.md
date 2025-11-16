@@ -81,7 +81,7 @@
 
 [项目地址](https://github.com/lilingfengdev/NitWiki-Script)
 
-[![Contrib](https://contrib.rocks/image?repo=8aka-Team/NitWiki-Script)](https://github.com/8aka-Team/NitWiki-Script/graphs/contributors)
+[![Contrib](https://contrib.rocks/image?repo=Cubic-Project/NitWiki-Script)](https://github.com/Cubic-Project/NitWiki-Script/graphs/contributors)
 
 # 📢 声明
 
@@ -96,8 +96,8 @@
 
 [![Deployed on Zeabur](https://zeabur.com/deployed-on-zeabur-dark.svg)](https://zeabur.com?referralCode=lilingfengvvv&utm_source=lilingfengvvv)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F8aka-Team%2FNitWikit)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FCubic-Project%2FNitWikit)
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/integration/start/deploy?repository=https://github.com/Cubic-Project/NitWikit)
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https%3A%2F%2Fgithub.com%2F8aka-Team%2FNitWikit)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https%3A%2F%2Fgithub.com%2FCubic-Project%2FNitWikit)

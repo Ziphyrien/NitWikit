@@ -52,7 +52,7 @@ const config = {
 
         baseUrl: '/',
 
-        organizationName: '8aka-Team',
+        organizationName: 'Cubic-Project',
         projectName: '笨蛋式指南',
 
         onBrokenLinks: 'warn',
@@ -317,7 +317,7 @@ const config = {
                         },
                     ],
                     // 底部版权信息
-                    copyright: `Copyright © ${new Date().getFullYear()} <b>8aka-Team</b>, All Rights Reserved. | Web Design By Lythrilla`,
+                    copyright: `Copyright © ${new Date().getFullYear()} <b>Cubic-Project</b>, All Rights Reserved. | Web Design By Lythrilla`,
                 },
                 // 深浅主题
                 prism: {
