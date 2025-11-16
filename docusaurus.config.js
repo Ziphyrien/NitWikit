@@ -176,7 +176,16 @@ const config = {
                         type: "image/x-icon",
                         href: '/favicon.ico',
                     },
-                }
+                },
+                {
+                    tagName: 'link',
+                    attributes: {
+                        rel: 'preconnect',
+                        href: 'https://D1KV1BYF3B-dsn.algolia.net',
+                        crossOrigin: 'anonymous',
+                    },
+                },
+
             ],
 
         themeConfig:
@@ -369,6 +378,7 @@ const config = {
                         apiKey: '8730c526c66126ee3424fe3e8647d825',
                         appId: 'D1KV1BYF3B',
                     },
+                    insights: true,
                 },
                 mermaid: {
                     theme: {light: "neutral", dark: "dark"},
