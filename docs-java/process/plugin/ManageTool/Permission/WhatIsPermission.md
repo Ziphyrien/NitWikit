@@ -29,11 +29,11 @@ sidebar_position: 2
 
 权限有三种状态：
 
-| 状态 | 描述 |
-| --- | --- |
-|true | 允许 |
-|false | 禁止 |
-|undefined | 未设置 |
+| 状态      | 描述   |
+| --------- | ------ |
+| true      | 允许   |
+| false     | 禁止   |
+| undefined | 未设置 |
 
 **true 和 false 好理解，那 undefined 是什么？**
 

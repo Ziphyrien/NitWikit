@@ -19,7 +19,6 @@ sidebar_position: 3
 
 ViaProxyWhitelist 只允许指定的玩家加入 ViaProxy 服务器，提供基础的访问控制功能。
 
-
 ### 安装要求
 
 - ViaProxy 最低版本：3.3.4
@@ -27,21 +26,18 @@ ViaProxyWhitelist 只允许指定的玩家加入 ViaProxy 服务器，提供基�
 
 ### 安装配置
 
+启动服务器后，会在服务器文件夹中创建 `whitelist.yml` 文件：
 
-   启动服务器后，会在服务器文件夹中创建 `whitelist.yml` 文件：
-   ```yaml
-   # whitelist.yml
-   # 非白名单玩家被踢出时显示的消息
-   KickMessage: You are not whitelisted on this server!
+```yaml
+# whitelist.yml
+# 非白名单玩家被踢出时显示的消息
+KickMessage: You are not whitelisted on this server!
 
-   # 允许加入服务器的玩家列表
-   Whitelist:
-   - Player1
-   - Player2
-   ```
-
-
-
+# 允许加入服务器的玩家列表
+Whitelist:
+    - Player1
+    - Player2
+```
 
 ## ViaProxySpark {#spark}
 
@@ -54,7 +50,6 @@ ViaProxyWhitelist 只允许指定的玩家加入 ViaProxy 服务器，提供基�
 :::
 
 ViaProxySpark 将 Spark 性能分析器集成到 ViaProxy 中，提供详细的性能分析和监控功能。
-
 
 ## ViaProxyMultiLaunch {#multilaunch}
 
@@ -94,21 +89,23 @@ ViaLimbo 为 ViaProxy 提供 Limbo 服务器功能，可以在连接失败时显
 ### ViaProxyLimbo 安装配置
 
 1. **安装 Limbo 服务器**
-   ```bash
-   # 下载并安装 Limbo 服务器
-   wget https://github.com/LOOHP/Limbo/releases/latest/download/Limbo.jar
-   ```
+
+    ```bash
+    # 下载并安装 Limbo 服务器
+    wget https://github.com/LOOHP/Limbo/releases/latest/download/Limbo.jar
+    ```
 
 2. **安装 ViaLimbo 插件**
-   ```bash
-   # 下载 ViaLimbo 插件到 Limbo 服务器的 plugins 目录
-   wget -P plugins/ https://ci.loohpjames.com/job/ViaLimbo/lastSuccessfulBuild/artifact/target/ViaLimbo.jar
-   ```
+
+    ```bash
+    # 下载 ViaLimbo 插件到 Limbo 服务器的 plugins 目录
+    wget -P plugins/ https://ci.loohpjames.com/job/ViaLimbo/lastSuccessfulBuild/artifact/target/ViaLimbo.jar
+    ```
 
 3. **重启 Limbo 服务器**
-   ```bash
-   java -jar Limbo.jar
-   ```
+    ```bash
+    java -jar Limbo.jar
+    ```
 
 ## ayunViaProxyLegacyIcon
 
@@ -123,12 +120,14 @@ ayunViaProxyLegacyIcon 为旧版服务器添加服务器图标支持，当后端
 ### 支持版本
 
 #### 服务器版本
+
 - Classic (c0.0.15 - c0.30)
 - Alpha (a1.0.15 - a1.2.6)
 - Beta (b1.0 - b1.8.1)
 - Release (1.0.0 - 1.6.4) - 部分版本不支持图标
 
 #### 客户端版本
+
 - Release (1.7.2+) - 支持服务器图标的所有版本
 
 ### ViaProxyServerIcon 安装配置

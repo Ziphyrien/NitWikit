@@ -31,34 +31,34 @@ sidebar_position: 3
 
 ```yaml
 defaults: &defaults
-  adapter: postgres
-  host: localhost
+    adapter: postgres
+    host: localhost
 
 development:
-  database: myapp_development
-  <<: *defaults
+    database: myapp_development
+    <<: *defaults
 
 test:
-  database: myapp_test
-  common: *defaults
+    database: myapp_test
+    common: *defaults
 ```
 
 相当于：
 
 ```yaml
 defaults:
-  adapter: postgres
-  host: localhost
-
-development:
-  database: myapp_development
-  adapter: postgres
-  host: localhost
-
-test:
-  common:
     adapter: postgres
     host: localhost
+
+development:
+    database: myapp_development
+    adapter: postgres
+    host: localhost
+
+test:
+    common:
+        adapter: postgres
+        host: localhost
 ```
 
 ## 换行
@@ -69,27 +69,28 @@ test:
 
 ```yaml
 lines: |
-  我是第一行
-  我是第二行
-    我是帅气迷人的驿站
-      我是第四行
-  我是第五行
+    我是第一行
+    我是第二行
+      我是帅气迷人的驿站
+        我是第四行
+    我是第五行
 ```
 
 使用 `|+` 来表示该语法，保留行尾及字符末尾的换行符。
 
 ```yaml
 lines: |+
-  我是第一行
-  我是第二行
+    我是第一行
+    我是第二行
+
 ```
 
 使用 `|-` 来表示该语法，保留行尾换行符，但不保留字符末尾的换行符。
 
 ```yaml
 lines: |-
-  我是第一行
-  我是第二行
+    我是第一行
+    我是第二行
 ```
 
 ### 折叠换行
@@ -98,26 +99,27 @@ lines: |-
 
 ```yaml
 lines: >
-  我是第一行
-  我也是第一行
-  我仍是第一行
-  我依旧是第一行
-  我是第二行
-  这么巧我也是第二行
+    我是第一行
+    我也是第一行
+    我仍是第一行
+    我依旧是第一行
+    我是第二行
+    这么巧我也是第二行
 ```
 
 使用 `>+` 来表示该语法，将行尾换行符替换成空格，保留字符末尾的换行符。
 
 ```yaml
 lines: >+
-  我是第一行
-  我也是第一行
+    我是第一行
+    我也是第一行
+
 ```
 
 使用 `>-` 来表示该语法，将行尾换行符替换成空格，不保留字符末尾的换行符。
 
 ```yaml
 lines: >-
-  我是第一行
-  我也是第一行
+    我是第一行
+    我也是第一行
 ```

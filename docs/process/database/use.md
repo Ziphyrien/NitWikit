@@ -26,7 +26,7 @@ sidebar_position: 2
 
 官网 https://navicat.com.cn/products
 
- :::
+:::
 
 **Navicat** 是一款企业级的简单易用的数据库管理软件
 
@@ -194,7 +194,7 @@ TODO
 我们来一一介绍他们的用途
 
 - enabled: 是否启用 MySQL 存储数据？如果是请填 true，否则填 false，默认是 false，而且有些插件是直接让你填写数据库类型的，默认是 SQLite。
-对于这种配置文件，请把 SQLite 改成 MySQL 或者其他你使用的数据库名。
+  对于这种配置文件，请把 SQLite 改成 MySQL 或者其他你使用的数据库名。
 
 - host: 也就是主机地址，如果数据库在本地，请填 localhost
 

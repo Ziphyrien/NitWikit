@@ -83,16 +83,16 @@ bedrock_server_mod.exe
 ### 下载必要的文件
 
 1. ​**下载 LeviLamina**​：
-   * 转到 [GitHub 上的 LeviLamina 发布页面](https://github.com/LiteLDev/LeviLamina/releases)。
-   * 选择所需的版本。
-   * 从所选版本 Release 中下载文件 `levilamina-windows-x64.zip`
+    - 转到 [GitHub 上的 LeviLamina 发布页面](https://github.com/LiteLDev/LeviLamina/releases)。
+    - 选择所需的版本。
+    - 从所选版本 Release 中下载文件 `levilamina-windows-x64.zip`
 2. ​**下载 BDS(Minecraft 服务器)**​：
-   * 访问 [Minecraft 的服务器下载页面](https://www.minecraft.net/en-us/download/server/bedrock)。
-   * 获取与你的 LeviLamina 版本相对应的 Bedrock 专用服务器 (BDS) 版本，名为
-   `bedrock-server-<version>.zip`
+    - 访问 [Minecraft 的服务器下载页面](https://www.minecraft.net/en-us/download/server/bedrock)。
+    - 获取与你的 LeviLamina 版本相对应的 Bedrock 专用服务器 (BDS) 版本，名为
+      `bedrock-server-<version>.zip`
 3. ​**获取 PeEditor 和 PreLoader**​：
-   * 前往他们各自的 GitHub 发布页面：[PeEditor Releases](https://github.com/LiteLDev/PeEditor/releases) 和 [PreLoader Releases](https://github.com/LiteLDev/PreLoader/releases)。
-   * 下载最新的 `PeEditor.exe` ​`PreLoader.dll` 文件
+    - 前往他们各自的 GitHub 发布页面：[PeEditor Releases](https://github.com/LiteLDev/PeEditor/releases) 和 [PreLoader Releases](https://github.com/LiteLDev/PreLoader/releases)。
+    - 下载最新的 `PeEditor.exe` ​`PreLoader.dll` 文件
 
 :::warning
 
@@ -103,15 +103,15 @@ bedrock_server_mod.exe
 ### 安装步骤
 
 1. ​**解压 BDS 文件**​：
-   * 将从步骤 2 获取的文件 `bedrock-server-<version>.zip` 解压到一个新的空文件夹中
+    - 将从步骤 2 获取的文件 `bedrock-server-<version>.zip` 解压到一个新的空文件夹中
 2. ​**放置 PeEditor 和 PreLoader**​：
-   * 将 `PeEditor.exe` ​`PreLoader.dll`​ `bedrock_server.exe` 文件移动到解压后 BDS 文件的目录
+    - 将 `PeEditor.exe` ​`PreLoader.dll`​ `bedrock_server.exe` 文件移动到解压后 BDS 文件的目录
 3. ​**安装 LeviLamina**​：
-   * 从步骤 1 中解压文件 `levilamina-windows-x64.zip`
-   * 将文件夹放入 BDS 同一目录中
+    - 从步骤 1 中解压文件 `levilamina-windows-x64.zip`
+    - 将文件夹放入 BDS 同一目录中
 4. ​**运行 PeEditor**​：
-   * 双击 `PeEditor.exe` 并等待配置完成
-   * 然后，你可以在目录中找到一个名为 `bedrock_server_mod.exe` 的新文件，原始文件 `bedrock_server.exe` 将重命名为 `bedrock_server.exe.bak`
+    - 双击 `PeEditor.exe` 并等待配置完成
+    - 然后，你可以在目录中找到一个名为 `bedrock_server_mod.exe` 的新文件，原始文件 `bedrock_server.exe` 将重命名为 `bedrock_server.exe.bak`
 
 现在，你已成功安装了 LeviLamina 了，要启动它，请运行命今
 

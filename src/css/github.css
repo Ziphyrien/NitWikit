@@ -58,13 +58,13 @@
 }
 
 /* 深色模式下的特定样式 */
-html[data-theme='dark'] .header-github-link,
-html[data-theme='dark'] .github-icon-button {
+html[data-theme="dark"] .header-github-link,
+html[data-theme="dark"] .github-icon-button {
     color: var(--ifm-navbar-link-color) !important;
 }
 
-html[data-theme='dark'] .header-github-link:hover,
-html[data-theme='dark'] .github-icon-button:hover {
+html[data-theme="dark"] .header-github-link:hover,
+html[data-theme="dark"] .github-icon-button:hover {
     background-color: var(--ifm-color-emphasis-200) !important;
 }
 

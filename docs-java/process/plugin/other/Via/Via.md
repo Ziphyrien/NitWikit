@@ -52,7 +52,7 @@ ViaVersion + ViaBackwards + ViaRewind
 
 :::tip
 
-Via* 插件剔除了 Java8 支持，这导致你不能在更低的服务端版本使用他
+Via\* 插件剔除了 Java8 支持，这导致你不能在更低的服务端版本使用他
 
 如果你想要支持服务端版本 1.8～1.21 的插件
 

@@ -72,8 +72,8 @@ Legacy Fabric 的模组生态相较于 Forge 并不完善，不建议使用。
 
 其他整活版本：
 
-| 名称                   | 兼容版本         | 下载地址                                |
-|----------------------|--------------|-----------------------------------------------|
+| 名称                 | 兼容版本     | 下载地址                                      |
+| -------------------- | ------------ | --------------------------------------------- |
 | Babric               | Beta 1.7.3   | [McMOD](https://www.mcmod.cn/class/6367.html) |
 | Cursed Legacy Fabric | Beta 1.7.3   | [McMOD](https://www.mcmod.cn/class/3902.html) |
 | Fabric Loader        | Alpha 1.2.2a | [McMOD](https://www.mcmod.cn/class/5753.html) |

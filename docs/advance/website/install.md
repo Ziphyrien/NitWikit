@@ -15,7 +15,6 @@ import TabItem from '@theme/TabItem';
 <Tabs groupId="download-method">
 <TabItem value="direct" label="直接下载">
 
-
 ```bash
 
 curl -L "https://github.com/NamelessMC/Nameless/releases/latest/download/nameless-deps-dist.tar.xz" | tar --xz --extract --directory=/var/www/html --file -
@@ -48,36 +47,41 @@ composer create-project namelessmc/nameless /var/www/html/namelessmc
 <TabItem value="docker" label="Docker">
 
 1. **安装Docker Compose** (Debian/Ubuntu):
-   ```bash
-   sudo apt install docker-compose-plugin
-   ```
+
+    ```bash
+    sudo apt install docker-compose-plugin
+    ```
 
 2. **下载配置文件**
-   ```bash
-   # 下载docker-compose.yaml文件
-   wget https://github.com/NamelessMC/Nameless-Docker/blob/master/docker-compose.yaml
-   ```
+
+    ```bash
+    # 下载docker-compose.yaml文件
+    wget https://github.com/NamelessMC/Nameless-Docker/blob/master/docker-compose.yaml
+    ```
 
 3. **准备数据目录**
-   ```bash
-   # 创建网站数据目录并设置权限
-   mkdir web
-   chown -R 33:33 web
-   ```
+
+    ```bash
+    # 创建网站数据目录并设置权限
+    mkdir web
+    chown -R 33:33 web
+    ```
 
 4. **启动容器**
-   ```bash
-   docker compose up -d
-   ```
+
+    ```bash
+    docker compose up -d
+    ```
 
 5. **完成安装**
-   - 访问 http://localhost:80
-   - 数据库地址填写: `db`
-   - 数据库用户名、密码、数据库名都填写: `nameless`
+    - 访问 http://localhost:80
+    - 数据库地址填写: `db`
+    - 数据库用户名、密码、数据库名都填写: `nameless`
 
 ### 推荐Docker标签
+
 - `v2.2`: 最新稳定版 (PHP 8.3)
-- `v2.1`: 上一稳定版 (PHP 8.2)  
+- `v2.1`: 上一稳定版 (PHP 8.2)
 - `dev`: 开发版 (仅用于开发)
 
 </TabItem>
@@ -142,39 +146,40 @@ sudo chmod -R 777 /var/www/html/namelessmc/uploads
 ### Web安装向导
 
 1. **访问安装页面**
-   - 打开浏览器访问：`http://your-domain.com/install`
-   - 或：`http://your-domain.com/namelessmc/install`
+    - 打开浏览器访问：`http://your-domain.com/install`
+    - 或：`http://your-domain.com/namelessmc/install`
 
 ![img.png](_images/img-2.png)
 
 1. **数据库配置**
-   ```text
-   数据库类型：MySQL
-   主机地址：localhost (或你的数据库主机)
-   端口：3306
-   数据库名：namelessmc
-   用户名：namelessmc
-   密码：your_secure_password
-   表前缀：nl2_ (可自定义)
-   ```
-   
+    ```text
+    数据库类型：MySQL
+    主机地址：localhost (或你的数据库主机)
+    端口：3306
+    数据库名：namelessmc
+    用户名：namelessmc
+    密码：your_secure_password
+    表前缀：nl2_ (可自定义)
+    ```
+
 ![img.png](_images/img-3.png)
 
 1. **站点配置**
-   ```text
-   站点名称：你的服务器名称
-   站点URL：完整的域名地址
-   友好URL：启用 (推荐)
-   ```
+
+    ```text
+    站点名称：你的服务器名称
+    站点URL：完整的域名地址
+    友好URL：启用 (推荐)
+    ```
 
 1. **管理员账户**
-   ```text
-   用户名：admin (可自定义)
-   邮箱：admin@yourdomain.com
-   密码：强密码
-   确认密码：重复输入
-   ```
-![img.png](_images/img-.png)
+    ```text
+    用户名：admin (可自定义)
+    邮箱：admin@yourdomain.com
+    密码：强密码
+    确认密码：重复输入
+    ```
+    ![img.png](_images/img-.png)
 
 然后就安装好了
 

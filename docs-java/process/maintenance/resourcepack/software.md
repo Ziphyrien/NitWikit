@@ -30,6 +30,3 @@ sidebar_position: 1
 ![](_images/tooltip2.png)
 
 > https://github.com/Godlander/tooltip
-
-
-

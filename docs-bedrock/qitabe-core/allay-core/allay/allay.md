@@ -68,4 +68,3 @@ gradlew Allay-Server:runShadow
 ```cmd
 gradlew Allay-Server:build
 ```
-

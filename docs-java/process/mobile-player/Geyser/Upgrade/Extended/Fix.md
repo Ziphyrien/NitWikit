@@ -154,48 +154,51 @@ Broadcaster 通过模拟 Xbox Live 客户端，将你的 Geyser/基岩版服务�
 适用于已有 Geyser 服务器的情况。
 
 1. **下载扩展**
-   - 从 [GitHub Releases](https://github.com/MCXboxBroadcast/Broadcaster/releases) 下载 `MCXboxBroadcastExtension.jar`
+    - 从 [GitHub Releases](https://github.com/MCXboxBroadcast/Broadcaster/releases) 下载 `MCXboxBroadcastExtension.jar`
 
 2. **安装扩展**
-   ```bash
-   服务器根目录/
-   ├── plugins/
-   │   └── Geyser-Spigot/
-   │       └── extensions/
-   │           └── MCXboxBroadcastExtension.jar
-   ```
+
+    ```bash
+    服务器根目录/
+    ├── plugins/
+    │   └── Geyser-Spigot/
+    │       └── extensions/
+    │           └── MCXboxBroadcastExtension.jar
+    ```
 
 3. **重启服务器**
-   - 重启服务器以加载扩展
+    - 重启服务器以加载扩展
 
 4. **查看认证信息**
-   - 服务器启动后，控制台会显示认证码：
-   ```bash
-   To sign in, use a web browser to open the page https://www.microsoft.com/link and enter the code XXXXXXXX to authenticate.
-   ```
+    - 服务器启动后，控制台会显示认证码：
+    ```bash
+    To sign in, use a web browser to open the page https://www.microsoft.com/link and enter the code XXXXXXXX to authenticate.
+    ```
 
 #### 方法二：独立版本
 
 适用于需要独立运行或连接远程服务器的情况。
 
 1. **下载独立版**
-   - 下载 `MCXboxBroadcastStandalone.jar`
+    - 下载 `MCXboxBroadcastStandalone.jar`
 
 2. **启动程序**
-   ```bash
-   java -jar MCXboxBroadcastStandalone.jar
-   ```
+
+    ```bash
+    java -jar MCXboxBroadcastStandalone.jar
+    ```
 
 3. **配置目标服务器**
-   - 编辑生成的 `config.yml` 文件：
-   ```yaml
-   remote:
-     address: "your-server-ip"
-     port: 19132
-   ```
+    - 编辑生成的 `config.yml` 文件：
+
+    ```yaml
+    remote:
+        address: "your-server-ip"
+        port: 19132
+    ```
 
 4. **重启工具**
-   - 保存配置后重启程序
+    - 保存配置后重启程序
 
 ### 高级配置
 
@@ -206,7 +209,6 @@ Broadcaster 通过模拟 Xbox Live 客户端，将你的 Geyser/基岩版服务�
 ![](_image/img.png)
 
 将制作好的图片重命名为 `screenshot.jpg`,放到配置文件目录即可
-
 
 ## GeyserFloatingPoints 浮点精度修复
 

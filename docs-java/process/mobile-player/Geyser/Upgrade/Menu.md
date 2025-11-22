@@ -19,7 +19,7 @@ sidebar_position: 4
 
 如果你是一个聪明人，看默认的`config.yml`就能看懂
 
-```yaml
+````yaml
 # 查看所有占位符请访问 https://github.com/onebeastchris/MagicMenu/blob/master/setup.md
 
 # 配置版本 - 不要更改此项。
@@ -160,7 +160,7 @@ menus:
     commands:
       - command-name: "天气"
         run: "weather !%dropdown:天气会是什么？, 雨，雨，晴朗，雷暴%"```
-```
+````
 
 ## 注意事项
 
@@ -216,11 +216,11 @@ menus:
 
 支持的插件：
 
-* EssentialX
-* CMI
-* Sunlight
-* HuskHomes (仅单端)
-* TPAPro (需要从 [此处](https://raw.githubusercontent.com/RenYuan-MC/TpaForm/master/extensions/TpaForm-TpaProSupport.jar) 下载扩展以兼容其黑名单功能)
+- EssentialX
+- CMI
+- Sunlight
+- HuskHomes (仅单端)
+- TPAPro (需要从 [此处](https://raw.githubusercontent.com/RenYuan-MC/TpaForm/master/extensions/TpaForm-TpaProSupport.jar) 下载扩展以兼容其黑名单功能)
 
 ### Skript 脚本
 

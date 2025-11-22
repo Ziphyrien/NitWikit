@@ -149,6 +149,7 @@ MySQL5 版本太低了，很多插件需要更高版本的，装 MySQL8 就够�
 ![](_images/48.png)
 
 ![](_images/49.png)
+
 </details>
 
 <details>

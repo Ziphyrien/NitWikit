@@ -52,6 +52,7 @@ sidebar_position: 5
 **支持版本：** 1.16.2+ (客户端) 连接到更高版本服务器
 
 **主要特性：**
+
 - 向后移植新版本物品、方块和实体的材质
 - 支持与其他资源包叠加使用（会从上层资源包加载材质）
 - 提供两个版本以满足不同需求
@@ -61,6 +62,7 @@ sidebar_position: 5
 基于 Minecraft 1.21.4+ 原版物品定义系统
 
 **使用方法：**
+
 1. 下载 V2 版本资源包
 2. 放入客户端 `.minecraft/resourcepacks` 文件夹或服务端
 3. 在游戏中启用资源包
@@ -71,10 +73,12 @@ sidebar_position: 5
 需要 Chime 模组或 Optifine CIT
 
 **依赖要求：**
+
 - **Chime 模组**：提供快速高效的物品识别
 - **或 Optifine CIT**：传统的自定义物品材质支持
 
 **使用方法：**
+
 1. 安装 [Chime 模组](https://modrinth.com/mod/chime) 或 Optifine
 2. 下载 V1 版本资源包
 3. 放入客户端 `.minecraft/resourcepacks` 文件夹或服务端
@@ -101,7 +105,6 @@ sidebar_position: 5
 **依赖要求：** 需要 Optifine
 
 为旧版本客户端添加新版本的物品、方块和实体材质
-
 
 ## ViaAprilFools
 
@@ -133,9 +136,9 @@ sidebar_position: 5
 
 功能：
 
-* 与 Minecraft 1.8 及更高版本兼容 Spigot/Velocity/Bungeecord，包括最新版本。
-* 自动从 Jenkins 下载 ViaVersion、ViaBackwards、ViaRewind 和 ViaRewind-Legacy-Support 的成功版本及其开发版本。
-* config.yml 允许你指定要更新的 Via 以及是否使用每个插件的开发版本。
-* /updatevias 命令强制更新检查器对所有 Via(需要 autoviaupdater.admin 权限)
+- 与 Minecraft 1.8 及更高版本兼容 Spigot/Velocity/Bungeecord，包括最新版本。
+- 自动从 Jenkins 下载 ViaVersion、ViaBackwards、ViaRewind 和 ViaRewind-Legacy-Support 的成功版本及其开发版本。
+- config.yml 允许你指定要更新的 Via 以及是否使用每个插件的开发版本。
+- /updatevias 命令强制更新检查器对所有 Via(需要 autoviaupdater.admin 权限)
 
 [下载地址](https://www.spigotmc.org/resources/autoviaupdater.109331/)

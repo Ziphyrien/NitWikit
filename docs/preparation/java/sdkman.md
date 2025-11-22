@@ -195,16 +195,16 @@ java -Xmx4G -Xms4G -jar server.jar nogui
 
 ## 常用命令
 
-| 命令                             | 说明               |
-|--------------------------------|------------------|
-| `sdk list java`                | 查看所有可用的 Java 版本  |
-| `sdk install java <version>`   | 安装指定版本的 Java     |
-| `sdk use java <version>`       | 临时切换到指定版本        |
-| `sdk default java <version>`   | 设置默认 Java 版本     |
-| `sdk current java`             | 查看当前使用的 Java 版本  |
-| `sdk uninstall java <version>` | 卸载指定版本的 Java     |
+| 命令                           | 说明                       |
+| ------------------------------ | -------------------------- |
+| `sdk list java`                | 查看所有可用的 Java 版本   |
+| `sdk install java <version>`   | 安装指定版本的 Java        |
+| `sdk use java <version>`       | 临时切换到指定版本         |
+| `sdk default java <version>`   | 设置默认 Java 版本         |
+| `sdk current java`             | 查看当前使用的 Java 版本   |
+| `sdk uninstall java <version>` | 卸载指定版本的 Java        |
 | `sdk upgrade java`             | 升级所有已安装的 Java 版本 |
-| `sdk flush`                    | 清理缓存             |
+| `sdk flush`                    | 清理缓存                   |
 
 ## 注意事项
 

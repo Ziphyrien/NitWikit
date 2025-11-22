@@ -91,7 +91,7 @@ Linux 环境下：
 前往 [Python 官网](https://python.org) 下载 Python 环境
 
 :::info
-Linux 请按照 [这个教程](https://blog.csdn.net/hd243608836/article/details/121417965) 或者必应搜索 **Python Linux 安装** 完成安装 python 最新版，*安装完毕请看第二步*
+Linux 请按照 [这个教程](https://blog.csdn.net/hd243608836/article/details/121417965) 或者必应搜索 **Python Linux 安装** 完成安装 python 最新版，_安装完毕请看第二步_
 :::
 
 运行 Python 安装包程序进行安装：

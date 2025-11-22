@@ -30,7 +30,7 @@ https://www.bt.cn/new/btcode.html
 
 接下来，我们需要清理配置（清理方式可选择手动注释或者删除）文件（位于安装目录的 conf 文件夹下，数据库的配置文件名称为 mysql.conf）
 
-最后，我们重新启动 PHPStudy 
+最后，我们重新启动 PHPStudy
 
 ### Linux 平台：
 

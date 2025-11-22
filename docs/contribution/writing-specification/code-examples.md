@@ -13,7 +13,7 @@ NitWikit 支持多种编程语言的代码高亮，让您的文档更加专业�
 
 ````md
 ```javascript
-const hello = 'world';
+const hello = "world";
 console.log(hello);
 ```
 ````
@@ -21,7 +21,7 @@ console.log(hello);
 效果如下：
 
 ```javascript
-const hello = 'world';
+const hello = "world";
 console.log(hello);
 ```
 
@@ -33,14 +33,14 @@ console.log(hello);
 ```javascript
 // 普通代码行
 const sum = (a, b) => {
-  // highlight-next-line
-  return a + b; // 这行会被高亮显示
+    // highlight-next-line
+    return a + b; // 这行会被高亮显示
 };
 
 // highlight-start
 // 多行高亮示例
 function multiply(a, b) {
-  return a * b;
+    return a * b;
 }
 // highlight-end
 ```
@@ -51,14 +51,14 @@ function multiply(a, b) {
 ```javascript
 // 普通代码行
 const sum = (a, b) => {
-  // highlight-next-line
-  return a + b; // 这行会被高亮显示
+    // highlight-next-line
+    return a + b; // 这行会被高亮显示
 };
 
 // highlight-start
 // 多行高亮示例
 function multiply(a, b) {
-  return a * b;
+    return a * b;
 }
 // highlight-end
 ```
@@ -71,7 +71,7 @@ function multiply(a, b) {
 ```javascript
 // 正确的代码
 let array = [1, 2, 3];
-array.forEach(item => console.log(item));
+array.forEach((item) => console.log(item));
 
 // error-next-line
 console.log(item); // 这行是错误的，因为 item 在这个作用域不可用
@@ -79,7 +79,7 @@ console.log(item); // 这行是错误的，因为 item 在这个作用域不可�
 // error-start
 // 多行错误示例
 function brokenFunction() {
-  return x + y; // x 和 y 都未定义
+    return x + y; // x 和 y 都未定义
 }
 // error-end
 ```
@@ -90,7 +90,7 @@ function brokenFunction() {
 ```javascript
 // 正确的代码
 let array = [1, 2, 3];
-array.forEach(item => console.log(item));
+array.forEach((item) => console.log(item));
 
 // error-next-line
 console.log(item); // 这行是错误的，因为 item 在这个作用域不可用
@@ -98,7 +98,7 @@ console.log(item); // 这行是错误的，因为 item 在这个作用域不可�
 // error-start
 // 多行错误示例
 function brokenFunction() {
-  return x + y; // x 和 y 都未定义
+    return x + y; // x 和 y 都未定义
 }
 // error-end
 ```
@@ -145,7 +145,7 @@ public class HelloWorld {
     // highlight-next-line
     public static void main(String[] args) {
         System.out.println("Hello, World!");
-        
+
         int sum = 0;
         // error-start
         for (int i = 0; i < 10; i--) { // 无限循环错误
@@ -167,4 +167,4 @@ npm start
 
 # 构建生产版本
 npm run build
-``` 
+```

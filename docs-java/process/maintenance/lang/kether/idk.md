@@ -14,13 +14,13 @@ inline 是在一段文本中插入语句，实际上会创造一个新的 kether
 例如这个 TrMenu 例子中：
 
 ```yaml
-  'A':
+"A":
     display:
-      material: stone
+        material: stone
     actions:
-      - meta set a to 1
-      - tell &a
-      - tell inline {{&a}}
+        - meta set a to 1
+        - tell &a
+        - tell inline {{&a}}
 ```
 
 第一个 tell 打印了 1

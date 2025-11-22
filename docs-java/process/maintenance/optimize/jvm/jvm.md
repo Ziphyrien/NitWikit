@@ -63,7 +63,7 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="jvm-download">
 <TabItem value="dragonwell" label="Dragonwell">
 
-Dragonwell 分为  Standard Edition 和 Extended Edition，推荐下载 Extended Edition
+Dragonwell 分为 Standard Edition 和 Extended Edition，推荐下载 Extended Edition
 
 - [官网](https://dragonwell-jdk.io/) 下载区域选择`China Mainland`
 - [Dragonwell 8 预览](https://github.com/dragonwell-project/dragonwell8/releases)

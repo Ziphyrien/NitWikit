@@ -2,20 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './base/variables.css';
-@import './base/theme.css';
-@import './base/typography.css';
+@import "./base/variables.css";
+@import "./base/theme.css";
+@import "./base/typography.css";
 
-@import './components/navbar.css';
-@import './components/sidebar.css';
-@import './components/card.css';
-@import './components/button.css';
-@import './components/code.css';
-@import './components/table.css';
-@import './components/alert.css';
-@import './components/footer.css';
+@import "./components/navbar.css";
+@import "./components/sidebar.css";
+@import "./components/card.css";
+@import "./components/button.css";
+@import "./components/code.css";
+@import "./components/table.css";
+@import "./components/alert.css";
+@import "./components/footer.css";
 
-@import './utilities/animations.css';
-@import './utilities/scrollbar.css';
-@import './utilities/responsive.css';
-@import './utilities/search.css';
+@import "./utilities/animations.css";
+@import "./utilities/scrollbar.css";
+@import "./utilities/responsive.css";
+@import "./utilities/search.css";

@@ -3,20 +3,19 @@ title: 安装
 sidebar_position: 2
 ---
 
-
 # 安装 Geyser
 
 ## 版本
 
 Geyser 有以下版本类型：
 
-* Spigot
-* Bungeecord
-* Velocity
-* Fabric
-* NeoForge
-* Standalone
-* ViaProxy
+- Spigot
+- Bungeecord
+- Velocity
+- Fabric
+- NeoForge
+- Standalone
+- ViaProxy
 
 其中：
 
@@ -33,9 +32,9 @@ Standalone 版本 可以作为一个独立的代理端启动
 在安装前，你需要找到合适的 Geyser 版本，你可以参考下图：
 ![version](_image/VersionChoose.png)
 
-* 1、运行独立版**仍需要 Java16**及以上环境，只不过你可以将其和目标服务器所处的 Java 环境隔开 此外**在任何情况下**，你都可使用独立版，甚至独立版可以和其目标不在同一服务器上
-* 2、你可以通过 ViaVersion 插件来适配版本，这会允许不同版本的玩家进入服务器，不过问题不大
-* 3、[Hydraulic](https://github.com/GeyserMC/Hydraulic) 可以允许你加入带客户端模组的服务器，但是项目处于**早期开发阶段**，你可以做个尝试，但是请不要在实际情况下使用
+- 1、运行独立版**仍需要 Java16**及以上环境，只不过你可以将其和目标服务器所处的 Java 环境隔开 此外**在任何情况下**，你都可使用独立版，甚至独立版可以和其目标不在同一服务器上
+- 2、你可以通过 ViaVersion 插件来适配版本，这会允许不同版本的玩家进入服务器，不过问题不大
+- 3、[Hydraulic](https://github.com/GeyserMC/Hydraulic) 可以允许你加入带客户端模组的服务器，但是项目处于**早期开发阶段**，你可以做个尝试，但是请不要在实际情况下使用
 
 ## 下载
 
@@ -74,25 +73,24 @@ bedrock 所代表的是你所开放的端口，也是基岩版玩家看到的那
 
 ```yaml
 bedrock:
-  port: 19132
-  clone-remote-port: false
-  motd1: "Geyser"
-  motd2: "Another Geyser server."
-  server-name: "Geyser"
-  compression-level: 6
-  enable-proxy-protocol: false
-  # proxy-protocol-whitelisted-ips：[ "127.0.0.1","172.18.0.0/16" ]
-
+    port: 19132
+    clone-remote-port: false
+    motd1: "Geyser"
+    motd2: "Another Geyser server."
+    server-name: "Geyser"
+    compression-level: 6
+    enable-proxy-protocol: false
+    # proxy-protocol-whitelisted-ips：[ "127.0.0.1","172.18.0.0/16" ]
 ```
 
 ```yaml
 remote:
-  address: auto
-  port: 25565
-  auth-type: online
-  allow-password-authentication: true
-  use-proxy-protocol: false
-  forward-hostname: false
+    address: auto
+    port: 25565
+    auth-type: online
+    allow-password-authentication: true
+    use-proxy-protocol: false
+    forward-hostname: false
 ```
 
 ### Bedrock 项
@@ -154,11 +152,11 @@ floodgate 是一个允许 **Minecraft 基岩版** 帐号加入 **Minecraft Java 
 
 它还允许：
 
-* 让 Java 版玩家看到基岩版玩家的皮肤
-* 向基岩版玩家发送 BE Form UI (基岩版独有的一种菜单格式)
-* 允许基岩版玩家与 Java 版玩家进行账号数据间的连接
-* 提供一个通用的 API，使更多插件可以兼容基岩版玩家
-* 以基岩版 XUID 作为 UUID 储存数据，使在基岩版玩家改名后不丢失数据
+- 让 Java 版玩家看到基岩版玩家的皮肤
+- 向基岩版玩家发送 BE Form UI (基岩版独有的一种菜单格式)
+- 允许基岩版玩家与 Java 版玩家进行账号数据间的连接
+- 提供一个通用的 API，使更多插件可以兼容基岩版玩家
+- 以基岩版 XUID 作为 UUID 储存数据，使在基岩版玩家改名后不丢失数据
 
 所以就算**非正版服务器**，也有**必要**安装此插件来获取更强大的兼容性
 
@@ -196,8 +194,8 @@ username-prefix: "."
 **但是**
 这在离线服中，有几个问题:
 
-* 离线服玩家名是可以任意修改的，所以 Java 玩家一样可以使用相同前缀进入服务器
-* 部分登录插件会禁止诸如带有 `.` 玩家名的玩家进入服务器，这会导致基岩版玩家无法进入服务器
+- 离线服玩家名是可以任意修改的，所以 Java 玩家一样可以使用相同前缀进入服务器
+- 部分登录插件会禁止诸如带有 `.` 玩家名的玩家进入服务器，这会导致基岩版玩家无法进入服务器
 
 接下来我们来解决这些问题
 

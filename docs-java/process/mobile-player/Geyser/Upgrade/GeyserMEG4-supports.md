@@ -17,11 +17,11 @@ sidebar_position: 6
 
 <!--markdownlint-disable line-length-->
 
-| 前置插件                 | 橡木链接                                                                        | 作用                   |
-|:---------------------|:----------------------------------------------------------------------------|:---------------------|
-| GeyserUtils          | [GeyserUtils](https://github.com/zimzaza4/GeyserUtils)                      | 让你的 Geyser 支持调用一些 BE 的东西 |
-| GeyserModelEngine    | [GitHub](https://github.com/zimzaza4/GeyserModelEngine)                     | 你猜                   |
-| LibsDisguises(免费版即可) | [LibsDisguises](https://www.spigotmc.org/resources/libs-disguises-free.81/) | 伪装成其他生物              |
+| 前置插件                  | 橡木链接                                                                    | 作用                                 |
+| :------------------------ | :-------------------------------------------------------------------------- | :----------------------------------- |
+| GeyserUtils               | [GeyserUtils](https://github.com/zimzaza4/GeyserUtils)                      | 让你的 Geyser 支持调用一些 BE 的东西 |
+| GeyserModelEngine         | [GitHub](https://github.com/zimzaza4/GeyserModelEngine)                     | 你猜                                 |
+| LibsDisguises(免费版即可) | [LibsDisguises](https://www.spigotmc.org/resources/libs-disguises-free.81/) | 伪装成其他生物                       |
 
 <!--markdownlint-enable line-length-->
 
@@ -49,12 +49,12 @@ sidebar_position: 6
 
 <!--markdownlint-disable line-length-->
 
-| 前置插件                           | 项目链接                                                                       | 作用                   |
-|:-------------------------------|:---------------------------------------------------------------------------|:---------------------|
-| GeyserUtils                    | [GitHub](https://github.com/zimzaza4/GeyserUtils)                          | 让你的 Geyser 支持调用一些 BE 的东西 |
-| GeyserModelEngine 自定义实体分支       | [GitHub](https://github.com/zimzaza4/GeyserModelEngine/tree/custom-entity) | 你猜                   |
-| Geyser 自定义实体分支                 | [GitHub](https://github.com/zimzaza4/Geyser)                               | 让 Geyser 支持自定义实体       |
-| GeyserModelEnginePackGenerator | [GitHub](https://github.com/zimzaza4/GeyserModelEnginePackGenerator)       | 帮你自动转换模型生成资源包        |
+| 前置插件                         | 项目链接                                                                   | 作用                                 |
+| :------------------------------- | :------------------------------------------------------------------------- | :----------------------------------- |
+| GeyserUtils                      | [GitHub](https://github.com/zimzaza4/GeyserUtils)                          | 让你的 Geyser 支持调用一些 BE 的东西 |
+| GeyserModelEngine 自定义实体分支 | [GitHub](https://github.com/zimzaza4/GeyserModelEngine/tree/custom-entity) | 你猜                                 |
+| Geyser 自定义实体分支            | [GitHub](https://github.com/zimzaza4/Geyser)                               | 让 Geyser 支持自定义实体             |
+| GeyserModelEnginePackGenerator   | [GitHub](https://github.com/zimzaza4/GeyserModelEnginePackGenerator)       | 帮你自动转换模型生成资源包           |
 
 <!--markdownlint-enable line-length-->
 

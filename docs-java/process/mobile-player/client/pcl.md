@@ -127,9 +127,8 @@ git clone https://github.com/MrXiaoM/FoldCraftLauncher
 将项目导入到 Android Studio 中，修改项目根目录下的『local.properties』
 在『local.properties』文件中增加以下键值对：
 
-* key-store-password
-* oauth-api-key
-* curse-api-key
+- key-store-password
+- oauth-api-key
+- curse-api-key
 
 找到『Build』 —> 『Generate Signed App Bundle / APK…』选项，并编译该项目即可
-

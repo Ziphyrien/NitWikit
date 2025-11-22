@@ -18,7 +18,6 @@ sidebar_position: 3
 ![](../_images/i4_2.png)
 ![](../_images/i4_3.png)
 
-
 3.点击此 [链接](https://updates.cdn-apple.com/2020/windows/001-39935-20200911-1A70AA56-F448-11EA-8CC0-99D41950005E/iCloudSetup.exe)下载iCloud电脑端并安装
 
 4.点击此 [链接](https://cdn.altstore.io/file/altstore/altinstaller.zip)下载AltServer
@@ -29,8 +28,7 @@ sidebar_position: 3
 
 7.打开iTunes，然后在设备上启用“通过Wi-Fi与此iPhone同步”
 ![](../_images/iTunes_1.png)
-![](../_images/iTunes_2.png)
-8.点击右下角任务栏中的 AltServer 图标。然后前往“Install AltStore”，并选择你的 iOS 设备。
+![](../_images/iTunes_2.png) 8.点击右下角任务栏中的 AltServer 图标。然后前往“Install AltStore”，并选择你的 iOS 设备。
 
 ![](../_images/Alt_1.png)
 
@@ -64,7 +62,7 @@ sidebar_position: 3
 
 ### 支持范围
 
-A8处理器的iPhone，iPad等在iOS/iPadOS 14.0 beta 2 ~ 15.8.4	可以安装
+A8处理器的iPhone，iPad等在iOS/iPadOS 14.0 beta 2 ~ 15.8.4 可以安装
 
 A9-A11处理器的iPhone，iPad等在iOS/iPadOS 14.0 beta 2 ~ 17.0 除16.7.x（不包含RC）以外可以安装
 
@@ -72,7 +70,7 @@ A12-A17/M1-M2处理器的iPhone，iPad等在iOS/iPadOS 14.0 beta 2 ~ 17.0 除16.
 
 ### 安装 TrollStore
 
-#### 以下方法支持固件版本 14.0 至 15.1.1 的所有 iOS/iPadOS 设备、固件版本 15.2 至 16.6.1 的 A9(X) 
+#### 以下方法支持固件版本 14.0 至 15.1.1 的所有 iOS/iPadOS 设备、固件版本 15.2 至 16.6.1 的 A9(X)
 
 #### 以及更高版本设备以及版本 17.0 beta 1至 17.0 beta 4的 A10(X) 设备。
 
@@ -116,7 +114,7 @@ A12-A17/M1-M2处理器的iPhone，iPad等在iOS/iPadOS 14.0 beta 2 ~ 17.0 除16.
 
 16.打开Amethyst
 
-#### 以下方法支持iOS/iPadOS 15.0 至 15.5 beta 4 和 15.6 beta 1 至 15.6 beta 3  A11 及更早版本的设备
+#### 以下方法支持iOS/iPadOS 15.0 至 15.5 beta 4 和 15.6 beta 1 至 15.6 beta 3 A11 及更早版本的设备
 
 #### iOS/iPadOS 14.0 beta 2 至 15.6.1 和 16.0 beta 1 至 16.0 beta 3 A12 及更高版本的设备
 

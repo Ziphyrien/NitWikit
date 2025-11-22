@@ -74,4 +74,3 @@ https://mineplugin.org/Multiverse-Core#%E5%8D%8F%E7%AE%A1/OP/%E7%8E%A9%E5%AE%B6%
 ## 你能让每个插件设置在不同世界的启用禁用或分离配置文件吗？
 
 https://mineplugin.org/Multiverse-Core#%E4%BD%A0%E8%83%BD%E8%AE%A9%E6%AF%8F%E4%B8%AA%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE%E5%9C%A8%E4%B8%8D%E5%90%8C%E4%B8%96%E7%95%8C%E7%9A%84%E5%90%AF%E7%94%A8%E7%A6%81%E7%94%A8%E6%88%96%E5%88%86%E7%A6%BB%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%90%97%EF%BC%9F
-

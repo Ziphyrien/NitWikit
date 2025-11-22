@@ -238,7 +238,7 @@ chcp 65001
 java -Xms2G -Xmx2G -jar server.jar --nogui
 ```
 
-### Java 启动找不到 ***.jar
+### Java 启动找不到 \*\*\*.jar
 
 有些时候写好启动脚本启动后，报错`Error: Unable to access jarfile xxx.jar`，但是相同目录下明明有`xxx.jar`
 
@@ -256,7 +256,7 @@ java -Xms2G -Xmx2G -jar server.jar --nogui
 
 ### Invalid initial heap size: -Xms
 
-:::note 
+:::note
 
 内存大小设置长这样
 
@@ -269,6 +269,7 @@ java -Xms2G -Xmx2G -jar server.jar --nogui
 ```shell
 -Xms 1024M -Xmx 2048M
 ```
+
 :::
 
 ### 新版 Forge 和 NeoForge 启动
@@ -290,7 +291,7 @@ pause
 
 > Forge 需要一组配置好的 JVM 和程序参数。
 > 向 user_JVM_args.txt 添加自定义 JVM 参数
-> 在%*或之前的下一行将自定义程序参数（如 nogui）添加到此文件中
+> 在%\*或之前的下一行将自定义程序参数（如 nogui）添加到此文件中
 > 直接将它们传递给此脚本
 
 此时你会发现有一个 `user_JVM_args.txt` 在你的根目录下，打开他，将原来的
@@ -298,6 +299,7 @@ pause
 ```shell
 java -Xms2G -Xmx2G -jar server.jar --nogui
 ```
+
 中 `java` 和 `-jar` 之间的内容填写到该文件中。
 
 如果你想使用 `nogui`，就像注释里面说的，在 `@libraries/net/minecraftforge/forge/1.18.2-40.1.60/win_args.txt` 和 `%*` 之间写入 `nogui`

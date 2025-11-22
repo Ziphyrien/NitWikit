@@ -48,12 +48,12 @@ watch -x 2 net.minecraft.server.network.PlayerConnection * '{params[0],@java.lan
 
 解释：
 
-* `-x 2` 表示遍历深度，可以调整来打印具体的参数和结果内容
-* `net.minecraft.server.network.PlayerConnection` 是 1.17+ 玩家连接的主类
-* 单引号括起来的是[OGNL 表达式](https://commons.apache.org/dormant/commons-ognl/language-guide.html)，是 Arthas 的核心
-* `params[0]` 会让 Arthas 输出调用的第一个参数
-* `@java.lang.Thread@currentThread().getStackTrace()` 输出调用堆栈
-* 后面那一大坨是输出过滤，只关注参数长度为 2，并且发包为`net.minecraft.network.protocol.game.ClientboundSystemChatPacket`或
+- `-x 2` 表示遍历深度，可以调整来打印具体的参数和结果内容
+- `net.minecraft.server.network.PlayerConnection` 是 1.17+ 玩家连接的主类
+- 单引号括起来的是[OGNL 表达式](https://commons.apache.org/dormant/commons-ognl/language-guide.html)，是 Arthas 的核心
+- `params[0]` 会让 Arthas 输出调用的第一个参数
+- `@java.lang.Thread@currentThread().getStackTrace()` 输出调用堆栈
+- 后面那一大坨是输出过滤，只关注参数长度为 2，并且发包为`net.minecraft.network.protocol.game.ClientboundSystemChatPacket`或
   `net.minecraft.network.protocol.game.ClientboundPlayerChatPacket`
 
 :::warning
@@ -76,7 +76,7 @@ sc -d com.google.gson.Gson
 watch -x 2 org.apache.logging.log4j.core.config.LoggerConfig processLogEvent '{params[0].message.message,@java.lang.Thread@currentThread().getStackTrace()}' 'params[0].message.message.contains("日志中的一部分内容")'
 ```
 
-* `org.apache.logging.log4j.core.config.LoggerConfig` 是 Minecraft 的日志核心库
-* `processLogEvent` 是日志记录事件方法
-* `params[0].message.message，@java.lang.Thread@currentThread().getStackTrace()` 打印出输出的日志和调用堆栈
-* `params[0].message.message.contains("日志中的一部分内容")` 检查输出消息中是否有想要的
+- `org.apache.logging.log4j.core.config.LoggerConfig` 是 Minecraft 的日志核心库
+- `processLogEvent` 是日志记录事件方法
+- `params[0].message.message，@java.lang.Thread@currentThread().getStackTrace()` 打印出输出的日志和调用堆栈
+- `params[0].message.message.contains("日志中的一部分内容")` 检查输出消息中是否有想要的

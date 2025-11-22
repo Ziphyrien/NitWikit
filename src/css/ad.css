@@ -49,12 +49,12 @@
         padding: 0.35rem 0.5rem;
         margin: 0 0.4rem !important;
     }
-    
+
     .extern-item:hover {
         background-color: rgba(37, 160, 110, 0.15);
         border-color: var(--primary-dark);
     }
-    
+
     .extern-item::before {
         content: "🔹";
         margin-right: 0.3em;
@@ -64,25 +64,25 @@
 }
 
 /* 暗色模式 */
-html[data-theme='dark'] .extern-item {
+html[data-theme="dark"] .extern-item {
     background-color: transparent;
     color: var(--primary);
     border: none;
 }
 
-html[data-theme='dark'] .extern-item:hover {
+html[data-theme="dark"] .extern-item:hover {
     background-color: transparent;
     color: var(--primary-light);
 }
 
 /* 暗色模式 PC端 */
 @media screen and (min-width: 996px) {
-    html[data-theme='dark'] .extern-item {
+    html[data-theme="dark"] .extern-item {
         background-color: rgba(54, 192, 133, 0.1);
         border: 1px solid var(--primary);
     }
-    
-    html[data-theme='dark'] .extern-item:hover {
+
+    html[data-theme="dark"] .extern-item:hover {
         background-color: rgba(54, 192, 133, 0.18);
         border-color: var(--primary-light);
     }

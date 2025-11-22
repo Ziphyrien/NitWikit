@@ -27,6 +27,7 @@ sidebar_position: 2
 Iris 是一个功能齐全的地形生成器插件，适用于 Paper 服务端（不支持 Spigot）。这个插件可以让你的 Minecraft 世界变得更加丰富多彩，支持 1.17 以上版本。
 
 插件的主要特点：
+
 - 预设世界已有 100 多个生物群落，2000 多个结构和丰富的细节
 - 支持多核心并行生成世界，生成速度快
 - 完全可自定义的"项目"系统，可以制作属于自己的生物群落、区域、结构和装饰
@@ -38,6 +39,7 @@ Iris 是一个功能齐全的地形生成器插件，适用于 Paper 服务端�
 ## 地形特性
 
 Iris 的地形生成系统非常强大：
+
 - 无限制的 3D 生物群系
 - 丰富的洞穴生物群系
 - 特色的海岸、海洋和陆地生物群系
@@ -87,24 +89,24 @@ Iris 的地形生成系统非常强大：
 
 # 性能设置
 performance:
-  # 区块生成线程数
-  threads: 4
-  # 预加载区块半径
-  preload-radius: 3
-  
+    # 区块生成线程数
+    threads: 4
+    # 预加载区块半径
+    preload-radius: 3
+
 # 世界设置
 worlds:
-  # 默认维度包
-  default-pack: "overworld"
-  # 是否在服务器启动时加载所有世界
-  load-all-worlds: true
-  
+    # 默认维度包
+    default-pack: "overworld"
+    # 是否在服务器启动时加载所有世界
+    load-all-worlds: true
+
 # 兼容性设置
 compatibility:
-  # 是否启用 MythicMobs 支持
-  mythicmobs: true
-  # 是否启用 PlaceholderAPI 支持
-  placeholderapi: true
+    # 是否启用 MythicMobs 支持
+    mythicmobs: true
+    # 是否启用 PlaceholderAPI 支持
+    placeholderapi: true
 ```
 
 </details>
@@ -116,28 +118,28 @@ compatibility:
 
 ```yaml
 permissions:
-  iris.*:
-    description: "允许使用所有 Iris 命令"
-    children:
-      iris.command.*: true
-  iris.command.create:
-    description: "允许创建新世界"
-    default: op
-  iris.command.tp:
-    description: "允许传送到 Iris 世界"
-    default: op
-  iris.command.list:
-    description: "允许查看维度包列表"
-    default: op
-  iris.command.worlds:
-    description: "允许查看世界列表"
-    default: op
-  iris.command.pack:
-    description: "允许管理维度包"
-    default: op
-  iris.command.studio:
-    description: "允许使用 Iris Studio"
-    default: op
+    iris.*:
+        description: "允许使用所有 Iris 命令"
+        children:
+            iris.command.*: true
+    iris.command.create:
+        description: "允许创建新世界"
+        default: op
+    iris.command.tp:
+        description: "允许传送到 Iris 世界"
+        default: op
+    iris.command.list:
+        description: "允许查看维度包列表"
+        default: op
+    iris.command.worlds:
+        description: "允许查看世界列表"
+        default: op
+    iris.command.pack:
+        description: "允许管理维度包"
+        default: op
+    iris.command.studio:
+        description: "允许使用 Iris Studio"
+        default: op
 ```
 
 </details>
@@ -145,6 +147,7 @@ permissions:
 ## 维度包开发
 
 Iris 支持自定义维度包开发，你可以创建自己的：
+
 - 生物群系
 - 地形生成器
 - 结构和建筑

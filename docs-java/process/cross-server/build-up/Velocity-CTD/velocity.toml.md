@@ -339,6 +339,7 @@ log-forwarding-changes = true
 4. **性能影响**：可能会对性能产生轻微影响
 
 **使用场景**：
+
 - 同时运行 1.12 和 1.13+ 版本的服务器
 - 部分服务器需要特殊的安全配置
 - 逐步迁移转发模式时的过渡期
@@ -576,23 +577,25 @@ read-timeout = 45000
 ### 性能优化建议
 
 1. **禁用不必要的功能**：
-   ```toml
-   disable-forge-inbound-handshake = true  # 如果不使用 Forge
-   disable-unsigned-message-kick = true    # 提高兼容性
-   ```
+
+    ```toml
+    disable-forge-inbound-handshake = true  # 如果不使用 Forge
+    disable-unsigned-message-kick = true    # 提高兼容性
+    ```
 
 2. **调整连接参数**：
-   ```toml
-   connection-timeout = 3000
-   read-timeout = 30000
-   login-ratelimit = 1000
-   ```
+
+    ```toml
+    connection-timeout = 3000
+    read-timeout = 30000
+    login-ratelimit = 1000
+    ```
 
 3. **优化压缩设置**：
-   ```toml
-   compression-threshold = 256
-   compression-level = 6
-   ```
+    ```toml
+    compression-threshold = 256
+    compression-level = 6
+    ```
 
 ## 重要配置注意事项
 
@@ -632,6 +635,7 @@ player-info-forwarding-mode = "modern"  # 最安全的转发模式
 **错误现象**：玩家无法连接到子服务器，出现转发相关错误
 
 **解决方案**：
+
 - 检查代理的 `player-info-forwarding-mode` 设置
 - 确保子服务器正确配置了对应的转发模式
 - 检查 `forwarding.secret` 文件是否存在且内容正确
@@ -641,6 +645,7 @@ player-info-forwarding-mode = "modern"  # 最安全的转发模式
 **错误现象**：代理启动时 Redis 连接失败
 
 **解决方案**：
+
 ```toml
 [redis]
 enabled = false  # 如果不需要 Redis，直接禁用
@@ -655,6 +660,7 @@ password = "正确的密码"
 **错误现象**：队列不工作或玩家卡在队列中
 
 **解决方案**：
+
 ```toml
 [queue]
 enabled = true
@@ -667,6 +673,7 @@ update-interval = 1000  # 不要设置太小
 **错误现象**：代理服务器延迟高或卡顿
 
 **解决方案**：
+
 ```toml
 [advanced]
 # 禁用不必要的功能

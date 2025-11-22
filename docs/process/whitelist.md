@@ -61,25 +61,25 @@ allow-list=on
 <Tabs queryString="command">
 <TabItem value="java" label="Java 服务器">
 
-* `/whitelist add`  将玩家名添加到白名单。该玩家不需要在线。
-* `/whitelist list` — 列出白名单中的玩家名。
-* `/whitelist off` — 在此服务器上禁用白名单验证。
-* `/whitelist on` — 在此服务器上启用白名单验证。
-* `/whitelist reload` —
+- `/whitelist add` 将玩家名添加到白名单。该玩家不需要在线。
+- `/whitelist list` — 列出白名单中的玩家名。
+- `/whitelist off` — 在此服务器上禁用白名单验证。
+- `/whitelist on` — 在此服务器上启用白名单验证。
+- `/whitelist reload` —
   从硬盘中重新读取 `white-list.txt`（1.7.5 及以前）或 `whitelist.json`（1.7.6 及以后）中的白名单列表（当 `white-list.txt` 或 w
   `whitelist.json` 在 Minecraft 外被修改时使用）。
-* `/whitelist remove` — 将玩家名从白名单中移除。该玩家不需要在线。
+- `/whitelist remove` — 将玩家名从白名单中移除。该玩家不需要在线。
 
 </TabItem>
 <TabItem value="bedrock" label="基岩版服务器">
 
-* `/allowlist add`  将玩家名添加到白名单。该玩家不需要在线。
-* `/allowlist list` — 列出白名单中的玩家名。
-* `/allowlist off` — 在此服务器上禁用白名单验证。
-* `/allowlist on` — 在此服务器上启用白名单验证。
-* `/allowlist reload` —
+- `/allowlist add` 将玩家名添加到白名单。该玩家不需要在线。
+- `/allowlist list` — 列出白名单中的玩家名。
+- `/allowlist off` — 在此服务器上禁用白名单验证。
+- `/allowlist on` — 在此服务器上启用白名单验证。
+- `/allowlist reload` —
   从硬盘中 `allowlist.json` 中的白名单列表（当 `allowlist.json` 在 Minecraft 外被修改时使用）。
-* `/allowlist remove` — 将玩家名从白名单中移除。该玩家不需要在线。
+- `/allowlist remove` — 将玩家名从白名单中移除。该玩家不需要在线。
 
 </TabItem>
 </Tabs>

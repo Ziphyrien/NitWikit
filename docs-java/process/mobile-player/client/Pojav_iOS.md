@@ -4,12 +4,13 @@ sidebar_position: 2
 ---
 
 # 在 iOS 上安装 PojavLauncher
+
 :::warning
 
- PojavLauncher已于2025年5月17日宣布停更
+PojavLauncher已于2025年5月17日宣布停更
 
- 建议使用Amethyst或者FCL替代PojavLauncher
- 
+建议使用Amethyst或者FCL替代PojavLauncher
+
 :::
 
 免越狱安装 PojavLauncher_iOS
@@ -122,9 +123,7 @@ sidebar_position: 2
 
 现在，你需要从 [此链接](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/actions) 下载 PojavLauncher 的 ipa 安装包。
 
-下载的时候有**两个注意事项**：
-1.你需要一个 GitHub 账号，不然你没法在 Actions 里面下载东西。
-2.你使用的是 TrollStore 方案，那么就下载 `net.kdt.pojavlauncher-ios-trollstore.tipa`，~~别告诉我你用的是 TVOS~~。
+下载的时候有**两个注意事项**：1.你需要一个 GitHub 账号，不然你没法在 Actions 里面下载东西。2.你使用的是 TrollStore 方案，那么就下载 `net.kdt.pojavlauncher-ios-trollstore.tipa`，~~别告诉我你用的是 TVOS~~。
 
 下载完 Pojav 安装包后，我们来到 TrollStore 里面。
 ![](../_images/troll-idid.PNG)

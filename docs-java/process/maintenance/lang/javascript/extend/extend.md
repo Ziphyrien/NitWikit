@@ -11,8 +11,8 @@ sidebar_position: 2
 
 ## 参考
 
-* [Nashorn 文档](https://docs.oracle.com/en/java/javase/14/scripting/index.html)
-* [GraalJS 文档](https://github.com/oracle/graaljs/tree/master/docs)
-* [Nashorn 扩展语法文档](https://wiki.openjdk.org/display/Nashorn/Nashorn+extensions)
-* [W3School](https://www.w3school.com.cn/js/index.asp)
-* [Java 8 Nashorn 教程](https://geekdaxue.co/read/apachecn@modern-java-zh/ch3)
+- [Nashorn 文档](https://docs.oracle.com/en/java/javase/14/scripting/index.html)
+- [GraalJS 文档](https://github.com/oracle/graaljs/tree/master/docs)
+- [Nashorn 扩展语法文档](https://wiki.openjdk.org/display/Nashorn/Nashorn+extensions)
+- [W3School](https://www.w3school.com.cn/js/index.asp)
+- [Java 8 Nashorn 教程](https://geekdaxue.co/read/apachecn@modern-java-zh/ch3)

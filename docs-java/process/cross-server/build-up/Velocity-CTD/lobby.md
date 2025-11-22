@@ -79,6 +79,7 @@ hub = ["lobby", "l", "spawn"]  # 设置命令别名
 ```
 
 权限配置：
+
 ```yaml
 # 允许使用 hub 命令
 velocity.command.hub: true
@@ -283,16 +284,19 @@ motd = "<red>维护中 - 预计 30 分钟后恢复"
 ### 常见问题
 
 #### 问题：玩家无法连接到大厅
+
 - 检查大厅服务器是否正常运行
 - 验证 `try` 配置是否正确
 - 查看代理服务器日志
 
 #### 问题：Hub 命令不工作
+
 - 确认命令已启用：`commands.hub = true`
 - 检查玩家权限：`velocity.command.hub`
 - 验证回退服务器配置
 
 #### 问题：负载不均衡
+
 - 检查 `selection-mode` 设置
 - 确认所有大厅服务器都在运行
 - 查看 `dynamic-fallbacks` 配置
@@ -300,6 +304,7 @@ motd = "<red>维护中 - 预计 30 分钟后恢复"
 ### 调试技巧
 
 1. **启用详细日志**：
+
 ```toml
 [advanced]
 log-player-connections = true

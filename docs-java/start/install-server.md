@@ -75,9 +75,9 @@ import TabItem from '@theme/TabItem';
 
 接着打开 cmd，不会请查看[开启 cmd](launch-server.md#笨蛋脚本)，输入以下命令
 
-````shell
+```shell
 java -jar <你下载的安装器的文件名> --installServer
-````
+```
 
 然后静待一会，直到控制台输出 `The server installed successfully` 就完成了！此时你应该会看到当前文件夹中出现了一个名为`forge-游戏版本号-forge版本号.jar`的文件，**这就是你此后开服时需要执行的可执行文件**。
 

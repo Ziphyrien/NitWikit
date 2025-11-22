@@ -54,14 +54,14 @@ sidebar_position: 4
 
 例如：
 
-- give 给予物品      %checkitem_give_mat:diamond%    // 给予玩家一个钻石
-- remove 收取物品    %checkitem_remove_mat:diamond%  // 收取玩家背包中所有的钻石
-- amount 查看数量    %checkitem_amount_mat:diamond%  // 查看玩家背包中的钻石数量
-- getinfo 物品信息   下面会讲到
+- give 给予物品 %checkitem_give_mat:diamond% // 给予玩家一个钻石
+- remove 收取物品 %checkitem_remove_mat:diamond% // 收取玩家背包中所有的钻石
+- amount 查看数量 %checkitem_amount_mat:diamond% // 查看玩家背包中的钻石数量
+- getinfo 物品信息 下面会讲到
 
 你应该注意到了 `mat:diamond` ，因为我写了 diamond 所以这些变量的功能是针对钻石的
 
- > mat 是 material 的缩写
+> mat 是 material 的缩写
 
 像 `mat` 被称为 **修饰符 (modifier)**
 
@@ -89,17 +89,17 @@ sidebar_position: 4
 
 可用的修饰符有：
 
-- namecontains      // 名字中包含
+- namecontains // 名字中包含
 - namestartswith
 - nameequals
-- mat               // 物品材质
-- amt               // 物品数量
-- data              // 物品的 data
-- custommodeldata   // 物品的 CMD 值
-- lorecontains      // lore 中包含
+- mat // 物品材质
+- amt // 物品数量
+- data // 物品的 data
+- custommodeldata // 物品的 CMD 值
+- lorecontains // lore 中包含
 - loreequals
 - matcontains
-- enchantments      // 附魔
+- enchantments // 附魔
 - enchanted
 - potiontype
 - potionextended
@@ -107,7 +107,7 @@ sidebar_position: 4
 - strict
 - inhand
 - inslot
-- nbtstrings        // nbt
+- nbtstrings // nbt
 - nbtints
 
 ### getinfo
@@ -173,9 +173,9 @@ sidebar_position: 4
 
 ```yaml title="plugins\PlaceholderAPI\config.yml"
 expansions:
-  checkitem:
-    give_enabled: false
-    remove_enabled: false
+    checkitem:
+        give_enabled: false
+        remove_enabled: false
 ```
 
 将两个`false`改为`true` 接着 `/papi reload`

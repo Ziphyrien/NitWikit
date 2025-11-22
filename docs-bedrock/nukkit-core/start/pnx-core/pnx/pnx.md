@@ -29,4 +29,5 @@ Nukkit 生态丰富多彩，成百上千各种各样的插件供您选择，您�
 - 内置生物 AI，无需安装 MobPlugin（开发中，未完善）。
 
 ## 链接
+
 - [Github 链接](https://github.com/PowerNukkitX/PowerNukkitX)

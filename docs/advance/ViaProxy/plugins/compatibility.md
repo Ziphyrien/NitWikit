@@ -25,7 +25,6 @@ ViaProxyBeta2Release 实现了 [Beta2Release](https://github.com/DirtPowered/Bet
 
 :::
 
-
 ### 安装配置
 
 ```toml
@@ -50,7 +49,6 @@ locale = "en_US"                 # 客户端翻译语言 (en_US, de_DE 等)
 world-seed = "-1849830396072973239"  # Beta 1.7.3 世界生成种子
 ```
 
-
 ## BungeeViaProxy {#bungeeviaproxy}
 
 :::info
@@ -66,6 +64,7 @@ BungeeViaProxy 是一个 BungeeCord 插件，解决 ViaProxy 与 BungeeCord 的�
 ### 背景说明
 
 **为什么需要这个插件？**
+
 - ViaBungee 在 Minecraft 1.20.2 中停止支持
 - 要继续在最新版本中使用 BungeeCord，需要 ViaProxy
 - ViaProxy 与 BungeeCord 结合使用时存在主机名转发和重复服务器错误等问题
@@ -76,6 +75,7 @@ BungeeViaProxy 通过确保正确的主机名转发和避免重复服务器错�
 ### 适用场景
 
 适合以下情况的服务器管理员：
+
 - 使用 BungeeCord 管理多个不同版本的后端服务器
 - 需要支持 Minecraft 1.20.2 及更高版本
 - 希望避免在每个后端服务器上维护 ViaVersion 插件的复杂性
@@ -101,63 +101,66 @@ BungeeViaProxy 通过确保正确的主机名转发和避免重复服务器错�
 ### 功能特性
 
 1. **正确的主机名转发**
-   - 当 ViaProxy 启用 `wildcard-domain-handling: PUBLIC` 时，确保正确转发包含 `.viaproxy.` 的地址
-   - 解决服务器路由问题
+    - 当 ViaProxy 启用 `wildcard-domain-handling: PUBLIC` 时，确保正确转发包含 `.viaproxy.` 的地址
+    - 解决服务器路由问题
 
 2. **避免重复服务器错误**
-   - 防止 BungeeCord 将不同主机名但相同 IP 的服务器视为相同
-   - 使用未解析的 `InetSocketAddress` 对象确保唯一识别
+    - 防止 BungeeCord 将不同主机名但相同 IP 的服务器视为相同
+    - 使用未解析的 `InetSocketAddress` 对象确保唯一识别
 
 ### BungeeViaProxy 安装配置
 
 1. **下载安装**
-   ```bash
-   # 下载最新版本并放入 BungeeCord plugins 目录
-   wget -P plugins/ https://github.com/ViaVersionAddons/BungeeViaProxy/releases/latest/download/BungeeViaProxy.jar
-   ```
+
+    ```bash
+    # 下载最新版本并放入 BungeeCord plugins 目录
+    wget -P plugins/ https://github.com/ViaVersionAddons/BungeeViaProxy/releases/latest/download/BungeeViaProxy.jar
+    ```
 
 2. **重启 BungeeCord 服务器**
-   ```bash
-   # 无需额外配置，插件会自动处理 .f2.viaproxy. 地址
-   ```
+    ```bash
+    # 无需额外配置，插件会自动处理 .f2.viaproxy. 地址
+    ```
 
 ### 配置示例
 
 假设以下服务器设置：
 
-| 服务器 | IP:端口 | Minecraft 版本 |
-|--------|---------|----------------|
-| BungeeCord | 127.0.0.1:25565 | N/A |
-| ViaProxy | 127.0.0.1:25566 | N/A |
-| 后端服务器 1 | 127.0.0.1:3001 | 1.20.4 |
-| 后端服务器 2 | 127.0.0.1:3002 | 1.16.5 |
-| 后端服务器 3 | 127.0.0.1:3003 | 1.21 |
+| 服务器       | IP:端口         | Minecraft 版本 |
+| ------------ | --------------- | -------------- |
+| BungeeCord   | 127.0.0.1:25565 | N/A            |
+| ViaProxy     | 127.0.0.1:25566 | N/A            |
+| 后端服务器 1 | 127.0.0.1:3001  | 1.20.4         |
+| 后端服务器 2 | 127.0.0.1:3002  | 1.16.5         |
+| 后端服务器 3 | 127.0.0.1:3003  | 1.21           |
 
 #### BungeeCord 配置 (config.yml)
+
 ```yaml
 online_mode: true
 servers:
-  server1:
-    # ViaProxy 地址格式: address.<后端IP>.port.<后端端口>.version.<版本>.f2.viaproxy.<ViaProxy IP>.nip.io:<ViaProxy端口>
-    address: address.127.0.0.1.port.3001.version.1.20.4.f2.viaproxy.127.0.0.1.nip.io:25566
-    motd: '&1示例服务器 1'
-    restricted: false
-  server2:
-    address: address.127.0.0.1.port.3002.version.1.16.5.f2.viaproxy.127.0.0.1.nip.io:25566
-    motd: '&1示例服务器 2'
-    restricted: false
-  server3:
-    # 版本可以省略（ViaProxy 会自动检测）
-    address: address.127.0.0.1.port.3003.f2.viaproxy.127.0.0.1.nip.io:25566
-    motd: '&1示例服务器 3（版本自动检测）'
-    restricted: false
+    server1:
+        # ViaProxy 地址格式: address.<后端IP>.port.<后端端口>.version.<版本>.f2.viaproxy.<ViaProxy IP>.nip.io:<ViaProxy端口>
+        address: address.127.0.0.1.port.3001.version.1.20.4.f2.viaproxy.127.0.0.1.nip.io:25566
+        motd: "&1示例服务器 1"
+        restricted: false
+    server2:
+        address: address.127.0.0.1.port.3002.version.1.16.5.f2.viaproxy.127.0.0.1.nip.io:25566
+        motd: "&1示例服务器 2"
+        restricted: false
+    server3:
+        # 版本可以省略（ViaProxy 会自动检测）
+        address: address.127.0.0.1.port.3003.f2.viaproxy.127.0.0.1.nip.io:25566
+        motd: "&1示例服务器 3（版本自动检测）"
+        restricted: false
 listeners:
-- host: 0.0.0.0:25565
+    - host: 0.0.0.0:25565
 prevent_proxy_connections: false
 ip_forward: true
 ```
 
 #### ViaProxy 配置 (config.yml)
+
 ```yaml
 # ViaProxy 监听地址
 bind-address: 0.0.0.0:25566
@@ -178,15 +181,17 @@ wildcard-domain-handling: PUBLIC
 #### 后端服务器配置
 
 - server.properties
+
 ```properties
 server-port=3001
 online-mode=false
 ```
 
 - spigot.yml
+
 ```yaml
 settings:
-  bungeecord: true
+    bungeecord: true
 ```
 
 :::tip 重要提示
@@ -260,7 +265,6 @@ ViaSnapshot 支持 Minecraft 快照版本的协议转换，目前支持 15w31a �
 
 ViaProxyEaglerCraft 为 ViaProxy 添加 EagleCraft 支持，允许 EagleCraft 客户端通过 WebSocket 连接到 Java 版服务器。
 
-
 ### EaglerCraft 安装配置
 
 #### 配置文件
@@ -289,11 +293,12 @@ eagler-server-mode: 0
 ### 使用方法
 
 **1.5.2 支持配置**
-   如果需要支持 EagleCraft 1.5.2：
-   ```yaml
-   # ViaProxy 配置
-   legacy-passthrough: true
-   ```
+如果需要支持 EagleCraft 1.5.2：
+
+```yaml
+# ViaProxy 配置
+legacy-passthrough: true
+```
 
 :::warning 重要提醒
 

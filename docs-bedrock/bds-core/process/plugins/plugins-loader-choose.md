@@ -15,42 +15,42 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="plugins-loader">
 <TabItem value="levilamina" label="LeviLamina">
 
-| 插件加载器 | 别名：LLL，LLv3 |
-| --- | --- |
-| 名称 | [LeviLamina](https://levilamina.liteldev.com/zh) |
-| 作者 | [LiteLDev](https://github.com/LiteLDev) |
-| 介绍 | 轻量级、模块化和多功能的 Minecraft Bedrock Server BDS 插件加载器，曾被称为 LiteLoaderBDS |
-| 推荐与否 | 非常推荐 |
-| 理由 | 插件生态不错，跟 [LiteLoader](#寿终正寝の加载器) 时代一样巅峰 |
-| 下载 | [GitHub 下载](https://github.com/LiteLDev/LeviLamina/releases) |
-| 支持的 MC 版本 | 1.20.61-1.21.3(目前保持更新) |
+| 插件加载器     | 别名：LLL，LLv3                                                                          |
+| -------------- | ---------------------------------------------------------------------------------------- |
+| 名称           | [LeviLamina](https://levilamina.liteldev.com/zh)                                         |
+| 作者           | [LiteLDev](https://github.com/LiteLDev)                                                  |
+| 介绍           | 轻量级、模块化和多功能的 Minecraft Bedrock Server BDS 插件加载器，曾被称为 LiteLoaderBDS |
+| 推荐与否       | 非常推荐                                                                                 |
+| 理由           | 插件生态不错，跟 [LiteLoader](#寿终正寝の加载器) 时代一样巅峰                            |
+| 下载           | [GitHub 下载](https://github.com/LiteLDev/LeviLamina/releases)                           |
+| 支持的 MC 版本 | 1.20.61-1.21.3(目前保持更新)                                                             |
 
 </TabItem>
 <TabItem value="endstone" label="EndStone">
 
-| 插件加载器 | |
-| --- | --- |
-| 名称 | [EndStone](https://github.com/EndstoneMC/endstone) |
-| 作者 | [EndStoneMC](https://github.com/EndstoneMC) |
-| 介绍 | 提供类似 Bukkit 插件开发者的友好 API，简化了低层系统 API 和挂钩的处理。可以使用 C++ 或 Python 编写插件 |
-| 推荐与否 | 比较慢推荐 |
-| 理由 | 虽然几乎没有插件生态，仅社区有 **极少** 的插件，但最近形势较好，社区内有参与开发的声音，后续可能会追平 LeviLamina |
-| 下载 | [Github 下载](https://github.com/EndstoneMC/endstone/releases) |
-| 支持的 MC 版本 | 1.20.71 - 1.21.2(目前保持更新) |
+| 插件加载器     |                                                                                                                   |
+| -------------- | ----------------------------------------------------------------------------------------------------------------- |
+| 名称           | [EndStone](https://github.com/EndstoneMC/endstone)                                                                |
+| 作者           | [EndStoneMC](https://github.com/EndstoneMC)                                                                       |
+| 介绍           | 提供类似 Bukkit 插件开发者的友好 API，简化了低层系统 API 和挂钩的处理。可以使用 C++ 或 Python 编写插件            |
+| 推荐与否       | 比较慢推荐                                                                                                        |
+| 理由           | 虽然几乎没有插件生态，仅社区有 **极少** 的插件，但最近形势较好，社区内有参与开发的声音，后续可能会追平 LeviLamina |
+| 下载           | [Github 下载](https://github.com/EndstoneMC/endstone/releases)                                                    |
+| 支持的 MC 版本 | 1.20.71 - 1.21.2(目前保持更新)                                                                                    |
 
 </TabItem>
 <TabItem value="bdsx" label="BDSX">
 
-| 插件加载器 | 别名：BDSX |
-| --- | --- |
-| 名称 | [bdsx](https://github.com/bdsx/bdsx) |
-| 作者 | [bdsx](https://github.com/bdsx) |
-| 介绍 | BDSX 是一个支持 node.js 的 Minecraft 基岩版专用服务器（BDS）修改版本。基于官方 BDS 实现，包含了原版 Minecraft 的所有特性，并支持 Hook 函数与网络数据包以添加或修改服务器的功能与表现。 |
-| 推荐与否 | 较为推荐 |
-| 理由 | 国内插件虽然少，但还是有很多的人去使用它，作者也从 19 年一直维护到现在 |
-| 下载 | [克隆源代码下载](https://github.com/bdsx/bdsx) |
-| 插件下载 | [npm 源](https://www.npmjs.com/search?q=%40bdsx%2F)<br />[Github](https://github.com/topics/bdsx-plugins) |
-| 支持的 MC 版本 | 1.12 - 最新（目前保持更新） |
+| 插件加载器     | 别名：BDSX                                                                                                                                                                             |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 名称           | [bdsx](https://github.com/bdsx/bdsx)                                                                                                                                                   |
+| 作者           | [bdsx](https://github.com/bdsx)                                                                                                                                                        |
+| 介绍           | BDSX 是一个支持 node.js 的 Minecraft 基岩版专用服务器（BDS）修改版本。基于官方 BDS 实现，包含了原版 Minecraft 的所有特性，并支持 Hook 函数与网络数据包以添加或修改服务器的功能与表现。 |
+| 推荐与否       | 较为推荐                                                                                                                                                                               |
+| 理由           | 国内插件虽然少，但还是有很多的人去使用它，作者也从 19 年一直维护到现在                                                                                                                 |
+| 下载           | [克隆源代码下载](https://github.com/bdsx/bdsx)                                                                                                                                         |
+| 插件下载       | [npm 源](https://www.npmjs.com/search?q=%40bdsx%2F)<br />[Github](https://github.com/topics/bdsx-plugins)                                                                              |
+| 支持的 MC 版本 | 1.12 - 最新（目前保持更新）                                                                                                                                                            |
 
 </TabItem>
 </Tabs>
@@ -64,15 +64,15 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="plugins-loader">
 <TabItem value="bds-script-api" label="BDS Script API(官方)">
 
-| 插件加载器 | 别名：SAPI |
-| --- | --- |
-| 名称 | [原生 BDS Script API](https://wiki.mcbe-dev.net/-/6424) |
-| 作者 | [Mojang Studio](https://github.com/Mojang) |
-| 介绍 | 随着 BDS 服务端的发展，官方已推出并逐渐完善基于 Javascript 语言的脚本 API，受到官方的支持与维护，可帮助创作者完成复杂的逻辑 <br />(其加载器直接内置于 BDS 核心包内，不用腐竹手动下载，这里仅提供 BDS 核心下载方式) |
-| 推荐与否 | 非常不推荐 |
-| 理由 | 几乎没有插件生态，仅社区有 **极少** 的插件 |
-| 下载 | [官网下载](https://www.minecraft.net/zh-hans/download/server/bedrock)<br />[原子云下载](https://res.nullatom.com/Minecraft/Server/BDS) |
-| 支持的 MC 版本 | 1.16.210 - 最新 (稳定更新) |
+| 插件加载器     | 别名：SAPI                                                                                                                                                                                                         |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 名称           | [原生 BDS Script API](https://wiki.mcbe-dev.net/-/6424)                                                                                                                                                            |
+| 作者           | [Mojang Studio](https://github.com/Mojang)                                                                                                                                                                         |
+| 介绍           | 随着 BDS 服务端的发展，官方已推出并逐渐完善基于 Javascript 语言的脚本 API，受到官方的支持与维护，可帮助创作者完成复杂的逻辑 <br />(其加载器直接内置于 BDS 核心包内，不用腐竹手动下载，这里仅提供 BDS 核心下载方式) |
+| 推荐与否       | 非常不推荐                                                                                                                                                                                                         |
+| 理由           | 几乎没有插件生态，仅社区有 **极少** 的插件                                                                                                                                                                         |
+| 下载           | [官网下载](https://www.minecraft.net/zh-hans/download/server/bedrock)<br />[原子云下载](https://res.nullatom.com/Minecraft/Server/BDS)                                                                             |
+| 支持的 MC 版本 | 1.16.210 - 最新 (稳定更新)                                                                                                                                                                                         |
 
 </TabItem>
 </Tabs>
@@ -86,28 +86,28 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="plugins-loader">
 <TabItem value="liteloader" label="LiteLoader">
 
-| 插件加载器 | 别名：LL，LLv2([详情点我](#litexloader-合并至-liteloader2022 年 2 月 12 日)) |
-| --- | --- |
-| 名称 | [LiteLoaderBDS](https://github.com/LiteLDev/LiteLoaderBDSv2/) |
-| 作者 | [LiteLDev](https://github.com/LiteLDev) |
-| 介绍 | LiteLoaderBDSv2 是一款专为 BDS 编写的插件加载器，旨在弥补官方行为包开发接口的不足。LiteLoaderBDSv2 支持多种编程语言编写插件，并保证了插件开发与维护的便利性 |
-| 推荐与否 | 非常不推荐 |
-| 理由 | 插件生态无可厚非，没人会否定它的巅峰时代，可惜岁月不饶人啊...如果你服务器愿意在此版本区间便罢了，因为不好找插件了 ([详情点我](#liteloader-宣布停更 2023 年 10 月份)) |
-| 下载 | [GitHub 下载](https://github.com/LiteLDev/LeviLamina/releases) |
-| 支持的 MC 版本 | 1.16.210-1.20.31.01(已存档)[^Archived] |
+| 插件加载器     | 别名：LL，LLv2([详情点我](#litexloader-合并至-liteloader2022 年 2 月 12 日))                                                                                         |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 名称           | [LiteLoaderBDS](https://github.com/LiteLDev/LiteLoaderBDSv2/)                                                                                                        |
+| 作者           | [LiteLDev](https://github.com/LiteLDev)                                                                                                                              |
+| 介绍           | LiteLoaderBDSv2 是一款专为 BDS 编写的插件加载器，旨在弥补官方行为包开发接口的不足。LiteLoaderBDSv2 支持多种编程语言编写插件，并保证了插件开发与维护的便利性          |
+| 推荐与否       | 非常不推荐                                                                                                                                                           |
+| 理由           | 插件生态无可厚非，没人会否定它的巅峰时代，可惜岁月不饶人啊...如果你服务器愿意在此版本区间便罢了，因为不好找插件了 ([详情点我](#liteloader-宣布停更 2023 年 10 月份)) |
+| 下载           | [GitHub 下载](https://github.com/LiteLDev/LeviLamina/releases)                                                                                                       |
+| 支持的 MC 版本 | 1.16.210-1.20.31.01(已存档)[^Archived]                                                                                                                               |
 
 </TabItem>
 <TabItem value="litexloader" label="LiteXLoader">
 
-| 插件加载器 | 别名：LXL |
-| --- | --- |
-| 名称 | [LiteXLoader](https://www.minebbs.com/threads/litexloader-x-bds.7439/) |
-| 作者 | [LiteDev](https://github.com/LiteLDev) |
-| 介绍 | LiteXLoader 是一款专为 LiteLoader 编写的拓展类插件加载器，旨在弥补 LiteLoader 可开发语言的不足。LiteXLoader 支持多种编程语言编写插件，并保证了插件开发与维护的便利性，例如拓展支持 Node-Js、Python、Qucik-Js 的开发 |
-| 推荐与否 | 非常不推荐 |
-| 理由 | 后续合并到 LiteLoader 中。[详情点我](#litexloader-合并至-liteloader2022 年 2 月 12 日) |
-| 下载 | [Github 下载](https://github.com/EndstoneMC/endstone/releases) |
-| 支持的 MC 版本 | 1.20.71 - 1.21.2(已存档)[^Archived] |
+| 插件加载器     | 别名：LXL                                                                                                                                                                                                           |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 名称           | [LiteXLoader](https://www.minebbs.com/threads/litexloader-x-bds.7439/)                                                                                                                                              |
+| 作者           | [LiteDev](https://github.com/LiteLDev)                                                                                                                                                                              |
+| 介绍           | LiteXLoader 是一款专为 LiteLoader 编写的拓展类插件加载器，旨在弥补 LiteLoader 可开发语言的不足。LiteXLoader 支持多种编程语言编写插件，并保证了插件开发与维护的便利性，例如拓展支持 Node-Js、Python、Qucik-Js 的开发 |
+| 推荐与否       | 非常不推荐                                                                                                                                                                                                          |
+| 理由           | 后续合并到 LiteLoader 中。[详情点我](#litexloader-合并至-liteloader2022 年 2 月 12 日)                                                                                                                              |
+| 下载           | [Github 下载](https://github.com/EndstoneMC/endstone/releases)                                                                                                                                                      |
+| 支持的 MC 版本 | 1.20.71 - 1.21.2(已存档)[^Archived]                                                                                                                                                                                 |
 
 </TabItem>
 </Tabs>

@@ -25,7 +25,6 @@ sidebar_position: 5
 
 ![](_images/bluemap-demo.png)
 
-
 ## Dynmap
 
 :::info
@@ -39,7 +38,6 @@ sidebar_position: 5
 :::
 
 一款历史悠久的卫星地图 Mod，支持用户在浏览器上查看服务器内的地图、玩家信息和其它一些附属功能，例如出生点、当前时间、是否下雨等，支持 2D 俯视角视图和 3D 俯视角视图查看。
-
 
 ![](_images/dynmap-demo.png)
 
@@ -59,7 +57,6 @@ squaremap 是一款优化了资源的加载和显示的卫星地图 Mod，采用
 
 ![](_images/squaremap-demo.png)
 
-
 ## Overviewer
 
 :::info
@@ -73,6 +70,5 @@ squaremap 是一款优化了资源的加载和显示的卫星地图 Mod，采用
 :::
 
 Overviewer 是一款静态地图渲染工具，可以产出一个非实时更新的网页地图，仅支持 3D 俯视角视图查看。
-
 
 ![](_images/overviewer-demo.png)

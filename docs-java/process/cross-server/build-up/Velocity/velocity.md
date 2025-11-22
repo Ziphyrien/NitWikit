@@ -42,9 +42,9 @@ A：不支持，因为如果支持 BungeeCord 插件的话，那么很多 Veloci
 
 A: 推荐你使用 Java 17 以及以上版本的 Java，如 Java 21
 
-3. Q：为什么我的玩家连不进服务器？**
+3. Q：为什么我的玩家连不进服务器？\*\*
 
-A: *<font color="gray">这里是一些可能的原因</font>*
+A: _<font color="gray">这里是一些可能的原因</font>_
 
 首先，你需要检查：
 

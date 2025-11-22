@@ -25,37 +25,37 @@ Honeypot 是一款采用"蜜罐陷阱"机制的反作弊插件，通过诱导恶
 
 ```yaml
 plugin:
-  # 触发动作前允许破坏的蜜罐数量
-  blocks-broken-before-action-taken: 1
+    # 触发动作前允许破坏的蜜罐数量
+    blocks-broken-before-action-taken: 1
 
-  # 是否允许玩家实际破坏蜜罐方块
-  allow-player-destruction: false
+    # 是否允许玩家实际破坏蜜罐方块
+    allow-player-destruction: false
 
-  # 是否允许爆炸破坏蜜罐
-  allow-explode: false
+    # 是否允许爆炸破坏蜜罐
+    allow-explode: false
 
 # 容器交互设置
 container-actions:
-  enable-container-actions: true
-  use-inventory-click: false
-  only-trigger-on-withdrawal: true
+    enable-container-actions: true
+    use-inventory-click: false
+    only-trigger-on-withdrawal: true
 
 # Discord 通知
 discord:
-  enable: false
-  url: "https://discord.com/api/webhooks/..."
-  send-when: action  # action 或 onbreak
+    enable: false
+    url: "https://discord.com/api/webhooks/..."
+    send-when: action # action 或 onbreak
 
 # 过滤器（可选）
 filters:
-  blocks: false
-  inventories: false
+    blocks: false
+    inventories: false
 
 # 允许的方块类型（启用过滤时）
 allowed-blocks:
-  - DIAMOND_ORE
-  - EMERALD_ORE
-  - ANCIENT_DEBRIS
+    - DIAMOND_ORE
+    - EMERALD_ORE
+    - ANCIENT_DEBRIS
 ```
 
 ## 基础命令
@@ -98,36 +98,36 @@ honeypot.notify     # 接收蜜罐通知
 
 ```yaml
 honeypots:
-  # 警告动作
-  warn:
-    action-type: "command"
-    commands:
-      - "msg {player} &c警告：你触发了蜜罐陷阱！"
-      - "broadcast &e{player} 触发了蜜罐陷阱"
+    # 警告动作
+    warn:
+        action-type: "command"
+        commands:
+            - "msg {player} &c警告：你触发了蜜罐陷阱！"
+            - "broadcast &e{player} 触发了蜜罐陷阱"
 
-  # 监狱动作
-  jail:
-    action-type: "command"
-    commands:
-      - "jail {player} griefing 1h"
-      - "msg {player} &c你因破坏行为被监禁1小时"
+    # 监狱动作
+    jail:
+        action-type: "command"
+        commands:
+            - "jail {player} griefing 1h"
+            - "msg {player} &c你因破坏行为被监禁1小时"
 
-  # 临时封禁
-  tempban:
-    action-type: "command"
-    commands:
-      - "tempban {player} 24h 蜜罐陷阱触发"
+    # 临时封禁
+    tempban:
+        action-type: "command"
+        commands:
+            - "tempban {player} 24h 蜜罐陷阱触发"
 ```
 
 ### 可用变量
 
-| 变量                | 说明     |
-|-------------------|--------|
+| 变量              | 说明         |
+| ----------------- | ------------ |
 | `{player}`        | 触发玩家名称 |
-| `{world}`         | 世界名称   |
-| `{x}` `{y}` `{z}` | 坐标位置   |
-| `{block}`         | 方块类型   |
-| `{action}`        | 动作类型   |
+| `{world}`         | 世界名称     |
+| `{x}` `{y}` `{z}` | 坐标位置     |
+| `{block}`         | 方块类型     |
+| `{action}`        | 动作类型     |
 
 ## 使用策略
 
@@ -151,10 +151,10 @@ honeypots:
     - 设置警告或踢出动作
 
 2. **仓库保护**
-   ```bash
-   # 将箱子设为蜜罐
-   /honeypot create theft_warn
-   ```
+    ```bash
+    # 将箱子设为蜜罐
+    /honeypot create theft_warn
+    ```
 
 ### 分层防护
 

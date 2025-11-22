@@ -38,30 +38,30 @@ sidebar_label: 常见问题 1
 
 ```yaml
 worlds:
-  world:
-    ==: MVWorld
-    hidden: 'false'
-    alias: ''
-    # 省略部分内容
-  world_nether:
-    ==: MVWorld
-    hidden: 'false'
-    alias: ''
-    # 省略部分内容
-  world_the_end:
-    ==: MVWorld
-    hidden: 'false'
-    alias: ''
-    # 省略部分内容
+    world:
+        ==: MVWorld
+        hidden: "false"
+        alias: ""
+        # 省略部分内容
+    world_nether:
+        ==: MVWorld
+        hidden: "false"
+        alias: ""
+        # 省略部分内容
+    world_the_end:
+        ==: MVWorld
+        hidden: "false"
+        alias: ""
+        # 省略部分内容
 ```
 
 解释：
 
-- worlds        - 插件检索的 YAML 节点，不用管
-- world         - 主世界的默认本名 (可在 server.properties 修改)
-- world_nether  - 地狱的默认本名
+- worlds - 插件检索的 YAML 节点，不用管
+- world - 主世界的默认本名 (可在 server.properties 修改)
+- world_nether - 地狱的默认本名
 - world_the_end - 末地的默认本名
-- alias         - 这个世界的别名
+- alias - 这个世界的别名
 
 我们在 **alias: ''** 中 `''` 填入这个世界的别名
 
@@ -69,11 +69,11 @@ worlds:
 
 ```yaml
 worlds:
-  world:
-    ==: MVWorld
-    hidden: 'false'
-    alias: '主城'
-    # 省略部分内容
+    world:
+        ==: MVWorld
+        hidden: "false"
+        alias: "主城"
+        # 省略部分内容
 ```
 
 然后 `/mv reload`

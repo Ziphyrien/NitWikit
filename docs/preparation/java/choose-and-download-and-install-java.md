@@ -15,41 +15,41 @@ MOD 服务端
 
 ### 常见插件端 (Paper 等)
 
-| Minecraft 版本  | 最低版本    | 推荐版本    |
-|---------------|---------|---------|
-| 1.0 - 1.11.2  | Java 6  | Java 8  |
-| 1.12 - 1.16.4 | Java 8  | Java 11 |
-| 1.16.5        | Java 8  | Java 16 |
-| 1.17 - 1.17.1 | Java 16 | Java 17 |
-| 1.18 - 1.20.4 | Java 17 | Java 21 |
-| 1.20.5 - 1.21 | Java 21 | Java 21 |
+| Minecraft 版本 | 最低版本 | 推荐版本 |
+| -------------- | -------- | -------- |
+| 1.0 - 1.11.2   | Java 6   | Java 8   |
+| 1.12 - 1.16.4  | Java 8   | Java 11  |
+| 1.16.5         | Java 8   | Java 16  |
+| 1.17 - 1.17.1  | Java 16  | Java 17  |
+| 1.18 - 1.20.4  | Java 17  | Java 21  |
+| 1.20.5 - 1.21  | Java 21  | Java 21  |
 
 ### 混合服务端 (CatServer 等)
 
 #### CatServer
 
-| Minecraft 版本 | 最低版本    | 推荐版本    |
-|--------------|---------|---------|
-| 1.12.2       | Java 8  | Java 8  |
-| 1.16.5       | Java 8  | Java 11 |
-| 1.18.2       | Java 17 | Java 17 |
+| Minecraft 版本 | 最低版本 | 推荐版本 |
+| -------------- | -------- | -------- |
+| 1.12.2         | Java 8   | Java 8   |
+| 1.16.5         | Java 8   | Java 11  |
+| 1.18.2         | Java 17  | Java 17  |
 
 #### Mohist
 
-| Minecraft 版本    | 最低版本    | 推荐版本    |
-|-----------------|---------|---------|
-| 1.7.10          | Java 8  | Java 8  |
-| 1.16.5          | Java 11 | Java 11 |
-| 1.18.2 - 1.20.2 | Java 17 | Java 17 |
+| Minecraft 版本  | 最低版本 | 推荐版本 |
+| --------------- | -------- | -------- |
+| 1.7.10          | Java 8   | Java 8   |
+| 1.16.5          | Java 11  | Java 11  |
+| 1.18.2 - 1.20.2 | Java 17  | Java 17  |
 
 #### SpongeForge
 
-| Minecraft 版本    | 最低版本    | 推荐版本    |
-|-----------------|---------|---------|
-| 1.8 - 1.12.2    | Java 8  | Java 8  |
-| 1.16.5(吐槽：就你特殊) | Java 17 | Java 17 |
-| 1.19.4          | Java 17 | Java 17 |
-| 1.20.6， 1.21.1  | Java 21 | Java 21 |
+| Minecraft 版本         | 最低版本 | 推荐版本 |
+| ---------------------- | -------- | -------- |
+| 1.8 - 1.12.2           | Java 8   | Java 8   |
+| 1.16.5(吐槽：就你特殊) | Java 17  | Java 17  |
+| 1.19.4                 | Java 17  | Java 17  |
+| 1.20.6， 1.21.1        | Java 21  | Java 21  |
 
 ## 直接下载
 
@@ -61,13 +61,13 @@ MOD 服务端
 
 <!--markdownlint-disable line-length-->
 
-| Java 版本 | 下载链接                                                                                               |
-|---------|----------------------------------------------------------------------------------------------------|
-| Java 8  | [Dragonwell](https://dragonwell-jdk.io/)                                                           |
-| Java 11 | [Dragonwell](https://dragonwell-jdk.io/)                                                           |
-| Java 17 | [Zulu](https://d10.injdk.cn/openjdk/zulu/17/)                                                      |
-| Java 21 | [GraalVM](https://d10.injdk.cn/openjdk/graalvm/21/)  [Zulu](https://d10.injdk.cn/openjdk/zulu/21/) |
-| Java 24 | [GraalVM](https://d10.injdk.cn/openjdk/graalvm/24/) [Zulu](https://d10.injdk.cn/openjdk/zulu/24/)  |
+| Java 版本 | 下载链接                                                                                          |
+| --------- | ------------------------------------------------------------------------------------------------- |
+| Java 8    | [Dragonwell](https://dragonwell-jdk.io/)                                                          |
+| Java 11   | [Dragonwell](https://dragonwell-jdk.io/)                                                          |
+| Java 17   | [Zulu](https://d10.injdk.cn/openjdk/zulu/17/)                                                     |
+| Java 21   | [GraalVM](https://d10.injdk.cn/openjdk/graalvm/21/) [Zulu](https://d10.injdk.cn/openjdk/zulu/21/) |
+| Java 24   | [GraalVM](https://d10.injdk.cn/openjdk/graalvm/24/) [Zulu](https://d10.injdk.cn/openjdk/zulu/24/) |
 
 <!--markdownlint-enable line-length-->
 
@@ -108,6 +108,7 @@ MOD 服务端
 你可以在下方链接直接下载 Java 8：
 
 https://www.java.com/zh-CN/download/
+
 </details>
 
 如果你想进行 JVM 优化，请看 [JVM 优化](/Java/optimize/jvm)

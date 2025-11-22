@@ -25,6 +25,7 @@ sidebar_position: 5
 - 最大玩家数
 
 ## server.proprites
+
 这一小节配置文件都位于服务端根目录下的`server.proprites`文件。如需修改，请打开该文件并找到对应选项
 
 ### 正版验证

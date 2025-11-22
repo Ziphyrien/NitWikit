@@ -21,8 +21,6 @@ sidebar_label: 多世界 - Multiverse
   <img src="https://cdn.jsdmirror.cn/npm/@intergrav/devins-badges@3/assets/cozy/supported/spigot_vector.svg" class="stylish-image" alt="Spigot" />
 </a>
 
-
-
 <a href="https://github.com/DecentSoftware-eu/DecentHolograms/releases">
   <img src="https://img.shields.io/github/v/release/Multiverse/Multiverse-Core" class="stylish-image" alt="Release" />
 </a>
@@ -87,9 +85,9 @@ sidebar_label: 多世界 - Multiverse
 在 `/plugins/Multiverse-Core/config.yml` 中，有这样的配置：
 
 ```yaml
-  world-name-format:
-    nether: '%overworld%_nether'
-    end: '%overworld%_the_end'
+world-name-format:
+    nether: "%overworld%_nether"
+    end: "%overworld%_the_end"
 ```
 
 这里规定了默认的世界名称格式，只需要更改这里的配置，或者在禁用了默认世界后创建名称不符合这里格式的世界，这样就可以间接实现对地狱门和末地门

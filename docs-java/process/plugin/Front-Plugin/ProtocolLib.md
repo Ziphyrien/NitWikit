@@ -27,10 +27,10 @@ sidebar_position: 5
 
 ```yaml title="plugins\ProtocolLib\config.yml"
 global:
-  # Settings for the automatic version updater
-  auto updater:
-    notify: true
-    download: false
+    # Settings for the automatic version updater
+    auto updater:
+        notify: true
+        download: false
 ```
 
 将 `notify: true` 改为 `notify: false` 来关闭更新提示

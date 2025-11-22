@@ -119,8 +119,12 @@ th.join();
 你可以通过传递一个 JavaScript 对象并在其中实现抽象方法来实例化抽象 Java 类的匿名子类。以下示例展示了如何实例化`java.util.TimerTask`类的一个子类：
 
 ```js
-var TimerTask =  Java.type("java.util.TimerTask");
-var task = new TimerTask({ run: function() { print("Hello World!") } });
+var TimerTask = Java.type("java.util.TimerTask");
+var task = new TimerTask({
+    run: function () {
+        print("Hello World!");
+    }
+});
 ```
 
 ### 扩展具体 Java 类
@@ -154,7 +158,7 @@ print(__FILE__, __LINE__, __DIR__);
 在 JavaScript 中加载额外的脚本文件非常方便。我们可以使用`load`函数加载本地或远程脚本。
 
 ```javascript
-load('https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js');
+load("https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js");
 ```
 
 外部脚本会在相同 JavaScript 上下文中被执行，所以我们可以直接访问 underscore 的对象。要记住当变量名称互相冲突时，脚本的加载可能会使你的代码崩溃。
@@ -162,7 +166,7 @@ load('https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.
 这一问题可以通过把脚本文件加载到新的全局上下文来绕过：
 
 ```javascript
-loadWithNewGlobal('script.js');
+loadWithNewGlobal("script.js");
 ```
 
 ## 数据类型映射
@@ -180,6 +184,7 @@ loadWithNewGlobal('script.js');
 一个 `try..catch` 语句可以有多个 `catch` 子句，每个子句都有自己的捕获条件。
 
 - 条件捕获子句示例：
+
 ```javascript
 try {
     func()
@@ -195,6 +200,7 @@ try {
 该语法允许在定义简单单行函数时省略大括号和 `return` 关键字。详情见 [MDN 1.8 新功能](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/1.8)。
 
 - 闭包函数表达式示例：
+
 ```javascript
 function sqr(x) x*x
 
@@ -207,6 +213,7 @@ function sqr(x) x*x
 ECMAScript 的 `for..in` 遍历对象的属性名或数组的索引，而 `for..each..in` 循环遍历对象的属性值，而不是属性名或索引。详情见 [MDN 参考](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for_each...in)。
 
 - `for each` 循环示例：
+
 ```javascript
 // 遍历对象的每个值
 var arr = [ "hello", "world" ];
@@ -218,6 +225,7 @@ for each (a in arr) {
 `for each` 也适用于 Java 数组以及任何 Java 的 `Iterable` 对象。
 
 #### Java 数组的 `for each` 示例
+
 ```javascript
 var JArray = Java.type("int[]");
 var arr = new JArray(10);
@@ -230,6 +238,7 @@ for each (i in arr) {
 ```
 
 #### 遍历 Java `Map` 示例
+
 ```javascript
 var System  = Java.type("java.lang.System")
 for each (p in System.properties.entrySet()) {
@@ -246,6 +255,7 @@ for each (e in System.env.entrySet()) {
 在一个 `new` 表达式中，如果最后一个参数是对象字面量，可以在 `")"` 后指定该参数。
 
 - 匿名类样式的表达式示例：
+
 ```javascript
 var r = new java.lang.Runnable() {
     run: function() { print("run"); }
@@ -257,6 +267,7 @@ var r = new java.lang.Runnable() {
 顶级函数语句可以是匿名的。
 
 - 匿名函数语句示例：
+
 ```javascript
 function () {
     print("hello")

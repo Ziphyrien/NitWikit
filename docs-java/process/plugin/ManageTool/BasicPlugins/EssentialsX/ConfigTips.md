@@ -110,7 +110,7 @@ starting-balance: 0
 注意：你需要安装 EssentialsX Spawn 才可以使用。
 
 ```yaml
-announce-format: '&7[&b 驿站&7]&a 欢迎大傻蛋来服务器！'
+announce-format: "&7[&b 驿站&7]&a 欢迎大傻蛋来服务器！"
 ```
 
 设置玩家进服的欢迎语。
@@ -128,7 +128,7 @@ kit: tools
 注意：你需要安装 EssentialsX Chat 才可以使用，推荐用别的聊天插件...
 
 ```yaml
-format: '<{DISPLAYNAME}> {MESSAGE}'
+format: "<{DISPLAYNAME}> {MESSAGE}"
 ```
 
 设置玩家聊天的公屏显示格式
