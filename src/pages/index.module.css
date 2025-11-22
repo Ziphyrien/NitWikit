@@ -238,7 +238,7 @@ html[data-theme="dark"] .sectionHeading span {
 }
 
 .mapGrid {
-    max-width: 1080px;
+    max-width: 1100px;
     margin: 0 auto;
     display: grid;
     gap: 20px;
