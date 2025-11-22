@@ -27,9 +27,9 @@ YAML 支持多维数组，可以使用行内表示：`key: [value1, value2, ...]
 
 ```yaml
 key1:
-  - value1
-  - value2
-  - ...
+    - value1
+    - value2
+    - ...
 ```
 
 一个相对复杂的例子：
@@ -52,27 +52,27 @@ companies:
 
 ```yaml
 languages:
-  - Ruby
-  - Perl
-  - Python
+    - Ruby
+    - Perl
+    - Python
 websites:
-  YAML: yaml.org
-  Ruby: ruby-lang.org
-  Python: python.org
-  Perl: use.perl.org
+    YAML: yaml.org
+    Ruby: ruby-lang.org
+    Python: python.org
+    Perl: use.perl.org
 ```
 
 转换为 JSON 为：
 
 ```json
 {
-  languages: [ 'Ruby', 'Perl', 'Python'],
-  websites: {
-    YAML: 'yaml.org',
-    Ruby: 'ruby-lang.org',
-    Python: 'python.org',
-    Perl: 'use.perl.org'
-  }
+    "languages": ["Ruby", "Perl", "Python"],
+    "websites": {
+        "YAML": "yaml.org",
+        "Ruby": "ruby-lang.org",
+        "Python": "python.org",
+        "Perl": "use.perl.org"
+    }
 }
 ```
 
@@ -92,26 +92,26 @@ websites:
 
 ```yaml
 boolean:
-    - TRUE  # true，True 都可以。
-    - FALSE  # false，False 都可以。
+    - TRUE # true，True 都可以。
+    - FALSE # false，False 都可以。
 float:
     - 3.14
-    - 6.8523015e+5  # 可以使用科学计数法。
+    - 6.8523015e+5 # 可以使用科学计数法。
 int:
     - 123
-    - 0b1010_0111_0100_1010_1110  # 二进制表示。
+    - 0b1010_0111_0100_1010_1110 # 二进制表示。
 null:
-    nodeName: 'node'
-    parent: ~  # 使用 ~ 表示 null。
+    nodeName: "node"
+    parent: ~ # 使用 ~ 表示 null。
 string:
     - 哈哈
-    - 'Hello world'  # 可以使用双引号或者单引号包裹特殊字符。
+    - "Hello world" # 可以使用双引号或者单引号包裹特殊字符。
     - newline
-      newline2  # 字符串可以拆成多行，每一行会被转化成一个空格。
+      newline2 # 字符串可以拆成多行，每一行会被转化成一个空格。
 date:
-    - 2018-02-17  # 日期必须使用 ISO 8601 格式，即 yyyy-MM-dd。
+    - 2018-02-17 # 日期必须使用 ISO 8601 格式，即 yyyy-MM-dd。
 datetime:
-    -  2018-02-17T15:02:31+08:00  # 时间和日期之间使用 T 连接，最后使用 + 代表时区。
+    - 2018-02-17T15:02:31+08:00 # 时间和日期之间使用 T 连接，最后使用 + 代表时区。
 ```
 
 ## 缩进
@@ -122,15 +122,15 @@ datetime:
 
 ```yaml
 options:
-  enable: true
-  check: false
-  drop-block: true
-  other:
-    money: 10
-    welcome: "欢迎你"
+    enable: true
+    check: false
+    drop-block: true
+    other:
+        money: 10
+        welcome: "欢迎你"
 guide:
-  show: true
-  receive: "你好"
+    show: true
+    receive: "你好"
 ```
 
 我们称 `options` 和 `guide` 在同一缩进下。
@@ -154,9 +154,9 @@ options:
 
 ```yaml
 options:
-  enable: true
-  check: false
+    enable: true
+    check: false
 guide:
-  enable: true
-  check: true
+    enable: true
+    check: true
 ```

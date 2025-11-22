@@ -34,36 +34,36 @@ sidebar_position: 5
   <summary>黑名单指令</summary>
 
 ```yaml
-      # WorldEdit exploit
-      - "//calc"
-      - "//calculate"
-      - "//eval"
-      - "//evaluate"
-      - "//solve"
-      - "//asc"
-      - "//ascend"
-      - "//desc"
-      - "//descend"
-      # HolographicDisplays exploit
-      - "/hd readtext"
-      - "/holo readtext"
-      - "/hologram readtext"
-      - "/holograms readtext"
-      - "/holographicdisplays readtext"
-      # PermissionsEx exploit
-      - "/pex promote"
-      - "/pex demote"
-      - "/promote"
-      - "/demote"
-      - "/execute"
-      # Multiverse exploit
-      - "/mv ^"
-      - "/mv help <"
-      - "/mvhelp <"
-      - "/$"
-      # FAWE exploit
-      - "//to"
-      - "/to"
+# WorldEdit exploit
+- "//calc"
+- "//calculate"
+- "//eval"
+- "//evaluate"
+- "//solve"
+- "//asc"
+- "//ascend"
+- "//desc"
+- "//descend"
+# HolographicDisplays exploit
+- "/hd readtext"
+- "/holo readtext"
+- "/hologram readtext"
+- "/holograms readtext"
+- "/holographicdisplays readtext"
+# PermissionsEx exploit
+- "/pex promote"
+- "/pex demote"
+- "/promote"
+- "/demote"
+- "/execute"
+# Multiverse exploit
+- "/mv ^"
+- "/mv help <"
+- "/mvhelp <"
+- "/$"
+# FAWE exploit
+- "//to"
+- "/to"
 ```
 
 </details>

@@ -76,25 +76,25 @@ TerraformGenerator 是一个旨在增强原版 Minecraft 世界生成体验的�
 
 ```yaml
 permissions:
-  terraform.*:
-    description: "允许使用所有 TerraformGenerator 命令"
-    children:
-      terraform.command.*: true
-  terraform.command.new:
-    description: "允许创建新世界"
-    default: op
-  terraform.command.tp:
-    description: "允许传送到 TerraformGenerator 世界"
-    default: op
-  terraform.command.list:
-    description: "允许查看世界列表"
-    default: op
-  terraform.command.biome:
-    description: "允许查看生物群系信息"
-    default: op
-  terraform.command.pregen:
-    description: "允许预生成世界"
-    default: op
+    terraform.*:
+        description: "允许使用所有 TerraformGenerator 命令"
+        children:
+            terraform.command.*: true
+    terraform.command.new:
+        description: "允许创建新世界"
+        default: op
+    terraform.command.tp:
+        description: "允许传送到 TerraformGenerator 世界"
+        default: op
+    terraform.command.list:
+        description: "允许查看世界列表"
+        default: op
+    terraform.command.biome:
+        description: "允许查看生物群系信息"
+        default: op
+    terraform.command.pregen:
+        description: "允许预生成世界"
+        default: op
 ```
 
 </details>

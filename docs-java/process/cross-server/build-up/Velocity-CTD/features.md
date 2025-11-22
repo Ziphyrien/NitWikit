@@ -48,6 +48,7 @@ pubsub-enabled = true
 ### 配置示例
 
 **多代理环境配置**：
+
 ```toml
 [redis]
 enabled = true
@@ -99,10 +100,12 @@ priority-enabled = true         # 启用优先级系统
 ### 队列命令
 
 **玩家命令：**
+
 - `/server <服务器名>` - 连接服务器（如果满员会自动加入队列）
 - `/leavequeue` 或 `/dequeue` - 离开当前队列
 
 **管理员命令：**
+
 - `/queueadmin list [服务器]` - 查看队列状态
 - `/queueadmin pause <服务器>` - 暂停服务器队列
 - `/queueadmin unpause <服务器>` - 恢复服务器队列
@@ -113,15 +116,15 @@ priority-enabled = true         # 启用优先级系统
 
 ```yaml
 # 队列绕过权限
-velocity.queue.bypass: true  # 绕过所有队列
-velocity.queue.bypass.survival: true  # 绕过特定服务器队列
+velocity.queue.bypass: true # 绕过所有队列
+velocity.queue.bypass.survival: true # 绕过特定服务器队列
 
 # 队列优先级权限
-velocity.queue.priority.ALL.10: true  # 所有服务器优先级 10
-velocity.queue.priority.survival.5: true  # 特定服务器优先级 5
+velocity.queue.priority.ALL.10: true # 所有服务器优先级 10
+velocity.queue.priority.survival.5: true # 特定服务器优先级 5
 
 # 队列超时权限
-velocity.queue.timeout.600: true  # 离线后保留队列位置 600 秒
+velocity.queue.timeout.600: true # 离线后保留队列位置 600 秒
 ```
 
 ## 管理命令系统
@@ -129,14 +132,17 @@ velocity.queue.timeout.600: true  # 离线后保留队列位置 600 秒
 ### 网络公告命令
 
 **`/alert <消息>`**
+
 - 向整个网络发送带前缀的公告消息
 - 权限：`velocity.command.alert`
 
 **`/alertraw <消息>`**
+
 - 向整个网络发送无前缀的原始消息
 - 权限：`velocity.command.alertraw`
 
 示例：
+
 ```bash
 /alert 服务器将在 10 分钟后重启
 /alertraw <red>紧急维护通知</red>
@@ -145,16 +151,19 @@ velocity.queue.timeout.600: true  # 离线后保留队列位置 600 秒
 ### 玩家查找命令
 
 **`/find <玩家名>`**
+
 - 查找指定玩家当前所在的服务器
 - 权限：`velocity.command.find`
 
 **`/plist`**
+
 - 显示代理服务器的玩家列表和统计信息
 - 权限：`velocity.command.plist`
 
 ### 快速传送命令
 
 **`/hub` 或 `/lobby`**
+
 - 快速返回大厅/登录服务器
 - 权限：`velocity.command.hub`
 - 自动选择 `try` 列表中的第一个服务器
@@ -162,20 +171,24 @@ velocity.queue.timeout.600: true  # 离线后保留队列位置 600 秒
 ### 网络管理命令
 
 **`/transfer <目标> <代理服务器>`**
+
 - 将玩家转移到其他代理服务器
 - 权限：`velocity.command.transfer`
 
 目标类型：
+
 - `<玩家名>` - 转移特定玩家
 - `current` - 转移当前服务器的所有玩家
 - `<服务器名>` - 转移指定服务器的所有玩家
 - `all` - 转移所有玩家
 
 **`/velocity sudo <玩家> <命令>`**
+
 - 强制玩家执行命令（代理端或服务器端）
 - 权限：`velocity.command.sudo`
 
 **`/velocity uptime`**
+
 - 查看代理服务器的运行时间
 - 权限：`velocity.command.uptime`
 
@@ -208,6 +221,7 @@ server-specific-forwarding = {
 ### 依赖项优化
 
 Velocity-CTD 使用更新的依赖项版本，包括：
+
 - 更新的网络库
 - 优化的压缩算法
 - 改进的内存管理
@@ -242,6 +256,7 @@ dynamic-fallbacks = ["lobby1", "lobby2", "lobby3"]
 ```
 
 选择模式：
+
 - `least` - 人数最少的服务器
 - `most` - 人数最多的服务器
 - `random` - 随机选择
@@ -281,6 +296,7 @@ server-full = "<red>服务器已满，正在排队中..."
 ```
 
 支持重载的配置：
+
 - 服务器列表
 - 消息配置
 - 命令设置
@@ -289,6 +305,7 @@ server-full = "<red>服务器已满，正在排队中..."
 ### 动态服务器管理
 
 可以在不重启代理的情况下：
+
 - 添加新的子服务器
 - 移除子服务器
 - 修改服务器配置
@@ -324,6 +341,7 @@ server-full = "<red>服务器已满，正在排队中..."
 ### Redis 相关问题
 
 #### 问题：Redis 连接失败
+
 ```text
 解决方案：
 1. 检查 Redis 服务是否运行
@@ -333,6 +351,7 @@ server-full = "<red>服务器已满，正在排队中..."
 ```
 
 #### 问题：多代理数据不同步
+
 ```text
 解决方案：
 1. 确保所有代理使用相同的 Redis 配置
@@ -343,6 +362,7 @@ server-full = "<red>服务器已满，正在排队中..."
 ### 队列系统问题
 
 #### 问题：玩家卡在队列中
+
 ```text
 解决方案：
 1. 检查目标服务器是否正常运行
@@ -352,6 +372,7 @@ server-full = "<red>服务器已满，正在排队中..."
 ```
 
 #### 问题：队列优先级不生效
+
 ```text
 解决方案：
 1. 确认 priority-enabled = true
@@ -362,6 +383,7 @@ server-full = "<red>服务器已满，正在排队中..."
 ### 命令系统问题
 
 #### 问题：命令不响应
+
 ```text
 解决方案：
 1. 检查命令是否启用：[commands] 部分
@@ -370,6 +392,7 @@ server-full = "<red>服务器已满，正在排队中..."
 ```
 
 #### 问题：/hub 命令不工作
+
 ```text
 解决方案：
 1. 检查 try 配置是否正确
@@ -380,6 +403,7 @@ server-full = "<red>服务器已满，正在排队中..."
 ### 性能问题
 
 #### 问题：代理服务器延迟高
+
 ```text
 解决方案：
 1. 启用性能优化选项
@@ -389,6 +413,7 @@ server-full = "<red>服务器已满，正在排队中..."
 ```
 
 #### 问题：内存使用过高
+
 ```text
 解决方案：
 1. 调整 JVM 参数
@@ -411,10 +436,12 @@ server-full = "<red>服务器已满，正在排队中..."
 ### 日志分析
 
 **重要日志位置**：
+
 - 代理日志：`logs/latest.log`
 - 子服务器日志：各子服务器的日志文件
 
 **常见错误信息**：
+
 ```text
 "Connection refused" - 子服务器未启动或端口错误
 "Forwarding error" - 转发配置不匹配

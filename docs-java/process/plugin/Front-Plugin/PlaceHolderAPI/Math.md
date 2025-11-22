@@ -39,7 +39,7 @@ sidebar_position: 3
 发现输出的结果有三位小数，你可以在 `plugins\PlaceholderAPI\config.yml` 中找到
 
 ```yaml
-  math:
+math:
     Disable-Warnings: false
     Rounding: half-up
     Decimals: 3

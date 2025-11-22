@@ -53,7 +53,7 @@ GitHub 界面是全英文，可以尝试安装油猴汉化插件：https://githu
 1. 魔法
 2. [改 hosts](https://www.cnblogs.com/eudaimonia/p/16001981.html#1034247326)
 3. [Watt Toolkit](https://steampp.net/)：下载安装完成后，在左侧侧边栏切换到**网络加速**，点击**平台加速 (免费)**，往下翻勾上 GitHub，然后点击**一键加速**，随后就可以正常访问 GitHub 了
-<!--[点击此处](https://cn.bing.com/search?q=%E8%BF%9E%E4%B8%8D%E4%B8%8AGitHub%E6%80%8E%E4%B9%88%E5%8A%9E)-->
+ <!--[点击此处](https://cn.bing.com/search?q=%E8%BF%9E%E4%B8%8D%E4%B8%8AGitHub%E6%80%8E%E4%B9%88%E5%8A%9E)-->
 
 </details>
 
@@ -117,7 +117,7 @@ SpigotMC 是目前 Minecraft 开服圈最大的插件网站，最大的问题是
 
 使用魔法就可以看到验证了，而不是傻呵呵的跟人说。
 
-*SpigotMC 不开放注册* *老外的网站真反人类*
+_SpigotMC 不开放注册_ _老外的网站真反人类_
 
 </details>
 
@@ -298,8 +298,9 @@ PaperMC 的现代化的插件平台，目前正在 Beta 阶段，插件相对较
 能为你避开 90% 诈骗坑的 [防骗小技巧](https://www.pixelbbs.cn/t-1377-1-1.html)。
 
 > 像素论坛因[数据丢失](https://www.pixelbbs.cn/thread-3-1-1.html)，大部分页面已失效，以下为 Wayback Machine 存档。
-> + [失信人员名单页面](https://web.archive.org/web/20240715222153/https://www.pixelbbs.cn/f-50-1.html)
-> + [防骗小技巧](https://web.archive.org/web/20250122075709/https://www.pixelbbs.cn/t-1377-1-1.html)
+>
+> - [失信人员名单页面](https://web.archive.org/web/20240715222153/https://www.pixelbbs.cn/f-50-1.html)
+> - [防骗小技巧](https://web.archive.org/web/20250122075709/https://www.pixelbbs.cn/t-1377-1-1.html)
 
   </TabItem>
 
@@ -376,7 +377,7 @@ MOTD 是玩家进入服务器之前最先看到的东西，决定了玩家对一
 > [MOTD creator](https://mctools.org/motd-creator)
 >
 > [Minecraft MOTD tool](https://minecraft.tools/en/motd.php)
-> 
+>
 > [MineBBS MOTD 查询站](https://motd.minebbs.com/)
 
   </TabItem>

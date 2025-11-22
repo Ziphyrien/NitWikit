@@ -87,9 +87,10 @@ server-port=25565
 1.检查你有没有打错域名
 
 2.如果你刚刚更改 DNS 解析：
-  - 等一会儿再试
-  - 在 Windows 下，CMD 执行`ipconfig /flushdns`
-  - 在 Linux 下，终端执行 `sudo systemd-resolve --flush-caches`
+
+- 等一会儿再试
+- 在 Windows 下，CMD 执行`ipconfig /flushdns`
+- 在 Linux 下，终端执行 `sudo systemd-resolve --flush-caches`
 
 3.你的域名可能被 DNS 污染，你可以检查实际解析出来的 IP 和设置的是否一致，不一致就是被污染了，临时解决方案是更改 DNS
 服务器，长远来看最好打开 DNSSEC
@@ -121,9 +122,9 @@ server-port=25565
 如果使用了 ViaVersion ,也需要调大配置文件中的`max-pps`和`tracking-warning-pps`值
 
 ### `忽略状态请求`
-  
+
 没遇到过这个问题
-  
+
 ### `java.io.IOException: Connection reset by peer`
 
 网络太差
@@ -141,16 +142,19 @@ server-port=25565
 ### `Outdated server! / 服务器版本过时`
 
 客户端与服务器版本不一致时会出现此提示。
+
 1. 检查客户端启动器选择的游戏版本是否与服务器一致
 2. 若服务器支持跨版本（如安装了 ViaVersion），确保客户端版本在插件支持的范围内
 3. 若为原版服务器，客户端需降级或升级至匹配版本
 
 ### `io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused`
+
 1. 服务器未启动或已崩溃，检查服务器控制台是否正常运行
 2. 确认服务器 IP 和端口填写正确（默认端口为 `25565`）
 3. 若使用内网穿透（如 FRP/Ngrok），检查穿透服务是否配置正确
 
 ### `Internal Exception: java.io.IOException: 远程主机强迫关闭了一个现有的连接`
+
 1. 服务器或客户端网络不稳
 2. 服务器插件冲突（如反作弊插件误判，尝试移除插件排查）
 3. 被服务器防火墙强行关闭了

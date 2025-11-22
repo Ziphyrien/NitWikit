@@ -252,11 +252,12 @@ server {
     SSLCertificateFile /etc/letsencrypt/live/<domain>/fullchain.pem
     # 指定 SSL 证书私钥文件的路径。
     SSLCertificateKeyFile /etc/letsencrypt/live/<domain>/privkey.pem
-    
+
 
 </VirtualHost>
 
 ```
+
 </TabItem>
 
 </Tabs>
@@ -286,7 +287,7 @@ Cloudflare 的免费 SSL 服务可以为你的网站提供免费的 SSL 证书�
 
 通过代理连接会导致两个问题：
 
-* NamelessMC 会看到你的代理地址而不是你的用户地址。这会破坏 IP 封锁和速率限制。这可以通过从代理向后端 Web 服务器发送 Forwarded 、 X-Forwarded-For 或 X-Real-IP （不推荐）标头来解决。
+- NamelessMC 会看到你的代理地址而不是你的用户地址。这会破坏 IP 封锁和速率限制。这可以通过从代理向后端 Web 服务器发送 Forwarded 、 X-Forwarded-For 或 X-Real-IP （不推荐）标头来解决。
 
 在你的 Nginx 配置文件中添加如下几行:
 
@@ -302,4 +303,3 @@ proxy_set_header X-Forwarded-Port   $server_port;
 set_real_ip_from 0.0.0.0/0;
 real_ip_header X-Forwarded-For;
 ```
-

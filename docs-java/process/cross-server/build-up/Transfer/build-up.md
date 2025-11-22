@@ -55,6 +55,7 @@ Transfer 要求**所有服务器都能被客户端直接访问**：
 :::danger 重要安全警告
 
 Transfer **没有内置的安全机制**，与传统代理端不同：
+
 - 玩家可以直接连接任何服务器，绕过登录验证
 - 缺乏统一的身份验证和权限管理
 - 在离线模式下存在身份冒充风险
@@ -68,9 +69,11 @@ Transfer **没有内置的安全机制**，与传统代理端不同：
 所有服务器设置 `online-mode=true`
 
 #### 方案二：OnlyTransfer 插件
+
 专门解决 Transfer 安全问题的插件：
 
 **主要功能：**
+
 - 阻止玩家直接连接非登录服
 - 基于令牌验证服务器间传送
 - 白名单控制允许的服务器
@@ -78,6 +81,7 @@ Transfer **没有内置的安全机制**，与传统代理端不同：
 **版本要求：** Spigot/Paper 1.21.4+
 
 **基础配置：**
+
 ```yaml
 # 是否允许通过服务器列表直接进入服务器
 # 如果为 true，则该服务器被允许直接通过客户端进入，否则将仅允许 transfer
@@ -105,10 +109,12 @@ allowed-servers:
 ```
 
 :::tip 安全令牌生成
+
 ```bash
 # 生成32位随机令牌
 openssl rand -base64 32
 ```
+
 :::
 
 ## 与 Velocity 混合使用
@@ -121,6 +127,7 @@ accepts-transfers = true
 ```
 
 **混合架构示例：**
+
 ```text
 独立服务器 --Transfer--> Velocity ---> 子服务器群组
 ```
@@ -128,4 +135,3 @@ accepts-transfers = true
 :::warning 兼容性问题
 OnlyTransfer 插件与 Velocity 的 Transfer 支持存在部分兼容性问题，建议在测试环境中验证。
 :::
-

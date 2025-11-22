@@ -25,21 +25,21 @@ sidebar_position: 6
 
 **常见数据包的下载**：
 
-| 名称                                                      | 介绍                                    |
-|-----------------------------------------------------------|-----------------------------------------|
-| [PlanetMinecraft](https://www.planetminecraft.com/data-packs/) | 比较老牌的我的世界资源网站了，东西比较全   |
-| [Modrinth](https://modrinth.com/datapacks)          | 新兴的我的世界资源平台，东西比较全 |
-| [9Minecraft](https://www.9minecraft.net/category/minecraft-data-packs/) | 比较老牌的我的世界资源网站了，界面不太符合中国习惯，不太推荐|
+| 名称                                                                    | 介绍                                                         |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------ |
+| [PlanetMinecraft](https://www.planetminecraft.com/data-packs/)          | 比较老牌的我的世界资源网站了，东西比较全                     |
+| [Modrinth](https://modrinth.com/datapacks)                              | 新兴的我的世界资源平台，东西比较全                           |
+| [9Minecraft](https://www.9minecraft.net/category/minecraft-data-packs/) | 比较老牌的我的世界资源网站了，界面不太符合中国习惯，不太推荐 |
 
 **数据包工具及扩展资源**：
 
-| 名称                                                      | 介绍                                    |
-|-----------------------------------------------------------|-----------------------------------------|
-| [Datapack Upgrader](https://misode.github.io/upgrader/) | 自动升级数据包版本，未测试    |
-| [Datapack Map](https://map.jacobsjo.eu/)          | 查看世界生成数据包对应种子的地图 |
-| [Datapack Maker](https://misode.github.io/) | 数据包生成器，适用于大部分环境 |
-| [vanilla tweaks](https://vanillatweaks.net/picker/datapacks/) | 常用数据包的结合体，可以集成下载 |
-| [MCCreator](https://mcreator.net/about) | 生成/制作初级数据包的不二之选，推荐 |
+| 名称                                                          | 介绍                                |
+| ------------------------------------------------------------- | ----------------------------------- |
+| [Datapack Upgrader](https://misode.github.io/upgrader/)       | 自动升级数据包版本，未测试          |
+| [Datapack Map](https://map.jacobsjo.eu/)                      | 查看世界生成数据包对应种子的地图    |
+| [Datapack Maker](https://misode.github.io/)                   | 数据包生成器，适用于大部分环境      |
+| [vanilla tweaks](https://vanillatweaks.net/picker/datapacks/) | 常用数据包的结合体，可以集成下载    |
+| [MCCreator](https://mcreator.net/about)                       | 生成/制作初级数据包的不二之选，推荐 |
 
 # 数据包结构
 

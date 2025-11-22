@@ -27,7 +27,7 @@ sidebar_position: 9
 | 沉浸式任务追踪   | ✅ 追踪组件 (Track Addon)      | ❌ 任务手册 (Journal) | ❌          | ❌           | ❌         | ❌        |  ❌ |
 | 自定义通知系统   | ✅ 脚本代理 (Kether)           | ✅ Notify IO | ❌    | ❌          | ❌           | ❌         | ❌        | -->
 
-<!-- 
+<!--
 | 功能 | [BetonQuest](https://www.spigotmc.org/resources/2117/) | [Quests](https://www.spigotmc.org/resources/3711/) PikaMug | [Quests](https://www.spigotmc.org/resources/23696/) LMBishop | [NotQuests](https://www.spigotmc.org/resources/95872/) | [BeautyQuests](https://www.spigotmc.org/resources/39255/) | [QuestCreator](https://www.spigotmc.org/resources/38734/) |
 | --- | --- | --- | --- | --- | --- | --- |
 | 价格 | 免费 | 免费 | 免费 | 免费 | 免费 | $25 |

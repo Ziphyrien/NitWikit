@@ -51,4 +51,3 @@ Boar 使用基岩版客户端的 server-auth-with-rewind 方法，即服务器�
 - `player-position-acceptance-threshold`：位置接受阈值（默认 1.0E-4）
 - `max-tolerance-compensated-reach`：最大允许触及距离（默认 3.005）
 - `disabled-checks`：禁用特定检查类型
-

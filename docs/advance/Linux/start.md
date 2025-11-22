@@ -55,7 +55,7 @@ OpenJDK 64-Bit Server VM Zulu21.32+17-CA (build 21.0.2+13-LTS, mixed mode, shari
 
 不熟悉 wget 时，先使用 Windows 前往 [zulu 下载](https://www.azul.com/downloads/?package=jdk#zulu)，下载再使用 SFTP 软件上传到服务器 `/opt` 目录下。
 
-![](_images/Linux 开服/开服/1.png)
+![](\_images/Linux 开服/开服/1.png)
 
 #### wegt 下载
 
@@ -63,17 +63,17 @@ OpenJDK 64-Bit Server VM Zulu21.32+17-CA (build 21.0.2+13-LTS, mixed mode, shari
 
 `wget https://cdn.azul.com/zulu/bin/zulu21.34.19-ca-jdk21.0.3-linux_x64.tar.gz`
 
-![](_images/Linux 开服/开服/2.png)
+![](\_images/Linux 开服/开服/2.png)
 
 ### 压缩包解压
 
 解压压缩包：
 
-![](_images/Linux 开服/开服/3.png)
+![](\_images/Linux 开服/开服/3.png)
 
 将目录重命名为 jdk21：
 
-![](_images/Linux 开服/开服/4.png)
+![](\_images/Linux 开服/开服/4.png)
 
 这样就算是安装好了 (PS：这里的操作仅适用于开服使用，若需要其他需要 jdk 的操作请使用包管理器安装 openjdk)
 
@@ -97,7 +97,7 @@ OpenJDK 64-Bit Server VM Zulu21.32+17-CA (build 21.0.2+13-LTS, mixed mode, shari
 
 设置别名
 
-确定你所使用的终端，此处以 `bash`  和 `zulu Java` 为例
+确定你所使用的终端，此处以 `bash` 和 `zulu Java` 为例
 
 `vim ~/.bashrc` 在这个文件末尾追加
 

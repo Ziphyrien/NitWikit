@@ -66,7 +66,7 @@ https://filoghost.me/docs/chest-commands/actions
 
 ```yaml
 ACTIONS:
-  - 'server: hub'
+    - "server: hub"
 ```
 
 #### DeluxeMenus
@@ -74,7 +74,7 @@ ACTIONS:
 https://wiki.helpch.at/helpchat-plugins/deluxemenus/files
 
 ```yaml
-- '[connect] <serverName>'
+- "[connect] <serverName>"
 ```
 
 #### TrMenu
@@ -82,7 +82,7 @@ https://wiki.helpch.at/helpchat-plugins/deluxemenus/files
 https://hhhhhy.gitbook.io/trmenu-v3/menu/action/types#kua-fu-chuan-song
 
 ```yaml
-- 'server: Lobby'
+- "server: Lobby"
 ```
 
 #### Invero
@@ -90,5 +90,5 @@ https://hhhhhy.gitbook.io/trmenu-v3/menu/action/types#kua-fu-chuan-song
 https://invero.8aka.org/docs/advance/basic/kether#%E8%B7%A8%E6%9C%8D
 
 ```yaml
-- 'connect 子服名'
+- "connect 子服名"
 ```

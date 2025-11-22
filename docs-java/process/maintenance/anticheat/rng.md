@@ -45,8 +45,8 @@ RNG 是 **随机数生成器** 的简写。
 这是 Purpur 的配置方法：
 
 ```yaml title="purpur.yml"
-    settings:
-      entity:
+settings:
+    entity:
         shared-random: true
 ```
 

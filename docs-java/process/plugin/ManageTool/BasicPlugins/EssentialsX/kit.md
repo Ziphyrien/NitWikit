@@ -54,12 +54,12 @@ sidebar_position: 5
 是的，你能在里面写命令
 
 ```yaml
-  iloveyizhan:
+iloveyizhan:
     delay: 0
     items:
-    - golden_apple 64
-    - /give {USERNAME} apple 1
-    - /say 1
+        - golden_apple 64
+        - /give {USERNAME} apple 1
+        - /say 1
 ```
 
 ![](_images/kit_4.png)

@@ -20,4 +20,3 @@ NamelessMC 有这非常多的插件,你可以在 [这里](https://namelessmc.com
 点击安装即可，如果你安装的是样式模板,你应该在这里安装
 
 ![img.png](_images/img_10.png)
-

@@ -14,15 +14,15 @@ sidebar_position: 4
 
 2. 使用以下命令格式进行备份：
 
-   ```shell
-   mysqldump -u [用户名] -p [数据库名] > [备份文件名].sql
-   ```
+    ```shell
+    mysqldump -u [用户名] -p [数据库名] > [备份文件名].sql
+    ```
 
-   例如：
+    例如：
 
-   ```shell
-   mysqldump -u root -p mydb > mydb_backup.sql
-   ```
+    ```shell
+    mysqldump -u root -p mydb > mydb_backup.sql
+    ```
 
 3. 输入密码后，系统会开始备份过程。
 
@@ -124,7 +124,7 @@ TODO
 
 #### 进阶教程：新增备份账号
 
->  什么是备份账号？简单来讲，备份账号是 1Panel 面板中不同的存储位置，即 **将备份存储在哪里**
+> 什么是备份账号？简单来讲，备份账号是 1Panel 面板中不同的存储位置，即 **将备份存储在哪里**
 
 TODO
 

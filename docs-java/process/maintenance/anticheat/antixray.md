@@ -9,9 +9,9 @@ sidebar_position: 2
 
 为什么常规的反作弊插件不会包括部分作弊类型？
 
-* 矿物透视与种子破解其实是很难从服务器所收到的玩家行为包分析得到的。
-* 插件往往术语有专攻，一个过于齐全的插件会像 ESS / CMI 一样累赘。
-* 插件对于"种子"这种相当底层的特征的修改并不如核心稳定高效。
+- 矿物透视与种子破解其实是很难从服务器所收到的玩家行为包分析得到的。
+- 插件往往术语有专攻，一个过于齐全的插件会像 ESS / CMI 一样累赘。
+- 插件对于"种子"这种相当底层的特征的修改并不如核心稳定高效。
 
 ## 矿物透视与种子破解
 
@@ -35,35 +35,34 @@ sidebar_position: 2
 
 ```yaml
 feature-seeds:
-  generate-random-seeds-for-all: true
+    generate-random-seeds-for-all: true
 ```
 
 > 这是对每个建筑使用随机种子，防止你的世界种子轻易的被破解
 > 如果发现你的 `spigot.yml` 中出现了类似以下的配置配置就成功了，你可以修改其中的种子。(但其实不改也完全没问题)
 
 ```yaml
-    seed-village: 10387312
-    seed-desert: 14357617
-    seed-igloo: 14357618
-    seed-jungle: 14357619
-    seed-swamp: 14357620
-    seed-monument: 10387313
-    seed-shipwreck: 165745295
-    seed-ocean: 14357621
-    seed-outpost: 165745296
-    seed-endcity: 10387313
-    seed-slime: 987234911
-    seed-nether: 30084232
-    seed-mansion: 10387319
-    seed-fossil: 14357921
-    seed-portal: 34222645
-    seed-ancientcity: 20083232
-    seed-trailruins: 83469867
-    seed-trialchambers: 94251327
-    seed-buriedtreasure: 10387320
-    seed-mineshaft: default
-    seed-stronghold: default
-
+seed-village: 10387312
+seed-desert: 14357617
+seed-igloo: 14357618
+seed-jungle: 14357619
+seed-swamp: 14357620
+seed-monument: 10387313
+seed-shipwreck: 165745295
+seed-ocean: 14357621
+seed-outpost: 165745296
+seed-endcity: 10387313
+seed-slime: 987234911
+seed-nether: 30084232
+seed-mansion: 10387319
+seed-fossil: 14357921
+seed-portal: 34222645
+seed-ancientcity: 20083232
+seed-trailruins: 83469867
+seed-trialchambers: 94251327
+seed-buriedtreasure: 10387320
+seed-mineshaft: default
+seed-stronghold: default
 ```
 
 #### Matter 安全种子
@@ -117,58 +116,59 @@ feature-seeds:
 
 ```yaml
 anticheat:
-  anti-xray:
-    enabled: true
-    engine-mode: 2
-    hidden-blocks:
-    - copper_ore
-    - deepslate_copper_ore
-    - raw_copper_block
-    - gold_ore
-    - deepslate_gold_ore
-    - iron_ore
-    - deepslate_iron_ore
-    - raw_iron_block
-    - coal_ore
-    - deepslate_coal_ore
-    - lapis_ore
-    - deepslate_lapis_ore
-    - mossy_cobblestone
-    - obsidian
-    - chest
-    - diamond_ore
-    - deepslate_diamond_ore
-    - redstone_ore
-    - deepslate_redstone_ore
-    - clay
-    - emerald_ore
-    - deepslate_emerald_ore
-    - ender_chest
-    lava-obscures: false
-    max-block-height: 128
-    replacement-blocks:
-    - amethyst_block
-    - andesite
-    - budding_amethyst
-    - calcite
-    - coal_ore
-    - deepslate_coal_ore
-    - deepslate
-    - diorite
-    - dirt
-    - emerald_ore
-    - deepslate_emerald_ore
-    - granite
-    - gravel
-    - oak_planks
-    - smooth_basalt
-    - stone
-    - tuff
-    update-radius: 2
-    use-permission: false
+    anti-xray:
+        enabled: true
+        engine-mode: 2
+        hidden-blocks:
+            - copper_ore
+            - deepslate_copper_ore
+            - raw_copper_block
+            - gold_ore
+            - deepslate_gold_ore
+            - iron_ore
+            - deepslate_iron_ore
+            - raw_iron_block
+            - coal_ore
+            - deepslate_coal_ore
+            - lapis_ore
+            - deepslate_lapis_ore
+            - mossy_cobblestone
+            - obsidian
+            - chest
+            - diamond_ore
+            - deepslate_diamond_ore
+            - redstone_ore
+            - deepslate_redstone_ore
+            - clay
+            - emerald_ore
+            - deepslate_emerald_ore
+            - ender_chest
+        lava-obscures: false
+        max-block-height: 128
+        replacement-blocks:
+            - amethyst_block
+            - andesite
+            - budding_amethyst
+            - calcite
+            - coal_ore
+            - deepslate_coal_ore
+            - deepslate
+            - diorite
+            - dirt
+            - emerald_ore
+            - deepslate_emerald_ore
+            - granite
+            - gravel
+            - oak_planks
+            - smooth_basalt
+            - stone
+            - tuff
+        update-radius: 2
+        use-permission: false
 ```
 
 ![test](_images/anticheat/antixray-mode2-1.png)
+
 </details>
 
 <details>
@@ -176,58 +176,59 @@ anticheat:
 
 ```yaml
 anticheat:
-  anti-xray:
-    enabled: true
-    engine-mode: 3
-    hidden-blocks:
-    - copper_ore
-    - deepslate_copper_ore
-    - raw_copper_block
-    - gold_ore
-    - deepslate_gold_ore
-    - iron_ore
-    - deepslate_iron_ore
-    - raw_iron_block
-    - coal_ore
-    - deepslate_coal_ore
-    - lapis_ore
-    - deepslate_lapis_ore
-    - mossy_cobblestone
-    - obsidian
-    - chest
-    - diamond_ore
-    - deepslate_diamond_ore
-    - redstone_ore
-    - deepslate_redstone_ore
-    - clay
-    - emerald_ore
-    - deepslate_emerald_ore
-    - ender_chest
-    lava-obscures: false
-    max-block-height: 128
-    replacement-blocks:
-    - amethyst_block
-    - andesite
-    - budding_amethyst
-    - calcite
-    - coal_ore
-    - deepslate_coal_ore
-    - deepslate
-    - diorite
-    - dirt
-    - emerald_ore
-    - deepslate_emerald_ore
-    - granite
-    - gravel
-    - oak_planks
-    - smooth_basalt
-    - stone
-    - tuff
-    update-radius: 2
-    use-permission: false
+    anti-xray:
+        enabled: true
+        engine-mode: 3
+        hidden-blocks:
+            - copper_ore
+            - deepslate_copper_ore
+            - raw_copper_block
+            - gold_ore
+            - deepslate_gold_ore
+            - iron_ore
+            - deepslate_iron_ore
+            - raw_iron_block
+            - coal_ore
+            - deepslate_coal_ore
+            - lapis_ore
+            - deepslate_lapis_ore
+            - mossy_cobblestone
+            - obsidian
+            - chest
+            - diamond_ore
+            - deepslate_diamond_ore
+            - redstone_ore
+            - deepslate_redstone_ore
+            - clay
+            - emerald_ore
+            - deepslate_emerald_ore
+            - ender_chest
+        lava-obscures: false
+        max-block-height: 128
+        replacement-blocks:
+            - amethyst_block
+            - andesite
+            - budding_amethyst
+            - calcite
+            - coal_ore
+            - deepslate_coal_ore
+            - deepslate
+            - diorite
+            - dirt
+            - emerald_ore
+            - deepslate_emerald_ore
+            - granite
+            - gravel
+            - oak_planks
+            - smooth_basalt
+            - stone
+            - tuff
+        update-radius: 2
+        use-permission: false
 ```
 
 ![test](_images/anticheat/antixray-mode3-1.png)
+
 </details>
 
 <details>
@@ -235,38 +236,38 @@ anticheat:
 
 ```yaml
 anticheat:
-  anti-xray:
-    enabled: true
-    engine-mode: 1
-    hidden-blocks:
-    - chest
-    - coal_ore
-    - deepslate_coal_ore
-    - copper_ore
-    - deepslate_copper_ore
-    - raw_copper_block
-    - diamond_ore
-    - deepslate_diamond_ore
-    - emerald_ore
-    - deepslate_emerald_ore
-    - gold_ore
-    - deepslate_gold_ore
-    - iron_ore
-    - deepslate_iron_ore
-    - raw_iron_block
-    - lapis_ore
-    - deepslate_lapis_ore
-    - redstone_ore
-    - deepslate_redstone_ore
-    lava-obscures: false
-    max-block-height: 64
-    replacement-blocks: []
-    update-radius: 2
-    use-permission: false
-
+    anti-xray:
+        enabled: true
+        engine-mode: 1
+        hidden-blocks:
+            - chest
+            - coal_ore
+            - deepslate_coal_ore
+            - copper_ore
+            - deepslate_copper_ore
+            - raw_copper_block
+            - diamond_ore
+            - deepslate_diamond_ore
+            - emerald_ore
+            - deepslate_emerald_ore
+            - gold_ore
+            - deepslate_gold_ore
+            - iron_ore
+            - deepslate_iron_ore
+            - raw_iron_block
+            - lapis_ore
+            - deepslate_lapis_ore
+            - redstone_ore
+            - deepslate_redstone_ore
+        lava-obscures: false
+        max-block-height: 64
+        replacement-blocks: []
+        update-radius: 2
+        use-permission: false
 ```
 
 ![test](_images/anticheat/antixray-mode1-1.png)
+
 </details>
 
 ---
@@ -280,30 +281,30 @@ anticheat:
 
 ```yaml
 anticheat:
-  anti-xray:
-    enabled: true
-    engine-mode: 2
-    hidden-blocks:
-    # See note about air and possible client performance issues above.
-    - ancient_debris
-    - bone_block
-    - glowstone
-    - magma_block
-    - nether_bricks
-    - nether_gold_ore
-    - nether_quartz_ore
-    - polished_blackstone_bricks
-    lava-obscures: false
-    max-block-height: 128
-    replacement-blocks:
-    - basalt
-    - blackstone
-    - gravel
-    - netherrack
-    - soul_sand
-    - soul_soil
-    update-radius: 2
-    use-permission: false
+    anti-xray:
+        enabled: true
+        engine-mode: 2
+        hidden-blocks:
+            # See note about air and possible client performance issues above.
+            - ancient_debris
+            - bone_block
+            - glowstone
+            - magma_block
+            - nether_bricks
+            - nether_gold_ore
+            - nether_quartz_ore
+            - polished_blackstone_bricks
+        lava-obscures: false
+        max-block-height: 128
+        replacement-blocks:
+            - basalt
+            - blackstone
+            - gravel
+            - netherrack
+            - soul_sand
+            - soul_soil
+        update-radius: 2
+        use-permission: false
 ```
 
 ![test](_images/anticheat/antixray-nether-mode2.png)
@@ -315,19 +316,19 @@ anticheat:
 
 ```yaml
 anticheat:
-  anti-xray:
-    enabled: true
-    engine-mode: 1
-    hidden-blocks:
-    - ancient_debris
-    - nether_gold_ore
-    - nether_quartz_ore
-    lava-obscures: false
-    max-block-height: 128
-    # The replacement-blocks list is not used in engine-mode: 1. Changing this will have no effect.
-    replacement-blocks: []
-    update-radius: 2
-    use-permission: false
+    anti-xray:
+        enabled: true
+        engine-mode: 1
+        hidden-blocks:
+            - ancient_debris
+            - nether_gold_ore
+            - nether_quartz_ore
+        lava-obscures: false
+        max-block-height: 128
+        # The replacement-blocks list is not used in engine-mode: 1. Changing this will have no effect.
+        replacement-blocks: []
+        update-radius: 2
+        use-permission: false
 ```
 
 ![test](_images/anticheat/antixray-nerher-mode1.png)
@@ -339,29 +340,29 @@ anticheat:
 
 ```yaml
 anticheat:
-  anti-xray:
-    enabled: true
-    engine-mode: 3
-    hidden-blocks:
-    - ancient_debris
-    - bone_block
-    - glowstone
-    - magma_block
-    - nether_bricks
-    - nether_gold_ore
-    - nether_quartz_ore
-    - polished_blackstone_bricks
-    lava-obscures: false
-    max-block-height: 128
-    replacement-blocks:
-    - basalt
-    - blackstone
-    - gravel
-    - netherrack
-    - soul_sand
-    - soul_soil
-    update-radius: 2
-    use-permission: false
+    anti-xray:
+        enabled: true
+        engine-mode: 3
+        hidden-blocks:
+            - ancient_debris
+            - bone_block
+            - glowstone
+            - magma_block
+            - nether_bricks
+            - nether_gold_ore
+            - nether_quartz_ore
+            - polished_blackstone_bricks
+        lava-obscures: false
+        max-block-height: 128
+        replacement-blocks:
+            - basalt
+            - blackstone
+            - gravel
+            - netherrack
+            - soul_sand
+            - soul_soil
+        update-radius: 2
+        use-permission: false
 ```
 
 ![test](_images/anticheat/antixray-nerher-mode3.png)
@@ -372,8 +373,8 @@ anticheat:
 
 ```yaml
 anticheat:
-  anti-xray:
-    enabled: false
+    anti-xray:
+        enabled: false
 ```
 
 注意，如果你需要隐藏暴露在空气中的方块，需要将 `air` 添加到 `hidden-blocks` 和 `replacement-blocks` ，但这非常影响性能，不推荐。
@@ -414,42 +415,42 @@ RayTraceAntiXray 文档提供两种配置方式
 
 ```yaml
 settings:
-  anti-xray:
-    update-ticks: 1
-    ms-per-ray-trace-tick: 50
-    # 根据可用的（最好是未使用的）CPU 线程进行调整。
-    ray-trace-threads: 2
+    anti-xray:
+        update-ticks: 1
+        ms-per-ray-trace-tick: 50
+        # 根据可用的（最好是未使用的）CPU 线程进行调整。
+        ray-trace-threads: 2
 world-settings:
-  default:
-    anti-xray:
-      ray-trace: true
-      ray-trace-third-person: false
-      ray-trace-distance: 64.0
-      rehide-blocks: false
-      rehide-distance: .inf
-      max-ray-trace-block-count-per-chunk: 30
-      ray-trace-blocks:
-      # 你可以在这里添加更多的方块，
-      # 但可能需要调整 max-ray-trace-block-count-per-chunk 设置。
-      - chest
-      - diamond_ore
-      - deepslate_diamond_ore
-      - emerald_ore
-      - deepslate_emerald_ore
-      - gold_ore
-      - deepslate_gold_ore
-      - lapis_ore
-      - deepslate_lapis_ore
-      - spawner
-  world_nether:
-    anti-xray:
-      # 注意，ancient_debris(下界合金) 永远不会自然生成在暴露于空气的地方。
-      # 普通引擎模式：1 已经足够，在下界禁用射线追踪。
-      ray-trace: false
-  # 调整世界名称。
-  world_the_end:
-    anti-xray:
-      ray-trace: false
+    default:
+        anti-xray:
+            ray-trace: true
+            ray-trace-third-person: false
+            ray-trace-distance: 64.0
+            rehide-blocks: false
+            rehide-distance: .inf
+            max-ray-trace-block-count-per-chunk: 30
+            ray-trace-blocks:
+                # 你可以在这里添加更多的方块，
+                # 但可能需要调整 max-ray-trace-block-count-per-chunk 设置。
+                - chest
+                - diamond_ore
+                - deepslate_diamond_ore
+                - emerald_ore
+                - deepslate_emerald_ore
+                - gold_ore
+                - deepslate_gold_ore
+                - lapis_ore
+                - deepslate_lapis_ore
+                - spawner
+    world_nether:
+        anti-xray:
+            # 注意，ancient_debris(下界合金) 永远不会自然生成在暴露于空气的地方。
+            # 普通引擎模式：1 已经足够，在下界禁用射线追踪。
+            ray-trace: false
+    # 调整世界名称。
+    world_the_end:
+        anti-xray:
+            ray-trace: false
 ```
 
 </details>
@@ -459,45 +460,45 @@ world-settings:
 
 ```yaml
 settings:
-  anti-xray:
-    update-ticks: 1
-    ms-per-ray-trace-tick: 50
-    # 根据可用的（最好是未使用的）CPU 线程进行调整。
-    ray-trace-threads: 2
+    anti-xray:
+        update-ticks: 1
+        ms-per-ray-trace-tick: 50
+        # 根据可用的（最好是未使用的）CPU 线程进行调整。
+        ray-trace-threads: 2
 world-settings:
-  default:
-    anti-xray:
-      ray-trace: true
-      # 请注意，这大约需要三倍的资源。
-      ray-trace-third-person: true
-      ray-trace-distance: 80.0
-      rehide-blocks: true
-      rehide-distance: 76.0
-      max-ray-trace-block-count-per-chunk: 60
-      ray-trace-blocks:
-      # 您可以在此处添加更多方块，
-      # 但可能需要调整 max-ray-trace-block-count-per-chunk 设置。
-      - chest
-      - diamond_ore
-      - deepslate_diamond_ore
-      - emerald_ore
-      - deepslate_emerald_ore
-      - gold_ore
-      - deepslate_gold_ore
-      - lapis_ore
-      - deepslate_lapis_ore
-      - mossy_cobblestone
-      - spawner
-  # 调整世界名称。
-  world_nether:
-    anti-xray:
-      # 注意，ancient_debris(下界合金) 永远不会自然生成在暴露于空气的地方。
-      # 普通引擎模式：1 已经足够，在下界禁用射线追踪。
-      ray-trace: false
-  # 调整世界名称。
-  world_the_end:
-    anti-xray:
-      ray-trace: false
+    default:
+        anti-xray:
+            ray-trace: true
+            # 请注意，这大约需要三倍的资源。
+            ray-trace-third-person: true
+            ray-trace-distance: 80.0
+            rehide-blocks: true
+            rehide-distance: 76.0
+            max-ray-trace-block-count-per-chunk: 60
+            ray-trace-blocks:
+                # 您可以在此处添加更多方块，
+                # 但可能需要调整 max-ray-trace-block-count-per-chunk 设置。
+                - chest
+                - diamond_ore
+                - deepslate_diamond_ore
+                - emerald_ore
+                - deepslate_emerald_ore
+                - gold_ore
+                - deepslate_gold_ore
+                - lapis_ore
+                - deepslate_lapis_ore
+                - mossy_cobblestone
+                - spawner
+    # 调整世界名称。
+    world_nether:
+        anti-xray:
+            # 注意，ancient_debris(下界合金) 永远不会自然生成在暴露于空气的地方。
+            # 普通引擎模式：1 已经足够，在下界禁用射线追踪。
+            ray-trace: false
+    # 调整世界名称。
+    world_the_end:
+        anti-xray:
+            ray-trace: false
 ```
 
 </details>

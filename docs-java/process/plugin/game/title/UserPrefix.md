@@ -57,11 +57,11 @@ sidebar_position: 2
 - 自动排序，且可翻页的 GUI！
 - 支持 PlaceholderAPI 变量！(凡支持的都可以使用，如 BungeeTabListPlus)
 - 支持[Hex 颜色](https://www.hexcolortool.com/)！(1.16 以上版本) `[自 v1.2.3 版本起]`
-  - 格式： `&(#颜色代码)`
-  - 示例：LightSlateBlue `&(#8470FF)` 、 DarkSlateBlue `&(#483D8B)`
+    - 格式： `&(#颜色代码)`
+    - 示例：LightSlateBlue `&(#8470FF)` 、 DarkSlateBlue `&(#483D8B)`
 - 支持渐变色！(1.16 以上版本) `[自 v1.2.3 版本起]`
-  - 格式： `&<#颜色代码1>消息内容&<#颜色代码2>`
-  - 示例： `&<#8470FF>Hello World!&<#483D8B>`
+    - 格式： `&<#颜色代码1>消息内容&<#颜色代码2>`
+    - 示例： `&<#8470FF>Hello World!&<#483D8B>`
 
 ## 注意事项
 
@@ -131,7 +131,8 @@ Many thanks to Jetbrains for kindly providing a license for me to work on this a
 > 需要注意的是，分发的时候，需要明确提供源代码和二进制文件，另外，用于某些程序的某些协议有一些问题和限制，你可以看一下 @PierreJoye 写的 Practical Guide to GPL Compliance 一文。使用 GPL
 > 协议，你必须在源代码代码中包含相应信息，以及协议本身。
 >
-> *以上文字来自 [五种开源协议 GPL,LGPL,BSD,MIT,Apache](https://www.oschina.net/question/54100_9455) 。*
+> _以上文字来自 [五种开源协议 GPL,LGPL,BSD,MIT,Apache](https://www.oschina.net/question/54100_9455) 。_
+
 </details>
 
 ## bStats

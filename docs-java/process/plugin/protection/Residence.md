@@ -39,8 +39,8 @@ Residence 需要 CMIlib 作为前置插件
 
 下载：
 
-* [SpigotMC](https://www.spigotmc.org/resources/cmilib.87610/)
-* [Zrips 官网](https://www.zrips.net/cmilib/)
+- [SpigotMC](https://www.spigotmc.org/resources/cmilib.87610/)
+- [Zrips 官网](https://www.zrips.net/cmilib/)
 
 ### 优点
 

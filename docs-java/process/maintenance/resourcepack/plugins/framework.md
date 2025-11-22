@@ -147,35 +147,35 @@ CraftEngine 提供了比 [PackSquash](/Java/process/maintenance/resourcepack/com
 
 ```yaml title="推荐配置"
 protection:
-  crash-tools:
-    method-1: true
-    method-2: true
-    method-3: true
-  obfuscation:
-    enable: true
-    seed: 0
-    fake-directory: true
-    escape-unicode: true
-    break-json: true
-    resource-location:
-      enable: true
-      random-namespace:
-        amount: 64
-        length: 9
-      random-path:
-        source: obf
-        depth: 32
-        anti-unzip: true
-      random-atlas:
-        images-per-canvas: 32
-        use-double: true
-      bypass-textures:
-        - "@legacy_unicode"
-        - "@vanilla_textures"
-      bypass-models:
-        - "@vanilla_models"
-      bypass-sounds: []
-      bypass-equipments: []
+    crash-tools:
+        method-1: true
+        method-2: true
+        method-3: true
+    obfuscation:
+        enable: true
+        seed: 0
+        fake-directory: true
+        escape-unicode: true
+        break-json: true
+        resource-location:
+            enable: true
+            random-namespace:
+                amount: 64
+                length: 9
+            random-path:
+                source: obf
+                depth: 32
+                anti-unzip: true
+            random-atlas:
+                images-per-canvas: 32
+                use-double: true
+            bypass-textures:
+                - "@legacy_unicode"
+                - "@vanilla_textures"
+            bypass-models:
+                - "@vanilla_models"
+            bypass-sounds: []
+            bypass-equipments: []
 ```
 
 </TabItem>

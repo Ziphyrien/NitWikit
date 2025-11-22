@@ -37,12 +37,12 @@ _(注意：![image](https://github.com/user-attachments/assets/49472da4-9b50-4fa
 
 ```yaml title="plugins/TrMenu/menus/example.yml"
 Icons:
-  test:
-    display:
-      material: stone
-      lore:
-        - '&11 &22 &33'
-        - '&aa &bb &cc'
+    test:
+        display:
+            material: stone
+            lore:
+                - "&11 &22 &33"
+                - "&aa &bb &cc"
 ```
 
 ![](_images/color-message/游戏内.png)
@@ -63,13 +63,13 @@ MiniMessage 的实质是一个叫 Adventure 的库，这是它的 [文档](https
 
 目前，一些平台已经支持原生使用 Adventure 来扩展字符串，以下是内置此库的列表：
 
-| 支持平台     | 支持版本                               | 备注                                                                   |
-|----------|------------------------------------|----------------------------------------------------------------------|
-| Sponge   | Sponge 8 (1.16.5)                  | /                                                                    |
-| Velocity | 1.1.0 build 158                    | 仅支持消息、操作栏标题、boss 栏和标题                                                 |
-| Paper    | 1.16.5 build 473                   | /                                                                    |
-| Minestom | Build 7494725                      | 内容有点杂，详见[minestom wiki](https://wiki.minestom.net/feature/adventure) |
-| Fabric   | `adventure-platform-fabric` 5.3.0* | 虽然不是一个东西 (?)，但是体验是一样的                                                 |
+| 支持平台 | 支持版本                            | 备注                                                                         |
+| -------- | ----------------------------------- | ---------------------------------------------------------------------------- |
+| Sponge   | Sponge 8 (1.16.5)                   | /                                                                            |
+| Velocity | 1.1.0 build 158                     | 仅支持消息、操作栏标题、boss 栏和标题                                        |
+| Paper    | 1.16.5 build 473                    | /                                                                            |
+| Minestom | Build 7494725                       | 内容有点杂，详见[minestom wiki](https://wiki.minestom.net/feature/adventure) |
+| Fabric   | `adventure-platform-fabric` 5.3.0\* | 虽然不是一个东西 (?)，但是体验是一样的                                       |
 
 _详情可以参阅 [Adventure 原生支持](https://docs.papermc.io/adventure/platform/native/)_
 
@@ -106,11 +106,11 @@ _除非他们自身引入了 Adventure 库 (如 PlaceholderAPI)。_
 
 ```yaml title="plugins/TrMenu/menus/example.yml"
 Icons:
-  test:
-    display:
-      material: stone
-      lore:
-        - '<rainbow>Hello world'
+    test:
+        display:
+            material: stone
+            lore:
+                - "<rainbow>Hello world"
 ```
 
 ![](_images/color-message/展示.png)
@@ -157,7 +157,7 @@ MineDown 为 Minecraft 引入了 Markdown 风格的文本格式化语法，让�
 ### 语法示例
 
 ```text
-[||||||||||||||||||||](color=#f6d365-#fda085) 
+[||||||||||||||||||||](color=#f6d365-#fda085)
 ```
 
 更多语法可以参考下面的链接

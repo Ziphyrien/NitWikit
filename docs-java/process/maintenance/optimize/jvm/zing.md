@@ -40,9 +40,9 @@ Azul Zing 的专业性较强，新手请不要使用
 
 以下 Falcon 参数已在 Zing 25.02 版本中被标记为弃用，并可能在未来版本中移除，不建议继续使用：
 
-* `-XX:+FalconUseCompileStashing`
-* `-XX:+FalconLoadObjectCache`
-* `-XX:-FalconSaveObjectCache`
+- `-XX:+FalconUseCompileStashing`
+- `-XX:+FalconLoadObjectCache`
+- `-XX:-FalconSaveObjectCache`
 
 这些参数与 `UseUnifiedCompilerFrontend` 不兼容，使用时会自动禁用 `UseUnifiedCompilerFrontend`。
 
@@ -98,5 +98,5 @@ C4 是 Zing 中唯一的垃圾收集器，取代了 OpenJDK 中可用的其他�
 
 这些参数未经测试，仅作为标记
 
-* `-XX:+UseSpecialHashSet` 启用对特殊 HashSet 填充模式的优化，当输入集合的元素频繁添加到空 HashSet 时。
-* `-XX:-OptimizeIdentityHashForDistribution` 启用 System.identityHashCode() 的替代实现，以牺份哈希计算速度为代价，提供更好的对象分布
+- `-XX:+UseSpecialHashSet` 启用对特殊 HashSet 填充模式的优化，当输入集合的元素频繁添加到空 HashSet 时。
+- `-XX:-OptimizeIdentityHashForDistribution` 启用 System.identityHashCode() 的替代实现，以牺份哈希计算速度为代价，提供更好的对象分布

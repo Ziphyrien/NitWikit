@@ -235,7 +235,7 @@ any [ 动作1 动作2 动作3 更多 ]
 /vul eval if any [ perm vulpecula.command not perm luckperms.editor ] then tell 通过 else 不通过
 ```
 
-*玩家拥有权限 vulpecula.command* 和 *没有权限 luckperms.editor* 满足其中一个或多个就通过
+_玩家拥有权限 vulpecula.command_ 和 _没有权限 luckperms.editor_ 满足其中一个或多个就通过
 
 ![](_images/if_3.png)
 

@@ -1,9 +1,9 @@
 // src/clientModules/adsModules.js
-import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
+import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
 
 // Helper to add styles to the document head
 function addStyles(cssText) {
-    const styleElement = document.createElement('style');
+    const styleElement = document.createElement("style");
     styleElement.textContent = cssText;
     document.head.appendChild(styleElement);
 }
@@ -13,27 +13,28 @@ function injectTextAds(ads) {
     if (ads.length === 0) return;
 
     // Create ad container
-    const adContainer = document.createElement('div');
-    adContainer.className = 'extern-container';
+    const adContainer = document.createElement("div");
+    adContainer.className = "extern-container";
 
-    ads.forEach(ad => {
-        const link = document.createElement('a');
+    ads.forEach((ad) => {
+        const link = document.createElement("a");
         link.href = ad.url;
-        link.target = '_blank';
-        link.rel = 'noopener noreferrer';
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
         link.textContent = ad.name;
-        link.className = 'extern-item';
+        link.className = "extern-item";
         adContainer.appendChild(link);
     });
 
     // Responsive insertion logic
     const updateAdPosition = () => {
         // Remove old ad position
-        const existingAd = document.querySelector('.extern-container');
+        const existingAd = document.querySelector(".extern-container");
         if (existingAd) existingAd.remove();
 
-        if (window.innerWidth >= 996) { // Desktop
-            const desktopTarget = document.querySelector('.navbar__items--right');
+        if (window.innerWidth >= 996) {
+            // Desktop
+            const desktopTarget = document.querySelector(".navbar__items--right");
             if (desktopTarget) {
                 const firstChild = desktopTarget.firstChild;
                 if (firstChild) {
@@ -42,33 +43,34 @@ function injectTextAds(ads) {
                     desktopTarget.prepend(adContainer.cloneNode(true));
                 }
             }
-        } else { // Mobile
-            const mobileTarget = document.querySelector('.menu__list');
+        } else {
+            // Mobile
+            const mobileTarget = document.querySelector(".menu__list");
             if (mobileTarget) {
                 const mobileAdContainer = adContainer.cloneNode(true);
-                mobileAdContainer.classList.add('mobile-extern');
+                mobileAdContainer.classList.add("mobile-extern");
                 mobileTarget.appendChild(mobileAdContainer);
             }
         }
     };
 
     updateAdPosition();
-    window.addEventListener('resize', updateAdPosition);
+    window.addEventListener("resize", updateAdPosition);
 }
 
 // Injects image-based ads into the sidebar
 function injectImageAds(ads) {
     if (ads.length === 0) return;
 
-    const target = document.querySelector('.col--3');
+    const target = document.querySelector(".col--3");
     if (!target) return; // Exit if sidebar isn't there
 
     // Remove existing ad container to prevent duplicates
-    const existingAd = document.getElementById('image-ad-container');
+    const existingAd = document.getElementById("image-ad-container");
     if (existingAd) existingAd.remove();
 
-    const adContainer = document.createElement('div');
-    adContainer.id = 'image-ad-container';
+    const adContainer = document.createElement("div");
+    adContainer.id = "image-ad-container";
 
     if (ads.length === 1) {
         const ad = ads[0];
@@ -79,77 +81,79 @@ function injectImageAds(ads) {
     } else {
         adContainer.innerHTML = `
             <div class="carousel-container">
-                ${ads.map((ad, index) => `
-                    <div class="carousel-slide ${index === 0 ? 'active' : ''}">
+                ${ads
+                    .map(
+                        (ad, index) => `
+                    <div class="carousel-slide ${index === 0 ? "active" : ""}">
                         <a href="${ad.url}" target="_blank" rel="noopener noreferrer">
                             <img src="${ad.img}" alt="${ad.alt_text || ad.name}" style="width: 100%;">
                         </a>
                     </div>
-                `).join('')}
+                `
+                    )
+                    .join("")}
             </div>
             <button class="carousel-control prev">&lt;</button>
             <button class="carousel-control next">&gt;</button>`;
-        
+
         let currentSlide = 0;
-        const slides = adContainer.querySelectorAll('.carousel-slide');
+        const slides = adContainer.querySelectorAll(".carousel-slide");
         const totalSlides = slides.length;
 
         const showSlide = (index) => {
             slides.forEach((s, i) => {
-                s.style.display = 'none';
-                s.style.opacity = '0';
+                s.style.display = "none";
+                s.style.opacity = "0";
             });
             const activeSlide = slides[index];
             if (activeSlide) {
-                activeSlide.style.display = 'block';
+                activeSlide.style.display = "block";
                 // A tiny delay is needed for the opacity transition to trigger correctly after display change
                 setTimeout(() => {
-                    activeSlide.style.opacity = '1';
+                    activeSlide.style.opacity = "1";
                 }, 10);
             }
         };
 
         // Show the first slide initially
         showSlide(currentSlide);
-        
-        adContainer.querySelector('.next').addEventListener('click', () => {
+
+        adContainer.querySelector(".next").addEventListener("click", () => {
             currentSlide = (currentSlide + 1) % totalSlides;
             showSlide(currentSlide);
         });
 
-        adContainer.querySelector('.prev').addEventListener('click', () => {
+        adContainer.querySelector(".prev").addEventListener("click", () => {
             currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
             showSlide(currentSlide);
         });
     }
-    
+
     // Add margin to the container itself
-    const rightSidebar = target.querySelector('div');
+    const rightSidebar = target.querySelector("div");
     if (rightSidebar) {
         rightSidebar.appendChild(adContainer);
     }
 }
 
-
 async function initializeAds() {
     try {
-        const isChina = window.location.hostname.includes('.cn');
-        const apiUrl = isChina ? 'https://ad-api.8aka.cn/ads-v2.json' : 'https://ad-api.8aka.org/ads-v2.json';
-        
+        const isChina = window.location.hostname.includes(".cn");
+        const apiUrl = isChina ? "https://ad-api.8aka.cn/ads-v2.json" : "https://ad-api.8aka.org/ads-v2.json";
+
         const response = await fetch(apiUrl);
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         const ads = await response.json();
 
         if (!Array.isArray(ads) || ads.length === 0) return;
 
-        const textAds = ads.filter(ad => !ad.img);
-        const imageAds = ads.filter(ad => ad.img);
+        const textAds = ads.filter((ad) => !ad.img);
+        const imageAds = ads.filter((ad) => ad.img);
 
         injectTextAds(textAds);
         injectImageAds(imageAds);
-
     } catch (error) {
-        console.error('Failed to load or inject ads:', error);
+        console.error("Failed to load or inject ads:", error);
     }
 }
 
@@ -177,10 +181,10 @@ if (ExecutionEnvironment.canUseDOM) {
     `);
 
     // Docusaurus lifecycle
-    if (document.readyState === 'complete') {
+    if (document.readyState === "complete") {
         initializeAds();
     } else {
-        window.addEventListener('load', initializeAds);
+        window.addEventListener("load", initializeAds);
     }
 }
 

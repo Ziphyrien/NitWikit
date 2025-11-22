@@ -77,7 +77,7 @@ Matrix 是由国人 RE 编写的一款反作弊插件，当年诞生是用于取
 ！不建议在不接触配置文件的情况下直接使用该插件。
 
 > GitHub: https://github.com/Updated-NoCheatPlus/NoCheatPlus
-> 
+>
 > 下载镜像：https://dl.8aka.org/plugins/NoCheatPlus.jar
 
 </TabItem>
@@ -92,7 +92,7 @@ Matrix 是由国人 RE 编写的一款反作弊插件，当年诞生是用于取
 ！可能不适合部分生电服务器或声明允许使用辅助模组的插件。
 
 > GitHub: https://github.com/GrimAnticheat/Grim
-> 
+>
 > MineBBS: https://www.minebbs.com/threads/grimanticheat-1-8-x-1-21-x.29384/
 
 </TabItem>
@@ -162,6 +162,7 @@ CoordinateOffset 是一个坐标混淆插件，可以防止玩家通过 F3 调�
 AntiHealthIndicator 是一个防止黑客和模组用户查看其他玩家血量的插件。通过直接修改数据包来实现，无法被绕过。
 
 **主要功能：**
+
 - 隐藏玩家血量
 - 隐藏玩家氧气值
 - 隐藏玩家吸收效果
@@ -239,14 +240,17 @@ ISeeYou 是一个免费的录制插件，可以录制玩家的一举一动
 syn-sniff 是一个被动 TCP/IP 协议栈指纹识别插件，通过分析网络数据包来获取玩家连接的深层信息。
 
 **主要功能：**
+
 - 被动嗅探 TCP/IP SYN 数据包进行指纹识别
 - 检测玩家的操作系统类型
 
 **系统要求：**
+
 - pcap 原生库 (libpcap, WinPcap, Npcap)
 - 管理员权限或 Linux Capabilities
 
 **命令：**
+
 - `/fingerprint <player>` - 查看原始 TCP/IP 指纹信息
 - `/predictos <player>` - 显示预测的操作系统
 

@@ -63,7 +63,7 @@ vm.nr_hugepages = <需要的页数>
 可以通过一个公式知道需要的页数：
 
 ```text
-(分配的内存数 (单位：MB)) / 2 + 300 
+(分配的内存数 (单位：MB)) / 2 + 300
 ```
 
 比如我分配了 12GB 的内存 (也就是 12288 MB),那么设置的值为`12288 / 2+ 300 = 6444`,最后的设置应该长这样
@@ -134,17 +134,17 @@ XanMod Linux 内核融合了许多优化补丁，包括许多来自 Cloudflare,G
     awk -f <(wget -qO- https://dl.xanmod.org/check_x86-64_psabi.sh)
     ```
 
-   输出结果
+    输出结果
 
     ```shell
     CPU supports x86-64-v4
     ```
 
-   这里可以看到我的 CPU 是支持 v4 版本的，安装时可以按照此结果进行选择。
+    这里可以看到我的 CPU 是支持 v4 版本的，安装时可以按照此结果进行选择。
 
-   :::warning
-   一定要选择符合的版本进行安装，否则将导致无法正常启动！
-   :::
+    :::warning
+    一定要选择符合的版本进行安装，否则将导致无法正常启动！
+    :::
 
 2. 添加上游公钥：
 
@@ -165,17 +165,17 @@ XanMod Linux 内核融合了许多优化补丁，包括许多来自 Cloudflare,G
     apt install -y linux-xanmod-rt-x64v3
     ```
 
-   `v3` 需要根据第 1 步的 CPU supports 更改，最后重启即可
+    `v3` 需要根据第 1 步的 CPU supports 更改，最后重启即可
 
-   :::tip
-   
-   `CPU supports x86-64-v4` 仍然需要安装 `x64v3`,AVX512 对于内核没有影响
-   
-   :::
+    :::tip
+
+    `CPU supports x86-64-v4` 仍然需要安装 `x64v3`,AVX512 对于内核没有影响
+
+    :::
 
 5. 检查安装
 
-   重启后检查安装
+    重启后检查安装
 
     ```shell
     uname -r
@@ -428,5 +428,5 @@ TEXT
 
 参考 NodeSeek 大佬教程：
 
-* https://www.nodeseek.com/post-37225-1
-* https://www.nodeseek.com/post-197087-1
+- https://www.nodeseek.com/post-37225-1
+- https://www.nodeseek.com/post-197087-1

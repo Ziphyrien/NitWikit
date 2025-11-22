@@ -73,7 +73,7 @@ skin-hashes：
 base64 编码的 JSON。
 
 如果在 Paper 服务器上，则可以通过将项目握在手中并运行命令来获取头骨的此数据。这会将项目的 NBT 数据输出到聊天和控制台。
-纹理字符串位于```SkullOwner```标签下、```Properties```标签下、```textures```标签下。例如：/paper dumpitem
+纹理字符串位于`SkullOwner`标签下、`Properties`标签下、`textures`标签下。例如：/paper dumpitem
 
 <!--markdownlint-disable line-length-->
 
@@ -96,6 +96,7 @@ GeyserHeads 是一个小工具，可以提取 Slimefun,DeluxeMenu，手
 中的头颅并自动保存到配置文件，[下载地址](https://github.com/Hahaa13/GeyserHeads/releases)
 
 使用方法:
-* `/geyserheads load Slimefun` 导出 Slimefun 头颅
-* `/geyserheads load Hand` 导出手上的头颅
-* `/geyserheads load DeluxeMenus` 导出 DeluxeMenus 中的头颅
+
+- `/geyserheads load Slimefun` 导出 Slimefun 头颅
+- `/geyserheads load Hand` 导出手上的头颅
+- `/geyserheads load DeluxeMenus` 导出 DeluxeMenus 中的头颅

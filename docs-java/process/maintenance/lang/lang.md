@@ -18,11 +18,11 @@
 
 通用语言是一些功能非常完备的语言，在 Minecraft 中常用的有以下语言：
 
-* Skript
-* Kether(语言自身功能并不完备，但可以运行 JavaScript，并且有许多扩展，归为通用语言)
-* JavaScript
-* Jexl
-* OGNL(少见，已知实现是 Arthas)
+- Skript
+- Kether(语言自身功能并不完备，但可以运行 JavaScript，并且有许多扩展，归为通用语言)
+- JavaScript
+- Jexl
+- OGNL(少见，已知实现是 Arthas)
 
 这些编程语言还可以与 Java 进行交互，实现非常复杂的功能
 
@@ -30,17 +30,16 @@
 
 特定语言一般是一些插件内部使用的语言，功能通常仅限于 Minecraft 游戏机制，常见的有以下语言：
 
-* ConditionalEvents
-* LiteCommandEditor
-* Actions
-* ScriptBlockPlus
-* Mechanics
-* PlaceholderAPI
-* Denizen
-* ...
+- ConditionalEvents
+- LiteCommandEditor
+- Actions
+- ScriptBlockPlus
+- Mechanics
+- PlaceholderAPI
+- Denizen
+- ...
 
 在这部分文档中不会介绍特定语言，学习请查看官方 wiki
-
 
 import DocCardList from '@theme/DocCardList';
 

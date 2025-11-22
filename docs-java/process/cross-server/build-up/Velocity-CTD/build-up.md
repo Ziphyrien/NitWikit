@@ -166,9 +166,9 @@ import TabItem from '@theme/TabItem';
 1. 在 `server.properties` 文件中禁用 `online-mode` 设置，以防止服务器自行验证玩家身份。
 2. 如果之前已启用 BungeeCord 转发，需在 `spigot.yml` 中将 `settings.bungeecord` 设置为 `false`。
 3. 在 `config/paper-global.yml` 中：
-   - 设置 `proxies.velocity.enabled` 为 true。
-   - 设置 `proxies.velocity.secret` 以匹配你的 `forwarding.secret` 文件中的密钥。
-   - 设置 `proxies.velocity.online-mode` 与你的 `velocity.toml` 中的 `online-mode` 一致。
+    - 设置 `proxies.velocity.enabled` 为 true。
+    - 设置 `proxies.velocity.secret` 以匹配你的 `forwarding.secret` 文件中的密钥。
+    - 设置 `proxies.velocity.online-mode` 与你的 `velocity.toml` 中的 `online-mode` 一致。
 4. 编辑完成后，重新启动服务器。
 
 **注意**：如果你使用的是 Paper **1.18.2 或更低版本**，请在 `paper.yml` 文件中查找相关设置。
@@ -203,8 +203,8 @@ import TabItem from '@theme/TabItem';
 ### 传统转发增加安全性
 
 - 对于托管在共享主机上的代理，Velocity 可选地支持 **BungeeGuard**。
-  - 将 `velocity.toml` 中的 `player-info-forwarding` 设置为 `bungeeguard`。
-  - 在 BungeeGuard 配置的令牌部分添加 `forwarding.secret` 文件中的值。
+    - 将 `velocity.toml` 中的 `player-info-forwarding` 设置为 `bungeeguard`。
+    - 在 BungeeGuard 配置的令牌部分添加 `forwarding.secret` 文件中的值。
 
 ### 为 Spigot / Paper 配置传统转发
 

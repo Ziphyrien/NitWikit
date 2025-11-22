@@ -21,6 +21,7 @@ sidebar_position: 6
 <summary>如何选择合适的节点？</summary>
 
 根据三角形两边之和大于第三边的定理，节点距离客户端或服务端越近，游戏延迟就越小。然而你无法确定客户端的地理位置，毕竟玩家来自大江南北。那么只有缩短节点与服务器之间的距离，才能保证所有玩家的延迟都最低。例如服务器位于河北，有两个节点分别位于山东枣庄和江苏宿迁，有两个玩家分别位于广东和辽宁，那么当选择离服务器更近的枣庄节点时，假设辽宁玩家到节点为 20ms，广东玩家到节点为 50ms，服务器到节点为 10ms，那么辽宁玩家的游戏延迟就是 20+10=30ms，广东玩家的游戏延迟就是 50ms+10ms=60ms。当选择离服务器更远的宿迁节点时，假设辽宁玩家到节点为 40ms，广东玩家到节点为 30ms，服务器到节点为 30ms，那么辽宁玩家的游戏延迟就是 50+30=70ms，广东玩家的游戏延迟就是 40+30=60ms。选择宿迁节点时虽然广东玩家的延迟不变，但是辽宁玩家连接服务器时，数据从更远的宿迁绕了一圈再回来，延迟高了很多。因此选择运营商时，优先选择拥有离自己近的节点的运营商。
+
 </details>
 6. 实名认证：为了在意外事故中更好地规划责任，很多内网穿透运营商都要求实名认证才能开始使用，或者部分节点需要实名认证。还有一些实名认证时还要求用户必须成年 (年满 18 岁)。况且实名认证服务提供方收费，内网穿透运营商可能会让你自行承担费用，目前价格通常在 1 元。所以在选择运营商时，如果你未成年，或者没有在线支付的能力，那么在一些运营商处可能会受到限制。
 
@@ -268,9 +269,9 @@ remotePort = 19132
 
 在 Linux 服务端上，为了保证 frp 在后台运行，这里有两种方法：
 
-1. screen    方便快捷
+1. screen 方便快捷
 
-2. systemd   省心，有点复杂
+2. systemd 省心，有点复杂
 
 <Tabs>
 <TabItem value="screen" label="Screen" default>
@@ -454,15 +455,15 @@ sudo systemctl enable frpc
 1. 打开命令提示符（CMD）或 PowerShell
 2. 切换到 frp 解压目录：
 
-   ```cmd
-   cd C:\frp
-   ```
+    ```cmd
+    cd C:\frp
+    ```
 
 3. 运行 frpc：
 
-   ```cmd
-   frpc.exe -c frpc.toml
-   ```
+    ```cmd
+    frpc.exe -c frpc.toml
+    ```
 
 :::tip
 此方法会占用一个命令行窗口，关闭窗口后 frpc 会停止运行。
@@ -477,31 +478,31 @@ sudo systemctl enable frpc
 3. 以管理员身份运行命令提示符
 4. 安装服务：
 
-   ```cmd
-   nssm install frpc "C:\frp\frpc.exe" "-c C:\frp\frpc.toml"
-   ```
+    ```cmd
+    nssm install frpc "C:\frp\frpc.exe" "-c C:\frp\frpc.toml"
+    ```
 
 5. 启动服务：
 
-   ```cmd
-   nssm start frpc
-   ```
+    ```cmd
+    nssm start frpc
+    ```
 
 6. 其他常用命令：
 
-   ```cmd
-   # 停止服务
-   nssm stop frpc
+    ```cmd
+    # 停止服务
+    nssm stop frpc
 
-   # 重启服务
-   nssm restart frpc
+    # 重启服务
+    nssm restart frpc
 
-   # 查看服务状态
-   nssm status frpc
+    # 查看服务状态
+    nssm status frpc
 
-   # 卸载服务
-   nssm remove frpc confirm
-   ```
+    # 卸载服务
+    nssm remove frpc confirm
+    ```
 
 ##### 方法三：使用 WinSW 设置为 Windows 服务
 
@@ -509,29 +510,29 @@ sudo systemctl enable frpc
 2. 将下载的 `WinSW.exe` 重命名为 `frpc-service.exe` 并放到 frp 目录
 3. 在同一目录创建配置文件 `frpc-service.xml`：
 
-   ```xml
-   <service>
-     <id>frpc</id>
-     <name>Frp Client</name>
-     <description>Frp 内网穿透客户端</description>
-     <executable>C:\frp\frpc.exe</executable>
-     <arguments>-c C:\frp\frpc.toml</arguments>
-     <logmode>rotate</logmode>
-   </service>
-   ```
+    ```xml
+    <service>
+      <id>frpc</id>
+      <name>Frp Client</name>
+      <description>Frp 内网穿透客户端</description>
+      <executable>C:\frp\frpc.exe</executable>
+      <arguments>-c C:\frp\frpc.toml</arguments>
+      <logmode>rotate</logmode>
+    </service>
+    ```
 
 4. 以管理员身份运行命令提示符，安装服务：
 
-   ```cmd
-   cd C:\frp
-   frpc-service.exe install
-   ```
+    ```cmd
+    cd C:\frp
+    frpc-service.exe install
+    ```
 
 5. 启动服务：
 
-   ```cmd
-   frpc-service.exe start
-   ```
+    ```cmd
+    frpc-service.exe start
+    ```
 
 6. 设置开机自启（在服务管理中设置为自动启动）
 
@@ -542,7 +543,7 @@ sudo systemctl enable frpc
 
 如果你使用的是现成的内网穿透运营商提供的内网穿透，**一定要根据运营商提供的教程操作**。以下是两个最有名的内网穿透运营商的 proxy protocol 开启方法。  
 [SakuraFrp](https://doc.natfrp.com/bestpractice/realip.html#proxy-protocol)  
-[OpenFrp](https://openfrp.wiki/use/proxy-protocol.html#%E8%8E%B7%E5%8F%96%E8%AE%BF%E9%97%AE%E8%80%85%E7%9A%84%E7%9C%9F%E5%AE%9E-ip)  
+[OpenFrp](https://openfrp.wiki/use/proxy-protocol.html#%E8%8E%B7%E5%8F%96%E8%AE%BF%E9%97%AE%E8%80%85%E7%9A%84%E7%9C%9F%E5%AE%9E-ip)
 
 如果是自建内网穿透，那么如果是 ini 配置文件，就在 frpc 隧道对应的配置 (位于 frpc.ini 中) 中加入一行 `proxy_protocol_version =`，如果是协议 v1 就写等于 v1，v2 就写等于 v2。例如：
 
@@ -573,7 +574,7 @@ transport.proxyProtocolVersion = "v2"
 ```yaml
 # config/paper-global.yaml
 proxies:
-  proxy-protocol: true   # 从 false 改为 true
+    proxy-protocol: true # 从 false 改为 true
 ```
 
 这样配置会使你的服务器仅接受来自 Frp 的连接。
@@ -581,4 +582,3 @@ proxies:
 如果你有特殊需求，需要同时支持直连和 Proxy Protocol 的话，请安装 [HAProxyDetector](https://github.com/andylizi/haproxy-detector) 插件来解决。
 
 对于较高的版本，请使用 [HaHaWTH 的 fork 版本](https://github.com/HaHaWTH/HAProxy-Detector)。
-

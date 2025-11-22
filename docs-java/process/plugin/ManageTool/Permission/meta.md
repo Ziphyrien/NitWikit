@@ -11,7 +11,7 @@ sidebar_position: 6
 
 ## 权限
 
-实际上，你可以给予用户和组 *不存在的*(没有被其他插件使用) 的权限节点
+实际上，你可以给予用户和组 _不存在的_(没有被其他插件使用) 的权限节点
 
 这些权限有着和其他权限一样的性质
 
@@ -28,16 +28,16 @@ sidebar_position: 6
 案例 (TrMenu)：
 
 ```yaml
-  'A':
+"A":
     display:
-      material: stone
+        material: stone
     icons:
-    - condition: 'perm *nitwikit.demo'
-      actions:
-        - 'tell: "你已经按过了！"'
+        - condition: "perm *nitwikit.demo"
+          actions:
+              - 'tell: "你已经按过了！"'
     actions:
-      - 'command inline "lp user {{player name}} permission set nitwikit.demo true" as console'
-      - 'refresh: A'
+        - 'command inline "lp user {{player name}} permission set nitwikit.demo true" as console'
+        - "refresh: A"
 ```
 
 ### 升级制 vip
@@ -45,26 +45,26 @@ sidebar_position: 6
 <!--markdownlint-disable line-length-->
 
 ```yaml
-  'A':
+"A":
     display:
-      material: stone
-      update: 20
+        material: stone
+        update: 20
     icons:
-      - condition: 'perm rank.vip+'
-        display:
-          lore: '最顶级 vip'
-      - condition: 'perm rank.vip'
-        display:
-          lore: '你是普通玩家，点击花费 20 金币升级到 vip+'
-        actions:
-          all:
-            - 'command inline "lp user {{player name}} permission set rank.vip+ true" as console {condition=check papi %vault_eco_balance% >= 20}'
-      - condition: 'perm rank.default'
-        display:
-          lore: '你是普通玩家，点击花费 10 金币升级到 vip'
-        actions:
-          all:
-            - 'command inline "lp user {{player name}} permission set rank.vip true" as console {condition=check papi %vault_eco_balance% >= 10}'
+        - condition: "perm rank.vip+"
+          display:
+              lore: "最顶级 vip"
+        - condition: "perm rank.vip"
+          display:
+              lore: "你是普通玩家，点击花费 20 金币升级到 vip+"
+          actions:
+              all:
+                  - 'command inline "lp user {{player name}} permission set rank.vip+ true" as console {condition=check papi %vault_eco_balance% >= 20}'
+        - condition: "perm rank.default"
+          display:
+              lore: "你是普通玩家，点击花费 10 金币升级到 vip"
+          actions:
+              all:
+                  - 'command inline "lp user {{player name}} permission set rank.vip true" as console {condition=check papi %vault_eco_balance% >= 10}'
 ```
 
 <!--markdownlint-enable line-length-->
@@ -90,17 +90,17 @@ sidebar_position: 6
 ![](_images/memory_4.png)
 
 ```yaml
-  'A':
+"A":
     update: 20
     display:
-      material: stone
+        material: stone
     icons:
-    - condition: 'perm *nitwikit.demo'
-      actions:
-        - 'tell: "正在冷却！还有%luckperms_expiry_time_nitwikit.demo%"'
+        - condition: "perm *nitwikit.demo"
+          actions:
+              - 'tell: "正在冷却！还有%luckperms_expiry_time_nitwikit.demo%"'
     actions:
-      - 'command inline "lp user {{player name}} permission settemp nitwikit.demo true 60s" as console'
-      - 'refresh'
+        - 'command inline "lp user {{player name}} permission settemp nitwikit.demo true 60s" as console'
+        - "refresh"
 ```
 
 :::warning

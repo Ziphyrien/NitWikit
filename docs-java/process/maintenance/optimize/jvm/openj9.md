@@ -32,7 +32,7 @@ OpenJ9 是完全重新设计的 JVM，拥有独立的垃圾回收系统，与 Ho
 
 ```yaml
 spark:
-  enabled: false
+    enabled: false
 ```
 
 ### 方法二：启动参数

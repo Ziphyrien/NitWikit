@@ -59,7 +59,7 @@ python main.py [相对/绝对目录] [时长] [类型]
 
 Windows 系统在服务器根目录右键点击压缩即可 (如果时间比较急推荐 zip，如果空间比较紧推荐 7zip)。
 
-Linux 使用指令 ```tar -czvf backup_date.tar.gz /[path]/``` (如果使用 7zip 请自行查看 7zip 指令)。
+Linux 使用指令 `tar -czvf backup_date.tar.gz /[path]/` (如果使用 7zip 请自行查看 7zip 指令)。
 
 面板 - 大多数面板都可以像 Windows 一键压缩。
 

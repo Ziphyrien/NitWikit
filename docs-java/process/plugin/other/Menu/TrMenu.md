@@ -85,7 +85,6 @@ Notice：维护这个分支完全是个人兴趣。
 
 - https://taboo.8aka.org/TrMenu/
 
-
 新文档，推荐阅读，不挂梯也可访问
 
 - https://taboo.8aka.org/TrMenu
@@ -133,13 +132,13 @@ kether 语法提示
 `condition` 最后的结果为 true 就会显示这个子图标
 
 ```yaml
-  'A':
+"A":
     display:
-      material: stone
+        material: stone
     icons:
-      - condition: 'true'
-        display:
-          name: '我有没有条件啊！我到底有没有条件啊！'
+        - condition: "true"
+          display:
+              name: "我有没有条件啊！我到底有没有条件啊！"
 ```
 
 所以你可以直接写 true 让他显示这个子图标
@@ -153,31 +152,30 @@ kether 语法提示
 所以你可以这样子在菜单打开或重新计算子图标的时候跑一遍这些语句
 
 ```yaml
-  'A':
+"A":
     display:
-      material: stone
+        material: stone
     icons:
-      - condition: 'tell 想不到骚话'
-      - condition: 'tell 想不到骚话'
-      - condition: 'tell 想不到骚话'
-      - condition: 'tell 想不到骚话'
-      - condition: 'tell 想不到骚话'
+        - condition: "tell 想不到骚话"
+        - condition: "tell 想不到骚话"
+        - condition: "tell 想不到骚话"
+        - condition: "tell 想不到骚话"
+        - condition: "tell 想不到骚话"
 ```
 
 特别的，写在此处的语句要比 name，lore 等位置先执行，下方是一个使用此特性的案例
 
 ```yaml
-  'A':
+"A":
     display:
-      material: stone
+        material: stone
     icons:
-      - condition: 'meta set mat to stone'
-      - condition: 'tell meta get mat'
-      - condition: 'meta set amt to 10'
+        - condition: "meta set mat to stone"
+        - condition: "tell meta get mat"
+        - condition: "meta set amt to 10"
     actions:
-      all:
-        tell meta get mat
-        papi join [ '%checkitem_remove_mat:' meta get mat ',amt:' meta get amt '%' ]
+        all: tell meta get mat
+            papi join [ '%checkitem_remove_mat:' meta get mat ',amt:' meta get amt '%' ]
 ```
 
 ![](_images/子图标写动作.png)
@@ -195,7 +193,7 @@ https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
 找到
 
 ```yaml
-Right-Click-Player: 'open: Profile'
+Right-Click-Player: "open: Profile"
 ```
 
 #### 玩家信息菜单
@@ -211,10 +209,10 @@ https://github.com/Dreeam-qwq/TrMenu/blob/stable/v3/plugin/src/main/resources/me
 https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
 
 ```yaml
-  Sneaking-Offhand:
-    - condition: 'perm *trmenu.shortcut'
-      execute: 'open: Example'
-      deny: 'return'
+Sneaking-Offhand:
+    - condition: "perm *trmenu.shortcut"
+      execute: "open: Example"
+      deny: "return"
 ```
 
 <!-- ### 每日签到
@@ -244,51 +242,51 @@ https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
 - [CheckItem](/Java/process/plugin/Front-Plugin/PlaceHolderAPI/CheckItem)
 
 ```yaml
-  '写法1':
+"写法1":
     display:
-      name: '两个钻石换三个绿宝石'
-      material: stone
+        name: "两个钻石换三个绿宝石"
+        material: stone
     actions:
-      - condition: 'papi %checkitem_mat:diamond,amt:2%'
-        actions:
-          - 'papi %checkitem_remove_mat:diamond,amt:2%'
-          - 'papi %checkitem_give_mat:emerald,amt:3%'
-        deny:
-          - 'tell inline "物品不够，你有{{papi %checkitem_amount_mat:diamond,amt:2%}}个，还差{{math 2 - papi %checkitem_amount_mat:diamond,amt:2%}}个"'
-  '写法2':
+        - condition: "papi %checkitem_mat:diamond,amt:2%"
+          actions:
+              - "papi %checkitem_remove_mat:diamond,amt:2%"
+              - "papi %checkitem_give_mat:emerald,amt:3%"
+          deny:
+              - 'tell inline "物品不够，你有{{papi %checkitem_amount_mat:diamond,amt:2%}}个，还差{{math 2 - papi %checkitem_amount_mat:diamond,amt:2%}}个"'
+"写法2":
     display:
-      name: '两个钻石换三个绿宝石'
-      material: stone
+        name: "两个钻石换三个绿宝石"
+        material: stone
     actions:
-      - if papi %checkitem_mat:diamond, amt:2% then {
+        - if papi %checkitem_mat:diamond, amt:2% then {
           papi %checkitem_remove_mat:diamond, amt:2%
           papi %checkitem_give_mat:emerald, amt:3%
-        } else tell inline "物品不够，你有{{papi %checkitem_amount_mat:diamond,amt:2%}}个，还差{{math 2 - papi %checkitem_amount_mat:diamond,amt:2%}}个"
+          } else tell inline "物品不够，你有{{papi %checkitem_amount_mat:diamond,amt:2%}}个，还差{{math 2 - papi %checkitem_amount_mat:diamond,amt:2%}}个"
 ```
 
 #### 购买
 
 ```yaml
-  '写法1':
+"写法1":
     display:
-      name: '10 块钱买 2 个钻石'
-      material: stone
+        name: "10 块钱买 2 个钻石"
+        material: stone
     actions:
-      - condition: 'money 10'
-        actions:
-          - 'take-money: 10'
-          - 'papi %checkitem_give_mat:emerald,amt:3%'
-        deny:
-          - tell inline "钱不够，你有{{papi %vault_eco_balance%}}块，还差{{math 10 - papi %vault_eco_balance%}}块"
-  '写法2':
+        - condition: "money 10"
+          actions:
+              - "take-money: 10"
+              - "papi %checkitem_give_mat:emerald,amt:3%"
+          deny:
+              - tell inline "钱不够，你有{{papi %vault_eco_balance%}}块，还差{{math 10 - papi %vault_eco_balance%}}块"
+"写法2":
     display:
-      name: '10 块钱买 2 个钻石'
-      material: stone
+        name: "10 块钱买 2 个钻石"
+        material: stone
     actions:
-      - if money 10 then {
+        - if money 10 then {
           command inline"money take {{player name}} 10"
           papi %checkitem_give_mat:emerald,amt:3%
-        } else tell inline "钱不够，你有{{papi %vault_eco_balance%}}块，还差{{math 10 - papi %vault_eco_balance%}}块"
+          } else tell inline "钱不够，你有{{papi %vault_eco_balance%}}块，还差{{math 10 - papi %vault_eco_balance%}}块"
 ```
 
 #### 个人限购
@@ -304,27 +302,27 @@ https://hhhhhy.gitbook.io/trmenu-v3/usage/shortcuts
 <!--markdownlint-disable line-length-->
 
 ```yaml
-  'C':
+"C":
     display:
-      name: '10 块钱买 2 个钻石 (限购 20 个)'
-      material: stone
+        name: "10 块钱买 2 个钻石 (限购 20 个)"
+        material: stone
     icons:
-      - condition: meta set KEY to 限购数据 1
-      - condition: data set papi %trmenu_meta_KEY% to 20
+        - condition: meta set KEY to 限购数据 1
+        - condition: data set papi %trmenu_meta_KEY% to 20
     actions:
-      - condition: meta set 单价 to 10
-      - condition: all [ money papi %trmenu_meta_单价% check data get meta get KEY > 0 ]
-        actions:
-          # 扣钱
-          - 'take-money: %trmenu_meta_单价%'
-          # 扣一次限购
-          - data set papi %trmenu_meta_KEY% to join [ math data get meta get KEY - 1 ]
-          - tell join [ "剩余限购次数：" data get meta get KEY " 剩的钱：" papi %vault_eco_balance% ]
-          # 给货
-          - papi %checkitem_give_mat:emerald,amt:3%
-        deny:
-          - tell inline 钱不够，你有{{papi %vault_eco_balance%}}块，还差{{math papi %trmenu_meta_单价% - papi %vault_eco_balance%}}块 {condition=not money meta get 单价}
-          - tell inline 限购次数用完了 {condition=check data get meta get KEY == 0}
+        - condition: meta set 单价 to 10
+        - condition: all [ money papi %trmenu_meta_单价% check data get meta get KEY > 0 ]
+          actions:
+              # 扣钱
+              - "take-money: %trmenu_meta_单价%"
+              # 扣一次限购
+              - data set papi %trmenu_meta_KEY% to join [ math data get meta get KEY - 1 ]
+              - tell join [ "剩余限购次数：" data get meta get KEY " 剩的钱：" papi %vault_eco_balance% ]
+              # 给货
+              - papi %checkitem_give_mat:emerald,amt:3%
+          deny:
+              - tell inline 钱不够，你有{{papi %vault_eco_balance%}}块，还差{{math papi %trmenu_meta_单价% - papi %vault_eco_balance%}}块 {condition=not money meta get 单价}
+              - tell inline 限购次数用完了 {condition=check data get meta get KEY == 0}
 ```
 
 <!--markdownlint-enable line-length-->

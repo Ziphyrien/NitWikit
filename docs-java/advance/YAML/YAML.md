@@ -4,7 +4,6 @@ slug: /Sundry/YAML
 sidebar_position: 2
 ---
 
-
 # 概览
 
 ## 什么是 YAML?
@@ -13,7 +12,7 @@ sidebar_position: 2
 >
 > YAML 的语法和其他高级语言类似，并且可以简单表达清单、散列表、标量等数据形态。它使用空白符号缩进和大量依赖外观的特色，特别适合用来表达或编辑数据结构、各种配置文件、调试内容、文件大纲 (例如：许多电子邮件标题格式和 YAML 非常接近)。
 >
-> YAML 的配置文件后缀为 *.yml* 或者 *.yaml* ，如：`config.yml` 。
+> YAML 的配置文件后缀为 _.yml_ 或者 _.yaml_ ，如：`config.yml` 。
 
 Minecraft 服务器用到的 YAML 语法都是非常非常基础的，只要了解一下就可以。(甚至看看配置文件就明白了)
 

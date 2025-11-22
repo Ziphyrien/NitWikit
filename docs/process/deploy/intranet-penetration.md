@@ -25,16 +25,16 @@ Cloudflare Tunnel 是 CF 下的免费内网穿透
 
 优点：
 
-* 免费，无需注册
-* 自带 n TB 高防
-* 不限流
-* 支持 TCP,UDP,RDP,SSH,HTTP
-* SSH 提供 WebSSH，还可以通过 Access 管理
+- 免费，无需注册
+- 自带 n TB 高防
+- 不限流
+- 支持 TCP,UDP,RDP,SSH,HTTP
+- SSH 提供 WebSSH，还可以通过 Access 管理
 
 缺点：
 
-* 延迟较大 (不可以优选）
-* 客户端需安装 mod 才能进入 (仅限 TCP,UDP)
+- 延迟较大 (不可以优选）
+- 客户端需安装 mod 才能进入 (仅限 TCP,UDP)
 
 ### 安装
 
@@ -85,15 +85,15 @@ Minekube 的免费内网穿透，这个组织还有另一个有名作品 Gate
 
 优点：
 
-* 免费，无需注册
-* 自带高防
-* 不限流
-* 会提供一个免费域名和 1 个 AnyCast 独立 IPV4
-* 有 Dashboard，可以进行网络分流，管理，黑名单等操作
+- 免费，无需注册
+- 自带高防
+- 不限流
+- 会提供一个免费域名和 1 个 AnyCast 独立 IPV4
+- 有 Dashboard，可以进行网络分流，管理，黑名单等操作
 
 缺点：
 
-* 延迟非常大
+- 延迟非常大
 
 [官网](https://connect.minekube.com/)
 
@@ -103,18 +103,18 @@ Playit 的免费内网穿透，需要登录
 
 优点：
 
-* 提供免费版本
-* 无限流量
-* 提供防火墙功能
-* 提供**亚太地区节点**（测试时候路由到了日本）
-* 自带高防
-* 支持 Geyser
-* 支持任意 TCP、UDP 应用
+- 提供免费版本
+- 无限流量
+- 提供防火墙功能
+- 提供**亚太地区节点**（测试时候路由到了日本）
+- 自带高防
+- 支持 Geyser
+- 支持任意 TCP、UDP 应用
 
 缺点：
 
-* 免费版本不能绑定自己的域名，只能使用随机域名
-* 延迟略大
+- 免费版本不能绑定自己的域名，只能使用随机域名
+- 延迟略大
 
 Premium 版本一个月 3 刀 (约合人民币 27 元)，一年 30 刀
 
@@ -164,9 +164,9 @@ frp 启用 proxy protocol 的方式参考[自建 frp](/advance/frp#配置-proxy-
 
 对于 mc 服务器来说，支持 proxy protocol 的软件有：
 
-* bungeecord 系
-* paper 分支 (1.18.2)(仅支持 v2)
-* [Geyser](/Java/process/mobile-player/Geyser/introduction/FAQ#frp-搭建内网穿透想显示真实-ip-怎么办)
-* Spigot 端插件 [HAProxyDetector](https://github.com/andylizi/haproxy-detector)
+- bungeecord 系
+- paper 分支 (1.18.2)(仅支持 v2)
+- [Geyser](/Java/process/mobile-player/Geyser/introduction/FAQ#frp-搭建内网穿透想显示真实-ip-怎么办)
+- Spigot 端插件 [HAProxyDetector](https://github.com/andylizi/haproxy-detector)
 
 等。BDS 服务器目前不支持此协议。

@@ -130,4 +130,3 @@ never_store_squash_times = true
 ['**/*?.png']
 image_data_compression_iterations = 255
 ```
-

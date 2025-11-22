@@ -135,7 +135,7 @@ macOS 内置 ssh 命令，我们可以用终端来执行它。要打开 macos �
 ![macos 终端](_images/Linux开服/连接服务器/macOS_terminal.png)
 
 打开终端后，使用上文中提到的 ssh 命令即可连接到服务器。
-  </TabItem>
+</TabItem>
 </Tabs>
 
 除了用 ssh 连接服务器之外，还有可以使用远程桌面。比如 VNC 和 RDP。服务器上一般不配备桌面环境和远程桌面环境，除非是非常需要，否则不建议在服务器上使用远程桌面。

@@ -39,8 +39,8 @@ sidebar_position: 8
 
 这意味着你下载的不是一个有效的插件。这通常是由以下原因之一引起的：
 
-* 你下载的插件根本不是插件，而是 Forge、Fabric 或类似软件的 mod。这些在插件端上无法运行
-* 插件下载不完整，重新下载即可
+- 你下载的插件根本不是插件，而是 Forge、Fabric 或类似软件的 mod。这些在插件端上无法运行
+- 插件下载不完整，重新下载即可
 
 ## Java 版本低
 
@@ -61,16 +61,16 @@ org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError
 常用 Class Version 对应表
 
 | Java 版本 | Class 文件版本 |
-|---------|------------|
-| Java 7  | 51.0       |
-| Java 8  | 52.0       |
-| Java 11 | 55.0       |
-| Java 16 | 60.0       |
-| Java 17 | 61.0       |
-| Java 21 | 65.0       |
-| Java 22 | 66.0       |
-| Java 23 | 67.0       |
-| Java 24 | 68.0       |
+| --------- | -------------- |
+| Java 7    | 51.0           |
+| Java 8    | 52.0           |
+| Java 11   | 55.0           |
+| Java 16   | 60.0           |
+| Java 17   | 61.0           |
+| Java 21   | 65.0           |
+| Java 22   | 66.0           |
+| Java 23   | 67.0           |
+| Java 24   | 68.0           |
 
 ## 循环依赖
 

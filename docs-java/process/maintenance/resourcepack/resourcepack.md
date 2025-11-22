@@ -77,7 +77,6 @@ JAVA 版的资源包分发与基岩版不同，它是云分发的，提供给客
 
 不需要登陆账号，不需要点击链接打开网页才下载
 
-
 import DocCardList from '@theme/DocCardList';
 
 <DocCardList />

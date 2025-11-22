@@ -9,14 +9,14 @@ Slime 世界格式是 Hypixel 开发的一种世界存储格式
 
 优势
 
-* 使用 ZStd 替换 ZLib，大大优化体积和加载速度
-* 支持数据库作为加载后端，多服小游戏非常有用
-* 支持 readonly，玩完就没
-* 预加载到内存当中，玩家不会因为加载卡顿
+- 使用 ZStd 替换 ZLib，大大优化体积和加载速度
+- 支持数据库作为加载后端，多服小游戏非常有用
+- 支持 readonly，玩完就没
+- 预加载到内存当中，玩家不会因为加载卡顿
 
 适合的服务器：
 
-* 不适用于大型生存世界，而是适用于小型世界，如**迷你游戏地图或服务器大厅**
+- 不适用于大型生存世界，而是适用于小型世界，如**迷你游戏地图或服务器大厅**
 
 ## 下载
 
@@ -26,20 +26,19 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="mcver">
 <TabItem value="new" label="1.20.4+">
 
-
 前往[Github Release](https://github.com/InfernalSuite/AdvancedSlimePaper/releases),找到适合的版本下载即可
 
-* `plugin-***-R0.1-SNAPSHOT.1.jar` ASM 的插件版本 (推荐)
-* `asp-server.jar` ASM 的独立服务器核心版本 (基于 Paper)
-* `importer-***-R0.1-SNAPSHOT.jar` ASM 独立的导入工具，可以将原版世界格式转为 SRF 格式
+- `plugin-***-R0.1-SNAPSHOT.1.jar` ASM 的插件版本 (推荐)
+- `asp-server.jar` ASM 的独立服务器核心版本 (基于 Paper)
+- `importer-***-R0.1-SNAPSHOT.jar` ASM 独立的导入工具，可以将原版世界格式转为 SRF 格式
 
 </TabItem>
 <TabItem value="old" label="1.8">
 
 前往[Github Release](https://github.com/Swofty-Developments/Continued-Slime-World-Manager/releases),下载最新版
 
-* 下载`swoftyworldmanager-plugin-<version>.jar` 到插件目录
-* 下载`swoftyworldmanager-classmodifier-<version>.jar` 到服务器根目录
+- 下载`swoftyworldmanager-plugin-<version>.jar` 到插件目录
+- 下载`swoftyworldmanager-classmodifier-<version>.jar` 到服务器根目录
 
 添加启动参数
 
@@ -47,7 +46,7 @@ import TabItem from '@theme/TabItem';
 -javaagent:swoftyworldmanager-classmodifier-<version>.jar
 ```
 
-* 你可以使用 `swoftyworldmanager-importer-<version>.jar` 来导入原版世界格式到 SRF 格式
+- 你可以使用 `swoftyworldmanager-importer-<version>.jar` 来导入原版世界格式到 SRF 格式
 
 </TabItem>
 </Tabs>
@@ -62,17 +61,17 @@ import TabItem from '@theme/TabItem';
 
 ```yaml
 worlds:
-  my_great_world:
-    source: mongodb
-    loadOnStartup: false
-    readOnly: true
-    spawn: 940, 2, -370
-    allowMonsters: false
-    allowAnimals: false
-    difficulty: peaceful
-    pvp: false
-    environment: NORMAL
-    worldType: default
+    my_great_world:
+        source: mongodb
+        loadOnStartup: false
+        readOnly: true
+        spawn: 940, 2, -370
+        allowMonsters: false
+        allowAnimals: false
+        difficulty: peaceful
+        pvp: false
+        environment: NORMAL
+        worldType: default
 ```
 
 **`source`** 存储世界的数据源名称

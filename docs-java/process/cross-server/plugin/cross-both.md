@@ -7,7 +7,7 @@ sidebar_position: 2
 
 这一分类中的插件有单端版和跨服端版，你可以删除单端版使用跨服端版，在此页会对比此举的优缺点。
 
-在“好处”与“坏处”对比中，如果一方被“*”标记，表示我们认为此方要远大于另一方。
+在“好处”与“坏处”对比中，如果一方被“\*”标记，表示我们认为此方要远大于另一方。
 
 ## MiniMOTD
 
@@ -27,10 +27,10 @@ sidebar_position: 2
 
 核心支持：
 <a href="">
-  <img src="https://img.shields.io/badge/BungeeCord-orange?&style=for-the-badge" class="stylish-image" alt="BungeeCord" />
+<img src="https://img.shields.io/badge/BungeeCord-orange?&style=for-the-badge" class="stylish-image" alt="BungeeCord" />
 </a>
 <a href="">
-  <img src="https://img.shields.io/badge/Velocity-blue?&style=for-the-badge" class="stylish-image" alt="Velocity" />
+<img src="https://img.shields.io/badge/Velocity-blue?&style=for-the-badge" class="stylish-image" alt="Velocity" />
 </a>
 
 import Tabs from '@theme/Tabs';
@@ -60,10 +60,10 @@ import TabItem from '@theme/TabItem';
 
 核心支持：
 <a href="">
-  <img src="https://img.shields.io/badge/BungeeCord-orange?&style=for-the-badge" class="stylish-image" alt="BungeeCord" />
+<img src="https://img.shields.io/badge/BungeeCord-orange?&style=for-the-badge" class="stylish-image" alt="BungeeCord" />
 </a>
 <a href="">
-  <img src="https://img.shields.io/badge/Velocity-blue?&style=for-the-badge" class="stylish-image" alt="Velocity" />
+<img src="https://img.shields.io/badge/Velocity-blue?&style=for-the-badge" class="stylish-image" alt="Velocity" />
 </a>
 
 <Tabs queryString="ViaVersion">
@@ -95,10 +95,10 @@ import TabItem from '@theme/TabItem';
 
 核心支持：
 <a href="">
-  <img src="https://img.shields.io/badge/BungeeCord-orange?&style=for-the-badge" class="stylish-image" alt="BungeeCord" />
+<img src="https://img.shields.io/badge/BungeeCord-orange?&style=for-the-badge" class="stylish-image" alt="BungeeCord" />
 </a>
 <a href="">
-  <img src="https://img.shields.io/badge/Velocity-blue?&style=for-the-badge" class="stylish-image" alt="Velocity" />
+<img src="https://img.shields.io/badge/Velocity-blue?&style=for-the-badge" class="stylish-image" alt="Velocity" />
 </a>
 
 <Tabs queryString="Geyser">
@@ -128,10 +128,10 @@ import TabItem from '@theme/TabItem';
 
 核心支持：
 <a href="">
-  <img src="https://img.shields.io/badge/BungeeCord-orange?&style=for-the-badge" class="stylish-image" alt="BungeeCord" />
+<img src="https://img.shields.io/badge/BungeeCord-orange?&style=for-the-badge" class="stylish-image" alt="BungeeCord" />
 </a>
 <a href="">
-  <img src="https://img.shields.io/badge/Velocity-blue?&style=for-the-badge" class="stylish-image" alt="Velocity" />
+<img src="https://img.shields.io/badge/Velocity-blue?&style=for-the-badge" class="stylish-image" alt="Velocity" />
 </a>
 
 <Tabs queryString="ServerUtils">
@@ -162,10 +162,10 @@ import TabItem from '@theme/TabItem';
 
 核心支持：
 <a href="">
-  <img src="https://img.shields.io/badge/BungeeCord-orange?&style=for-the-badge" class="stylish-image" alt="BungeeCord" />
+<img src="https://img.shields.io/badge/BungeeCord-orange?&style=for-the-badge" class="stylish-image" alt="BungeeCord" />
 </a>
 <a href="">
-  <img src="https://img.shields.io/badge/Velocity-blue?&style=for-the-badge" class="stylish-image" alt="Velocity" />
+<img src="https://img.shields.io/badge/Velocity-blue?&style=for-the-badge" class="stylish-image" alt="Velocity" />
 </a>
 
 可以用来设置多个子大厅，设置主大厅，并按照你配置的方式发送玩家到子服。
@@ -194,10 +194,10 @@ TODO
 
 核心支持：
 <a href="">
-  <img src="https://img.shields.io/badge/BungeeCord-orange?&style=for-the-badge" class="stylish-image" alt="BungeeCord" />
+<img src="https://img.shields.io/badge/BungeeCord-orange?&style=for-the-badge" class="stylish-image" alt="BungeeCord" />
 </a>
 <a href="">
-  <img src="https://img.shields.io/badge/Velocity-blue?&style=for-the-badge" class="stylish-image" alt="Velocity" />
+<img src="https://img.shields.io/badge/Velocity-blue?&style=for-the-badge" class="stylish-image" alt="Velocity" />
 </a>
 
 一款好用的 tab 栏插件，此外，还可以制作计分板，Bossbar
@@ -236,10 +236,10 @@ TODO
 
 核心支持：
 <a href="">
-  <img src="https://img.shields.io/badge/BungeeCord-orange?&style=for-the-badge" class="stylish-image" alt="BungeeCord" />
+<img src="https://img.shields.io/badge/BungeeCord-orange?&style=for-the-badge" class="stylish-image" alt="BungeeCord" />
 </a>
 <a href="">
-  <img src="https://img.shields.io/badge/Velocity-blue?&style=for-the-badge" class="stylish-image" alt="Velocity" />
+<img src="https://img.shields.io/badge/Velocity-blue?&style=for-the-badge" class="stylish-image" alt="Velocity" />
 </a>
 
 SkinRestorer 拥有完善的 Proxy Mode 以支持在代理服与字符同时部署，其本身作为老牌皮肤插件并无其他明显缺点。

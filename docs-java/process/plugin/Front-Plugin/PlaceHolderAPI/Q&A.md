@@ -66,8 +66,8 @@ flowchart TD
 
 ```yaml title="plugins\PlaceholderAPI\config.yml"
 boolean:
-  'true': 'yes'
-  'false': 'no'
+    "true": "yes"
+    "false": "no"
 ```
 
 将 yes 和 no 改为 true false

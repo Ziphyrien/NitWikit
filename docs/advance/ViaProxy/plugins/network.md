@@ -29,5 +29,3 @@ sidebar_position: 2
 1. 从 [GitHub Actions](https://github.com/ViaVersionAddons/ViaProxyRakNetProviders/actions/workflows/build.yml) 下载最新版本
 2. 将 jar 文件放入 ViaProxy 的 plugins 文件夹
 3. 运行 ViaProxy。现在您应该能够在高级选项卡中选择 RakNet 后端
-
-

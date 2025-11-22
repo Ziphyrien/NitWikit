@@ -21,7 +21,6 @@ import GlobalContent from '@site/src/components/GlobalContent'
 
 - [日志上传](https://log.8aka.org) - 上传日志
 
-
 ## 规则
 
 **不要滥用，不要上传违法文件!!!!!**

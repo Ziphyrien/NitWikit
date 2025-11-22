@@ -41,40 +41,41 @@ Nukkit 拥有相当丰富的社区分支，例如 PM1E、PowerNukkit 和 PowerNu
 ## 服务端分支
 
 ### 主流服务端
+
 <!--markdownlint-disable line-length-->
 
 <Tabs queryString="nukkit-history">
 <TabItem value="NukkitX" label="NukkitX">
 
-| NukkitX | 别名：NKX |
-| --- | --- |
-| 相关链接 | [NukkitX 官网](https://cloudburstmc.org/)、[Github 仓库](https://github.com/CloudburstMC/Nukkit) |
-| 作者 | [CloudburstMC](https://github.com/CloudburstMC) |
-| 介绍 | NukkitX（原为 Nukkit2.0）是一个基于 Java 开发的高性能、开源的 Minecraft Bedrock Edition 服务端软件，继承了 Nukkit 的代码并不断优化，支持多种平台和丰富的插件扩展，为玩家和开发者提供了更稳定、更灵活的多人游戏体验 |
-| 下载 | [构建站](https://ci.opencollab.dev/job/NukkitX/job/Nukkit/job/master/) |
-| 支持的 MC 版本 | 1.14.x-最新版 (目前保持更新) |
+| NukkitX        | 别名：NKX                                                                                                                                                                                                          |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 相关链接       | [NukkitX 官网](https://cloudburstmc.org/)、[Github 仓库](https://github.com/CloudburstMC/Nukkit)                                                                                                                   |
+| 作者           | [CloudburstMC](https://github.com/CloudburstMC)                                                                                                                                                                    |
+| 介绍           | NukkitX（原为 Nukkit2.0）是一个基于 Java 开发的高性能、开源的 Minecraft Bedrock Edition 服务端软件，继承了 Nukkit 的代码并不断优化，支持多种平台和丰富的插件扩展，为玩家和开发者提供了更稳定、更灵活的多人游戏体验 |
+| 下载           | [构建站](https://ci.opencollab.dev/job/NukkitX/job/Nukkit/job/master/)                                                                                                                                             |
+| 支持的 MC 版本 | 1.14.x-最新版 (目前保持更新)                                                                                                                                                                                       |
 
 </TabItem>
 <TabItem value="Nukkit-MOT" label="Nukkit-MOT">
 
-| Nukkit-MOT | 别名：NMOT |
-| --- | --- |
-| 相关链接 | [Nukkit-MOT 官网](https://www.nukkit-mot.com/)、[Github 仓库](https://github.com/MemoriesOfTime/Nukkit-MOT) |
-| 作者 | [MemoriesOfTime](https://github.com/MemoriesOfTime) |
-| 介绍 | Nukkit-MOT 是基于 NukkitPetteriM1Edition 开发的 Minecraft Bedrock Edition 服务器软件，支持 1.2 至 1.21.50 版本，内置生物 AI 和原版命令，支持多版本协议和丰富的游戏特性 |
-| 下载 | [构建站](https://motci.cn/job/Nukkit-MOT/job/master/) |
-| 支持的 MC 版本 | 1.18.x-最新版 (目前保持更新) |
+| Nukkit-MOT     | 别名：NMOT                                                                                                                                                             |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 相关链接       | [Nukkit-MOT 官网](https://www.nukkit-mot.com/)、[Github 仓库](https://github.com/MemoriesOfTime/Nukkit-MOT)                                                            |
+| 作者           | [MemoriesOfTime](https://github.com/MemoriesOfTime)                                                                                                                    |
+| 介绍           | Nukkit-MOT 是基于 NukkitPetteriM1Edition 开发的 Minecraft Bedrock Edition 服务器软件，支持 1.2 至 1.21.50 版本，内置生物 AI 和原版命令，支持多版本协议和丰富的游戏特性 |
+| 下载           | [构建站](https://motci.cn/job/Nukkit-MOT/job/master/)                                                                                                                  |
+| 支持的 MC 版本 | 1.18.x-最新版 (目前保持更新)                                                                                                                                           |
 
 </TabItem>
 <TabItem value="PowerNukkitX" label="PowrNukkitX">
 
-| PowerNukkitX | 别名：PNX |
-| --- | --- |
-| 相关链接 | [PowerNukkitX 官网](https://www.powernukkitx.cn/)、[Github 仓库](https://github.com/PowerNukkitX/PowerNukkitX) |
-| 作者 | [PowerNukkitX](https://github.com/PowerNukkitX) |
-| 介绍 | PowerNukkitX（简称 PNX）是基于 PowerNukkit 和 Nukkit 的修改优化版本，修复了其 bug，添加了 BlocklyNukkit，LiteLoaderBDS 插件等更多功能的支持，内置了 Java 版服务端插件史诗地形生成器 (Terra) |
-| 下载 | [Github](https://github.com/PowerNukkitX/PowerNukkitX/releases/download/snapshot/powernukkitx-run.zip) |
-| 支持的 MC 版本 | 1.17.x-最新版 (目前保持更新) |
+| PowerNukkitX   | 别名：PNX                                                                                                                                                                                   |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 相关链接       | [PowerNukkitX 官网](https://www.powernukkitx.cn/)、[Github 仓库](https://github.com/PowerNukkitX/PowerNukkitX)                                                                              |
+| 作者           | [PowerNukkitX](https://github.com/PowerNukkitX)                                                                                                                                             |
+| 介绍           | PowerNukkitX（简称 PNX）是基于 PowerNukkit 和 Nukkit 的修改优化版本，修复了其 bug，添加了 BlocklyNukkit，LiteLoaderBDS 插件等更多功能的支持，内置了 Java 版服务端插件史诗地形生成器 (Terra) |
+| 下载           | [Github](https://github.com/PowerNukkitX/PowerNukkitX/releases/download/snapshot/powernukkitx-run.zip)                                                                                      |
+| 支持的 MC 版本 | 1.17.x-最新版 (目前保持更新)                                                                                                                                                                |
 
 </TabItem>
 </Tabs>
@@ -88,14 +89,14 @@ Nukkit 拥有相当丰富的社区分支，例如 PM1E、PowerNukkit 和 PowerNu
 <Tabs queryString="nukkit-history">
 <TabItem value="NukkitPetteriM1Edition" label="NukkitPetteriM1Edition">
 
-| NukkitPetteriM1Edition | 别名：PM1ENK、Nukkit-PM1E、PM1E |
-| --- | --- |
-| 相关链接 | [Github 仓库](https://github.com/PetteriM1/NukkitPetteriM1Edition) |
-| 作者 | [PetteriM1](https://github.com/PetteriM1/) |
-| 介绍 | Nukkit PetteriM1 Edition 是一个基于 Java 开发的 Minecraft Bedrock Edition 服务器软件的定制版本，由 Nukkit 核心开发者 PetteriM1 制作，支持从 1.2 到 最新版版本 的多客户端，并内置生物 AI 和生成功能 |
-| 下载 | [Github Releases](https://github.com/PetteriM1/NukkitPetteriM1Edition/releases) |
-| 支持的 MC 版本 | 1.13.x-最新版 (目前保持更新) |
-| **争议问题** | **2022 年 11 月 15 日，PetteriM1 删除了 PM1E 仓库下的所有代码，并表示接下来只会发布混淆过的 jar 文件供使用。此举引起了社区的强烈不满，据知情人士透露，这么做的原因是为了防止"别人抄袭他的代码"。而在闭源后，PM1ENK 又被指控在接下来的更新中存在对 PowerNukkitX 的抄袭。在此期间，一位名为 sora-kawaii 的 Github 用户成功反混淆了 PM1ENK 并公布了源码，公开的代码显示了 PM1ENK 对开源项目的抄袭。2023 年 1 月 18 日，PM1ENK 发布了更新，此次更新被认为使用了业内最贵的付费混淆器 ZKM 以加强混淆效果，这一违背开源协议的行为立刻掀起了社区中抵制 PM1ENK 的浪潮，随后社区推出了基于 PM1ENK 最后一个开源版本开发的 Nukkit-MOT 核心。*（参考文章：刀哥《[为什么你不应该使用 PM1ENK - 细说 PM1ENK 的罪状](https://www.minebbs.com/threads/pm1enk-pm1enk.16912/)》*）** |
+| NukkitPetteriM1Edition | 别名：PM1ENK、Nukkit-PM1E、PM1E                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 相关链接               | [Github 仓库](https://github.com/PetteriM1/NukkitPetteriM1Edition)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| 作者                   | [PetteriM1](https://github.com/PetteriM1/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| 介绍                   | Nukkit PetteriM1 Edition 是一个基于 Java 开发的 Minecraft Bedrock Edition 服务器软件的定制版本，由 Nukkit 核心开发者 PetteriM1 制作，支持从 1.2 到 最新版版本 的多客户端，并内置生物 AI 和生成功能                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| 下载                   | [Github Releases](https://github.com/PetteriM1/NukkitPetteriM1Edition/releases)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| 支持的 MC 版本         | 1.13.x-最新版 (目前保持更新)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **争议问题**           | **2022 年 11 月 15 日，PetteriM1 删除了 PM1E 仓库下的所有代码，并表示接下来只会发布混淆过的 jar 文件供使用。此举引起了社区的强烈不满，据知情人士透露，这么做的原因是为了防止"别人抄袭他的代码"。而在闭源后，PM1ENK 又被指控在接下来的更新中存在对 PowerNukkitX 的抄袭。在此期间，一位名为 sora-kawaii 的 Github 用户成功反混淆了 PM1ENK 并公布了源码，公开的代码显示了 PM1ENK 对开源项目的抄袭。2023 年 1 月 18 日，PM1ENK 发布了更新，此次更新被认为使用了业内最贵的付费混淆器 ZKM 以加强混淆效果，这一违背开源协议的行为立刻掀起了社区中抵制 PM1ENK 的浪潮，随后社区推出了基于 PM1ENK 最后一个开源版本开发的 Nukkit-MOT 核心。_（参考文章：刀哥《[为什么你不应该使用 PM1ENK - 细说 PM1ENK 的罪状](https://www.minebbs.com/threads/pm1enk-pm1enk.16912/)》_）** |
 
 </TabItem>
 </Tabs>
@@ -105,35 +106,35 @@ Nukkit 拥有相当丰富的社区分支，例如 PM1E、PowerNukkit 和 PowerNu
 <Tabs queryString="nukkit-history">
 <TabItem value="Nukkit" label="Nukkit">
 
-| Nukkit | 别名：NK |
-| --- | --- |
-| 相关链接 | [Github 仓库](https://github.com/Nukkit/Nukkit) |
-| 作者 | [Nukkit Project](https://github.com/Nukkit) |
-| 介绍 | 第一代 Nukkit，现已停止更新并转移到 Nukkit2.0（项目重命名为 NukkitX） |
-| 下载 | 无 |
-| 支持的 MC 版本 | 携带版 0.12-1.14.x |
+| Nukkit         | 别名：NK                                                              |
+| -------------- | --------------------------------------------------------------------- |
+| 相关链接       | [Github 仓库](https://github.com/Nukkit/Nukkit)                       |
+| 作者           | [Nukkit Project](https://github.com/Nukkit)                           |
+| 介绍           | 第一代 Nukkit，现已停止更新并转移到 Nukkit2.0（项目重命名为 NukkitX） |
+| 下载           | 无                                                                    |
+| 支持的 MC 版本 | 携带版 0.12-1.14.x                                                    |
 
 </TabItem>
 <TabItem value="PowerNukkit" label="PowerNukkit">
 
-| PowerNukkit | --- |
-| --- | --- |
-| 相关链接 | [PowerNukkit 官网](https://powernukkit.org/)、[Github 仓库](https://github.com/PowerNukkit/PowerNukkit) |
-| 作者 | [PowerNukkit](https://github.com/PowerNukkit/) |
-| 介绍 | PowerNukkit 是一个基于 Nukkit 的 Minecraft Bedrock Edition 服务器软件分支，支持几乎所有单机方块和物品，增加了大量新特性（如含水方块、红石、副手槽等），并修复了众多在 Nukkit 上出现的 Bug |
-| 下载 | [Github Releases](https://github.com/PowerNukkit/PowerNukkit/releases) |
-| 支持的 MC 版本 | 1.12.x-1.18.0 |
+| PowerNukkit    | ---                                                                                                                                                                                       |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 相关链接       | [PowerNukkit 官网](https://powernukkit.org/)、[Github 仓库](https://github.com/PowerNukkit/PowerNukkit)                                                                                   |
+| 作者           | [PowerNukkit](https://github.com/PowerNukkit/)                                                                                                                                            |
+| 介绍           | PowerNukkit 是一个基于 Nukkit 的 Minecraft Bedrock Edition 服务器软件分支，支持几乎所有单机方块和物品，增加了大量新特性（如含水方块、红石、副手槽等），并修复了众多在 Nukkit 上出现的 Bug |
+| 下载           | [Github Releases](https://github.com/PowerNukkit/PowerNukkit/releases)                                                                                                                    |
+| 支持的 MC 版本 | 1.12.x-1.18.0                                                                                                                                                                             |
 
 </TabItem>
 <TabItem value="NukkitPetteriM1Edition-MOT" label="NukkitPetteriM1Edition-MOT">
 
-| NukkitPetteriM1Edition-MOT | --- |
-| --- | --- |
-| 相关链接 | [Github 仓库](https://github.com/MemoriesOfTime/NukkitPetteriM1Edition) |
-| 作者 | [MemoriesOfTime](https://github.com/MemoriesOfTime) |
-| 介绍 | NukkitPetteriM1Edition 事件发生后，MemoriesOfTime 团队第一时间保存了该项目的最后一次更新的代码，并结合了 sora-kawaii 反编译开源出来的代码进行续写并转移仓库为 **Nukkit-MOT** |
-| 下载 | 无 |
-| 支持的 MC 版本 | 1.18.x |
+| NukkitPetteriM1Edition-MOT | ---                                                                                                                                                                          |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 相关链接                   | [Github 仓库](https://github.com/MemoriesOfTime/NukkitPetteriM1Edition)                                                                                                      |
+| 作者                       | [MemoriesOfTime](https://github.com/MemoriesOfTime)                                                                                                                          |
+| 介绍                       | NukkitPetteriM1Edition 事件发生后，MemoriesOfTime 团队第一时间保存了该项目的最后一次更新的代码，并结合了 sora-kawaii 反编译开源出来的代码进行续写并转移仓库为 **Nukkit-MOT** |
+| 下载                       | 无                                                                                                                                                                           |
+| 支持的 MC 版本             | 1.18.x                                                                                                                                                                       |
 
 </TabItem>
 </Tabs>

@@ -289,14 +289,14 @@ on command "/op":
 
 要注意，事件的监听是有优先级的，其中有六个优先级，其中执行顺序为**从上到下**分别为：
 
-|优先级 | Priority|
-|---|---|
-|最低 | Lowest|
-|低 |Low|
-|正常 (默认)|Normal|
-|高 |High|
-|最高 |Highest|
-|监控 |Monitor|
+| 优先级      | Priority |
+| ----------- | -------- |
+| 最低        | Lowest   |
+| 低          | Low      |
+| 正常 (默认) | Normal   |
+| 高          | High     |
+| 最高        | Highest  |
+| 监控        | Monitor  |
 
 :::warning[吐槽]
 
@@ -583,8 +583,7 @@ command /world <world>:
 
 后文为 TUCAOEVER 在 mcbbs 的教程未参考部分，没有进行任何格式化，TODO
 
-:::
-=
+# :::
 
 ---
 
@@ -673,17 +672,17 @@ on command "/op":
 通过在官方 Doc 搜索，我们得知关于 Title 相关的 Effects 一共有两个：
 
 - [EffResetTitle](https://docs.skriptlang.org/docs.html?search=#EffResetTitle)
-    "Resets the title of the player to the default values."
-    "重置玩家的 Title 至默认值"
+  "Resets the title of the player to the default values."
+  "重置玩家的 Title 至默认值"
 - [EffSendTitle](https://docs.skriptlang.org/docs.html?search=#EffSendTitle)
-    "Sends a title/subtitle to the given player(s) with optional fadein/stay/fadeout times."
-    "发送 Title/Subtitle 至指定玩家 可自定义渐入和淡出的时间"
+  "Sends a title/subtitle to the given player(s) with optional fadein/stay/fadeout times."
+  "发送 Title/Subtitle 至指定玩家 可自定义渐入和淡出的时间"
 
 我们需要知道的是 #EffSendTitle 的用法。关于怎么用，这里本质上和学习 Conditions(条件) 一样，我们将注意点放在 "Patterns" 上。
 
 <!--markdownlint-disable line-length-->
 
-``` text
+```text
 send title %text% [with subtitle %text%] [to %players%] [for %time span%] [with fade[(-| )]in %time span%] [(and|with) fade[(-| )]out %time span%]
 send subtitle %text% [to %players%] [for %time span%] [with fade[(-| )]in %time span%] [(and|with) fade[(-| )]out %time span%]
 ```
@@ -781,7 +780,7 @@ https://docs.skriptlang.org/classes.html
 
 综合上面我们所获得的信息 我们获得了完整一行代码：
 
-```spawn zombie at location of player```
+`spawn zombie at location of player`
 
 ---
 
@@ -839,9 +838,9 @@ WOW，恭喜你！看到这，你就可以开始尝试着写一些插件了。
 
 是的，确实。如果仅仅需要获得某一个玩家的游戏币数量，两者并没有什么区别。
 
-但是，如果我将 `{金币::(玩家的名称)}` 中玩家的名称改为 "*" 即 ``{金币::*}``，这时候会产生什么样的效果呢？
+但是，如果我将 `{金币::(玩家的名称)}` 中玩家的名称改为 "_" 即 ``{金币::_}``，这时候会产生什么样的效果呢？
 
-``{金币::*}`` 将包含，所有 ``{金币::(玩家的名称)}`` 变量。
+`{金币::*}` 将包含，所有 `{金币::(玩家的名称)}` 变量。
 
 而这个，却是 `{(玩家的名称)的游戏币数量}` 怎么改也做不到的。
 
@@ -974,17 +973,17 @@ command /<指令名称> <参数>:
 ```
 
 - 指令名称 (必填)
-    指令名称基本上是指令，你可以在指令名称中使用任何字符 (空格字符除外)。
-    当然如果在指令名称中使用空格字符，那么空格字符后的文本将成为参数。
-    指令名称前的斜杠字符 (/) 是可选的 (但这并不意味着你可以在执行指令时不带斜杠)。
+  指令名称基本上是指令，你可以在指令名称中使用任何字符 (空格字符除外)。
+  当然如果在指令名称中使用空格字符，那么空格字符后的文本将成为参数。
+  指令名称前的斜杠字符 (/) 是可选的 (但这并不意味着你可以在执行指令时不带斜杠)。
 - 参数 (可选)
-    可以通过将参数放在 "[]" 中来使其成为可选参数。
-  - 类型参数
-        可以通过使用规定的格式来限制参数的类型，例如：`<type = default value>`。
-    - 类型为 "text/string" 的参数可以接受任何字符，但 "object" 类型不能用作于参数 (编者注：原因大抵是无法输入 `object`)。
-    - 类型可以是多个 (例如 number -> numbers entity -> entities)。通过这样的方法，可以使参数接受多个值。
-    - "= default value" 这一部分是可选的，如果指令执行者未输入参数，系统将自动使用默认值。
-    - 同样你也可以使用这样的方式设置参数默认值，例如：`<item = %player's tool%>`。
+  可以通过将参数放在 "[]" 中来使其成为可选参数。
+    - 类型参数
+      可以通过使用规定的格式来限制参数的类型，例如：`<type = default value>`。
+        - 类型为 "text/string" 的参数可以接受任何字符，但 "object" 类型不能用作于参数 (编者注：原因大抵是无法输入 `object`)。
+        - 类型可以是多个 (例如 number -> numbers entity -> entities)。通过这样的方法，可以使参数接受多个值。
+        - "= default value" 这一部分是可选的，如果指令执行者未输入参数，系统将自动使用默认值。
+        - 同样你也可以使用这样的方式设置参数默认值，例如：`<item = %player's tool%>`。
 
 以下是一份指令示例：
 
@@ -995,27 +994,27 @@ command /<指令名称> <参数>:
 但是如果没有输入数值，系统将自动使用默认值，半径 20。
 
 - Aliases
-    子指令，指令的别名。如果需要创建多个子指令，请使用用逗号分隔。
-    示例：(/alias1，alias2，/alias3)
+  子指令，指令的别名。如果需要创建多个子指令，请使用用逗号分隔。
+  示例：(/alias1，alias2，/alias3)
 - Executable By
-    指定可以使用该指令的执行者。
-    例如：console(后台)，players(玩家)，the console and players(后台和玩家)
+  指定可以使用该指令的执行者。
+  例如：console(后台)，players(玩家)，the console and players(后台和玩家)
 - Usage
-    执行者用法不正确时，将发送的消息。
+  执行者用法不正确时，将发送的消息。
 - Description
-    指令描述，其他插件可以获取/显示此信息。
+  指令描述，其他插件可以获取/显示此信息。
 - Permission
-    执行指令所需要的权限。
+  执行指令所需要的权限。
 - Permission Message
-    执行者没有权限时的提示信息。
+  执行者没有权限时的提示信息。
 - Cooldown
-    多长冷却时间后可以再次使用该指令，需要注意的是，关服时所有指令冷却时间将被重置。
+  多长冷却时间后可以再次使用该指令，需要注意的是，关服时所有指令冷却时间将被重置。
 - Cooldown Message
-    冷却期间，提示信息。
+  冷却期间，提示信息。
 - Cooldown Bypass
-    无视冷却时间所需要的权限。
+  无视冷却时间所需要的权限。
 - Cooldown Storage
-    存储冷却时间全局变量名称。
+  存储冷却时间全局变量名称。
 
 ---
 
@@ -1067,7 +1066,7 @@ function SG_writeFile(variableName: text, value: text, fileDir: text):
     save yaml "plugins/SUPERGUILDS/%{_fileDir}%.yml"
 ```
 
-若想将 "plugins/SUPERGUILDS/playerdata/玩家UUID.yml" 的 "Datas.Username" 设置为 "**EVER"
+若想将 "plugins/SUPERGUILDS/playerdata/玩家UUID.yml" 的 "Datas.Username" 设置为 "\*\*EVER"
 
 ```skript
 file "plugins/SUPERGUILDS/playerdata/%uuid of player%.yml" does not exists:
