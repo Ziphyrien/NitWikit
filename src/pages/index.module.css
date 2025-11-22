@@ -19,7 +19,9 @@
     gap: 28px;
 }
 
-.heroTag {
+.heroTag,
+.sectionHeading span,
+.communityIntro span {
     display: inline-flex;
     align-items: center;
     padding: 6px 14px;
@@ -46,7 +48,12 @@
     color: var(--ifm-color-emphasis-700);
 }
 
-.heroButtons,
+.heroButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
 .ctaButtons {
     display: flex;
     flex-wrap: wrap;
@@ -62,10 +69,7 @@
     border-radius: 12px;
     text-decoration: none;
     font-weight: 600;
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease,
-        background 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .primaryButton {
@@ -89,7 +93,9 @@
     transform: translateY(-2px);
 }
 
-html[data-theme="dark"] .heroTag {
+html[data-theme="dark"] .heroTag,
+html[data-theme="dark"] .sectionHeading span,
+html[data-theme="dark"] .communityIntro span {
     background: rgba(46, 204, 113, 0.18);
     color: #c8ffe3;
 }
@@ -207,14 +213,6 @@ html[data-theme="dark"] .heroMetrics div {
 
 .sectionHeading span {
     justify-self: center;
-    padding: 6px 14px;
-    border-radius: 999px;
-    background: rgba(37, 160, 110, 0.1);
-    color: var(--ifm-color-primary-darker);
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
 }
 
 html[data-theme="dark"] .sectionHeading span {
@@ -256,10 +254,7 @@ html[data-theme="dark"] .sectionHeading span {
     color: inherit;
     display: grid;
     gap: 12px;
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease,
-        border-color 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .mapCard:hover {
@@ -305,15 +300,6 @@ html[data-theme="dark"] .sectionHeading span {
 }
 
 .communityIntro span {
-    display: inline-flex;
-    padding: 6px 14px;
-    border-radius: 999px;
-    background: rgba(37, 160, 110, 0.12);
-    color: var(--ifm-color-primary-darker);
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
     margin-bottom: 16px;
 }
 
