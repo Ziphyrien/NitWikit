@@ -1,0 +1,242 @@
+.page {
+    min-height: 100vh;
+    background: var(--ifm-background-color);
+    color: var(--ifm-font-color-base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: calc(-1 * var(--ifm-navbar-height, 60px));
+    padding-top: var(--ifm-navbar-height, 60px);
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+    gap: 48px;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 24px;
+
+    @media (max-width: 1020px) {
+        grid-template-columns: 1fr;
+        padding: 100px 24px 80px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 96px 20px 72px;
+        gap: 28px;
+    }
+}
+
+.heroCopy {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    h1 {
+        margin: 0;
+        font-size: clamp(40px, 5vw, 56px);
+        letter-spacing: -0.02em;
+    }
+
+    p {
+        margin: 0;
+        max-width: 620px;
+        font-size: 17px;
+        line-height: 1.8;
+        color: var(--ifm-color-emphasis-700);
+
+        @media (max-width: 540px) {
+            max-width: none;
+        }
+    }
+
+    @media (max-width: 1020px) {
+        gap: 24px;
+    }
+}
+
+.heroButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    @media (max-width: 768px) {
+        gap: 10px;
+    }
+}
+
+.primaryButton,
+.secondaryButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 22px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+
+    @media (max-width: 540px) {
+        width: 100%;
+    }
+}
+
+.primaryButton {
+    background: var(--ifm-color-primary);
+    color: #fff !important;
+    box-shadow: 0 12px 24px rgba(37, 160, 110, 0.18);
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 18px 34px rgba(37, 160, 110, 0.24);
+    }
+}
+
+.secondaryButton {
+    background: var(--primary-alpha-bg);
+
+    &:hover {
+        background: var(--primary-alpha-strong);
+        transform: translateY(-2px);
+    }
+}
+
+.heroMetrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 18px;
+    padding-top: 20px;
+    border-top: 1px solid var(--ifm-color-emphasis-200);
+
+    div {
+        padding: 14px 16px;
+        border-radius: 12px;
+        border: 1px solid var(--primary-alpha-border);
+        background: var(--primary-alpha-bg);
+
+        @media (max-width: 768px) {
+            padding: 12px 14px;
+        }
+
+        @media (max-width: 540px) {
+            padding: 10px 12px;
+        }
+    }
+
+    strong {
+        display: block;
+        font-size: 26px;
+        color: var(--ifm-color-primary);
+    }
+
+    span {
+        font-size: 14px;
+        color: var(--ifm-color-emphasis-600);
+    }
+
+    @media (max-width: 1020px) {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 14px;
+    }
+
+    @media (max-width: 540px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.heroPanel {
+    border-radius: 12px;
+    border: 1px solid var(--ifm-color-emphasis-200);
+    background: var(--ifm-background-surface-color);
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1020px) {
+        width: 100%;
+        max-width: none;
+        margin: 48px 0 0;
+        align-self: stretch;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0 6px;
+        margin-top: 16px;
+    }
+
+    @media (max-width: 540px) {
+        padding: 0 8px;
+    }
+}
+
+.panelHeader {
+    padding: 24px;
+    border-bottom: 1px solid var(--ifm-color-emphasis-200);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.linkList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    li {
+        flex: 1;
+        display: flex;
+
+        & + li {
+            border-top: 1px solid var(--ifm-color-emphasis-200);
+        }
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 20px 24px;
+        text-decoration: none;
+        color: inherit;
+        transition: background 0.2s ease;
+        width: 100%;
+
+        &:hover {
+            background: var(--primary-alpha-medium);
+        }
+
+        @media (max-width: 1020px) {
+            padding: 18px 20px;
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        @media (max-width: 540px) {
+            padding: 18px;
+        }
+    }
+
+    h3 {
+        margin: 0 0 6px;
+        font-size: 16px;
+    }
+
+    p {
+        margin: 0;
+        font-size: 14px;
+        color: var(--ifm-color-emphasis-600);
+    }
+}

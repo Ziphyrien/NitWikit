@@ -4,7 +4,9 @@
     --primary-light: #36c085;
     --primary-alpha-light: rgba(37, 160, 110, 0.04);
     --primary-alpha-medium: rgba(37, 160, 110, 0.08);
-    --primary-alpha-strong: rgba(37, 160, 110, 0.1);
+    --primary-alpha-strong: rgba(37, 160, 110, 0.14);
+    --primary-alpha-border: rgba(37, 160, 110, 0.6);
+    --primary-alpha-bg: rgba(37, 160, 110, 0.1);
 
     --text-primary: #1a202c;
     --text-secondary: #4a5568;
@@ -27,8 +29,8 @@
     --transition-fast: 0.2s ease;
     --transition-base: 0.3s ease;
 
-    --font-base:
-        -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    --font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+        sans-serif;
     --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
     --ifm-color-primary: var(--primary);
