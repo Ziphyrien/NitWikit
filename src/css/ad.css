@@ -78,8 +78,8 @@ html[data-theme="dark"] .extern-item:hover {
 /* 暗色模式 PC端 */
 @media screen and (min-width: 996px) {
     html[data-theme="dark"] .extern-item {
-        background-color: rgba(54, 192, 133, 0.1);
-        border: 1px solid var(--primary);
+        background-color: var(--primary-alpha-bg);
+        border: 1px solid var(--primary-alpha-border);
     }
 
     html[data-theme="dark"] .extern-item:hover {
