@@ -1,5 +1,6 @@
 import type { Options as PresetClassicOptions } from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
+import path from "path";
 import { themes as prismThemes } from "prism-react-renderer";
 
 const IS_CHINA_SITE = process.env.CHINA === "true";
@@ -159,7 +160,8 @@ const config: Config = {
                 showLastUpdateAuthor: true,
                 showLastUpdateTime: true
             }
-        ]
+        ],
+        path.resolve(__dirname, "src/plugins/tailwind-plugin.ts")
     ],
     headTags: [
         {

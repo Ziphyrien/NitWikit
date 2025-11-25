@@ -1,11 +1,8 @@
 {
     "extends": "@docusaurus/tsconfig",
     "compilerOptions": {
-        "baseUrl": ".",
-        "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
         "resolveJsonModule": true,
-        "jsx": "react-jsx",
         "strict": true,
         "forceConsistentCasingInFileNames": true,
         "paths": {
@@ -15,7 +12,5 @@
             "@theme/*": ["src/theme/*"],
             "@css/*": ["src/css/*"]
         }
-    },
-    "include": ["src"],
-    "exclude": ["node_modules", "build", "dist"]
+    }
 }
