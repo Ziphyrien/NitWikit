@@ -286,7 +286,12 @@ const config = {
                     },
                     {
                         title: "交流",
-                        items: []
+                        items: [
+                            {
+                                label: 'QQ 群',
+                                href: 'https://qm.qq.com/q/UyurWW3zyI',
+                            },
+                        ]
                     },
                     {
                         title: "友链",
@@ -366,6 +371,14 @@ const config = {
                         block: { start: "error-start", end: "error-end" }
                     }
                 ]
+            },
+            announcementBar: {
+                id: 'qq-group-notice',
+                content:
+                    'Cubic Wiki 新的 QQ 交流群 <a target="_blank" rel="noopener noreferrer" href="https://qm.qq.com/q/UyurWW3zyI"><strong>1074062482</strong></a>',
+                backgroundColor: '#25a06e',
+                textColor: 'white',
+                isCloseable: false,
             },
 
             // 颜色随系统切换
