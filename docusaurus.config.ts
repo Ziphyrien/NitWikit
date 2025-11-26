@@ -337,7 +337,7 @@ const config: Config = {
                 }
             ],
             // 底部版权信息
-            copyright: `Copyright © ${new Date().getFullYear()} <b>Cubic-Project</b>, All Rights Reserved. | Web Design By Lythrilla`
+            copyright: `Copyright © ${new Date().getFullYear()} <b>Cubic-Project</b>, All Rights Reserved. | Web Design By Lythrilla and Cubic-Project`
         },
         // 深浅主题
         prism: {
