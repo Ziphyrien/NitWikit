@@ -1,6 +1,6 @@
 import type { Options as PresetClassicOptions } from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
-import path from "path";
+import * as path from "path";
 import { themes as prismThemes } from "prism-react-renderer";
 
 const IS_CHINA_SITE = process.env.CHINA === "true";
@@ -65,7 +65,7 @@ const config: Config = {
     clientModules: [
         require.resolve("./src/clientModules/routeModules.js"),
         require.resolve("./src/clientModules/adsModules.js"),
-        require.resolve("./src/clientModules/githubIconModule.js")
+        require.resolve("./src/clientModules/themeModules.ts")
     ],
 
     presets: [
@@ -99,6 +99,7 @@ const config: Config = {
     plugins: [
         "docusaurus-plugin-image-zoom",
         "docusaurus-plugin-sass",
+        path.resolve(__dirname, "src/plugins/remote-gh-viewer-plugin.ts"),
         ["@gracefullight/docusaurus-plugin-microsoft-clarity", { projectId: "oyfswsvfpc" }],
         [
             "@docusaurus/plugin-content-docs",
@@ -176,7 +177,23 @@ const config: Config = {
             tagName: "link",
             attributes: {
                 rel: "preconnect",
+                href: "https://fontsapi.zeoseven.com",
+                crossOrigin: "anonymous"
+            }
+        },
+        {
+            tagName: "link",
+            attributes: {
+                rel: "preconnect",
                 href: "https://D1KV1BYF3B-dsn.algolia.net",
+                crossOrigin: "anonymous"
+            }
+        },
+        {
+            tagName: "link",
+            attributes: {
+                rel: "preconnect",
+                href: "https://giscus.app",
                 crossOrigin: "anonymous"
             }
         }
