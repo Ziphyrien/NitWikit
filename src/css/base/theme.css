@@ -214,6 +214,15 @@
 /* 基础过渡：为所有主题相关属性添加过渡 */
 html {
     transition: background-color var(--theme-transition-duration) var(--theme-transition-timing);
+    /* 平滑滚动，但尊重用户的动画偏好设置 */
+    scroll-behavior: smooth;
+}
+
+/* 如果用户偏好减少动画，则禁用平滑滚动 */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
 }
 
 body {

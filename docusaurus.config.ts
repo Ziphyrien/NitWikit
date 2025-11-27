@@ -65,7 +65,8 @@ const config: Config = {
     clientModules: [
         require.resolve("./src/clientModules/routeModules.js"),
         require.resolve("./src/clientModules/adsModules.js"),
-        require.resolve("./src/clientModules/themeModules.ts")
+        require.resolve("./src/clientModules/themeModules.ts"),
+        require.resolve("./src/clientModules/tocSmoothScroll.ts")
     ],
 
     presets: [
