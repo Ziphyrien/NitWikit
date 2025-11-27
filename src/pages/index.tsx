@@ -2,7 +2,8 @@ import Head from "@docusaurus/Head";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import React from "react";
+import { useHistory } from "@docusaurus/router";
+import React, { useRef } from "react";
 import styles from "./index.module.scss";
 
 interface Stat {
@@ -18,6 +19,8 @@ interface NavLink {
 
 const Home: React.FC = () => {
     const { siteConfig } = useDocusaurusContext();
+    const history = useHistory();
+    const pageRef = useRef<HTMLElement>(null);
 
     const stats: Stat[] = [
         { label: "文档篇章", value: "1200+" },
@@ -30,13 +33,31 @@ const Home: React.FC = () => {
         { title: "基岩版核心", description: "基岩版服务器开服指南", to: "/Bedrock/intro" }
     ];
 
+    const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, to: string) => {
+        e.preventDefault();
+        const pageElement = pageRef.current;
+
+        if (pageElement) {
+            // 添加退出动画类
+            pageElement.classList.add(styles.pageExit);
+
+            // 延迟导航，让退出动画完成
+            setTimeout(() => {
+                history.push(to);
+            }, 300);
+        } else {
+            // 如果找不到元素，直接导航
+            history.push(to);
+        }
+    };
+
     return (
         <Layout>
             <Head>
                 <title>{siteConfig.title}</title>
                 <meta name="description" content={siteConfig.tagline} />
             </Head>
-            <main className={styles.page}>
+            <main ref={pageRef} className={styles.page}>
                 {/* 装饰性模糊圆形 */}
                 <div className={`${styles.decorCircle} ${styles.decorCircle1}`} />
                 <div className={`${styles.decorCircle} ${styles.decorCircle2}`} />
@@ -74,14 +95,22 @@ const Home: React.FC = () => {
                         </div>
                         <ul className={styles.linkList}>
                             {quickLinks.map((item, index) => (
-                                <li key={item.title}>
-                                    <Link to={item.to}>
+                                <li
+                                    key={item.title}
+                                    className={styles.linkItem}
+                                    style={{ animationDelay: `${0.4 + index * 0.1}s` }}
+                                >
+                                    <a
+                                        href={item.to}
+                                        className={styles.linkItemAnchor}
+                                        onClick={(e) => handleLinkClick(e, item.to)}
+                                    >
                                         <div>
                                             <h3>{item.title}</h3>
                                             <p>{item.description}</p>
                                         </div>
                                         <span>→</span>
-                                    </Link>
+                                    </a>
                                 </li>
                             ))}
                         </ul>
