@@ -62,9 +62,7 @@ if (ExecutionEnvironment.canUseDOM) {
     // 初始化：为所有 TOC 链接添加事件监听器
     function initTOCSmoothScroll(): void {
         // 查找所有 TOC 链接
-        const tocLinks = document.querySelectorAll<HTMLAnchorElement>(
-            ".table-of-contents a[href^='#']"
-        );
+        const tocLinks = document.querySelectorAll<HTMLAnchorElement>(".table-of-contents a[href^='#']");
 
         tocLinks.forEach((link) => {
             // 移除可能存在的旧监听器
@@ -98,4 +96,3 @@ if (ExecutionEnvironment.canUseDOM) {
         setupTOCSmoothScroll();
     }
 }
-
