@@ -9,12 +9,6 @@ import SponsorCard from '@site/src/components/SponsorCard';
 
 感谢所有赞助者对本项目的支持！您的帮助让我们能够持续维护和改进文档内容。
 
-:::tip 如何赞助
-
-在组织恢复前,不会接受赞助
-
-:::
-
 ## 赞助者
 
 <SponsorCard
