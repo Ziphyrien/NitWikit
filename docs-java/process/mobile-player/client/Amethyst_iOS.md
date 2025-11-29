@@ -5,8 +5,6 @@ sidebar_position: 3
 
 # 在 iOS 上安装 Amethyst
 
-免越狱安装Amethyst
-
 ## 方法一：使用 AltStore
 
 ### （针对Windows用户，Windows 用户尚不支持在 iOS 17 上使用 AltJIT。）
@@ -42,9 +40,7 @@ sidebar_position: 3
 
 （要在 iOS 16 或更高版本上使用 AltStore，您需要前往“设置”->“隐私和安全”->“开发者模式”在设备上启用开发者模式。）
 
-12.从此 [链接](https://github.com/AngelAuraMC/Amethyst-iOS/actions) 下载 Amethyst 的 ipa 安装包。
-
-#### （需要使用github账号才能继续下载）
+12.从此 [链接](https://github.com/AngelAuraMC/Amethyst-iOS/actions) 下载 Amethyst 的 ipa 安装包。**（需要使用github账号才能继续下载）**
 
 ### 手机开启JIT
 
@@ -100,7 +96,7 @@ A12-A17/M1-M2处理器的iPhone，iPad等在iOS/iPadOS 14.0 beta 2 ~ 17.0 除16.
 
 12.打开TrollInstallerX，点击“Install TrollStore”
 
-13.当提示要“ install the persistence helper ”请点击您**最不关心的应用程序**
+13.当提示要“ install the persistence helper ”请点击您**最不经常使用的应用程序**
 
 （如果您不知道点击哪个应用，请选择Tips）
 
@@ -108,9 +104,7 @@ A12-A17/M1-M2处理器的iPhone，iPad等在iOS/iPadOS 14.0 beta 2 ~ 17.0 除16.
 
 你需要打开你安装的“persistence helper”并且点击Install TrollStore
 
-15.从此 [链接](https://github.com/AngelAuraMC/Amethyst-iOS/actions) 下载 Amethyst 的 tipa 安装包。
-
-#### （安装包需要使用github账号才能继续下载）
+15.从此 [链接](https://github.com/AngelAuraMC/Amethyst-iOS/actions) 下载 Amethyst 的 tipa 安装包。**（安装包需要使用github账号才能继续下载）**
 
 16.打开Amethyst
 
@@ -122,9 +116,7 @@ A12-A17/M1-M2处理器的iPhone，iPad等在iOS/iPadOS 14.0 beta 2 ~ 17.0 除16.
 
 2.在您的设备上打开此页面
 
-3.在您的设备上，点击[此处](itms-services://?action=download-manifest&url=https://jailbreaks.app/cdn/plists/TrollHelper.plist)
-
-（如果您无法访问此页面，请itms-services://?action=download-manifest&url=https://jailbreaks.app/cdn/plists/TrollHelper.plist在 Safari 中输入）
+3.在您的设备上，使用Safari访问（itms-services://?action=download-manifest&url=https://jailbreaks.app/cdn/plists/TrollHelper.plist）
 
 4.点击Install
 
@@ -134,9 +126,7 @@ A12-A17/M1-M2处理器的iPhone，iPad等在iOS/iPadOS 14.0 beta 2 ~ 17.0 除16.
 
 （如果重新启动，重新执行第六步）
 
-7.从此 [链接](https://github.com/AngelAuraMC/Amethyst-iOS/actions) 下载 Amethyst 的 tipa 安装包。
-
-#### （tipa 安装包需要使用github账号才能继续下载）
+7.从此 [链接](https://github.com/AngelAuraMC/Amethyst-iOS/actions) 下载 Amethyst 的 tipa 安装包。**（tipa 安装包需要使用github账号才能继续下载）**
 
 8.打开Amethyst
 
@@ -165,10 +155,47 @@ A12-A17/M1-M2处理器的iPhone，iPad等在iOS/iPadOS 14.0 beta 2 ~ 17.0 除16.
 
 9.解锁您的设备，打开你覆盖的系统应用程序，点击Install TrollStore
 
-10.从此 [链接](https://github.com/AngelAuraMC/Amethyst-iOS/actions) 下载 Amethyst 的 tipa 安装包。
-
-#### （在GitHub Actions需要使用github账号才能继续下载）
+10.从此 [链接](https://github.com/AngelAuraMC/Amethyst-iOS/actions) 下载 Amethyst 的 tipa 安装包。**（在GitHub Actions需要使用github账号才能继续下载）**
 
 11.打开Amethyst
 
-剩下方法之后再说
+## 方法三：牛蛙助手
+
+~~虽然简单但是不推荐，因为广告太多了~~
+
+1.点击[这里](https://ios222.com/)下载牛蛙助手
+
+2.点击此 [链接](https://www.i4.cn)下载爱思助手电脑端并安装
+
+3.打开爱思助手，点击“工具箱->iTunes及驱动->安装iTunes”来安装iTunes
+![](../_images/i4_1.png)
+![](../_images/i4_2.png)
+![](../_images/i4_3.png)
+
+4.打开牛蛙助手，将你的苹果设备链接至电脑（先把设备解锁）
+
+5.点击“立即安装”
+
+6.打开手机上的牛蛙助手
+
+7.点击一下->允许->设置->已下载描述文件->安装->输入手机密码->安装->安装
+
+8.打开手机上的牛蛙助手，点击IPA签名->证书->右上方的“+”->apple证书
+
+9.输入你的appleID和密码，点击确定
+
+10.从此 [链接](https://github.com/AngelAuraMC/Amethyst-iOS/actions) 下载 Amethyst 的 ipa 安装包。**（需要使用github账号才能继续下载）**
+
+11.点击文件管理->右上方的“+”->导入资源，导入你刚才下载的IPA文件
+
+12.点击应用->找到Amethyst，点击它->签名
+
+13.找到“已签名”点击一下->找到Amethyst，点击它->点击安装->点击安装
+
+14.回到牛蛙助手的主页->JIT->找到Amethyst，点击它->点击使用 JIT 启动
+
+（iOS/iPadOS 16+ 记得前往“设置”->“隐私和安全”->“开发者模式”在设备上启用开发者模式。）
+
+## 方法四：越狱
+
+
