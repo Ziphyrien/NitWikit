@@ -3,6 +3,9 @@ title: 调服务端配置
 sidebar_position: 4
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 <!--markdownlint-disable no-duplicate-heading-->
 
 ## 调服务端配置
@@ -20,15 +23,15 @@ sidebar_position: 4
 ## 更简单的
 
 自动优化脚本，[下载](https://script.8aka.org/auto-optimize)
-，在服务器根目录执行，目前支持 CraftBukkit，Spigot，Paper，PufferFish，Purpur，Gale，Leaf
+，在服务器根目录执行，目前支持 CraftBukkit，Spigot，Paper，Pufferfish，Purpur，Gale，Leaf
 
 :::tip
 
-以下教程的优化项并不全面 (比如没有 Leaf 配置项),如果你希望了解所有的优化配置项
+以下教程的优化项并不全面 (比如没有 Leaf 配置项)，如果你希望了解所有的优化配置项
 
 你可以看看**笨蛋脚本的源代码**或**服务器核心的文档**
 
-Leaf 和 Gale 的优化配置项请前往：[Leaf 官方文档](https://www.leafmc.one/zh/docs),CatServer
+Leaf 和 Gale 的优化配置项请前往：[Leaf 官方文档](https://www.leafmc.one/zh/docs)，CatServer
 可以看[这个帖子](https://bbs.mcmod.cn/thread-10697-1-1.html)
 
 :::
@@ -115,26 +118,26 @@ spawn-limits:
 
 ```yaml
 spawn-limits:
-    monsters: 70
-    #怪物包括 远古守卫者、末影人、监守者、蠹虫、猪灵蛮兵、流浪者、幻术师、骷髅、潜影贝、僵尸疣猪兽、守卫者、岩浆怪、僵尸村民、僵尸猪灵、卫道士、幻翼、猪灵、史莱姆、末影龙、溺尸、掠夺者、唤魔者、僵尸、蜘蛛、尸壳、恶魂、劫掠兽、疣猪兽、洞穴蜘蛛、女巫、枯萎、末影螨、凋灵骷髅、烈焰人、巨人、爬行者、恼鬼。
-
-    creature: 10
-    #动物包括 猪、北极熊、狐狸、猫、僵尸马、嗅探者、熊猫、兔子、狼、牛、海龟、青蛙、悦灵、行商羊驼、驴、蜜蜂、骆驼、绵羊、蝌蚪、豹猫、鸡、哞菇、马、羊驼、流浪商人、鹦鹉、山羊、骡、骷髅马刷、炽足兽。
-
-    water-creature: 5
-    # 包括鱿鱼和海豚
-
-    water-ambient: 20
-    # 包括鳕鱼、河豚、鲑鱼、热带鱼
-
-    water-underground-creature: 5
-    # 包括发光鱿鱼
+    ambient: 15
+    # 只包括蝙蝠，建议 0
 
     axolotls: 5
     # 美西螈
 
-    ambient: 15
-    # 只包括蝙蝠，建议 0
+    creature: 10
+    #动物包括 猪、北极熊、狐狸、猫、僵尸马、嗅探者、熊猫、兔子、狼、牛、海龟、青蛙、悦灵、行商羊驼、驴、蜜蜂、骆驼、绵羊、蝌蚪、豹猫、鸡、哞菇、马、羊驼、流浪商人、鹦鹉、山羊、骡、骷髅马刷、炽足兽。
+
+    monsters: 70
+    #怪物包括 远古守卫者、末影人、监守者、蠹虫、猪灵蛮兵、流浪者、幻术师、骷髅、潜影贝、僵尸疣猪兽、守卫者、岩浆怪、僵尸村民、僵尸猪灵、卫道士、幻翼、猪灵、史莱姆、末影龙、溺尸、掠夺者、唤魔者、僵尸、蜘蛛、尸壳、恶魂、劫掠兽、疣猪兽、洞穴蜘蛛、女巫、枯萎、末影螨、凋灵骷髅、烈焰人、巨人、爬行者、恼鬼。
+
+    water-underground-creature: 5
+    # 包括发光鱿鱼
+
+    water-ambient: 20
+    # 包括鳕鱼、河豚、鲑鱼、热带鱼
+
+    water-creature: 5
+    # 包括鱿鱼和海豚
 ```
 
 大多数情况下，直接将所有限制降低到原来的 50% 是合理的，由于限制和实际实体数量不成线性，实际存在的实体数量大约是原来的 72%。
@@ -145,6 +148,7 @@ spawn-limits:
 
 ```yaml
 entity-tracking-range:
+    display: 64
     players: 48
     animals: 48
     monsters: 48
@@ -270,6 +274,12 @@ chunk-loading-basic:
 
 #### delay-chunk-unloads-by
 
+:::tip
+
+此选项仅在 Paper 1.21.6 及以上版本可用，请参见 [Paper#8731](https://github.com/PaperMC/Paper/issues/8731)
+
+:::
+
 区块的反复大量加载和卸载区块是很消耗性能的，而长期加载无效的区块也是浪费性能。
 
 在 `paper-world-defaults.yml` 中可以调整玩家离开后多久开始卸载区块。
@@ -324,28 +334,85 @@ max-auto-save-chunks-per-tick: 24
 
 推荐值：
 
-```yaml
-chunks:
-    entity-per-chunk-save-limit:
-        area_effect_cloud: 8
-        arrow: 16
-        dragon_fireball: 3
-        egg: 8
-        ender_pearl: 8
-        experience_bottle: 3
-        experience_orb: 16
-        eye_of_ender: 8
-        fireball: 8
-        firework_rocket: 8
-        llama_spit: 3
-        potion: 8
-        shulker_bullet: 8
-        small_fireball: 8
-        snowball: 8
-        spectral_arrow: 16
-        trident: 16
-        wither_skull: 4
-```
+<Tabs>
+    <TabItem value="1200-1213" label="1.20~1.21.3">
+    ```yaml
+    chunks:
+        entity-per-chunk-save-limit:
+            area_effect_cloud: 8
+            arrow: 16
+            dragon_fireball: 3
+            egg: 8
+            ender_pearl: 16
+            experience_bottle: 3
+            experience_orb: 16
+            eye_of_ender: 8
+            fireball: 8
+            firework_rocket: 8
+            llama_spit: 3
+            potion: 8
+            shulker_bullet: 8
+            small_fireball: 8
+            snowball: 8
+            spectral_arrow: 16
+            trident: 16
+            wither_skull: 4
+    ```
+    </TabItem>
+    <TabItem value="1214" label="1.21.4">
+    ```yaml
+    chunks:
+        entity-per-chunk-save-limit:
+            area_effect_cloud: 8
+            arrow: 16
+            breeze_wind_charge: 16
+            dragon_fireball: 3
+            egg: 8
+            ender_pearl: 16
+            experience_bottle: 3
+            experience_orb: 16
+            eye_of_ender: 8
+            fireball: 8
+            firework_rocket: 8
+            llama_spit: 3
+            potion: 8
+            shulker_bullet: 8
+            small_fireball: 8
+            snowball: 8
+            spectral_arrow: 16
+            trident: 16
+            wind_charge: 16
+            wither_skull: 4
+    ```
+    </TabItem>
+    <TabItem value="1215+" label="1.21.5+" default>
+    ```yaml
+    chunks:
+        entity-per-chunk-save-limit:
+            area_effect_cloud: 8
+            arrow: 16
+            breeze_wind_charge: 16
+            dragon_fireball: 3
+            egg: 8
+            ender_pearl: 16
+            experience_bottle: 3
+            experience_orb: 16
+            eye_of_ender: 8
+            fireball: 8
+            firework_rocket: 8
+            llama_spit: 3
+            splash_potion: 8
+            lingering_potion: 8
+            shulker_bullet: 8
+            small_fireball: 8
+            snowball: 8
+            spectral_arrow: 16
+            trident: 16
+            wind_charge: 16
+            wither_skull: 4
+    ```
+    </TabItem>
+</Tabs>
 
 此项可以设置区块卸载后从内存保存到硬盘时每个区块最大的实体数量，可为每种实体规定一个限制，
 
@@ -494,10 +561,12 @@ ticks-per:
 
 这无疑是非常繁重的工作，但调整这个值到太高会导致即使服务器生物没有到达上限，生物刷新频率还是偏低。
 
+推荐值：
+
 ```yaml
-推荐值:
-    monster-spawns: 9
+ticks-per:
     animal-spawns: 399
+    monster-spawns: 9
     water-spawns: 199
     water-ambient-spawns: 399
     water-underground-creature-spawns: 399
@@ -600,16 +669,17 @@ water_creature:
 
 但可能会导致怪物反应迟钝。将此值降低太多可能会破坏某些生物农场，比如刷铁机。
 
+推荐值：
+
 ```yaml
-推荐值:
-    entity-activation-range:
-        animals: 16
-        monsters: 24
-        raiders: 48
-        misc: 8
-        water: 8
-        villagers: 16
-        flying-monsters: 48
+entity-activation-range:
+    animals: 16
+    monsters: 24
+    raiders: 48
+    misc: 8
+    water: 8
+    villagers: 16
+    flying-monsters: 48
 ```
 
 ##### inactive-goal-selector-throttle
@@ -760,8 +830,10 @@ tick-inactive-villagers: true
 推荐值：
 
 ```yaml
-acquire-poi: 16
-nearest-bed-sensor: 16
+villager:
+    search-radius:
+        acquire-poi: 16
+        nearest-bed-sensor: 16
 ```
 
 降低这个值会大大提高了村民的性能，但会阻止他们探测到比设定值更远的工作方块或床。
@@ -775,15 +847,15 @@ nearest-bed-sensor: 16
 ```yaml
 behavior:
     villager:
-        validatenearbypoi: 60
         acquirepoi: 120
+        validatenearbypoi: 60
 sensor:
     villager:
-        secondarypoisensor: 80
         nearestbedsensor: 80
-        villagerbabiessensor: 40
-        playersensor: 40
         nearestlivingentitysensor: 40
+        playersensor: 40
+        secondarypoisensor: 80
+        villagerbabiessensor: 40
 ```
 
 > 当 [Pufferfish's DAB](#dab) 启用时，不建议修改该项任何默认值。
@@ -814,40 +886,78 @@ sensor:
 
 推荐值：
 
-```yaml
-enabled: true
-items:
-    cobblestone: 300
-    netherrack: 300
-    sand: 300
-    red_sand: 300
-    gravel: 300
-    dirt: 300
-    short_grass: 300
-    pumpkin: 300
-    melon_slice: 300
-    kelp: 300
-    bamboo: 300
-    sugar_cane: 300
-    twisting_vines: 300
-    weeping_vines: 300
-    oak_leaves: 300
-    spruce_leaves: 300
-    birch_leaves: 300
-    jungle_leaves: 300
-    acacia_leaves: 300
-    dark_oak_leaves: 300
-    mangrove_leaves: 300
-    cactus: 300
-    diorite: 300
-    granite: 300
-    andesite: 300
-    scaffolding: 600
-```
+<Tabs>
+    <TabItem value="1200-1202" label="1.20~1.20.2">
+    ```yaml
+    enabled: true
+    items:
+        cobblestone: 300
+        netherrack: 300
+        sand: 300
+        red_sand: 300
+        gravel: 300
+        dirt: 300
+        grass: 300
+        pumpkin: 300
+        melon_slice: 300
+        kelp: 300
+        bamboo: 300
+        sugar_cane: 300
+        twisting_vines: 300
+        weeping_vines: 300
+        oak_leaves: 300
+        spruce_leaves: 300
+        birch_leaves: 300
+        jungle_leaves: 300
+        acacia_leaves: 300
+        dark_oak_leaves: 300
+        mangrove_leaves: 300
+        cherry_leaves: 300
+        cactus: 300
+        diorite: 300
+        granite: 300
+        andesite: 300
+        scaffolding: 600
+    ```
+    </TabItem>
+    <TabItem value="1203+" label="1.20.3+">
+    ```yaml
+    enabled: true
+    items:
+        cobblestone: 300
+        netherrack: 300
+        sand: 300
+        red_sand: 300
+        gravel: 300
+        dirt: 300
+        short_grass: 300
+        pumpkin: 300
+        melon_slice: 300
+        kelp: 300
+        bamboo: 300
+        sugar_cane: 300
+        twisting_vines: 300
+        weeping_vines: 300
+        oak_leaves: 300
+        spruce_leaves: 300
+        birch_leaves: 300
+        jungle_leaves: 300
+        acacia_leaves: 300
+        dark_oak_leaves: 300
+        mangrove_leaves: 300
+        cherry_leaves: 300
+        cactus: 300
+        diorite: 300
+        granite: 300
+        andesite: 300
+        scaffolding: 600
+    ```
+    </TabItem>
+</Tabs>
 
 此项可以设置指定物品消失的时间 (tick 为单位)，建议用此项替代扫地姬或 `merge-radius` 来提高性能。
 
-##### merge-radius
+#### merge-radius
 
 在 `spigot.yml` 中设置同类物品和经验球合并堆叠的距离。
 
@@ -950,7 +1060,7 @@ exp: 4.0
 
 降低沙子或沙砾中的漏斗矿车之类的情况，启用该项可能会破坏一些红石装置。
 
-### tick-per
+#### tick-per
 
 ```yaml
 ticks-per:
