@@ -198,4 +198,30 @@ A12-A17/M1-M2处理器的iPhone，iPad等在iOS/iPadOS 14.0 beta 2 ~ 17.0 除16.
 
 ## 方法四：越狱
 
+:::warning
 
+本文档不对你的设备安全负责
+
+请你在知道你在做什么的情况下，使用越狱的方法
+
+（越狱可以获得手机最高权限）
+
+:::
+
+| 越狱名称 | 支持版本(iOS/iPad OS) | 支持芯片 |
+| --- | --- | --- |
+| [Electra](https://coolstar.org/electra/) | 11.0~11.1.2 | A9-A11 | 
+| [Chimera](https://chimera.coolstar.org/) | 12.0~12.5.5 | A9~A12 | 
+| [Odyssey](https://theodyssey.dev/) | 13.0~13.7 | A9~A13 |
+| [Unc0ver](https://unc0ver.dev/) | 11.0~14.8 | A9~A14 |
+| [Taurine](https://taurine.app/) | 14.0~14.8.1 | A9~A12 |
+| [Dopamine](https://ellekit.space/dopamine/) | 15.0~16.6.1* | A12~A16,M1~M2 |
+| [Checkraln](https://checkra.in/) | 12.0~15.4.1 | A7~A11 |
+| [Paleraln](https://palera.in/) | 15.0~? | A7~A11 |
+
+*Dopamine到iOS 16.6 - 16.6.1 不支持 A12 及更新版本的设备，iOS 16.5.1 - 16.6.1 不支持 A15-A16/M2 版本的设备。
+
+除了Paleraln和Checkraln需要使用U盘或者Linux或者macOS，其他基本上就是签名->安装->打开->点jailbreak就可以了
+
+基本上就是**安装 TrollStore**第一个方法1~11步
+~~懒得写了~~
