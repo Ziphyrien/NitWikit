@@ -90,8 +90,7 @@ const config: Config = {
                     customCss: [
                         require.resolve("./src/css/custom.css"),
                         require.resolve("./src/css/github.css"),
-                        require.resolve("./src/css/ad.css"),
-                        require.resolve("./src/css/announcement.css")
+                        require.resolve("./src/css/ad.css")
                     ]
                 }
             } as PresetClassicOptions
@@ -394,9 +393,8 @@ const config: Config = {
             id: "qq-group-notice",
             content:
                 'Cubic Wiki 新的 QQ 交流群 <a target="_blank" rel="noopener noreferrer" href="https://qm.qq.com/q/UyurWW3zyI"><strong>1074062482</strong></a>',
-            backgroundColor: "#25a06e",
-            textColor: "white",
-            isCloseable: false
+            backgroundColor: "#00c16a",
+            isCloseable: true
         },
 
         // 颜色随系统切换
