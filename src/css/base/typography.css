@@ -16,7 +16,9 @@
    基础文档样式
 ====================================== */
 body {
-    font-family: var(--font-sans);
+    font-family: var(--font-family-base);
+    font-variation-settings: 'GRAD' var(--font-grade);
+    font-weight: var(--font-weight-normal);
     color: var(--text-primary);
     line-height: 1.6;
     background-color: var(--bg-light);

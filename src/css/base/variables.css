@@ -5,61 +5,178 @@
 
 :root {
     /* ======================================
-       Citizen: Primary Color (OKLCH)
-       Default: Purple-ish from documentation example
+       Citizen: Base Variables
     ====================================== */
+    --delta-lightness-state-base: 4%;
+    --delta-lightness-hover-state: calc(var(--delta-lightness-state-base) * 1);
+    --delta-lightness-active-state: calc(var(--delta-lightness-state-base) * -1);
+    --delta-lightness-surface-base: -2%;
+
     --color-progressive-oklch__l: 53.25%;
     --color-progressive-oklch__c: 0.1679;
     --color-progressive-oklch__h: 262.29;
 
-    --color-progressive: oklch(
-        var(--color-progressive-oklch__l)
-        var(--color-progressive-oklch__c)
-        var(--color-progressive-oklch__h)
-    );
+    --color-surface-0-oklch__l: 96%;
+    --color-surface-0-oklch__c: 0.01;
+    --color-surface-1-oklch__l: calc(var(--color-surface-0-oklch__l) + var(--delta-lightness-surface-base));
+    --color-surface-1-oklch__c: 0.015;
+    --color-surface-2-oklch__l: calc(var(--color-surface-0-oklch__l) + (var(--delta-lightness-surface-base) * 2));
+    --color-surface-2-oklch__c: 0.02;
+    --color-surface-3-oklch__l: calc(var(--color-surface-0-oklch__l) + (var(--delta-lightness-surface-base) * 3));
+    --color-surface-3-oklch__c: 0.03;
+    --color-surface-4-oklch__l: calc(var(--color-surface-0-oklch__l) + (var(--delta-lightness-surface-base) * 4));
+    --color-surface-4-oklch__c: 0.04;
 
-    /* ======================================
-       Citizen: Surface Colors (Light Mode)
-    ====================================== */
-    --color-surface-0: #ffffff;
-    --color-surface-1: #f8f9fa;
-    --color-surface-2: #eaecf0;
-    --color-surface-3: #dee2e6;
-    --color-surface-4: #ced4da;
+    --color-surface-0: oklch(var(--color-surface-0-oklch__l) var(--color-surface-0-oklch__c) var(--color-progressive-oklch__h));
+    --color-surface-1: oklch(var(--color-surface-1-oklch__l) var(--color-surface-1-oklch__c) var(--color-progressive-oklch__h));
+    --color-surface-2: oklch(var(--color-surface-2-oklch__l) var(--color-surface-2-oklch__c) var(--color-progressive-oklch__h));
+    --color-surface-3: oklch(var(--color-surface-3-oklch__l) var(--color-surface-3-oklch__c) var(--color-progressive-oklch__h));
+    --color-surface-4: oklch(var(--color-surface-4-oklch__l) var(--color-surface-4-oklch__c) var(--color-progressive-oklch__h));
 
-    /* ======================================
-       Citizen: Text Colors (Light Mode)
-    ====================================== */
-    --color-base: #202122;
-    --color-emphasized: #000000;
-    --color-subtle: #54595d;
+    --color-emphasized-oklch__l: 5%;
+    --color-emphasized-oklch__c: 0.07000000000000001;
+    --color-base-oklch__l: 20%;
+    --color-base-oklch__c: 0.09;
+    --color-subtle-oklch__l: 35%;
+    --color-subtle-oklch__c: 0.11;
+    --color-placeholder-oklch__l: 40%;
+    --color-placeholder-oklch__c: 0.07000000000000001;
+    --color-disabled-oklch__l: 60%;
+    --color-disabled-oklch__c: 0.05;
 
-    /* ======================================
-       Citizen: Typography
-    ====================================== */
-    --font-family-citizen-base: 'Inter', 'Roboto', system-ui, -apple-system, sans-serif;
-    --font-family-citizen-serif: 'Roboto Serif', serif;
-    --font-family-citizen-monospace: 'JetBrains Mono', 'Roboto Mono', monospace;
+    --color-inverted-primary: #fff;
+    --color-destructive__h: 340;
+    --color-destructive__l: 40%;
+    --color-success__h: 170;
+    --color-success__l: 17%;
+    --color-warning__h: 48;
+    --color-warning__l: 40%;
 
-    /* ======================================
-       Citizen: Layout
-    ====================================== */
-    --width-layout: 1200px; /* Adjusted for Docusaurus container */
+    --background-color-subtle__s: 95%;
+    --background-color-subtle__l: 95%;
 
-    /* ======================================
-       Citizen: Recipes / Customization
-    ====================================== */
-    --transform-image-hover: scale(1.02);
-    --backdrop-filter-frosted-glass: blur(20px) saturate(180%);
-    --opacity-glass: 0.75;
-    --border-radius-base: 12px;
+    --opacity-icon-base: 0.6;
+    --opacity-icon-base--hover: 0.74;
+    --opacity-icon-base--selected: 1;
+    --opacity-icon-base--disabled: 0.51;
+    --opacity-icon-placeholder: 0.51;
+    --opacity-icon-subtle: 0.67;
+
+    --background-color-icon: rgba(0, 0, 0, var(--opacity-icon-base));
+    --background-color-icon--hover: rgba(0, 0, 0, var(--opacity-icon-base--hover));
+    --background-color-icon--active: rgba(0, 0, 0, var(--opacity-icon-base--active));
+
+    --color-progressive: oklch(var(--color-progressive-oklch__l) var(--color-progressive-oklch__c) var(--color-progressive-oklch__h));
+    --color-progressive--hover: oklch(calc(var(--color-progressive-oklch__l) + var(--delta-lightness-hover-state)) var(--color-progressive-oklch__c) var(--color-progressive-oklch__h));
+    --color-progressive--active: oklch(calc(var(--color-progressive-oklch__l) + var(--delta-lightness-active-state)) var(--color-progressive-oklch__c) var(--color-progressive-oklch__h));
+
+    --color-base: oklch(var(--color-base-oklch__l) var(--color-base-oklch__c) var(--color-progressive-oklch__h));
+    --color-base--hover: oklch(calc(var(--color-base-oklch__l) + var(--delta-lightness-hover-state)) var(--color-base-oklch__c) var(--color-progressive-oklch__h));
+    
+    --color-emphasized: oklch(var(--color-emphasized-oklch__l) var(--color-emphasized-oklch__c) var(--color-progressive-oklch__h));
+    --color-subtle: oklch(var(--color-subtle-oklch__l) var(--color-subtle-oklch__c) var(--color-progressive-oklch__h));
+    --color-placeholder: oklch(var(--color-placeholder-oklch__l) var(--color-placeholder-oklch__c) var(--color-progressive-oklch__h));
+    --color-disabled: oklch(var(--color-disabled-oklch__l) var(--color-disabled-oklch__c) var(--color-progressive-oklch__h));
+
+    --color-inverted: #fff;
+    --color-inverted-fixed: #fff;
+
+    --color-destructive: hsl(var(--color-destructive__h), 100%, var(--color-destructive__l));
+    --color-destructive--hover: hsl(var(--color-destructive__h), 100%, calc(var(--color-destructive__l) + var(--delta-lightness-hover-state)));
+    --color-destructive--active: hsl(var(--color-destructive__h), 100%, calc(var(--color-destructive__l) + var(--delta-lightness-active-state)));
+
+    --color-warning: hsl(var(--color-warning__h), 100%, var(--color-warning__l));
+    --color-success: hsl(var(--color-success__h), 100%, var(--color-success__l));
+
+    --backdrop-filter-frosted-glass: blur(16px) saturate(140%);
+    --backdrop-opacity: 0.65;
+    --opacity-glass: 0.9;
+
+    --shadow-color-oklch__l: 12%;
+    --shadow-color-oklch__c: 0.01;
+    --shadow-opacity: 0.03;
+    --box-shadow-color-alpha-base: oklch(var(--shadow-color-oklch__l) var(--shadow-color-oklch__c) var(--color-progressive-oklch__h) / var(--shadow-opacity));
+
+    --border-radius-base: 4px;
+    --border-radius-medium: calc(var(--border-radius-base) * 2);
+    --border-radius-large: calc(var(--border-radius-base) * 3);
+    --border-radius-pill: 9999px;
+    --border-radius-circle: 50%;
+
+    --border-width-base: 1px;
+    --border-width-thick: 2px;
+    --border-color-base: rgb(0 0 0 / 0.1);
+    --border-color-subtle: rgb(0 0 0 / 0.05);
+    --border-color-muted: rgb(0 0 0 / 0.03);
+    --border-color-interactive: rgb(0 0 0 / 0.1);
+
+    --box-shadow-small: 0 0 0 1px var(--border-color-base);
+    --box-shadow-medium: 0 0.5px 0.6px var(--box-shadow-color-alpha-base), 0 1.6px 1.8px -0.8px var(--box-shadow-color-alpha-base), 0 4px 4.5px -1.7px var(--box-shadow-color-alpha-base), 0 9.8px 11px -2.5px var(--box-shadow-color-alpha-base);
+    --box-shadow-large: 0 0.5px 0.6px var(--box-shadow-color-alpha-base), 0 2.8px 3.1px -0.4px var(--box-shadow-color-alpha-base), 0 5.3px 6px -0.7px var(--box-shadow-color-alpha-base), 0 8.7px 9.8px -1.1px var(--box-shadow-color-alpha-base), 0 13.9px 15.6px -1.4px var(--box-shadow-color-alpha-base), 0 21.8px 24.5px -1.8px var(--box-shadow-color-alpha-base);
+
+    /* Typography */
+    --font-family-citizen-base: 'Roboto', 'Roboto-fallback', system-ui, -apple-system, sans-serif;
+    --font-family-citizen-serif: 'Roboto Serif', 'Roboto Serif-fallback', serif;
+    --font-family-citizen-monospace: 'Roboto Mono', 'Roboto Mono-fallback', monospace;
+    
+    --font-family-base: var(--font-family-citizen-base);
+    --font-family-serif: var(--font-family-citizen-serif);
+    --font-family-monospace: var(--font-family-citizen-monospace);
+
+    --font-size-x-small: 0.75rem;
+    --font-size-small: 0.875rem;
+    --font-size-medium: 1rem;
+    --font-size-large: 1.125rem;
+    --font-size-x-large: 1.25rem;
+    --font-size-xx-large: 1.5rem;
+    --font-size-xxx-large: 1.75rem;
+
+    --line-height-x-small: 1.25rem;
+    --line-height-small: 1.375rem;
+    --line-height-medium: 1.625rem;
+    --line-height-large: 1.75rem;
+    --line-height-x-large: 1.875rem;
+    --line-height-xx-large: 2.125rem;
+    --line-height-xxx-large: 2.375rem;
+    --line-height-content: 1.625;
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+
+    /* Layout */
+    --width-layout: 1080px;
+    --width-layout--extended: calc(var(--width-layout) * 1.5);
+    --width-toc: 240px;
+    --width-page: 1080px;
+    --padding-page: 16px;
+    
+    --space-unit: 1rem;
+    --space-xxs: calc(0.25 * var(--space-unit));
+    --space-xs: calc(0.5 * var(--space-unit));
+    --space-sm: calc(0.75 * var(--space-unit));
+    --space-md: var(--space-unit);
+    --space-lg: calc(1.25 * var(--space-unit));
+    --space-xl: calc(1.5 * var(--space-unit));
+    --space-xxl: calc(2 * var(--space-unit));
+
+    --header-size: 3.5rem;
+    --toolbar-size: 2.5rem;
+
+    /* Transitions */
+    --transition-duration-base: 100ms;
+    --transition-duration-medium: 250ms;
+    --transition-timing-function-ease: cubic-bezier(0.44, 0.21, 0, 1);
+    --transition-timing-function-ease-in: cubic-bezier(0.75, 0, 1, 1);
+    --transition-timing-function-ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
+    --transition-base: var(--transition-duration-base) var(--transition-timing-function-ease);
+    --transition-hover: 0.2s cubic-bezier(0.44, 0.21, 0, 1);
 
     /* ======================================
        Docusaurus / Infima Mapping
     ====================================== */
     --ifm-color-primary: var(--color-progressive);
-    
-    /* Generate shades using color-mix (Modern CSS) or calc with OKLCH */
     --ifm-color-primary-dark: oklch(calc(var(--color-progressive-oklch__l) - 5%) var(--color-progressive-oklch__c) var(--color-progressive-oklch__h));
     --ifm-color-primary-darker: oklch(calc(var(--color-progressive-oklch__l) - 10%) var(--color-progressive-oklch__c) var(--color-progressive-oklch__h));
     --ifm-color-primary-darkest: oklch(calc(var(--color-progressive-oklch__l) - 15%) var(--color-progressive-oklch__c) var(--color-progressive-oklch__h));
@@ -73,23 +190,19 @@
     --ifm-font-color-base: var(--color-base);
     --ifm-heading-color: var(--color-emphasized);
     
-    --ifm-font-family-base: var(--font-family-citizen-base);
-    --ifm-font-family-monospace: var(--font-family-citizen-monospace);
+    --ifm-font-family-base: var(--font-family-base);
+    --ifm-font-family-monospace: var(--font-family-monospace);
     
     --ifm-navbar-background-color: var(--color-surface-1);
     --ifm-navbar-height: 4rem;
     
-    /* Borders */
-    --ifm-border-color: var(--color-surface-3);
+    --ifm-border-color: var(--border-color-base);
 
-    /* ======================================
-       Missing Variables Mapping
-       (Added to fix missing borders and styles)
-    ====================================== */
-    --border: var(--ifm-border-color);
-    --radius-sm: 4px;
-    --radius-md: 8px;
-    --radius-lg: 12px;
+    /* Missing Variables Mapping */
+    --border: var(--border-color-base);
+    --radius-sm: var(--border-radius-base);
+    --radius-md: var(--border-radius-medium);
+    --radius-lg: var(--border-radius-large);
     
     --bg-light: var(--color-surface-0);
     --bg-card: var(--color-surface-1);
@@ -99,7 +212,7 @@
     --text-primary: var(--color-base);
     --text-secondary: var(--color-subtle);
     --text-light: var(--color-subtle);
-    --text-muted: var(--color-surface-4);
+    --text-muted: var(--color-placeholder);
 
     --primary: var(--color-progressive);
     --primary-dark: var(--ifm-color-primary-dark);
@@ -110,48 +223,70 @@
     --primary-alpha-10: oklch(from var(--color-progressive) l c h / 0.1);
     --primary-alpha-border: oklch(from var(--color-progressive) l c h / 0.2);
 
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-lg: var(--box-shadow-large);
     
-    --transition-fast: 150ms ease;
-    --transition-base: 300ms ease;
-
+    --transition-fast: var(--transition-duration-base) var(--transition-timing-function-ease);
+    
     /* Alert Colors */
     --alert-info: #2979ff;
     --alert-info-bg: rgba(41, 121, 255, 0.1);
-    --alert-warning: #ff9100;
+    --alert-warning: var(--color-warning);
     --alert-warning-bg: rgba(255, 145, 0, 0.1);
-    --alert-danger: #ff1744;
+    --alert-danger: var(--color-destructive);
     --alert-danger-bg: rgba(255, 23, 68, 0.1);
-    --alert-success: #00e676;
+    --alert-success: var(--color-success);
     --alert-success-bg: rgba(0, 230, 118, 0.1);
     --alert-note: #651fff;
     --alert-note-bg: rgba(101, 31, 255, 0.1);
+    
+    --background-color-button-quiet--hover: rgba(0, 24, 73, 0.027);
+    --background-color-button-quiet--active: rgba(0, 24, 73, 0.082);
 }
 
 /* ======================================
    Dark Mode Overrides
 ====================================== */
 [data-theme='dark'] {
-    /* Citizen: Surface Colors (Dark Mode) */
-    --color-surface-0: #0f1216; /* Deep dark */
-    --color-surface-1: #1a1e23; /* Card bg */
-    --color-surface-2: #262b32;
-    --color-surface-3: #343b44;
-    --color-surface-4: #434c56;
+    --delta-lightness-surface-base: 2%;
+    --color-progressive-oklch__l: 60%;
+    --color-surface-0-oklch__l: 14%;
+    --color-emphasized-oklch__l: 93%;
+    --color-emphasized-oklch__c: 0.03;
+    --color-base-oklch__l: 80%;
+    --color-base-oklch__c: 0.05;
+    --color-subtle-oklch__l: 70%;
+    --color-subtle-oklch__c: 0.07000000000000001;
+    --color-placeholder-oklch__l: 60%;
+    --color-placeholder-oklch__c: 0.03;
+    --color-disabled-oklch__l: 50%;
+    --color-disabled-oklch__c: 0.01;
 
-    /* Citizen: Text Colors (Dark Mode) */
-    --color-base: #c8ccd1;
-    --color-emphasized: #ffffff;
-    --color-subtle: #89919a;
+    --color-destructive__l: 50%;
+    --color-success__l: 35%;
+    --color-warning__l: 60%;
 
-    /* Adjust Primary for Dark Mode if needed */
-    /* Keeping same hue/chroma but ensuring lightness is sufficient */
-    --color-progressive-oklch__l: 60%; 
+    --background-color-subtle__s: 85%;
+    --background-color-subtle__l: 5%;
 
-    --ifm-border-color: var(--color-surface-2);
+    --background-color-button-quiet--hover: rgba(255, 255, 255, 0.04);
+    --background-color-button-quiet--active: rgba(255, 255, 255, 0.08);
+    --background-color-icon: rgba(255, 255, 255, var(--opacity-icon-base));
+    --background-color-icon--hover: rgba(255, 255, 255, var(--opacity-icon-base--hover));
+    --background-color-icon--active: rgba(255, 255, 255, var(--opacity-icon-base--active));
+
+    --border-color-base: rgb(255 255 255 / 0.1);
+    --border-color-subtle: rgb(255 255 255 / 0.05);
+    --border-color-muted: rgb(255 255 255 / 0.03);
+    --border-color-interactive: rgb(255 255 255 / 0.1);
+
+    --opacity-glass: 0.8;
+    --shadow-color-oklch__l: 6%;
+    --shadow-opacity: 0.44;
+    
+    --ifm-border-color: var(--border-color-base);
     
     /* Update Mappings for Dark Mode */
-    --border: var(--ifm-border-color);
+    --border: var(--border-color-base);
     --bg-light: var(--color-surface-0);
     --bg-card: var(--color-surface-1);
     --bg-muted: var(--color-surface-2);
@@ -160,7 +295,7 @@
     --text-primary: var(--color-base);
     --text-secondary: var(--color-subtle);
     
-    /* Alert Colors for Dark Mode (Slightly adjusted for contrast if needed) */
+    /* Alert Colors for Dark Mode */
     --alert-info: #448aff;
     --alert-info-bg: rgba(68, 138, 255, 0.15);
     --alert-warning: #ffb74d;
@@ -175,10 +310,21 @@
 
 /* ======================================
    Pure Black Mode (Optional Recipe)
-   .citizen-feature-pure-black-clientpref-1
 ====================================== */
 [data-theme='dark'][data-pure-black='true'] {
-    --color-surface-0: #000000;
-    --color-surface-1: #101010;
-    --color-surface-2: #202020;
+    --color-surface-0-oklch__l: 0%;
+    --color-surface-0-oklch__c: 0;
+    --color-surface-1-oklch__c: 0;
+    --color-surface-2-oklch__c: 0;
+    --color-surface-3-oklch__c: 0;
+    --color-surface-4-oklch__c: 0;
+    
+    --color-emphasized-oklch__c: 0;
+    --color-base-oklch__c: 0;
+    --color-subtle-oklch__c: 0;
+    --color-placeholder-oklch__c: 0;
+    
+    --border-color-base: rgba(255, 255, 255, 0.1);
+    --border-color-subtle: rgba(255, 255, 255, 0.05);
+    --border-color-interactive: rgba(255, 255, 255, 0.15);
 }

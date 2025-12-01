@@ -173,50 +173,78 @@
 }
 
 /* ======================================
-   Button (Trigger)
-   Keep it minimal as requested before
+   Button (Trigger) - Citizen Style Animated Icon
 ====================================== */
 .DocSearch-Button {
-    /* Remove fixed dimensions to allow native adaptation */
-    /* width: 44px !important; */
-    /* height: 44px !important; */
+    position: relative !important;
+    width: var(--size-icon, 24px) !important;
+    height: var(--size-icon, 24px) !important;
     padding: 0 !important;
     margin: 0 !important;
-    border-radius: 50% !important;
     background: transparent !important;
+    border: none !important;
     box-shadow: none !important;
     display: flex !important;
-    justify-content: center !important;
     align-items: center !important;
-    overflow: hidden !important;
-    border: none !important;
-    /* Ensure it takes full width of container if needed, or auto */
-    width: 100% !important;
-    height: 100% !important;
-    max-width: 44px !important; /* Limit max size for icon look */
-    max-height: 44px !important;
+    justify-content: center !important;
+    color: var(--color-base) !important;
+    transition: var(--transition-hover, 0.2s ease) !important;
+    border-radius: var(--border-radius-base, 4px) !important;
+    overflow: visible !important; /* Allow handle to move */
 }
 
-.DocSearch-Button:hover {
-    background-color: var(--color-surface-2) !important;
-}
-
-.DocSearch-Button-Placeholder, 
+/* Hide default Algolia content */
+.DocSearch-Button-Container, 
 .DocSearch-Button-Keys,
-.DocSearch-Button-Key {
+.DocSearch-Button-Key,
+.DocSearch-Button-Placeholder,
+.DocSearch-Search-Icon {
     display: none !important;
 }
 
-.DocSearch-Button-Container {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    margin: 0 !important;
-    padding: 0 !important;
+/* Circle Part */
+.DocSearch-Button::before {
+    content: '' !important;
+    position: absolute !important;
+    width: 0.625rem !important;
+    height: 0.625rem !important;
+    border: 0.125rem solid currentColor !important;
+    border-radius: 100% !important;
+    top: 50% !important;
+    left: 50% !important;
+    /* Position based on Citizen CSS logic: margin-top: -0.3125rem; margin-left: -0.125rem; */
+    /* Translate to center then apply offset */
+    transform: translate(-50%, -50%) translate(-0.125rem, -0.3125rem) rotate(-45deg) !important;
+    transition: inherit !important;
+    box-sizing: content-box !important;
 }
 
-.DocSearch-Search-Icon {
-    width: 24px !important;
-    height: 24px !important;
-    color: var(--text-secondary);
+/* Handle Part */
+.DocSearch-Button::after {
+    content: '' !important;
+    position: absolute !important;
+    width: 0.125rem !important;
+    height: 0.5rem !important;
+    background-color: currentColor !important;
+    top: 50% !important;
+    left: 50% !important;
+    /* Position based on Citizen CSS logic: top: 0.3125rem; left: 0.75rem; */
+    /* We use translate to position relative to center */
+    /* 0.75rem left is 12px. Center is 10px (if 20px icon). So +2px. */
+    /* 0.3125rem top is 5px. Center is 10px. So -5px? No, top is from top edge. */
+    /* Let's use the visual approximation: Handle sticks out bottom right */
+    transform: translate(-50%, -50%) translate(0.25rem, 0.125rem) rotate(-45deg) !important;
+    transition: inherit !important;
+    border-radius: var(--border-radius-base, 4px) !important;
+}
+
+/* Hover Effect */
+.DocSearch-Button:hover {
+    background-color: var(--background-color-button-quiet--hover, rgba(0,0,0,0.05)) !important;
+}
+
+.DocSearch-Button:hover::after {
+    height: 0.375rem !important;
+    /* Move handle slightly on hover */
+    transform: translate(-50%, -50%) translate(0.375rem, 0.25rem) rotate(-45deg) !important;
 }

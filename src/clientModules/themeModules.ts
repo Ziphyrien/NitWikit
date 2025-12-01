@@ -105,7 +105,49 @@ if (ExecutionEnvironment.canUseDOM) {
     const setupThemeAnimation = (): void => {
         injectStyles();
         init();
+        initHamburgerMenu();
     };
+
+    // ======================================
+    // Hamburger Menu Logic
+    // ======================================
+    function initHamburgerMenu(): void {
+        const toggleSelector = '.navbar__toggle';
+        const html = document.documentElement;
+        const MENU_OPEN_CLASS = 'citizen-menu-open';
+
+        // Delegate click event to body to handle dynamic updates or re-renders
+        document.body.addEventListener('click', (e) => {
+            const target = e.target as HTMLElement;
+            const toggleBtn = target.closest(toggleSelector);
+
+            if (toggleBtn) {
+                // Only handle if it's the navbar toggle
+                // Prevent default Docusaurus behavior if needed, but we might want to keep it for mobile
+                // For desktop, we want to toggle our custom class
+                if (window.innerWidth >= 997) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    const isOpen = html.classList.contains(MENU_OPEN_CLASS);
+                    if (isOpen) {
+                        html.classList.remove(MENU_OPEN_CLASS);
+                        // Also remove Docusaurus class if present to sync state
+                        // document.querySelector('.navbar')?.classList.remove('navbar-sidebar--show');
+                    } else {
+                        html.classList.add(MENU_OPEN_CLASS);
+                    }
+                }
+            } else {
+                // Close menu when clicking outside
+                if (html.classList.contains(MENU_OPEN_CLASS) && 
+                    !target.closest('.navbar__inner') && 
+                    !target.closest('.navbar-sidebar')) {
+                    html.classList.remove(MENU_OPEN_CLASS);
+                }
+            }
+        });
+    }
 
     if (document.readyState === "loading") {
         document.addEventListener("DOMContentLoaded", setupThemeAnimation);
