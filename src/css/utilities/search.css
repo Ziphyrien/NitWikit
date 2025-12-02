@@ -11,7 +11,7 @@
   --docsearch-modal-width: 600px;
   --docsearch-modal-height: 600px;
   --docsearch-modal-background: var(--color-surface-0);
-  --docsearch-modal-shadow: 0 0 0 1px var(--border), 0 20px 60px rgba(0,0,0,0.4);
+  --docsearch-modal-shadow: 0 0 0 1px var(--border), 0 20px 60px rgba(0, 0, 0, 0.4);
   --docsearch-searchbox-height: 56px;
   --docsearch-searchbox-background: var(--color-surface-2);
   --docsearch-searchbox-focus-background: var(--color-surface-2);
@@ -41,83 +41,83 @@
    Modal Layout
 ====================================== */
 .DocSearch-Modal {
-  @apply !rounded-xl !overflow-hidden !bg-[var(--docsearch-modal-background)] !shadow-[var(--docsearch-modal-shadow)];
+  @apply rounded-xl! overflow-hidden! bg-(--docsearch-modal-background)! shadow-(--docsearch-modal-shadow)!;
 }
 
 /* ======================================
    Search Bar
 ====================================== */
 .DocSearch-SearchBar {
-  @apply !p-4 !border-b !border-border;
+  @apply p-4! border-b! border-border!;
 }
 
 .DocSearch-Form {
-  @apply !rounded-lg !bg-[var(--docsearch-searchbox-background)] !shadow-none !border !border-transparent focus-within:!border-progressive focus-within:!ring-2 focus-within:!ring-progressive/20;
+  @apply relative! rounded-lg! bg-(--docsearch-searchbox-background)! shadow-none! border! border-transparent! focus-within:border-progressive! focus-within:ring-2! focus-within:ring-progressive/20!;
 }
 
 .DocSearch-Input {
-  @apply !text-base !pl-3;
+  @apply text-base! pl-3!;
 }
 
 /* ======================================
    Results (Hits)
 ====================================== */
 .DocSearch-Dropdown {
-  @apply !px-3;
+  @apply px-3!;
 }
 
 .DocSearch-Hit {
-  @apply !pb-1;
+  @apply pb-1!;
 }
 
 .DocSearch-Hit a {
-  @apply !rounded-lg !bg-transparent !shadow-none !border !border-transparent !p-3;
+  @apply rounded-lg! bg-transparent! shadow-none! border! border-transparent! p-3!;
 }
 
 .DocSearch-Hit[aria-selected="true"] a {
-  @apply !bg-[var(--docsearch-hit-active-background)] !border-border;
+  @apply bg-(--docsearch-hit-active-background)! border-border!;
 }
 
 /* Icon */
 .DocSearch-Hit-icon {
-  @apply !w-8 !h-8 !text-text-secondary;
+  @apply w-8! h-8! text-text-secondary!;
 }
 
 /* Content */
 .DocSearch-Hit-content-wrapper {
-  @apply !mx-3;
+  @apply mx-3!;
 }
 
 .DocSearch-Hit-title {
-  @apply !text-[15px] !font-semibold !text-emphasized;
+  @apply text-[15px]! font-semibold! text-emphasized!;
 }
 
 .DocSearch-Hit-path {
-  @apply !text-[13px] !text-subtle !mt-0.5;
+  @apply text-[13px]! text-subtle! mt-0.5!;
 }
 
 /* Action (The "Page" badge) */
 .DocSearch-Hit-action {
-  @apply !flex !text-text-secondary;
+  @apply flex! text-text-secondary!;
 }
 
 .DocSearch-Hit-action-button {
-  @apply !rounded !px-1.5 !py-0.5 !text-[11px] !font-semibold !bg-surface-2 !text-text-secondary !border !border-border !uppercase !tracking-wide !visible;
+  @apply rounded! px-1.5! py-0.5! text-[11px]! font-semibold! bg-surface-2! text-text-secondary! border! border-border! uppercase! tracking-wide! visible!;
 }
 
 /* ======================================
    Footer
 ====================================== */
 .DocSearch-Footer {
-  @apply !h-auto !px-6 !py-3 !bg-[var(--docsearch-footer-background)] !shadow-none !border-t !border-border;
+  @apply h-auto! px-6! py-3! bg-(--docsearch-footer-background)! shadow-none! border-t! border-border!;
 }
 
 .DocSearch-Commands {
-  @apply !flex !gap-4;
+  @apply flex! gap-4!;
 }
 
 .DocSearch-Label {
-  @apply !text-xs !text-text-secondary;
+  @apply text-xs! text-text-secondary!;
 }
 
 /* ======================================
@@ -126,20 +126,20 @@
 /* Note: navbar.css handles the main container size (w-10 h-10) and positioning */
 
 .DocSearch-Button {
-  @apply !text-text-secondary !transition-colors !overflow-visible;
+  @apply text-text-secondary! transition-colors! overflow-visible!;
 }
 
 .DocSearch-Button:hover {
-  @apply !bg-surface-2 !text-text-primary;
+  @apply bg-surface-2! text-text-primary!;
 }
 
 /* Hide default Algolia content */
-.DocSearch-Button-Container, 
+.DocSearch-Button-Container,
 .DocSearch-Button-Keys,
 .DocSearch-Button-Key,
 .DocSearch-Button-Placeholder,
 .DocSearch-Search-Icon {
-  @apply !hidden;
+  @apply hidden!;
 }
 
 /* Custom Icon Construction */
@@ -163,7 +163,7 @@
 
 /* Hover Animation */
 .DocSearch-Button:hover::after {
-  @apply h-2.5; 
+  @apply h-2.5;
   /* Extend handle outwards */
   transform: translate(-50%, -50%) translate(6px, 6px) rotate(-45deg);
 }

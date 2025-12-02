@@ -1,6 +1,6 @@
 /* Mobile (Default) */
 .navbar {
-  @apply h-[var(--ifm-navbar-height)] px-4 flex items-center bg-surface-1 border-b border-border transition-all shadow-none;
+  @apply h-(--ifm-navbar-height) px-4 flex items-center bg-surface-1 border-b border-border transition-all shadow-none;
 }
 
 .navbar__brand {
@@ -18,7 +18,7 @@
 @media (min-width: 997px) {
   /* Main Container: Fixed Left Rail */
   .navbar {
-    @apply fixed left-0 top-0 bottom-0 w-16 h-screen flex-col py-4 px-0 border-r border-border border-b-0 bg-surface-0 z-50 items-center overflow-visible !transform-none !pointer-events-auto;
+    @apply fixed left-0 top-0 bottom-0 w-16 h-screen flex-col py-4 px-0 border-r border-border border-b-0 bg-surface-0 z-50 items-center overflow-visible transform-none! pointer-events-auto!;
   }
 
   /* Inner Container: Flex Column */
@@ -41,23 +41,23 @@
   .DocSearch-Button,
   button[class*="DocSearch"],
   div[class*="colorModeToggle"] button {
-    @apply !w-10 !h-10 !aspect-square !p-0 flex justify-center items-center rounded-md transition-colors mx-auto bg-transparent border-none shadow-none text-text-secondary hover:bg-surface-2 hover:text-text-primary;
+    @apply w-10! h-10! aspect-square! p-0! flex justify-center items-center rounded-md transition-colors mx-auto bg-transparent border-none shadow-none text-text-secondary hover:bg-surface-2 hover:text-text-primary;
     line-height: 0 !important;
   }
 
   /* Force Icon Sizes for Consistency */
   .DocSearch-Button svg,
   div[class*="colorModeToggle"] button svg {
-    @apply !w-6 !h-6;
+    @apply w-6! h-6!;
   }
 
   /* Fix DocSearch Internal Container Alignment */
   .DocSearch-Button-Container {
-    @apply !flex !justify-center !items-center !w-full !h-full !m-0 !p-0;
+    @apply flex! justify-center! items-center! w-full! h-full! m-0! p-0!;
   }
 
   .DocSearch-Button svg {
-    @apply !m-0 !block;
+    @apply m-0! block!;
   }
 
   /* 1. Logo Area */
@@ -86,7 +86,7 @@
 
   .DocSearch-Button,
   button[class*="DocSearch"] {
-    @apply relative z-50 visible order-0 !m-0;
+    @apply relative z-50 visible order-0 m-0!;
   }
 
   .DocSearch-Button-Placeholder,
@@ -157,7 +157,7 @@
 
   /* GitHub Link */
   .header-github-link {
-    @apply order-[99] mt-auto mb-0 overflow-hidden;
+    @apply order-99 mt-auto mb-0 overflow-hidden;
     font-size: 0;
   }
 
@@ -175,14 +175,14 @@
 
   /* Color Toggle */
   div[class*="colorModeToggle"] {
-    @apply order-[100] mt-2 mx-auto w-10 h-10 flex justify-center items-center;
+    @apply order-100 mt-2 mx-auto w-10 h-10 flex justify-center items-center;
   }
 
   /* ======================================
      Sidebar Drawer
   ====================================== */
   .navbar-sidebar {
-    @apply block !left-16 !w-80 -translate-x-full bg-surface-0 border-r border-border shadow-none transition-transform z-40 p-0;
+    @apply block left-16! w-80! -translate-x-full bg-surface-0 border-r border-border shadow-none transition-transform z-40 p-0;
   }
 
   .navbar-sidebar--show .navbar-sidebar {
@@ -190,7 +190,7 @@
   }
 
   .navbar-sidebar__backdrop {
-    @apply !left-16 z-30 bg-black/40;
+    @apply left-16! z-30 bg-black/40;
   }
 
   /* Clean up Sidebar Content */
