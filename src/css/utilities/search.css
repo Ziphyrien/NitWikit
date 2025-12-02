@@ -1,196 +1,136 @@
-/* ======================================
-   NitWikit 搜索样式
-   Algolia DocSearch 适配 (Citizen 风格)
-====================================== */
-
+/* Theme Variables - Keeping these for compatibility with Algolia's structure */
 :root {
-    --docsearch-primary-color: var(--color-progressive);
-    --docsearch-text-color: var(--color-base);
-    --docsearch-spacing: 12px;
-    --docsearch-icon-stroke-width: 1.4;
-    --docsearch-highlight-color: var(--docsearch-primary-color);
-    --docsearch-muted-color: var(--color-subtle);
-    --docsearch-container-background: rgba(0, 0, 0, 0.6);
-    --docsearch-logo-color: var(--docsearch-primary-color);
-
-    /* Modal */
-    --docsearch-modal-width: 600px;
-    --docsearch-modal-height: 600px;
-    --docsearch-modal-background: var(--color-surface-0);
-    --docsearch-modal-shadow: 0 0 0 1px var(--border), 0 20px 60px rgba(0,0,0,0.4);
-
-    /* Searchbox */
-    --docsearch-searchbox-height: 56px;
-    --docsearch-searchbox-background: var(--color-surface-2);
-    --docsearch-searchbox-focus-background: var(--color-surface-2);
-    --docsearch-searchbox-shadow: none;
-
-    /* Hit */
-    --docsearch-hit-height: 64px;
-    --docsearch-hit-color: var(--color-base);
-    --docsearch-hit-active-color: var(--color-emphasized);
-    --docsearch-hit-background: transparent;
-    --docsearch-hit-shadow: none;
-
-    /* Footer */
-    --docsearch-footer-height: 44px;
-    --docsearch-footer-background: var(--color-surface-0);
-    --docsearch-footer-shadow: 0 -1px 0 0 var(--border);
+  --docsearch-primary-color: var(--color-progressive);
+  --docsearch-text-color: var(--color-base);
+  --docsearch-spacing: 12px;
+  --docsearch-icon-stroke-width: 1.4;
+  --docsearch-highlight-color: var(--docsearch-primary-color);
+  --docsearch-muted-color: var(--color-subtle);
+  --docsearch-container-background: rgba(0, 0, 0, 0.6);
+  --docsearch-logo-color: var(--docsearch-primary-color);
+  --docsearch-modal-width: 600px;
+  --docsearch-modal-height: 600px;
+  --docsearch-modal-background: var(--color-surface-0);
+  --docsearch-modal-shadow: 0 0 0 1px var(--border), 0 20px 60px rgba(0,0,0,0.4);
+  --docsearch-searchbox-height: 56px;
+  --docsearch-searchbox-background: var(--color-surface-2);
+  --docsearch-searchbox-focus-background: var(--color-surface-2);
+  --docsearch-searchbox-shadow: none;
+  --docsearch-hit-height: 64px;
+  --docsearch-hit-color: var(--color-base);
+  --docsearch-hit-active-color: var(--color-emphasized);
+  --docsearch-hit-background: transparent;
+  --docsearch-hit-shadow: none;
+  --docsearch-footer-height: 44px;
+  --docsearch-footer-background: var(--color-surface-0);
+  --docsearch-footer-shadow: 0 -1px 0 0 var(--border);
 }
 
 [data-theme='dark'] {
-    --docsearch-modal-background: #0b0d10; /* Deepest black/blue */
-    --docsearch-searchbox-background: #15171b;
-    --docsearch-searchbox-focus-background: #15171b;
-    --docsearch-hit-background: transparent;
-    --docsearch-hit-active-background: #1a1d21;
-    --docsearch-footer-background: #0b0d10;
-    --docsearch-key-gradient: #262b32;
-    --docsearch-key-shadow: none;
-    --docsearch-text-color: #b0b8c4;
-    --docsearch-muted-color: #6e7681;
+  --docsearch-modal-background: #0b0d10;
+  --docsearch-searchbox-background: #15171b;
+  --docsearch-searchbox-focus-background: #15171b;
+  --docsearch-hit-active-background: #1a1d21;
+  --docsearch-footer-background: #0b0d10;
+  --docsearch-key-gradient: #262b32;
+  --docsearch-text-color: #b0b8c4;
+  --docsearch-muted-color: #6e7681;
 }
 
 /* ======================================
    Modal Layout
 ====================================== */
 .DocSearch-Modal {
-    border-radius: 12px !important;
-    overflow: hidden !important;
+  @apply !rounded-xl !overflow-hidden !bg-[var(--docsearch-modal-background)] !shadow-[var(--docsearch-modal-shadow)];
 }
 
 /* ======================================
    Search Bar
 ====================================== */
 .DocSearch-SearchBar {
-    padding: 16px !important;
-    border-bottom: 1px solid var(--border);
+  @apply !p-4 !border-b !border-border;
 }
 
 .DocSearch-Form {
-    border-radius: 8px !important;
-    background-color: var(--docsearch-searchbox-background) !important;
-    box-shadow: none !important;
-    border: 1px solid transparent !important;
-}
-
-.DocSearch-Form:focus-within {
-    border-color: var(--color-progressive) !important;
-    box-shadow: 0 0 0 2px rgba(var(--color-progressive), 0.2) !important;
+  @apply !rounded-lg !bg-[var(--docsearch-searchbox-background)] !shadow-none !border !border-transparent focus-within:!border-progressive focus-within:!ring-2 focus-within:!ring-progressive/20;
 }
 
 .DocSearch-Input {
-    font-size: 16px !important;
-    padding-left: 12px !important;
+  @apply !text-base !pl-3;
 }
 
 /* ======================================
    Results (Hits)
 ====================================== */
 .DocSearch-Dropdown {
-    padding: 0 12px !important;
+  @apply !px-3;
 }
 
 .DocSearch-Hit {
-    padding-bottom: 4px !important;
+  @apply !pb-1;
 }
 
 .DocSearch-Hit a {
-    border-radius: 8px !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    border: 1px solid transparent !important;
-    padding: 12px !important;
+  @apply !rounded-lg !bg-transparent !shadow-none !border !border-transparent !p-3;
 }
 
 .DocSearch-Hit[aria-selected="true"] a {
-    background-color: var(--docsearch-hit-active-background) !important;
-    border-color: var(--border) !important;
+  @apply !bg-[var(--docsearch-hit-active-background)] !border-border;
 }
 
 /* Icon */
 .DocSearch-Hit-icon {
-    width: 32px !important;
-    height: 32px !important;
-    color: var(--text-secondary) !important;
+  @apply !w-8 !h-8 !text-text-secondary;
 }
 
 /* Content */
 .DocSearch-Hit-content-wrapper {
-    margin: 0 12px !important;
+  @apply !mx-3;
 }
 
 .DocSearch-Hit-title {
-    font-size: 15px !important;
-    font-weight: 600 !important;
-    color: var(--color-emphasized) !important;
+  @apply !text-[15px] !font-semibold !text-emphasized;
 }
 
 .DocSearch-Hit-path {
-    font-size: 13px !important;
-    color: var(--color-subtle) !important;
-    margin-top: 2px !important;
+  @apply !text-[13px] !text-subtle !mt-0.5;
 }
 
 /* Action (The "Page" badge) */
 .DocSearch-Hit-action {
-    display: flex !important;
-    color: var(--text-secondary) !important;
+  @apply !flex !text-text-secondary;
 }
 
 .DocSearch-Hit-action-button {
-    border-radius: 4px !important;
-    padding: 2px 6px !important;
-    font-size: 11px !important;
-    font-weight: 600 !important;
-    background: var(--color-surface-2) !important;
-    color: var(--text-secondary) !important;
-    border: 1px solid var(--border) !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.5px !important;
-    visibility: visible !important;
+  @apply !rounded !px-1.5 !py-0.5 !text-[11px] !font-semibold !bg-surface-2 !text-text-secondary !border !border-border !uppercase !tracking-wide !visible;
 }
 
 /* ======================================
    Footer
 ====================================== */
 .DocSearch-Footer {
-    height: auto !important;
-    padding: 12px 24px !important;
-    background: var(--docsearch-footer-background) !important;
-    box-shadow: none !important;
-    border-top: 1px solid var(--border) !important;
+  @apply !h-auto !px-6 !py-3 !bg-[var(--docsearch-footer-background)] !shadow-none !border-t !border-border;
 }
 
 .DocSearch-Commands {
-    display: flex !important;
-    gap: 16px !important;
+  @apply !flex !gap-4;
 }
 
 .DocSearch-Label {
-    font-size: 12px !important;
-    color: var(--text-secondary) !important;
+  @apply !text-xs !text-text-secondary;
 }
 
 /* ======================================
    Button (Trigger) - Citizen Style Animated Icon
 ====================================== */
+/* Note: navbar.css handles the main container size (w-10 h-10) and positioning */
+
 .DocSearch-Button {
-    position: relative !important;
-    width: var(--size-icon, 24px) !important;
-    height: var(--size-icon, 24px) !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    color: var(--color-base) !important;
-    transition: var(--transition-hover, 0.2s ease) !important;
-    border-radius: var(--border-radius-base, 4px) !important;
-    overflow: visible !important; /* Allow handle to move */
+  @apply !text-text-secondary !transition-colors !overflow-visible;
+}
+
+.DocSearch-Button:hover {
+  @apply !bg-surface-2 !text-text-primary;
 }
 
 /* Hide default Algolia content */
@@ -199,52 +139,31 @@
 .DocSearch-Button-Key,
 .DocSearch-Button-Placeholder,
 .DocSearch-Search-Icon {
-    display: none !important;
+  @apply !hidden;
 }
+
+/* Custom Icon Construction */
+/* We use absolute positioning to center the icon within the 40x40 button */
 
 /* Circle Part */
 .DocSearch-Button::before {
-    content: '' !important;
-    position: absolute !important;
-    width: 0.625rem !important;
-    height: 0.625rem !important;
-    border: 0.125rem solid currentColor !important;
-    border-radius: 100% !important;
-    top: 50% !important;
-    left: 50% !important;
-    /* Position based on Citizen CSS logic: margin-top: -0.3125rem; margin-left: -0.125rem; */
-    /* Translate to center then apply offset */
-    transform: translate(-50%, -50%) translate(-0.125rem, -0.3125rem) rotate(-45deg) !important;
-    transition: inherit !important;
-    box-sizing: content-box !important;
+  @apply content-[''] absolute w-2.5 h-2.5 border-2 border-current rounded-full top-1/2 left-1/2 box-content transition-all;
+  /* Center the circle perfectly */
+  /* Shifted up-left to visually center the entire icon (circle + handle) */
+  transform: translate(-50%, -50%) translate(-2px, -2px);
 }
 
 /* Handle Part */
 .DocSearch-Button::after {
-    content: '' !important;
-    position: absolute !important;
-    width: 0.125rem !important;
-    height: 0.5rem !important;
-    background-color: currentColor !important;
-    top: 50% !important;
-    left: 50% !important;
-    /* Position based on Citizen CSS logic: top: 0.3125rem; left: 0.75rem; */
-    /* We use translate to position relative to center */
-    /* 0.75rem left is 12px. Center is 10px (if 20px icon). So +2px. */
-    /* 0.3125rem top is 5px. Center is 10px. So -5px? No, top is from top edge. */
-    /* Let's use the visual approximation: Handle sticks out bottom right */
-    transform: translate(-50%, -50%) translate(0.25rem, 0.125rem) rotate(-45deg) !important;
-    transition: inherit !important;
-    border-radius: var(--border-radius-base, 4px) !important;
+  @apply content-[''] absolute w-0.5 h-2 bg-current top-1/2 left-1/2 rounded-sm transition-all;
+  /* Position handle relative to center */
+  /* Placed at bottom-right */
+  transform: translate(-50%, -50%) translate(5px, 5px) rotate(-45deg);
 }
 
-/* Hover Effect */
-.DocSearch-Button:hover {
-    background-color: var(--background-color-button-quiet--hover, rgba(0,0,0,0.05)) !important;
-}
-
+/* Hover Animation */
 .DocSearch-Button:hover::after {
-    height: 0.375rem !important;
-    /* Move handle slightly on hover */
-    transform: translate(-50%, -50%) translate(0.375rem, 0.25rem) rotate(-45deg) !important;
+  @apply h-2.5; 
+  /* Extend handle outwards */
+  transform: translate(-50%, -50%) translate(6px, 6px) rotate(-45deg);
 }

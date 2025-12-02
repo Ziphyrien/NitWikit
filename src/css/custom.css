@@ -16,6 +16,24 @@
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/utilities.css" layer(utilities);
 
+@theme {
+  --color-surface-0: var(--color-surface-0);
+  --color-surface-1: var(--color-surface-1);
+  --color-surface-2: var(--color-surface-2);
+  --color-surface-3: var(--color-surface-3);
+  --color-surface-4: var(--color-surface-4);
+
+  --color-border: var(--border);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+
+  --color-progressive: var(--color-progressive);
+  --color-emphasized: var(--color-emphasized);
+  --color-subtle: var(--color-subtle);
+  --color-base: var(--color-base);
+}
+
 /* ======================================
    基础样式
 ====================================== */
@@ -52,13 +70,13 @@
     }
 
     .main-wrapper {
-        margin-left: 60px; /* Matches sidebar width (3.75rem) */
-        width: calc(100% - 60px);
+        margin-left: 4rem; /* Matches navbar width (w-16 = 4rem) */
+        width: calc(100% - 4rem);
     }
 
     /* Adjust footer to respect sidebar */
     .footer {
-        margin-left: 60px;
-        width: calc(100% - 60px);
+        margin-left: 4rem;
+        width: calc(100% - 4rem);
     }
 }

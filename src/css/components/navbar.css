@@ -1,449 +1,239 @@
-/* ======================================
-   NitWikit 导航栏样式
-   垂直侧边栏 (Citizen 风格)
-====================================== */
-
-/* 移动端基础样式 (保持不变) */
+/* Mobile (Default) */
 .navbar {
-    height: var(--ifm-navbar-height);
-    padding: 0 var(--ifm-navbar-padding-horizontal);
-    display: flex;
-    align-items: center;
-    background: var(--color-surface-1);
-    border-bottom: 1px solid var(--ifm-border-color);
-    transition: all var(--transition-base);
-    box-shadow: none !important;
+  @apply h-[var(--ifm-navbar-height)] px-4 flex items-center bg-surface-1 border-b border-border transition-all shadow-none;
 }
 
 .navbar__brand {
-    font-weight: 700;
-    color: var(--text-primary);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  @apply font-bold text-text-primary flex items-center gap-2;
 }
 
 .navbar__logo {
-    height: 1.75rem;
-    width: 1.75rem;
+  @apply h-7 w-7;
 }
 
 /* ======================================
    Desktop Vertical Rail (Citizen Style)
-   屏幕宽度 >= 997px 时启用垂直侧边栏
+   Enabled at lg breakpoint (approx 997px)
 ====================================== */
 @media (min-width: 997px) {
-    .navbar {
-        position: fixed;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        width: 60px; /* 调整为 Citizen 标准宽度 (3.75rem) */
-        height: 100vh;
-        flex-direction: column;
-        padding: 1rem 0;
-        border-right: 1px solid var(--border);
-        border-bottom: none;
-        background-color: var(--color-surface-0); /* 深色背景 */
-        z-index: 200;
-        align-items: center;
-        overflow: visible !important; /* Allow sidebar to overflow */
-        --citizen-rail-gap: 0.75rem;
-    }
+  /* Main Container: Fixed Left Rail */
+  .navbar {
+    @apply fixed left-0 top-0 bottom-0 w-16 h-screen flex-col py-4 px-0 border-r border-border border-b-0 bg-surface-0 z-50 items-center overflow-visible !transform-none !pointer-events-auto;
+  }
 
-    .navbar__inner {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        width: 100%;
-        align-items: center;
-        gap: 0; /* Use margins for precise control */
-        padding: 0;
-    }
+  /* Inner Container: Flex Column */
+  .navbar__inner {
+    @apply flex flex-col h-full w-full items-center gap-2 p-0;
+  }
 
-    /* 使用 display: contents 打平结构，以便重新排序 */
-    .navbar__items,
-    .navbar__items--right {
-        display: contents;
-    }
+  /* Flatten structure */
+  .navbar__items,
+  .navbar__items--right {
+    @apply contents;
+  }
 
-    /* 1. Logo (顶部) */
-    .navbar__brand {
-        order: -1; /* Ensure it is always at the top */
-        margin-right: 0;
-        width: 44px;
-        height: 44px;
-        justify-content: center;
-        border-radius: var(--radius-md);
-        transition: background-color var(--transition-fast);
-        /* Ensure text is hidden even if selector fails */
-        font-size: 0 !important; 
-        
-        /* Divider setup */
-        position: relative;
-        /* 
-           Calculation for Symmetry:
-           Logo Height: 44px (Center 22px)
-           Divider: bottom -6px (Absolute Y = 50px)
-           Logo Center to Divider = 50 - 22 = 28px
-           
-           Target Search Center to Divider = 28px
-           Search Center Y = 50 + 28 = 78px
-           Search Height: 40px (Center 20px)
-           Search Top Y = 78 - 20 = 58px
-           
-           Required Spacing (Logo Bottom to Search Top):
-           58px (Search Top) - 44px (Logo Bottom) = 14px
-        */
-        margin-bottom: 0;
-    }
+  /* Common Button Style Utility */
+  /* We use a consistent width and aspect-square to ensure perfect squares */
+  /* w-10 (40px) is standard touch target size */
+  .navbar__brand,
+  .navbar__toggle,
+  .header-github-link,
+  .DocSearch-Button,
+  button[class*="DocSearch"],
+  div[class*="colorModeToggle"] button {
+    @apply !w-10 !h-10 !aspect-square !p-0 flex justify-center items-center rounded-md transition-colors mx-auto bg-transparent border-none shadow-none text-text-secondary hover:bg-surface-2 hover:text-text-primary;
+    line-height: 0 !important;
+  }
+
+  /* Force Icon Sizes for Consistency */
+  .DocSearch-Button svg,
+  div[class*="colorModeToggle"] button svg {
+    @apply !w-6 !h-6;
+  }
+
+  /* Fix DocSearch Internal Container Alignment */
+  .DocSearch-Button-Container {
+    @apply !flex !justify-center !items-center !w-full !h-full !m-0 !p-0;
+  }
+
+  .DocSearch-Button svg {
+    @apply !m-0 !block;
+  }
+
+  /* 1. Logo Area */
+  .navbar__brand {
+    @apply -order-1 mb-2 relative gap-0;
+    font-size: 0;
+  }
+
+  /* Divider below logo */
+  .navbar__brand::after {
+    @apply content-[''] absolute -bottom-2 left-1/2 -translate-x-1/2 w-6 h-0.5 bg-border rounded-sm;
+  }
+
+  .navbar__title {
+    @apply hidden;
+  }
+  
+  .navbar__logo {
+    @apply w-7 h-7 m-0 object-contain;
+  }
+
+  /* 2. Search Button */
+  .navbar__items .navbar__search {
+    @apply contents;
+  }
+
+  .DocSearch-Button,
+  button[class*="DocSearch"] {
+    @apply relative z-50 visible order-0 !m-0;
+  }
+
+  .DocSearch-Button-Placeholder,
+  .DocSearch-Button-Keys {
+    @apply hidden;
+  }
+
+  /* 3. Menu Toggle (Hamburger) */
+  .navbar__toggle {
+    @apply order-1 z-50 relative cursor-pointer;
     
-    .navbar__brand::after {
-        content: '';
-        position: absolute;
-        bottom: -6px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 24px;
-        height: 2px;
-        background-color: var(--border);
-        border-radius: 1px;
-    }
-    
-    .navbar__brand:hover {
-        background-color: var(--color-surface-2);
-    }
+    /* Middle bar */
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 1.25rem 0.125rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
+  }
+  
+  /* Hide default SVG */
+  .navbar__toggle svg {
+    @apply hidden;
+  }
 
-    .navbar__title {
-        display: none !important; /* 强制隐藏文字 */
-    }
-    
-    .navbar__logo {
-        width: 28px;
-        height: 28px;
-        margin: 0;
-    }
+  /* Top and Bottom bars */
+  .navbar__toggle::before,
+  .navbar__toggle::after {
+    @apply content-[''] absolute left-1/2 w-5 h-0.5 bg-current -translate-x-1/2 transition-transform origin-center;
+  }
 
-    /* Rescue Search button regardless of container */
-    .navbar__items:not(.navbar__items--right) .navbar__search,
-    .navbar__items--right .navbar__search,
-    .navbar__items .DocSearch-Button,
-    .navbar__items .navbar__item:has(.DocSearch-Button),
-    .navbar__items .navbar__item:has(button[class*="DocSearch"]),
-    .navbar__items button[class*="DocSearch"] {
-        position: relative !important;
-        top: auto;
-        left: auto;
-        transform: none;
-        z-index: 201;
-        visibility: visible;
-        width: 40px;
-        height: 40px;
-        justify-content: center;
-        display: flex !important;
-        align-items: center;
-        padding: 0;
-        margin: 0 !important;
-        margin-top: 14px !important; /* Precise spacing from Logo (58px top - 44px logo) */
-        background: transparent;
-        border: none;
-        box-shadow: none !important;
-        order: 0;
-    }
+  .navbar__toggle::before {
+    @apply -translate-y-1.5;
+  }
 
-    /* Force Search Button Style */
-    .DocSearch-Button,
-    button[class*="DocSearch"] {
-        width: 40px;
-        height: 40px;
-        padding: 0;
-        margin: 0;
-        background: transparent;
-        border: none;
-        box-shadow: none !important;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .navbar__toggle::after {
+    @apply translate-y-1.5;
+  }
 
-    .DocSearch-Button-Placeholder,
-    .DocSearch-Button-Keys {
-        display: none !important;
-    }
-    
-    /* 3. 菜单按钮 (搜索下方) */
-    /* Show toggle on desktop */
-    .navbar__toggle {
-        display: flex !important;
-        order: 1; /* Follows Search */
-        z-index: 201; 
-        position: relative;
-        top: auto;
-        left: auto;
-        transform: none;
-        margin: 0;
-        margin-top: 10px !important; /* Gap between Search and Toggle */
-    }
+  .navbar__toggle:hover::before {
+    @apply -translate-x-1/2;
+  }
 
-    /* Unified spacing reset */
-    .navbar__brand {
-        margin: 0;
-    }
+  /* Active State */
+  .navbar-sidebar--show .navbar__toggle,
+  html.citizen-menu-open .navbar__toggle {
+    background-size: 0 0.125rem;
+  }
 
-    /* Hide default SVG */
-    .navbar__toggle svg {
-        display: none;
-    }
+  .navbar-sidebar--show .navbar__toggle::before,
+  html.citizen-menu-open .navbar__toggle::before {
+    @apply top-1/2 -translate-y-1/2 rotate-45;
+  }
 
-    /* Citizen-style Hamburger */
-    .navbar__toggle {
-        position: relative;
-        width: 40px;
-        height: 40px;
-        padding: 0;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        align-items: center;
-        justify-content: center;
-        /* Middle bar using background gradient */
-        background-image: linear-gradient(currentColor, currentColor);
-        background-size: 18px 2px; /* Width 18px, Height 2px */
-        background-position: center;
-        background-repeat: no-repeat;
-        transition: background-size 0.2s ease-in-out;
-        color: var(--text-secondary);
-    }
-    
-    .navbar__toggle:hover {
-        background-color: var(--color-surface-2);
-        border-radius: var(--radius-md);
-        color: var(--text-primary);
-    }
+  .navbar-sidebar--show .navbar__toggle::after,
+  html.citizen-menu-open .navbar__toggle::after {
+    @apply bottom-1/2 translate-y-1/2 -rotate-45;
+  }
 
-    /* Top and Bottom bars */
-    .navbar__toggle::before,
-    .navbar__toggle::after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        width: 18px;
-        height: 2px;
-        background-color: currentColor;
-        transform: translateX(-50%);
-        transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
-        transform-origin: center;
-    }
+  /* Hide standard nav links */
+  .navbar__items:not(.navbar__items--right) .navbar__item {
+    @apply hidden;
+  }
 
-    .navbar__toggle::before {
-        top: 13px; /* 20px center - 7px */
-    }
+  /* 4. Bottom Actions */
+  .navbar__item {
+    @apply order-10;
+  }
 
-    .navbar__toggle::after {
-        bottom: 13px; /* 20px center - 7px */
-    }
+  /* GitHub Link */
+  .header-github-link {
+    @apply order-[99] mt-auto mb-0 overflow-hidden;
+    font-size: 0;
+  }
 
-    /* Hover effect (Citizen style: top bar moves left) */
-    .navbar__toggle:hover::before {
-        transform: translateX(-60%);
-    }
+  /* GitHub Icon Mask */
+  .header-github-link::before {
+    @apply content-[''] block w-5 h-5 bg-text-secondary transition-colors;
+    mask: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat center;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+  }
+  
+  .header-github-link:hover::before {
+    @apply bg-text-primary;
+  }
 
-    /* Open State - When sidebar is visible */
-    /* Docusaurus adds .navbar-sidebar--show to the navbar container */
-    /* Also support our custom class .citizen-menu-open on html */
-    .navbar-sidebar--show .navbar__toggle,
-    html.citizen-menu-open .navbar__toggle {
-        background-size: 0 2px; /* Hide middle bar */
-    }
+  /* Color Toggle */
+  div[class*="colorModeToggle"] {
+    @apply order-[100] mt-2 mx-auto w-10 h-10 flex justify-center items-center;
+  }
 
-    .navbar-sidebar--show .navbar__toggle::before,
-    html.citizen-menu-open .navbar__toggle::before {
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(45deg);
-    }
+  /* ======================================
+     Sidebar Drawer
+  ====================================== */
+  .navbar-sidebar {
+    @apply block !left-16 !w-80 -translate-x-full bg-surface-0 border-r border-border shadow-none transition-transform z-40 p-0;
+  }
 
-    .navbar-sidebar--show .navbar__toggle::after,
-    html.citizen-menu-open .navbar__toggle::after {
-        bottom: 50%;
-        transform: translate(-50%, 50%) rotate(-45deg);
-    }
-    
-    /* Adjust Rail Container */
-    .navbar__inner {
-        padding-top: 1rem !important; /* Reset padding, use flex flow */
-    }
+  .navbar-sidebar--show .navbar-sidebar {
+    @apply translate-x-0;
+  }
 
-    /* ======================================
-       Desktop Drawer Implementation
-       Using .navbar-sidebar as the only drawer
-    ====================================== */
-    
-    /* Hide nav links in the rail, they will be in the sidebar */
-    .navbar__items:not(.navbar__items--right) .navbar__item {
-        display: none;
-    }
+  .navbar-sidebar__backdrop {
+    @apply !left-16 z-30 bg-black/40;
+  }
 
-    /* Ensure Logo is visible and positioned correctly in Rail */
-    /* .navbar__brand is already styled above with order: -1 */
-    
-    /* Remove the conflicting .navbar__items drawer implementation */
-    /* The following block was causing the "double drawer" issue */
+  /* Clean up Sidebar Content */
+  .navbar-sidebar__brand,
+  .navbar-sidebar__close,
+  .navbar-sidebar__items .header-github-link,
+  .navbar-sidebar__items .navbar__item[href*="github.com"] {
+    @apply hidden;
+  }
 
+  .navbar-sidebar__items {
+    @apply h-full p-0;
+  }
 
-    /* 4. 底部设置区域 (颜色切换等) */
-    /* 这是一个 hack，尝试将最后一个元素推到底部 */
-    /* 通常颜色切换按钮在 items--right 的最后 */
-    
-    /* 针对颜色切换按钮 */
-    .navbar__item {
-        order: 10; /* 默认顺序 */
-    }
+  .navbar-sidebar__items > .menu {
+    @apply pt-10 px-3 pb-2 bg-transparent w-full box-border;
+  }
 
-    /* 尝试选中颜色切换按钮容器 */
-    div[class*="colorModeToggle"] {
-        order: 100;
-        margin-top: var(--citizen-rail-gap) !important; /* 紧跟在 GitHub 按钮下方、保持统一间距 */
-    }
-    
-    /* GitHub 链接样式 */
-    .header-github-link {
-        order: 99;
-        margin-top: auto !important; /* 固定到底部 */
-        margin-bottom: 0;
-        width: 44px;
-        height: 44px;
-        display: flex !important; /* Force display */
-        justify-content: center;
-        align-items: center;
-        border-radius: var(--radius-md);
-    }
-    
-    .header-github-link:hover {
-        background-color: var(--color-surface-2);
-    }
+  .navbar-sidebar__items .menu__link {
+    @apply rounded text-text-secondary py-2 px-3 text-sm font-medium leading-tight;
+  }
 
-    .header-github-link::before {
-        content: '';
-        width: 24px;
-        height: 24px;
-        display: block;
-        background-color: var(--text-secondary);
-        mask: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat center;
-        mask-size: contain;
-        -webkit-mask: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat center;
-        -webkit-mask-size: contain;
-    }
+  .navbar-sidebar__items .menu__link:hover {
+    @apply bg-surface-2 text-text-primary no-underline;
+  }
 
-    /* ======================================
-       Desktop Sidebar (Drawer) - DocSidebar Style
-    ====================================== */
-    
-    /* 1. Position: Right of Rail */
-    .navbar-sidebar {
-        display: block !important;
-        left: 60px !important; /* Start after the rail */
-        width: 300px !important; /* Standard DocSidebar width (usually 300px) */
-        transform: translate3d(-100%, 0, 0); /* Hidden by default */
-        
-        /* Visual Style: Match DocSidebar exactly */
-        background-color: var(--ifm-background-color) !important; /* Use main background */
-        border-right: 1px solid var(--ifm-border-color) !important; /* Standard border */
-        box-shadow: none !important; /* No shadow for flat look */
-        
-        transition: transform var(--transition-base) !important;
-        z-index: 100; /* Below the rail (200) */
-        padding: 0; /* Reset padding */
-    }
-
-    /* 2. Content: Hide Brand/Close, Show Menu only */
-    .navbar-sidebar__brand {
-        display: none !important;
-    }
-    
-    .navbar-sidebar__close {
-        display: none !important;
-    }
-
-    /* 3. Items Container */
-    .navbar-sidebar__items {
-        height: 100%;
-        padding: 0 !important; /* Remove padding from container to avoid overflow */
-    }
-    
-    /* Ensure the menu inside looks like a doc sidebar menu */
-    .navbar-sidebar__items > .menu {
-        padding: 2.5rem 0.75rem 0.5rem; /* Increased top padding to move content down */
-        background: transparent;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    
-    /* Hide GitHub link and other rail items from the sidebar list */
-    .navbar-sidebar__items .header-github-link,
-    .navbar-sidebar__items .navbar__item[href*="github.com"] {
-        display: none !important;
-    }
-
-    /* Style the menu items to match DocSidebar exactly */
-    .navbar-sidebar__items .menu__list-item {
-        margin-bottom: 0.25rem;
-    }
-
-    .navbar-sidebar__items .menu__link {
-        border-radius: 0.25rem;
-        color: #89919A; /* Match screenshot color */
-        padding: 8px 12px 8px 16px; /* Match screenshot padding */
-        line-height: 1.25;
-        font-size: 15px; /* Match screenshot font size */
-        font-weight: 500;
-    }
-
-    .navbar-sidebar__items .menu__link:hover {
-        background-color: var(--ifm-menu-color-background-hover);
-        color: var(--ifm-menu-color-hover);
-        text-decoration: none;
-    }
-
-    .navbar-sidebar__items .menu__link--active {
-        background-color: var(--ifm-menu-color-background-active);
-        color: var(--ifm-menu-color-active);
-        font-weight: 700; /* Bold for active item */
-    }
-
-    /* 4. Interaction */
-    .navbar-sidebar--show .navbar-sidebar {
-        transform: translate3d(0, 0, 0) !important;
-    }
-    
-    /* Backdrop */
-    .navbar-sidebar__backdrop {
-        left: 60px !important; /* Start after rail */
-        z-index: 90; /* Below sidebar */
-        background-color: rgba(0, 0, 0, 0.4);
-    }
+  .navbar-sidebar__items .menu__link--active {
+    @apply bg-surface-3 text-text-primary font-bold;
+  }
 }
 
-/* ======================================
-   移动端样式 (保持原有逻辑)
-====================================== */
+/* Mobile Layout */
 @media (max-width: 996px) {
-    .navbar__inner {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .navbar__brand {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
-    .navbar__items {
-        display: flex;
-    }
-    
-    .navbar__items--right {
-        display: flex;
-        margin-left: auto;
-    }
+  .navbar__inner {
+    @apply flex justify-between;
+  }
+  .navbar__brand {
+    @apply absolute left-1/2 -translate-x-1/2;
+  }
+  .navbar__items, .navbar__items--right {
+    @apply flex;
+  }
+  .navbar__items--right {
+    @apply ml-auto;
+  }
 }
