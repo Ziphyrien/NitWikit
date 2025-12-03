@@ -12,9 +12,9 @@ export default function Home(): ReactNode {
 
     return (
         <Layout title={tagline} description={description}>
-            <main className="min-h-screen bg-surface-0 pt-(--ifm-navbar-height) pb-16 flex justify-center">
+            <main className="min-h-screen bg-surface-0 pt-(--ifm-navbar-height) pb-16 flex flex-col items-center">
+                <HeroCard />
                 <BentoGrid>
-                    <HeroCard />
                     <FeatureCard 
                         title="Java 版核心" 
                         description="高版本 Java 版服务器开服指南，涵盖基础配置与进阶优化。" 

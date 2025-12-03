@@ -83,42 +83,54 @@ export function HeroCard() {
   };
 
   return (
-    <div 
-      className="lg:col-span-2 lg:row-span-2 flex flex-col justify-center items-center text-center p-8 lg:p-12 animate-fade-in-up opacity-0" 
-      style={{ animationDelay: '100ms', animationFillMode: "forwards" }}
-    >
-      <div className="flex items-center gap-2 mb-4 animate-fade-in-up" style={{ animationDelay: '150ms' }}>
-        <span className="text-2xl">👋</span>
-        <span className="text-lg font-medium text-subtle">Welcome to the</span>
+    <div className="relative w-full overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/img/hero.png"
+          alt="Background"
+          className="w-full h-full object-cover opacity-40 dark:opacity-30 scale-105 blur-[2px]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-surface-0/30 via-surface-0/80 to-surface-0"></div>
       </div>
-      
-      <h1 className="text-5xl lg:text-7xl font-black mb-6 uppercase tracking-tight bg-linear-to-br from-text-primary to-subtle bg-clip-text text-transparent animate-fade-in-up" style={{ animationDelay: '200ms' }}>
-        Cubic Wiki
-      </h1>
-      
-      <p className="text-lg lg:text-xl text-subtle mb-10 leading-relaxed max-w-2xl animate-fade-in-up" style={{ animationDelay: '250ms' }}>
-        主要针对 <span className="text-progressive font-medium italic">高版本 Java 版</span> 和 <span className="text-progressive font-medium italic">基岩版</span> 服务器的开服指南。
-        <br className="hidden lg:block" />
-        从零开始，手把手教你搭建和运营 Minecraft 服务器。
-      </p>
 
       <div 
-        className="w-full max-w-xl relative group cursor-text animate-fade-in-up" 
-        style={{ animationDelay: '300ms' }}
-        onClick={handleSearchClick}
+        className="relative z-10 flex flex-col justify-center items-center text-center p-8 lg:p-24 animate-fade-in-up opacity-0 w-full max-w-(--width-layout) mx-auto" 
+        style={{ animationDelay: '100ms', animationFillMode: "forwards" }}
       >
-        {/* Glow effect */}
-        <div className="absolute -inset-0.5 bg-linear-to-r from-progressive/20 to-primary-light/20 rounded-full blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
+        <div className="flex items-center gap-2 mb-4 animate-fade-in-up" style={{ animationDelay: '150ms' }}>
+          <span className="text-2xl">👋</span>
+          <span className="text-lg font-medium">Welcome to the</span>
+        </div>
         
-        <div className="relative flex items-center gap-4 px-6 py-4 bg-surface-0 border border-border rounded-full shadow-sm group-hover:border-progressive/50 group-hover:shadow-md transition-all duration-300">
-          <svg className="w-5 h-5 text-subtle group-hover:text-progressive transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>
-          <span className="text-subtle text-lg font-medium">Search the Cubic Wiki</span>
-          <div className="ml-auto flex items-center gap-1.5 text-xs font-bold text-subtle/50 border border-border/50 rounded-md px-2 py-1 bg-surface-1">
-            <span className="font-mono">Ctrl</span>
-            <span className="font-mono">Alt</span>
-            <span className="font-mono">K</span>
+        <h1 className="text-5xl lg:text-7xl font-black mb-6 uppercase tracking-tight animate-fade-in-up" style={{ animationDelay: '200ms' }}>
+          Cubic Wiki
+        </h1>
+        
+        <p className="text-lg lg:text-xl mb-10 leading-relaxed max-w-2xl animate-fade-in-up" style={{ animationDelay: '250ms' }}>
+          主要针对 <span className="font-medium italic">高版本 Java 版</span> 和 <span className="font-medium italic">基岩版</span> 服务器的开服指南。
+          <br className="hidden lg:block" />
+          从零开始，手把手教你搭建和运营 Minecraft 服务器。
+        </p>
+
+        <div 
+          className="w-full max-w-xl relative group cursor-text animate-fade-in-up" 
+          style={{ animationDelay: '300ms' }}
+          onClick={handleSearchClick}
+        >
+          {/* Glow effect */}
+          <div className="absolute -inset-0.5 bg-linear-to-r from-progressive/20 to-primary-light/20 rounded-full blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
+          
+          <div className="relative flex items-center gap-4 px-6 py-4 bg-surface-0/80 backdrop-blur-md border border-border rounded-full shadow-sm group-hover:border-progressive/50 group-hover:shadow-md transition-all duration-300">
+            <svg className="w-5 h-5 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <span className="text-lg font-medium">Search the Cubic Wiki</span>
+            <div className="ml-auto flex items-center gap-1.5 text-xs font-bold border border-border/50 rounded-md px-2 py-1 bg-surface-1/50">
+              <span className="font-mono">Ctrl</span>
+              <span className="font-mono">Alt</span>
+              <span className="font-mono">K</span>
+            </div>
           </div>
         </div>
       </div>
