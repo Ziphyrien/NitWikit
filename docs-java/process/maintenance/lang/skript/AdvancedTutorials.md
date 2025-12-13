@@ -33,7 +33,7 @@ import:
 
 # 监听事件
 on TPARequestEvent:
-    set {_ess_User} to event.getTarget()   # 获取User对象
+    set {_ess_IUser} to event.getTarget()   # 获取IUser对象
     set {_player} to {_ess_IUser}.getBase()   # 获取Player对象
     # 判断玩家
     if {_player} is player("lilingfeng"):
@@ -73,7 +73,7 @@ on TPARequestEvent:
 
 ```skript
     if {_player} is player("lilingfeng"):
-        send "&cliliangfeng是我的不准tpa到她那里🥵"
+        send "&clilingfeng是我的不准tpa到她那里🥵"
         cancel event
 ```
 
