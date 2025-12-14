@@ -91,7 +91,7 @@ export function HeroCard() {
           alt="Background"
           className="w-full h-full object-cover opacity-40 dark:opacity-30 scale-105 blur-[2px]"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-surface-0/30 via-surface-0/80 to-surface-0"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-surface-0/30 via-surface-0/80 to-surface-0"></div>
       </div>
 
       <div 
