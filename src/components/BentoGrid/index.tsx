@@ -1,4 +1,5 @@
 import Link from "@docusaurus/Link";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 import React, { ReactNode } from "react";
 
 interface BentoGridProps {
@@ -87,7 +88,7 @@ export function HeroCard() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/img/hero.png"
+          src={useBaseUrl("/img/hero.png")}
           alt="Background"
           className="w-full h-full object-cover opacity-40 dark:opacity-30 scale-105 blur-[2px]"
         />
