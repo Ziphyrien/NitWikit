@@ -24,7 +24,7 @@ slug: /optimize/jvm/dragonwell
 
 Dragonwell 11 的 ZGC 不同于 OpenJDK11 的 ZGC，Dragonwell 通过移植 OpenJDK 15+ 的 ZGC 补丁，使得 Dragonwell 的 ZGC 可以投入生产环境
 
-添加参数 `-XX:+UseZGC -XX:AllocatePrefetchStyle=1`以启用
+添加参数 `-XX:+UseZGC -XX:AllocatePrefetchStyle=1` 以启用
 
 ## G1GC
 
@@ -32,7 +32,7 @@ Dragonwell 11 的 ZGC 不同于 OpenJDK11 的 ZGC，Dragonwell 通过移植 Open
 
 <!--markdownlint-disable line-length-->
 
-```shell
+```text
 -XX:+UseG1GC -XX:MaxGCPauseMillis=130 -XX:+UnlockExperimentalVMOptions -XX:+ExplicitGCInvokesConcurrent -XX:+AlwaysPreTouch -XX:G1NewSizePercent=28 -XX:G1HeapRegionSize=16M -XX:G1ReservePercent=20 -XX:G1MixedGCCountTarget=3 -XX:InitiatingHeapOccupancyPercent=10 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=0 -XX:SurvivorRatio=32 -XX:MaxTenuringThreshold=1 -XX:G1SATBBufferEnqueueingThresholdPercent=30 -XX:G1ConcMarkStepDurationMillis=5 -XX:G1ConcRefinementServiceIntervalMillis=150 -XX:G1ConcRSHotCardLimit=16  -XX:+G1BarrierSimple
 ```
 
@@ -42,7 +42,7 @@ Dragonwell 11 的 ZGC 不同于 OpenJDK11 的 ZGC，Dragonwell 通过移植 Open
 
 可以节约 10% 左右的 Java 对象内存占用，并可能提升程序性能。**目前仅支持 G1GC 和 ParallelGC**
 
-添加参数`-XX:+UseCompactObjectHeaders`
+添加参数 `-XX:+UseCompactObjectHeaders`
 
 ## Wisp
 
@@ -56,4 +56,4 @@ Wisp 在 JVM 上提供了一种用户态的线程实现。开启 Wisp2 后，Jav
 
 :::
 
-添加参数`-XX:+UnlockExperimentalVMOptions -XX:+UseWisp2`
+添加参数 `-XX:+UnlockExperimentalVMOptions -XX:+UseWisp2`

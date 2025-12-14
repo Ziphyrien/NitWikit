@@ -19,7 +19,7 @@ MCHPRS 破坏了很多基于生物/传送装置的红石机器，因此 MCHPRS �
 
 MCHPRS 的构建需要 Rust 和 Cargo，具体安装教程请自行上网搜索
 
-```shell
+```bash
 git clone https://github.com/MCHPR/MCHPRS.git
 cd MCHPRS
 cargo build --release
@@ -29,7 +29,7 @@ cargo build --release
 
 如果你希望基于你的 CPU 进一步优化 (但兼容性会下降),你可以使用这个指令构建：
 
-```shell
+```bash
 RUSTFLAGS="-C target-cpu=native" cargo build --release
 ```
 
@@ -43,11 +43,11 @@ RUSTFLAGS="-C target-cpu=native" cargo build --release
 | ----------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------ |
 | `bind_address`    | 绑定地址与端口                                                                                                    | `0.0.0.0:25565`                |
 | `motd`            | MOTD                                                                                                              | `"Minecraft 高性能红石服务器"` |
-| `chat_format`     | 聊天消息格式化方式（使用花括号插入`username`和`message`变量）                                                     | `<{username}> {message}`       |
+| `chat_format`     | 聊天消息格式化方式（使用花括号插入 `username` 和 `message` 变量）                                                     | `<{username}> {message}`       |
 | `max_players`     | 最大同时在线玩家数                                                                                                | `99999`                        |
 | `view_distance`   | 视距                                                                                                              | `8`                            |
-| `whitelist`       | 是否启用白名单（读取`whitelist.json`文件）                                                                        | `false`                        |
-| `schemati`        | 模拟 Open Redstone Engineers 的[Schemati 插件](https://github.com/OpenRedstoneEngineers/Schemati)的验证与目录结构 | `false`                        |
+| `whitelist`       | 是否启用白名单（读取 `whitelist.json` 文件）                                                                        | `false`                        |
+| `schemati`        | 模拟 Open Redstone Engineers 的 [Schemati 插件](https://github.com/OpenRedstoneEngineers/Schemati) 的验证与目录结构 | `false`                        |
 | `block_in_hitbox` | 允许在玩家碰撞箱内放置方块（简化碰撞检测逻辑）                                                                    | `true`                         |
 | `auto_redpiler`   | 自动使用红石编译器                                                                                                | `false`                        |
 

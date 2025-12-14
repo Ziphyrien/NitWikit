@@ -15,9 +15,9 @@ import TabItem from '@theme/TabItem';
 
 `SpigotMC` https://www.spigotmc.org/resources/73355
 
-`GitHub(主页)` https://github.com/ItemsAdder
+`GitHub (主页)` https://github.com/ItemsAdder
 
-`GitHub(可以反馈 BUG)` https://github.com/PluginBugs/Issues-ItemsAdder
+`GitHub (可以反馈 bug)` https://github.com/PluginBugs/Issues-ItemsAdder
 
 `文档 (英文)` https://itemsadder.devs.beer
 
@@ -36,7 +36,7 @@ import TabItem from '@theme/TabItem';
 https://zhangshenxing.github.io/VanillaModTutorial
 -
 第二步：
-使用 IA 官方 WIKI 并结合原版材质包开发产出内容，但是请注意 IA 内有大量无用功能和屎山代码，所以将 IA 当作一个打包器是最优解的选择
+使用 IA 官方 Wiki 并结合原版材质包开发产出内容，但是请注意 IA 内有大量无用功能和屎山代码，所以将 IA 当作一个打包器是最优解的选择
 https://itemsadder.devs.beer
 -
 第三步：如何让你的服务器更加劣质的办法 (仅我个人而言，如果你看的很不舒服我很抱歉，如果你要对号入座那就是你是对的)
@@ -45,7 +45,7 @@ https://itemsadder.devs.beer
 3. 乱加插件，看啥加啥，导致服务器变成性能答辩，这种服开不了几个月就跑路
 4. 在高版本非特殊需求还在使用单端开发，没有采用最基本的群组框架
 
-                                    ————来自 ia 群 群公告
+                                    ————来自 IA 群 群公告
 ```
 
 连基础都没学不要他妈的问问问
@@ -77,7 +77,7 @@ https://itemsadder.devs.beer
 
 :::info
 
-`Modrinth(社区版)` https://modrinth.com/plugin/craftengine
+`Modrinth (社区版)` https://modrinth.com/plugin/craftengine
 
 `Polymart` https://polymart.org/product/7624/craftengine
 
@@ -92,7 +92,9 @@ https://itemsadder.devs.beer
 :::
 
 :::warning
+
 本项目处于开发状态，如遇到错误请到 [GitHub](https://github.com/Xiao-MoMi/craft-engine/issues) 提交问题
+
 :::
 
 ## 插件特点
@@ -131,18 +133,23 @@ CraftEngine 使用一个服务端的真实体存储家具的数据，然后将�
 ### 资源包保护
 
 :::info[说明]
-CraftEngine 提供了比 [PackSquash](/Java/process/maintenance/resourcepack/compress) 更强大的内置资源包保护。
 
-因为 CraftEngine 侧重于保护性所以使用保护功能时会导致资源包大小增加，如果侧重于压缩率更推荐使用 [PackSquash](/Java/process/maintenance/resourcepack/compress)。
+CraftEngine 提供了比 [PackSquash](../compress.md) 更强大的内置资源包保护。
+
+因为 CraftEngine 侧重于保护性所以使用保护功能时会导致资源包大小增加，如果侧重于压缩率更推荐使用 [PackSquash](../compress.md)。
+
 :::
 
 :::danger
+
 不要尝试解压开启了 crash-tools 的的资源包！
+
 :::
 
 :::warning
 
 如果发现有可以破解资源包的工具可以前往本插件的 [Discord](https://discord.gg/WVKdaUPR3S) 打开工单反馈！
+
 :::
 
 ```yaml title="推荐配置"

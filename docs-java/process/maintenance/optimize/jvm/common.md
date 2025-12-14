@@ -8,23 +8,23 @@ slug: /optimize/jvm/common
 
 ## 大页支持
 
-注意在 WINDOWS 上使用大页，必须要以管理员启动
+注意在 Windows 上使用大页，必须要以管理员启动
 
 当然，在动手前，让我们先试一试是不是系统已经支持了这项功能，在控制台执行此命令
 
-```shell
+```bash
 java -Xlog:gc+init -XX:+UseLargePages -Xmx1g -version
 ```
 
 如果出现了以下字样，那么说明不完全兼容：
 
-```shell
+```text
 UseLargePages disabled, no large pages configured and available on the system.
 ```
 
 那么就说明当前系统并不支持大页，不过不要急，可以试一下这一行命令：
 
-```shell
+```bash
 java -Xlog:gc+init -XX:+UseTransparentHugePages -Xmx1g -version
 ```
 
@@ -34,13 +34,13 @@ java -Xlog:gc+init -XX:+UseTransparentHugePages -Xmx1g -version
 
 如果支持 LargePages，加上此参数
 
-```shell
+```text
 -XX:+UseLargePages  -XX:LargePageSizeInBytes=2m
 ```
 
 如果支持 TransparentHugePages，加上此参数
 
-```shell
+```text
 -XX:+UseTransparentHugePages
 ```
 
@@ -54,7 +54,7 @@ java -Xlog:gc+init -XX:+UseTransparentHugePages -Xmx1g -version
 
 如果你使用的是 Pufferfish 的分支 (Purpur，Leaf，Leaves，Gale)，你可以添加此参数
 
-```shell
+```text
 --add-modules=jdk.incubator.vector
 ```
 
@@ -64,20 +64,20 @@ java -Xlog:gc+init -XX:+UseTransparentHugePages -Xmx1g -version
 
 如果你使用的是 Leaf，你可以添加参数使用国内下载源：
 
-```shell
+```text
 -DLeaf.library-download-repo=https://maven.aliyun.com/repository/public
 ```
 
-如果你使用的是 Paper 1.21.6(及其分支) 之后的版本 ，可以使用以下系统属性配置 Maven 中心仓库镜像：
+如果你使用的是 Paper 1.21.6 (及其分支) 之后的版本，可以使用以下系统属性配置 Maven 中心仓库镜像：
 
-```shell
+```text
 -Dorg.bukkit.plugin.java.LibraryLoader.centralURL=https://maven.aliyun.com/repository/central
 ```
 
 或者设置环境变量（优先级更高）：
 
-```shell
-# Linux/MacOS
+```bash
+# Linux/macOS
 export PAPER_DEFAULT_CENTRAL_REPOSITORY=https://maven.aliyun.com/repository/central
 
 # Windows (PowerShell)
@@ -96,7 +96,7 @@ set PAPER_DEFAULT_CENTRAL_REPOSITORY=https://maven.aliyun.com/repository/central
 - **华为云 Maven 中心仓库**: `https://repo.huaweicloud.com/repository/maven/`
 - **腾讯云 Maven 中心仓库**: `https://mirrors.cloud.tencent.com/nexus/repository/maven-public/`
 
-:::tip 性能提示
+:::tip[性能提示]
 
 使用国内镜像源可以显著提升插件依赖库的下载速度，特别是在服务器首次启动或安装新插件时。
 
@@ -106,13 +106,13 @@ set PAPER_DEFAULT_CENTRAL_REPOSITORY=https://maven.aliyun.com/repository/central
 
 防止乱码
 
-```shell
+```text
 -Dfile.encoding=UTF-8
 ```
 
-如果仍然乱码,可以添加运行:
+如果仍然乱码，可以添加运行：
 
-```shell
+```bash
 chcp 65001 # for Windows
 ```
 
@@ -120,16 +120,16 @@ chcp 65001 # for Windows
 
 (仅适合 Leaf 或者 Gale)
 
-```shell
+```text
 -Dgale.log.warning.root=false -Dgale.log.warning.offline.mode=false
 ```
 
 ## 更快的安全随机数生成器
 
-(仅适合 Linux 和 MacOS 系统，在 Windows 上无效)
+(仅适合 Linux 和 macOS 系统，在 Windows 上无效)
 (原版 Minecraft 仅在个人信息公钥签名中使用到 SecureRandom)
 
-```shell
+```text
 -Djava.security.egd=file:/dev/urandom
 ```
 
@@ -137,7 +137,7 @@ chcp 65001 # for Windows
 
 (仅适合 Java17 及以上)
 
-```shell
+```text
  -Xlog:async
 ```
 
@@ -149,17 +149,17 @@ chcp 65001 # for Windows
 
 (仅适合 Paper 和 Paper Fork)
 
-```shell
+```text
 -Dpaper.playerconnection.keepalive=60
 ```
 
-如果你的网络不好，可以适当延长 keepalive 时间，打开[alternate-keepalive](/docs-java/process/maintenance/optimize/go.mdx#心跳连接)
+如果你的网络不好，可以适当延长 keepalive 时间，打开[alternate-keepalive](../go.mdx#心跳连接)
 
 ## 禁用文件夹遍历和符号链接验证
 
 (仅适合 Paper 和 Paper Fork)
 
-```shell
+```text
 -Dpaper.disableWorldSymlinkValidation=true
 ```
 

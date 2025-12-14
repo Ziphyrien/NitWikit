@@ -14,19 +14,19 @@ sidebar_position: 4
 
 2. 使用以下命令格式进行备份：
 
-    ```shell
+    ```bash
     mysqldump -u [用户名] -p [数据库名] > [备份文件名].sql
     ```
 
     例如：
 
-    ```shell
+    ```bash
     mysqldump -u root -p mydb > mydb_backup.sql
     ```
 
 3. 输入密码后，系统会开始备份过程。
 
-4. 备份完成后，你会在当前目录下看到生成的 .sql 文件。
+4. 备份完成后，你会在当前目录下看到生成的 `.sql` 文件。
 
 注意事项：
 
@@ -36,13 +36,13 @@ sidebar_position: 4
 
 要还原备份，可以使用以下命令：
 
-```shell
+```bash
 mysql -u [用户名] -p [数据库名] < [备份文件名].sql
 ```
 
 例如：
 
-```shell
+```bash
 mysql -u root -p mydb < mydb_backup.sql
 ```
 

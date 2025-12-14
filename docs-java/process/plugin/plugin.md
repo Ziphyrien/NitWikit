@@ -2,7 +2,7 @@
 title: 插件
 slug: /plugin
 sidebar_position: 1
-sidebar_label: Java插件
+sidebar_label: Java 插件
 ---
 
 # 插件
@@ -11,7 +11,7 @@ sidebar_label: Java插件
 
 建议阅读：
 
-- [YAML 语法](../../advance/YAML/YAML.md) - 了解大部分插件配置文件的语法。
+- [YAML 语法](../../advance/yaml/yaml.md) - 了解大部分插件配置文件的语法。
 - [特征文件](./more/plugin-signature-file.md) - 了解插件的一些信息。
 - [颜色代码](./more/color-message.md) - 改变服务器中文本的颜色
 - [什么是乱码](/start/basic/what-is-messy-code) - 了解文本文件中的字符有时为什么会变得奇奇怪怪。
@@ -28,7 +28,7 @@ sidebar_label: Java插件
 
 :::danger
 
-服务器在**开发阶段**可以使用 PlugmanX，ServerUtils 等插件热重载插件。
+服务器在 **开发阶段** 可以使用 PlugmanX，ServerUtils 等插件热重载插件。
 
 过了开发阶段后切记，多数插件自带了重载（上方就是）。
 
@@ -60,7 +60,7 @@ sidebar_label: Java插件
   <summary>安装的插件列表</summary>
 
 - ProtocolLib 必备前置
-- Luckperms 权限管理插件
+- LuckPerms 权限管理插件
 - PlaceholderAPI 必备前置
 - PlugManx 插件管理
 - WorldEdit 创世神
@@ -72,7 +72,7 @@ sidebar_label: Java插件
 - TrChat 聊天插件
 - MiniMotd MOTD 插件
 
-Via 自动安装已经移动到[此处](./other/Via/Via.md#笨蛋脚本)
+Via 自动安装已经移动到 [此处](./misc/via/via.md#笨蛋脚本)
 
 </details>
 

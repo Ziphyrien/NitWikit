@@ -12,7 +12,7 @@ sidebar_position: 1
 
 引用的内容主要来源于
 
-TUCAOEVER 在 mcbbs 的教程
+TUCAOEVER 在 MCBBS 的教程
 
 法棍 在 CSKB 发布的 [sk 教程](https://kb.corona.studio/zhCN/skript/startup.html)
 
@@ -82,8 +82,8 @@ on join:
 
 ## 基础教程
 
-见[“基础教程”](BasicTutorials.md)。
+见[“基础教程”](basic-tutorials.md)。
 
 ## 进阶教程
 
-见[“高级教程”](AdvancedTutorials.md)。
+见[“高级教程”](advanced-tutorials.md)。

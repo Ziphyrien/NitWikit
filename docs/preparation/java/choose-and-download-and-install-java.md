@@ -8,9 +8,9 @@ sidebar_position: 1
 ## 选择版本
 
 :::warning
-部分服务端有在项目的 README 中标注最低版本和推荐版本，例如 [Beast](https://github.com/HomoMC/Beast)，最低版本为 Java
-8，推荐版本为 Java 21
-MOD 服务端
+
+部分服务端有在项目的 README 中标注最低版本和推荐版本，例如 [Beast](https://github.com/HomoMC/Beast)，最低版本为 Java 8，推荐版本为 Java 21 mod 服务端
+
 :::
 
 ### 常见插件端 (Paper 等)
@@ -65,9 +65,9 @@ MOD 服务端
 | --------- | ------------------------------------------------------------------------------------------------- |
 | Java 8    | [Dragonwell](https://dragonwell-jdk.io/)                                                          |
 | Java 11   | [Dragonwell](https://dragonwell-jdk.io/)                                                          |
-| Java 17   | [Zulu](https://d10.injdk.cn/openjdk/zulu/17/)                                                     |
-| Java 21   | [GraalVM](https://d10.injdk.cn/openjdk/graalvm/21/) [Zulu](https://d10.injdk.cn/openjdk/zulu/21/) |
-| Java 24   | [GraalVM](https://d10.injdk.cn/openjdk/graalvm/24/) [Zulu](https://d10.injdk.cn/openjdk/zulu/24/) |
+| Java 17   | [Azul Zulu](https://d10.injdk.cn/openjdk/zulu/17/)                                                     |
+| Java 21   | [GraalVM](https://d10.injdk.cn/openjdk/graalvm/21/) / [Azul Zulu](https://d10.injdk.cn/openjdk/zulu/21/) |
+| Java 24   | [GraalVM](https://d10.injdk.cn/openjdk/graalvm/24/) / [Azul Zulu](https://d10.injdk.cn/openjdk/zulu/24/) |
 
 <!--markdownlint-enable line-length-->
 
@@ -111,7 +111,7 @@ https://www.java.com/zh-CN/download/
 
 </details>
 
-如果你想进行 JVM 优化，请看 [JVM 优化](/Java/optimize/jvm)
+如果你想进行 JVM 优化，请看 [JVM 优化](/java/optimize/jvm)
 
 ## 验证 Java 安装
 
@@ -123,7 +123,7 @@ https://www.java.com/zh-CN/download/
 
 输入：
 
-```shell
+```bash
 java -version
 ```
 
@@ -151,4 +151,4 @@ java -version
 
 ## 本节视频教程
 
-[**点此前往 B 站**: 笨蛋级 MC 开服教程 - 第三集 P1:实机演示安装 JAVA](https://www.bilibili.com/video/BV1eT42167iZ/)
+[**点此前往 B 站**: 笨蛋级 MC 开服教程 - 第三集 P1:实机演示安装 Java](https://www.bilibili.com/video/BV1eT42167iZ/)

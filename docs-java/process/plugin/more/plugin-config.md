@@ -7,9 +7,9 @@ sidebar_position: 2
 
 插件的配置文件一般在 `/plugins/插件名字/` 文件夹中，常见的配置文件一般是 `config.yml` 。
 
-> 插件一般会使用 **Yaml** 作为配置文件格式，建议先学习 [Yaml](../../../advance/YAML/YAML.md) 语法。
+> 插件一般会使用 **YAML** 作为配置文件格式，建议先学习 [YAML](../../../advance/yaml/yaml.md) 语法。
 
-我们在开始前所做的准备工作中，推荐你安装任意一款推荐的文档编辑软件：请查看[文本编辑器](/preparation/text-editor)
+我们在开始前所做的准备工作中，推荐你安装任意一款推荐的文档编辑软件：请查看 [文本编辑器](/preparation/text-editor)
 
 如果你是 Windows，现在让我们双击 .yml 文件就可以开始修改配置文件了！
 
@@ -41,11 +41,18 @@ import TabItem from '@theme/TabItem';
 
 插件文件夹中有类似 Language、lang、locale 之类的文件夹 (或其他东西？)：
 
-![](\_images/查看语言 -1.png)
+<!-- autocorrect disable space-world-->
+
+![](_images/查看语言-1.png)
 
 请寻找 zhcn、zh-cn、zh-CN、chinese 等字眼：
 
-![](\_images/查看语言 -2.png)
+<!-- autocorrect enable space-world-->
+<!-- autocorrect disable space-world-->
+
+![](_images/查看语言-2.png)
+
+<!-- autocorrect enable space-world-->
 
 然后一般要去插件配置文件 (多数为 config.yml) 把语言改成这里的文件名 (此处为 zh_cn)。
 
@@ -57,9 +64,11 @@ import TabItem from '@theme/TabItem';
 
 如果我们在插件文件夹找不到语言文件夹，可以直接用解压缩软件打开 jar 包：
 
-![](\_images/查看语言 - 拆开 jar.png)
+<!-- autocorrect disable space-world-->
 
-还有可能写在插件文档里，在项目 README 里，甚至在配置文件的注释里。
+![](_images/查看语言-拆开jar.png)
+
+<!-- autocorrect enable space-world-->
 
 碰到这之外的情况就需要你自己摸索了
 
@@ -81,7 +90,7 @@ import TabItem from '@theme/TabItem';
 
 然后把语言项改成 zh_CN、Chinese 等，具体应该写什么这地方。插件配置的注释可能提到
 
-也可以找找 [插件文件夹](/Java/process/plugin/more/plugin-config?plugin-language=folder) 和 [拆开 jar 文件](/Java/process/plugin/more/plugin-config?plugin-language=jar)
+也可以找找 [插件文件夹](plugin-config.md?plugin-language=folder) 和 [拆开 jar 文件](plugin-config.md?plugin-language=jar)
 
 </TabItem>
 
@@ -98,7 +107,7 @@ import TabItem from '@theme/TabItem';
 <!--markdownlint-disable line-length-->
 
 ```text
-请将我给出的以 yml 格式存储的 Minecraft 插件的配置文件汉化，且不改变本身的可执行性，其中被两个 % 包裹的为变量请不要翻译，请翻译时不要带翻译腔，而是要翻译得自然、流畅和地道，使用优美和高雅的表达方式并代入 Minecraft 游戏内进行翻译，翻译后请以 markdown 代码块的格式发送
+请将我给出的以 YAML 格式存储的 Minecraft 插件的配置文件汉化，且不改变本身的可执行性，其中被两个 % 包裹的为变量请不要翻译，请翻译时不要带翻译腔，而是要翻译得自然、流畅和地道，使用优美和高雅的表达方式并代入 Minecraft 游戏内进行翻译，翻译后请以 Markdown 代码块的格式发送
 ```
 
 <!--markdownlint-enable line-length-->
@@ -113,9 +122,9 @@ import TabItem from '@theme/TabItem';
 
 如果你要用的这个插件没有以上所提到的所有情况...
 
-他**可能**把你要改的语言直接写死在代码里了，你要自己去改代码...
+他 **可能** 把你要改的语言直接写死在代码里了，你要自己去改代码...
 
-比如驿站内核汉化的 [DecentHolograms](../other/Holograms/DecentHolograms.md)
+比如驿站内核汉化的 [DecentHolograms](../misc/holograms/decentholograms.md)
 
 </TabItem>
 </Tabs>

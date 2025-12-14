@@ -20,7 +20,7 @@ Arthas(中文名：阿尔萨斯) 是一个 Java 诊断工具，在 Minecraft 中
 
 ## 下载
 
-自行参考[官方文档 - 下载](https://arthas.aliyun.com/doc/install-detail.html)
+自行参考 [官方文档 - 下载](https://arthas.aliyun.com/doc/install-detail.html)
 
 ### Arthas IDEA
 
@@ -30,9 +30,9 @@ Arthas 的 idea 插件，可以帮助你生成 Arthas 命令
 
 ## 启动
 
-自行参考[官方文档 - 快速开始](https://arthas.aliyun.com/doc/quick-start.html)
+自行参考 [官方文档 - 快速开始](https://arthas.aliyun.com/doc/quick-start.html)
 
-## 开始！
+## 开始
 
 :::tip
 
@@ -42,7 +42,7 @@ Arthas 的 idea 插件，可以帮助你生成 Arthas 命令
 
 ### 哪个插件发送了聊天信息？
 
-```shell
+```bash
 watch -x 2 net.minecraft.server.network.PlayerConnection * '{params[0],@java.lang.Thread@currentThread().getStackTrace()}' 'params.length==2 && (params[0].class.name == "net.minecraft.network.protocol.game.ClientboundPlayerChatPacket" || params[0].class.name == "net.minecraft.network.protocol.game.ClientboundSystemChatPacket")'
 ```
 
@@ -64,7 +64,7 @@ watch -x 2 net.minecraft.server.network.PlayerConnection * '{params[0],@java.lan
 
 ### 查看类是哪个插件添加的
 
-```shell
+```bash
 sc -d com.google.gson.Gson
 ```
 
@@ -72,7 +72,7 @@ sc -d com.google.gson.Gson
 
 ### 日志是哪个插件打印的
 
-```shell
+```bash
 watch -x 2 org.apache.logging.log4j.core.config.LoggerConfig processLogEvent '{params[0].message.message,@java.lang.Thread@currentThread().getStackTrace()}' 'params[0].message.message.contains("日志中的一部分内容")'
 ```
 

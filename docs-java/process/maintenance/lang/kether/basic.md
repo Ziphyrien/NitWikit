@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # 基础
 
-> 动作，又称语句，每个动作都功能明确，如：Tell(输出文本)
+> 动作，又称语句，每个动作都功能明确，如：Tell (输出文本)
 
 在这一节中，我将告诉你在 kether 中的一些基本概念
 
@@ -17,13 +17,13 @@ sidebar_position: 2
 
 ![](_images/vul-tell.png)
 
-这个动作的作用是给玩家发送一条信息 (图中的 1 )
+这个动作的作用是给玩家发送一条信息 (图中的 1)
 
 下面的 `< > Result:` 是动作的返回值 (下面会讲)
 
 :::note
 
-非调试 (/vul evel) 是不会看到这个的
+非调试 (`/vul evel`) 是不会看到这个的
 
 ![](_images/result.png)
 
@@ -37,7 +37,7 @@ sidebar_position: 2
 
 我们可以用下面的 `color Text` 动作来搞颜色
 
-## 彩色 (color Text)
+## 彩色 (Color Text)
 
 > https://kether.tabooproject.org/list.html#Color_Text
 
@@ -92,7 +92,7 @@ sidebar_position: 2
 
 所以在 [语句的连用](#语句的连用) 那里，我们可以在 `tell` 后面接一个 `color` 动作
 
-那么问题来了，为什么在 [Tell](#输出文本 Tell) 那里可以接一句话 (此处写了个 1)？
+那么问题来了，为什么在 [Tell](#输出文本-tell) 那里可以接一句话 (此处写了个 1)？
 
 ![](_images/vul-tell.png)
 

@@ -25,23 +25,23 @@ sidebar_position: 2
 
 :::
 
-你只需要在启动参数最后加上`--forceUpgrade`就行了，像这样
+你只需要在启动参数最后加上 `--forceUpgrade` 就行了，像这样
 
-```shell
+```bash
 java -Xms2G -Xmx2G -jar server.jar --nogui
 ```
 
 改成这样
 
-```shell
+```bash
 java -Xms2G -Xmx2G -jar server.jar --nogui --forceUpgrade
 ```
 
-然后启动服务端，等待转换完成，**不要进入服务器或操作服务器**，这是非常危险的，可能会**直接废档**
+然后启动服务端，等待转换完成，**不要进入服务器或操作服务器**，这是非常危险的，可能会 **直接废档**
 
 转换完后，删掉 `--forceUpgrade` 再启动就可以了
 
-## Chunker.app
+## Chunker
 
 :::info
 
@@ -53,7 +53,7 @@ java -Xms2G -Xmx2G -jar server.jar --nogui --forceUpgrade
 
 :::
 
-Chunker.app 是一个多功能的转换工具，支持基岩版和 Java 之间的转换，在转换大版本的时候也推荐使用
+Chunker 是一个多功能的转换工具，支持基岩版和 Java 之间的转换，在转换大版本的时候也推荐使用
 
 目前不支持实体和玩家背包
 
@@ -75,9 +75,9 @@ Chunker.app 是一个多功能的转换工具，支持基岩版和 Java 之间�
 
 Amulet 可用于高版本地图转低版本，但在地图转换后可能出现光源问题
 
-使用 [FastAsyncWorldEdit](/Java/process/plugin/WorldManagement/FastAsyncWorldEdit)
+使用 [FastAsyncWorldEdit](/java/process/plugin/world-management/fastasyncworldedit)
 
-选择光源异常区域，先 //removelight 再 //fixlighting
+选择光源异常区域，先 `//removelight` 再 `//fixlighting`
 
 :::
 
@@ -115,7 +115,7 @@ Amulet 可用于高版本地图转低版本，但在地图转换后可能出现�
 
 #### BDS 局部导入
 
-在 JAVA 版做完建筑，使用 [Chunker](https://chunker.app/) 转换存档
+在 Java 版做完建筑，使用 [Chunker](https://chunker.app/) 转换存档
 
 将建筑存档与服务端存档导入本地基岩版客户端
 
@@ -125,7 +125,7 @@ Amulet 可用于高版本地图转低版本，但在地图转换后可能出现�
 
 具体使用方法请看官方文档，这里不过多赘述
 
-[WE-Addon 结构的使用](https://worldedit-be-docs.readthedocs.io/en/stable/usage/structures/)
+[WorldEdit-Addon 结构的使用](https://worldedit-be-docs.readthedocs.io/en/stable/usage/structures/)
 
 :::info
 
@@ -145,9 +145,9 @@ Amulet 可用于高版本地图转低版本，但在地图转换后可能出现�
 
 #### NKX 局部导入
 
-在 JAVA 版做完建筑，使用 [WE](https://modrinth.com/plugin/worldedit) / [FAWE](https://modrinth.com/plugin/fastasyncworldedit) 选区导出 .schematic 文件
+在 Java 版做完建筑，使用 [WorldEdit](https://modrinth.com/plugin/worldedit) / [FAWE](https://modrinth.com/plugin/fastasyncworldedit) 选区导出 `.schematic` 文件
 
-于 NKX 服务端内使用 [FastAsyncWorldEdit-Nukkit](https://cloudburstmc.org/resources/fastasyncworldedit.30/) 导入 .schematic 文件粘贴到指定位置
+于 NKX 服务端内使用 [FastAsyncWorldEdit-Nukkit](https://cloudburstmc.org/resources/fastasyncworldedit.30/) 导入 `.schematic` 文件粘贴到指定位置
 
 :::warning
 
@@ -159,4 +159,4 @@ schematic 导入粘贴可能会出现方块状态不正确的情况，例如楼�
 
 #### NKX 存档导入
 
-NukkitX 通用 JAVA 版 1.12.2 的世界，可直接替换进去
+NukkitX 通用 Java 版 1.12.2 的世界，可直接替换进去

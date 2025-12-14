@@ -23,7 +23,7 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="open">
 <TabItem value="java" label="Java 服务器">
 
-包括所有 Java 服务端
+包括所有 Java 版服务端
 
 在 `server.properties` 中打开 `white-list`
 
@@ -86,7 +86,7 @@ allow-list=on
 
 ## 扩展插件
 
-### BistroWhitelist(Java 版)
+### BistroWhitelist (Java 版)
 
 :::info
 
@@ -94,7 +94,7 @@ allow-list=on
 
 `Gitee` https://gitee.com/myKasa/BistroWhitelist
 
-`文档(中文)` https://wiki.mcxjg.cn/wiki/BistroWhitelist/%E7%AE%80%E4%BB%8B/
+`文档 (中文)` https://wiki.mcxjg.cn/wiki/BistroWhitelist/%E7%AE%80%E4%BB%8B/
 
 `MineBBS` https://www.minebbs.com/resources/bistrowhitelist-bistrobot-qq.9058/
 

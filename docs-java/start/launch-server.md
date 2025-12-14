@@ -68,7 +68,7 @@ sidebar_position: 4
 
 用你前面下的文本编辑器编辑这个文件，写入以下信息并保存，然后双击 `start.bat`
 
-```shell title="start.bat"
+```bash title="start.bat"
 java -Xms2G -Xmx2G -jar 核心名.jar --nogui
 ```
 
@@ -133,7 +133,7 @@ import TabItem from '@theme/TabItem';
 @echo off
 :start
 java -Xmx4G -Xms1G -jar server.jar nogui
-echo 服务器已关闭，5秒后重启...
+echo 服务器已关闭，5 秒后重启...
 timeout /t 5
 goto start
 ```
@@ -145,7 +145,7 @@ goto start
 #!/bin/bash
 while true; do
     java -Xmx4G -Xms1G -jar server.jar nogui
-    echo "服务器已关闭，5秒后重启..."
+    echo "服务器已关闭，5 秒后重启..."
     sleep 5
 done
 ```
@@ -183,7 +183,7 @@ import GlobalContent from '@site/src/components/GlobalContent'
 
 <GlobalContent>
 
-### 我不会在命令行界面 (CMD / 终端 / Powershell) 使用科学上网
+### 我不会在命令行界面 (CMD / 终端 / PowerShell) 使用科学上网
 
 :::tip
 
@@ -199,7 +199,7 @@ import GlobalContent from '@site/src/components/GlobalContent'
 
 在命令行界面 (一般情况下，一个黑 / 蓝框框) 中执行这两条
 
-```shell
+```bash
 set http_proxy=http://127.0.0.1:7890
 set https_proxy=http://127.0.0.1:7890
 ```
@@ -221,19 +221,19 @@ export HTTPS_PROXY=http://127.0.0.1:7890
 
 ### 中文乱码
 
-如果你用的是 Windows，你需要在启动脚本**最前面**加上`chcp 65001`
+如果你用的是 Windows，你需要在启动脚本 **最前面** 加上 `chcp 65001`
 
 如上面的方法无效，检查你的系统区域设置是否为中国和中文语言包是否下载。
 
 比如你原来的启动脚本长这样
 
-```shell
+```bash
 java -Xms2G -Xmx2G -jar server.jar --nogui
 ```
 
 你需要改成这样
 
-```shell
+```bash
 chcp 65001
 java -Xms2G -Xmx2G -jar server.jar --nogui
 ```
@@ -260,13 +260,13 @@ java -Xms2G -Xmx2G -jar server.jar --nogui
 
 内存大小设置长这样
 
-```shell
+```text
 -Xms1024M -Xmx2048M
 ```
 
 不是这样！
 
-```shell
+```text
 -Xms 1024M -Xmx 2048M
 ```
 
@@ -276,7 +276,7 @@ java -Xms2G -Xmx2G -jar server.jar --nogui
 
 使用安装器安装后，你无法在根目录找到 `xxx.jar`，同时会生成一个 bat 脚本。里面大概是这样的
 
-```shell
+```bash
 @echo off
 REM Forge requires a configured set of both JVM and program arguments.
 REM Add custom JVM arguments to the user_jvm_args.txt
@@ -296,7 +296,7 @@ pause
 
 此时你会发现有一个 `user_JVM_args.txt` 在你的根目录下，打开他，将原来的
 
-```shell
+```bash
 java -Xms2G -Xmx2G -jar server.jar --nogui
 ```
 
@@ -306,6 +306,6 @@ java -Xms2G -Xmx2G -jar server.jar --nogui
 
 就像这样
 
-```shell
+```bash
 java @user_jvm_args.txt @libraries/net/minecraftforge/forge/1.18.2-40.1.60/win_args.txt nogui %*
 ```

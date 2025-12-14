@@ -7,7 +7,7 @@ sidebar_position: 6
 
 ## 混合端
 
-由于混合端本身的问题，混合端能进行的优化很少，并且混合端**不可以装大部分优化 MOD**，但是你仍然可以进行除安装优化 mod 以外的其他优化操作
+由于混合端本身的问题，混合端能进行的优化很少，并且混合端 **不可以装大部分优化 mod**，但是你仍然可以进行除安装优化 mod 以外的其他优化操作
 
 ~~不使用混合端来达到最佳的优化~~
 
@@ -18,7 +18,7 @@ sidebar_position: 6
 我们在这里列出的不建议使用的插件是一个类型的插件，而不是仅仅只是不推荐某个插件。对于推荐的"优化插件"
 ，其实大多数也是通过限制红石/漏斗/实体数量和 AI 等完成的，
 
-在狭义上任何使用插件操作限制任何东西都不能称之为"_优化_"而是"_限制_"，这里只是以"_优化插件_"代指一些"_限制插件_".
+在狭义上任何使用插件操作限制任何东西都不能称之为"*优化*"而是"*限制*"，这里只是以"*优化插件*"代指一些"*限制插件*".
 
 所以说，使用这些"优化插件"，不如更换服务端核心，甚至不如优化启动参数和调优服务端配置文件
 
@@ -42,16 +42,16 @@ sidebar_position: 6
 
 因此，停止使用类似插件，如：
 
-_[TooManyGen](https://modrinth.com/plugin/toomanygen) - 惩罚玩家跑图，实际上这是非常影响游戏体验的，有更好的选择。_
+*[TooManyGen](https://modrinth.com/plugin/toomanygen) - 惩罚玩家跑图，实际上这是非常影响游戏体验的，有更好的选择。*
 
 ### 对于 AI 有影响的插件
 
 使用 Pufferfish DAB 降低远处生物的 AI 比插件利用 API 更加有效和符合游戏逻辑，
 
-因此，停止使用类似插件，如:
+因此，停止使用类似插件，如：
 
-_LaggRemover (Fork) - 有时候会导致即使插件卸载，实体 AI 也被移除了，比不上 Pufferfish(使用 Purpur Fork 即可) 根据距离衰减的
-AI._
+*LaggRemover (Fork) - 有时候会导致即使插件卸载，实体 AI 也被移除了，比不上 Pufferfish (使用 Purpur Fork 即可) 根据距离衰减的
+AI.*
 
 ### 任何对于内存 GC 进行操作的插件
 
@@ -59,7 +59,7 @@ AI._
 
 因此，停止使用类似插件，如：
 
-_Spartan - 一款性能非常差的付费反作弊，如果你买了那么恭喜你你被骗了 (大嘘)，如果近期购买请立即申请退款!_
+*Spartan - 一款性能非常差的付费反作弊，如果你买了那么恭喜你你被骗了 (大嘘)，如果近期购买请立即申请退款!*
 
 ### 村民优化插件
 
@@ -76,12 +76,12 @@ _Spartan - 一款性能非常差的付费反作弊，如果你买了那么恭喜
 
 地面上的物品很少会导致性能问题，而且物品往往会自行消失，如果你的服务器掉落物特别多，请调整以下两个参数：
 
-[点这里查看正确方法 #alt-item-despawn-rate](go.mdx#alt-item-despawn-rate)
+[点这里查看正确方法 #alt-item-despawn-rate](go.mdx#alt-item-despawn-rate)，
 [点这里查看正确方法 #merge-radius](go.mdx#merge-radius)
 
 因此，停止使用类似插件，如：
 
-_[ClearLagg](https://www.spigotmc.org/resources/clearlagg.68271/) - 清理物品插件_
+*[ClearLagg](https://www.spigotmc.org/resources/clearlagg.68271/) - 清理物品插件*
 
 ### 生物清理插件
 
@@ -91,16 +91,16 @@ _[ClearLagg](https://www.spigotmc.org/resources/clearlagg.68271/) - 清理物品
 
 因此，停止使用类似插件，如：
 
-_[Cleaner](https://www.minebbs.com/resources/cleaner-addon.4816/) - 清理生物/物品插件_
+*[Cleaner](https://www.minebbs.com/resources/cleaner-addon.4816/) - 清理生物/物品插件*
 
 ### 实体堆叠插件
 
 除非玩家乐意养殖非常非常多生物，否则对生物进行堆叠仍然会使服务器浪费性能在刷新更多的生物上，否则请不要安装堆叠插件。
 
-因此，停止使用类似插件，如:
+因此，停止使用类似插件，如：
 
-_[StackMob](https://www.spigotmc.org/resources/stackmob-enhance-your-servers-performance-without-the-sacrifice.29999/) -
-实体密集时进行堆叠的插件 (若一定要使用仍推荐本插件而不是其他堆叠插件)_
+*[StackMob](https://www.spigotmc.org/resources/stackmob-enhance-your-servers-performance-without-the-sacrifice.29999/) -
+实体密集时进行堆叠的插件 (若一定要使用仍推荐本插件而不是其他堆叠插件)*
 
 其实叠加后的一小段时间，应该是占用下降的，但是服务器会因为实际的实体变少，重新刷新怪物，这会让占用缓慢恢复。
 
@@ -111,8 +111,10 @@ _[StackMob](https://www.spigotmc.org/resources/stackmob-enhance-your-servers-per
 综上所述，不要安装堆叠插件。
 
 :::tip
-补充一点，我可以推荐给你这个，只在服务器 mspt 超过阈值才堆叠动物。如果你本身有 farmcontrol 之类的插件控制总量，那这个插件的使用是安全、无感、且能起到一定的“优化”作用的。<br />
+
+补充一点，我可以推荐给你这个，只在服务器 MSPT 超过阈值才堆叠动物。如果你本身有 FarmControl 之类的插件控制总量，那这个插件的使用是安全、无感、且能起到一定的“优化”作用的。<br />
 https://github.com/quiquelhappy/StackMob-5
+
 :::
 
 ### 爆炸优化插件
@@ -147,7 +149,7 @@ Paper 酱为你在 `/config/paper-world-default.yml` 中准备了爆炸优化。
 1. ChunkAnalyser -
    简单的搜索世界的红石，漏斗，实体之类，有很多平替插件如 [Insights](https://modrinth.com/plugin/insights)/ [Entitydetection](https://www.spigotmc.org/resources/entitydetection-tile-entity-support.20588/)；
 
-2. LagMonitor，LagMap，Benchmark - 很鸡肋的性能检测 (不如 [Spark](performance-analysis.md#spark) )；
+2. LagMonitor，LagMap，Benchmark - 很鸡肋的性能检测 (不如 [Spark](performance-analysis.md#spark))；
 
 3. RedstoneCuller -
    直接破坏红石机器，平替插件 [AntiRedstoneClock](https://hangar.papermc.io/OneLiteFeather/AntiRedstoneClock-Remastered)；
@@ -157,7 +159,7 @@ Paper 酱为你在 `/config/paper-world-default.yml` 中准备了爆炸优化。
    ，体验远好于此插件；
 
 5. ChunkLimiter -
-   平替插件 [Farmcontrol](https://www.spigotmc.org/resources/farmcontrol-1-15-1-19.86923/) / [Mob-Farm-Manager](https://www.spigotmc.org/resources/mob-farm-manager-supports-1-7-10-up-to-1-20-hopper-support.15127/)
+   平替插件 [FarmControl](https://www.spigotmc.org/resources/farmcontrol-1-15-1-19.86923/) / [Mob-Farm-Manager](https://www.spigotmc.org/resources/mob-farm-manager-supports-1-7-10-up-to-1-20-hopper-support.15127/)
    ，甚至更多配置项；
 
 6. Dynamic View Distance -
@@ -173,7 +175,7 @@ Paper 酱为你在 `/config/paper-world-default.yml` 中准备了爆炸优化。
 
 但是这样的插件往往功能多而不专，如 CMI 经济经常出 bug 且不支持跨服。
 
-而 ESS 使用 yml 储存大量的玩家数据，经常被发现有刷钱漏洞等高血压操作。
+而 ESS 使用 YAML 储存大量的玩家数据，经常被发现有刷钱漏洞等高血压操作。
 
 这些插件往往因为功能多导致有些代码没有被优化好，无法和专精某一方面的插件媲美。
 
@@ -187,19 +189,19 @@ Paper 酱为你在 `/config/paper-world-default.yml` 中准备了爆炸优化。
 
 主要是包括一些甚至不到 10kb 的插件，功能仅仅只是右键西瓜能够收获，或是禁止农田踩踏等。
 
-这些插件功能很可能被一些其他的插件甚至核心自带了 (如 purpur 可设置农田是否可踩踏)。
+这些插件功能很可能被一些其他的插件甚至核心自带了 (如 Purpur 可设置农田是否可踩踏)。
 
 虽然一般来说这些插件不会对性能有影响，但是的确能够降低服务器维护难度等。
 
 ### 拥有相似功能的插件
 
-顾名思义，同时安装两个基础插件如 CMI 和 ESS，两个权限插件 GroupManager 和 Luckperms，两个经济插件，
+顾名思义，同时安装两个基础插件如 CMI 和 ESS，两个权限插件 GroupManager 和 LuckPerms，两个经济插件，
 
 不但可能由于插件矛盾导致性能问题，更有可能直接出现权限失效、保护功能失效等严重问题。
 
-## 有用的~~优化~~限制插件
+## 有用的 ~~优化~~ 限制插件
 
-:::warning 红石限制？
+:::warning[红石限制？]
 
 目前，市面上的红石限制插件限制红石的方式都是通过破坏或停用实现的
 
@@ -228,7 +230,7 @@ Minecraft 1.20.1 开始，这还没有修复。
 
 这个插件通过用一个自定义的、更快、更简单的搜索替换原版埋藏的寻宝来修复这些类型的崩溃：它只是在合理的距离内随机选择一个海滩并将宝藏放在那里。由于这主要是异步的，因此不会导致延迟。
 
-详细使用和局限性，请看[官方页面](https://hangar.papermc.io/Kyle/OkTreasures)
+详细使用和局限性，请看 [官方页面](https://hangar.papermc.io/Kyle/OkTreasures)
 
 ### Chunky Border
 
@@ -258,7 +260,7 @@ Minecraft 1.20.1 开始，这还没有修复。
 
 ESU 是一款多合一插件，但优化只需要 NetworkThrottleModule 省流模块即可
 
-通过压缩区块数据包中玩家不可见的方块信息以有效降低上行带宽的占用。对非作弊玩家的影响为零。经过深度优化，每个区块的处理耗时低于 1ms. 负载低于 GrimAC 与其他假矿插件.
+通过压缩区块数据包中玩家不可见的方块信息以有效降低上行带宽的占用。对非作弊玩家的影响为零。经过深度优化，每个区块的处理耗时低于 1 ms. 负载低于 GrimAC 与其他假矿插件。
 在百人原版生存服的测试环境中，该功能帮助降低了约 50% 的上行带宽。详情说明请检查模块配置中的注释。
 
 - **该功能与假矿插件相冲突，不可共同安装。插件有较一般的反矿透效果**

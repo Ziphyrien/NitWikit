@@ -26,7 +26,7 @@ sidebar_position: 5
 
 ## server.proprites
 
-这一小节配置文件都位于服务端根目录下的`server.proprites`文件。如需修改，请打开该文件并找到对应选项
+这一小节配置文件都位于服务端根目录下的 `server.proprites` 文件。如需修改，请打开该文件并找到对应选项
 
 ### 正版验证
 
@@ -44,11 +44,11 @@ online-mode=true
 
 **不要在服务器投入运营后去改正版验证状态！** 这会造成 UUID 混乱，玩家数据丢失，当然你可以转换 UUID 来解决这个问题 [查看解决方法](https://klpbbs.com/thread-131458-1-1.html)
 
-如果需要更多的验证方式 (如 **皮肤站**/**统一认证** 等)，请在服务器 **公测前** 确定，具体请参考[更多验证方式](../advance/loginchoices.md)
+如果需要更多的验证方式 (如 **皮肤站**/**统一认证** 等)，请在服务器 **公测前** 确定，具体请参考 [更多验证方式](../advance/login-choices.md)
 
 :::
 
-注意，在离线模式下，玩家大概率没皮肤，你需要 [SkinsRestorer](../process/plugin/other/SkinsRestorer.md)，根据需求选择 SkinsRestorer 的版本。
+注意，在离线模式下，玩家大概率没皮肤，你需要 [SkinsRestorer](../process/plugin/misc/skinsrestorer.md)，根据需求选择 SkinsRestorer 的版本。
 
 ### 最大玩家数
 
@@ -65,9 +65,10 @@ level-seed=
 ```
 
 这里面就可以填上你想要的种子，不填表示随机种子
+
 :::note
 
-在服务器生成地图后修改种子是**无效的**
+在服务器生成地图后修改种子是 **无效的**
 
 因此，请确保修改种子时，地图未生成
 
@@ -120,11 +121,11 @@ spawn-protection=16
 
 :::warning
 
-强烈**建议禁用**这一配置，无论你是否需要出生点保护。
+强烈 **建议禁用** 这一配置，无论你是否需要出生点保护。
 
-这一配置的保护**并不能**防御苦力怕、TNT 等造成的破坏。
+这一配置的保护 **并不能** 防御苦力怕、TNT 等造成的破坏。
 
-如有保护出生点的需求，可以考虑使用插件 [WorldGuard](../process/plugin/WorldManagement/WorldGuard.md)
+如有保护出生点的需求，可以考虑使用插件 [WorldGuard](../process/plugin/world-management/worldguard.md)
 
 :::
 
@@ -203,7 +204,7 @@ allow-flight=true
 
 :::tip
 
-请注意，默认情况下 `/gamerule` 所设置的游戏规则**只会**在执行命令的世界生效
+请注意，默认情况下 `/gamerule` 所设置的游戏规则 **只会** 在执行命令的世界生效
 
 [Ultimate Gamerules Manager](https://www.spigotmc.org/resources/ultimate-gamerules-manager-1-13-1-20-3.102215/) 是个不错的插件，适合新手管理 gamerule 时使用
 

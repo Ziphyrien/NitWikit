@@ -54,9 +54,9 @@ One man’s constant is another man’s variable. — Alan Perlis
 
 `GitHub` https://github.com
 
-`文档(英文)` https://xxx
+`文档 (英文)` https://xxx
 
-`文档(中文)` https://xxx
+`文档 (中文)` https://xxx
 
 `插件百科` https://mineplugin.org
 
@@ -66,4 +66,4 @@ One man’s constant is another man’s variable. — Alan Perlis
 
 如果文档只有一个，不需要标注是中文还是英文
 
-明确**大小写**，完全按照此页中的大小写样式
+明确 **大小写**，完全按照此页中的大小写样式

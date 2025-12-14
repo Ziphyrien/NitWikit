@@ -18,11 +18,11 @@ https://www.bt.cn/new/btcode.html
 
 ### 小皮数据库
 
-### Windows 平台：
+### Windows 平台
 
-首先，通过 PHPStudy 的控制面板，找到 Mysql 服务，并点击“暂停”按钮
+首先，通过 PHPStudy 的控制面板，找到 MySQL 服务，并点击“暂停”按钮
 
-之后，找到 PHPStudy 的安装目录，找到 Mysql 的安装文件夹
+之后，找到 PHPStudy 的安装目录，找到 MySQL 的安装文件夹
 
 注：通常命名为：MySQL 或者 mysqlXX（XX 为版本号）
 
@@ -32,7 +32,7 @@ https://www.bt.cn/new/btcode.html
 
 最后，我们重新启动 PHPStudy
 
-### Linux 平台：
+### Linux 平台
 
 首先，点击左侧面板的数据库，进入数据库列表管理页面
 
