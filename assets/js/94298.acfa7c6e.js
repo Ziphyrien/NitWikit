@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcubic_wiki=self.webpackChunkcubic_wiki||[]).push([["94298"],{61281:function(c,i,u){u.r(i)}}]);

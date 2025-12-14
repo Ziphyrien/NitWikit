@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcubic_wiki=self.webpackChunkcubic_wiki||[]).push([["26332"],{10967:function(c,e,i){i.d(e,{createPacketServices:()=>k.$});var k=i(82012);i(91079)}}]);

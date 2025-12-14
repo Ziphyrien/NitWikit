@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcubic_wiki=self.webpackChunkcubic_wiki||[]).push([["19640"],{68907:function(c,e,i){i.d(e,{createPieServices:()=>u.f});var u=i(76764);i(91079)}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcubic_wiki=self.webpackChunkcubic_wiki||[]).push([["89261"],{5820:function(c,e,i){i.d(e,{createArchitectureServices:()=>u.S});var u=i(83738);i(91079)}}]);

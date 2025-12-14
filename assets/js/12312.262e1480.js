@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcubic_wiki=self.webpackChunkcubic_wiki||[]).push([["12312"],{93899:function(e,c,i){i.d(c,{createTreemapServices:()=>u.d});var u=i(4659);i(91079)}}]);

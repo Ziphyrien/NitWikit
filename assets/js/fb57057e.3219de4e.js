@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcubic_wiki=self.webpackChunkcubic_wiki||[]).push([["34247"],{32994:function(c){c.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"docs-bedrock"}')}}]);
