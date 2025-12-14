@@ -52,7 +52,7 @@ const config: Config = {
 
     url: IS_CHINA_SITE ? "https://nitwikit.8aka.cn" : "https://nitwikit.8aka.org",
 
-    baseUrl: "/",
+    baseUrl: "/NitWikit/",
 
     organizationName: "Cubic-Project",
     projectName: "笨蛋式指南",
