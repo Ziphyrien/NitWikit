@@ -31,25 +31,12 @@ if (ExecutionEnvironment.canUseDOM) {
             const targetElement = document.getElementById(targetId);
 
             if (targetElement) {
-                // 计算偏移量（考虑固定导航栏）
-                const navbarHeight = getNavbarHeight();
-                const elementPosition = targetElement.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.pageYOffset - navbarHeight - 10; // 额外 10px 间距
-
-                // 使用平滑滚动
-                if (prefersReducedMotion) {
-                    // 如果用户偏好减少动画，使用即时滚动
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: "auto"
-                    });
-                } else {
-                    // 使用平滑滚动
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: "smooth"
-                    });
-                }
+                // 使用 scrollIntoView，让浏览器处理滚动位置
+                // 需要配合 CSS scroll-margin-top 使用
+                targetElement.scrollIntoView({
+                    behavior: prefersReducedMotion ? "auto" : "smooth",
+                    block: "start"
+                });
 
                 // 更新 URL hash（不触发滚动）
                 if (history.pushState) {
